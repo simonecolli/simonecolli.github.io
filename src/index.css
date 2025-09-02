@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+:root {
+  /* Tech Minimal Color Palette */
+  --color-primary: #000000;
+  --color-secondary: #404040;
+  --color-accent: #0066ff;
+  --color-muted: #888888;
+  --color-border: #e5e5e5;
+  --color-background: #ffffff;
+  --color-surface: #fafafa;
+  
+  /* Typography */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  
+  /* Animations */
+  --transition-fast: 0.15s ease-out;
+  --transition-normal: 0.25s ease-out;
+  --transition-slow: 0.4s ease-out;
+
+  color: var(--color-primary);
+  background-color: var(--color-background);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+/* Typography Reset */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+p {
+  margin: 0;
+  color: var(--color-secondary);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+/* Buttons */
+button {
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+button:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Utility Classes */
+.tech-minimal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.tech-minimal-grid {
+  display: grid;
+  gap: 32px;
+}
+
+.tech-minimal-card {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 32px;
+  transition: all var(--transition-normal);
+}
+
+.tech-minimal-card:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.tech-minimal-section {
+  padding: 80px 0;
+}
+
+.tech-minimal-section:nth-child(even) {
+  background-color: var(--color-surface);
+}
