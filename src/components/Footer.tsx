@@ -38,6 +38,7 @@ export default function Footer() {
                     href={link.url}
                     className="w-8 h-8 border border-gray-300 rounded-full flex items-center justify-center hover:border-blue-600 hover:text-blue-600 transition-all"
                     aria-label={link.name}
+                    target="_blank"
                   >
                     <span className="text-xs font-medium">
                         {link.icon}

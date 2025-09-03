@@ -10,8 +10,8 @@ export default function Projects() {
     },
     {
       title: "Quantum Portfolio Optimization",
-      description: "A research project focused on optimizing investment portfolios using quantum computing techniques.",
-      tags: ["Research", "Quantum Computing", "Finance", "Python"],
+      description: "A research project focused on optimizing portfolio allocation, enhancing traditional methods for improved risk-return management.",
+      tags: ["Research", "Quantum Computing", "Finance", "Python", "Exam"],
       status: "Completed"
     },
     {

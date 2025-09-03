@@ -4,57 +4,49 @@ import Footer from "../components/Footer";
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with modern web technologies. Features include user authentication, payment processing, inventory management, and a responsive design.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Docker"],
-      status: "In Development",
-      github: "https://github.com",
-      demo: "https://demo.com",
+      title: "PanDelos-plus",
+      description: "PanDelos-plus: a parallel algorithm for computing sequence homology in pangenomic analysis",
+      tags: ["Research", "C++", "Python", "Docker"],
+      status: "Completed",
+      github: "https://github.com/simonecolli/PanDelos-plus/tree/main",
+      demo: "",
       year: "2024"
     },
     {
-      title: "Mobile Photo Editor",
-      description: "Cross-platform mobile application for photo editing with real-time filters, advanced color correction, and social sharing capabilities.",
-      tech: ["React Native", "TypeScript", "Firebase", "OpenCV", "Redux"],
+      title: "Quantum Portfolio Optimization",
+      description: "A research project focused on optimizing portfolio allocation, enhancing traditional methods for improved risk-return management.",
+      tags: ["Research", "Quantum Computing", "Finance", "Python", "Exam"],
       status: "Completed",
-      github: "https://github.com",
-      demo: "https://demo.com",
-      year: "2023"
+      github: "https://github.com/simonecolli/quantum-portfolio-optimization",
+      demo: "",
+      year: "2025"
     },
     {
-      title: "AI Chat Assistant",
-      description: "Intelligent chatbot using natural language processing and machine learning to provide contextual responses and assist users with various tasks.",
-      tech: ["Python", "TensorFlow", "FastAPI", "Docker", "OpenAI"],
-      status: "Beta",
-      github: "https://github.com",
-      demo: "https://demo.com",
-      year: "2024"
-    },
-    {
-      title: "Portfolio Analytics Dashboard",
-      description: "Real-time analytics dashboard for tracking website performance, user behavior, and conversion metrics with beautiful data visualizations.",
-      tech: ["Vue.js", "D3.js", "Node.js", "MongoDB", "Chart.js"],
+      title: "MazeProject",
+      description: "An application developed in occasion of the European Researchers' Night 2022.",
+      tags: ["JavaScript", "CSS", "HTML"],
       status: "Completed",
-      github: "https://github.com",
-      demo: "https://demo.com",
-      year: "2023"
-    },
-    {
-      title: "Task Management API",
-      description: "RESTful API for task management with features like team collaboration, time tracking, file attachments, and email notifications.",
-      tech: ["Express.js", "MongoDB", "JWT", "Nodemailer", "Jest"],
-      status: "Completed",
-      github: "https://github.com",
-      year: "2023"
-    },
-    {
-      title: "Weather Forecast App",
-      description: "Clean and minimal weather application with location-based forecasts, historical data, and beautiful weather animations.",
-      tech: ["React", "OpenWeather API", "Tailwind CSS", "Framer Motion"],
-      status: "Completed",
-      github: "https://github.com",
-      demo: "https://demo.com",
+      github: "https://github.com/simonecolli/MazeProject",
+      demo: "https://simonecolli.github.io/MazeProject/",
       year: "2022"
+    },
+    {
+      title: "Academic Guarantee Optimization",
+      description: "Answer Set Programming (ASP)-based tool for optimizing the assignment of academic guarantors to university courses.",
+      tags: ["Research", "Answer set programming", "Clingo", "Python", "Exam"],
+      status: "Completed",
+      github: "https://github.com/simonecolli/ottimizzazione-garanti-accademici",
+      demo: "",
+      year: "2025"
+    },
+    {
+      title: "Deep neural network library",
+      description: "A C++ library for building, training, and using deep neural networks.",
+      tags: ["Neural Networks", "C++"],
+      status: "Completed",
+      github: "https://github.com/unipr-org/deep-neural-network",
+      demo: "",
+      year: "2024"
     }
   ];
 
@@ -107,12 +99,12 @@ export default function ProjectsPage() {
 
                   {/* Tech Stack */}
                   <div className="flex flex-wrap gap-2 mb-6">
-                    {project.tech.map((tech, techIndex) => (
+                    {project.tags.map((tag, techIndex) => (
                       <span 
                         key={techIndex}
                         className="text-xs px-2 py-1 border border-gray-200 rounded text-gray-600"
                       >
-                        {tech}
+                        {tag}
                       </span>
                     ))}
                   </div>
@@ -139,7 +131,7 @@ export default function ProjectsPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <span>Live Demo</span>
+                        <span>Live demo</span>
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
