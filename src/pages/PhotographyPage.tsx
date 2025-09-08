@@ -2,21 +2,21 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function PhotographyPage() {
-  const photoCategories = ["All", "Street", "Portrait", "Landscape", "Architecture"];
+  const photoCategories = ["All", "Sport", "Wildlife", "Macro", "Ceremonies"];
   
   const photos = [
     {
       id: 1,
-      src: "/photo1.jpg",
+      src: "/public/vite.svg",
       alt: "Street Photography in Milan",
-      category: "Street",
+      category: "Sport",
       location: "Milan, Italy",
       camera: "Canon EOS R5",
       settings: "f/2.8 • 1/250s • ISO 400"
     },
     {
       id: 2,
-      src: "/photo2.jpg", 
+      src: "/photo2.jpg",
       alt: "Portrait of a musician",
       category: "Portrait",
       location: "Studio",
@@ -74,10 +74,10 @@ export default function PhotographyPage() {
               </h1>
               <div className="h-px bg-gray-300 w-24 mx-auto mb-6"></div>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Through my lens, I capture moments, emotions, and stories. 
-                Photography is my way of freezing time and sharing perspectives.
+                Through my lens, I capture moments, emotions, and stories.
+                Photography is my way of freezing time and creating
+                meaningful memories.
               </p>
-              
               {/* Category Filter */}
               <div className="flex flex-wrap justify-center gap-2">
                 {photoCategories.map((category, index) => (

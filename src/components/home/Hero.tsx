@@ -20,7 +20,8 @@ export default function Hero() {
           
           {/* Description */}
           <p className="text-xl text-gray-500 max-w-2xl mx-auto mb-12 leading-relaxed">
-            ......
+            Master's student in Computer Science passionate about challenging problems,
+            software development, collaborations, and visual storytelling through photography.
           </p>
         </div>
       </div>

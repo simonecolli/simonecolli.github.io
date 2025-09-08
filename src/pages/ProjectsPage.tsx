@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "PanDelos-plus",
-      description: "PanDelos-plus: a parallel algorithm for computing sequence homology in pangenomic analysis",
-      tags: ["Research", "C++", "Python", "Docker"],
-      status: "Completed",
-      github: "https://github.com/simonecolli/PanDelos-plus/tree/main",
+      title: "Personal website",
+      description: "A personal website showcasing my projects, skills, and experience.",
+      tags: ["Web Development", "React", "JavaScript"],
+      status: "In Progress",
+      github: "",
       demo: "",
-      year: "2024"
+      year: "2025"
     },
     {
       title: "Quantum Portfolio Optimization",
@@ -22,15 +22,6 @@ export default function ProjectsPage() {
       year: "2025"
     },
     {
-      title: "MazeProject",
-      description: "An application developed in occasion of the European Researchers' Night 2022.",
-      tags: ["JavaScript", "CSS", "HTML"],
-      status: "Completed",
-      github: "https://github.com/simonecolli/MazeProject",
-      demo: "https://simonecolli.github.io/MazeProject/",
-      year: "2022"
-    },
-    {
       title: "Academic Guarantee Optimization",
       description: "Answer Set Programming (ASP)-based tool for optimizing the assignment of academic guarantors to university courses.",
       tags: ["Research", "Answer set programming", "Clingo", "Python", "Exam"],
@@ -40,6 +31,15 @@ export default function ProjectsPage() {
       year: "2025"
     },
     {
+      title: "PanDelos-plus",
+      description: "PanDelos-plus: a parallel algorithm for computing sequence homology in pangenomic analysis",
+      tags: ["Research", "C++", "Python", "Docker"],
+      status: "Completed",
+      github: "https://github.com/simonecolli/PanDelos-plus/tree/main",
+      demo: "",
+      year: "2024"
+    },
+    {
       title: "Deep neural network library",
       description: "A C++ library for building, training, and using deep neural networks.",
       tags: ["Neural Networks", "C++"],
@@ -47,6 +47,15 @@ export default function ProjectsPage() {
       github: "https://github.com/unipr-org/deep-neural-network",
       demo: "",
       year: "2024"
+    },
+    {
+      title: "MazeProject",
+      description: "An application developed in occasion of the European Researchers' Night 2022.",
+      tags: ["JavaScript", "CSS", "HTML"],
+      status: "Completed",
+      github: "https://github.com/simonecolli/MazeProject",
+      demo: "https://simonecolli.github.io/MazeProject/",
+      year: "2022"
     }
   ];
 
@@ -140,23 +149,6 @@ export default function ProjectsPage() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
-            <div className="max-w-2xl mx-auto text-center tech-minimal-card">
-              <h2 className="text-2xl font-light tracking-tight mb-4">
-                Interested in collaborating?
-              </h2>
-              <p className="text-gray-600 mb-6">
-                I'm always open to discussing new projects, creative ideas, or opportunities to learn.
-              </p>
-              <button className="px-8 py-3 bg-black text-white border border-black hover:bg-transparent hover:text-black transition-all">
-                Get in Touch
-              </button>
             </div>
           </div>
         </section>
