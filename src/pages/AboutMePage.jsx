@@ -145,50 +145,6 @@ export default function AboutMePage() {
           </div>
         </section>
 
-        {/* Values */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-2xl font-light tracking-tight mb-4">What I Value</h2>
-                <div className="h-px bg-gray-300 w-16 mx-auto"></div>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                
-                <div className="text-center">
-                  <div className="w-12 h-12 border border-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-sm font-medium">01</span>
-                  </div>
-                  <h3 className="font-medium mb-3">Continuous learning</h3>
-                  <p className="text-sm text-gray-600">
-                    Staying curious and always learning new technologies and techniques.
-                  </p>
-                </div>
-
-                <div className="text-center">
-                  <div className="w-12 h-12 border border-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-sm font-medium">02</span>
-                  </div>
-                  <h3 className="font-medium mb-3">Problem solving & innovation</h3>
-                  <p className="text-sm text-gray-600">
-                    Developing creative and high-performance solutions in complex domains.
-                  </p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 border border-gray-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-sm font-medium">03</span>
-                  </div>
-                  <h3 className="font-medium mb-3">Collaboration</h3>
-                  <p className="text-sm text-gray-600">
-                    Working with other professionals to achieve the best possible results through teamwork and knowledge sharing.
-                  </p>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </section>
         <Back2Home />
       </main>
       <Footer />
