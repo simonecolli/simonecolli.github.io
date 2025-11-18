@@ -88,7 +88,7 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
-/* Utility Classes */
+/* Utility classes */
 .tech-minimal-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -119,4 +119,10 @@ button:focus-visible {
 
 .tech-minimal-section:nth-child(even) {
   background-color: var(--color-surface);
+}
+
+.back2home {
+  color: var(--color-primary);
+  background: var(--color-background);
+  transition: color var(--transition-fast);
 }

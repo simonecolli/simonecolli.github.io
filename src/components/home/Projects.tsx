@@ -28,7 +28,7 @@ export default function Projects() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl font-light tracking-tight mb-4">
-            Selected Projects
+            Favorite projects
           </h2>
           <div className="h-px bg-gray-300 w-24 mx-auto"></div>
         </div>
