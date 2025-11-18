@@ -39,8 +39,8 @@ export default function Header() {
                 Projects
               </Link>
             </li>
-            <li>
-              <Link 
+            {/* <li>
+               <Link 
                 to="/photography" 
                 className={`text-sm font-medium transition-colors hover:text-blue-600 ${
                   isActive('/photography') ? 'text-blue-600' : 'text-gray-600'
@@ -49,6 +49,7 @@ export default function Header() {
                 Photography
               </Link>
             </li>
+            */}
             <li>
               <Link 
                 to="/about" 

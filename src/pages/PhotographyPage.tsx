@@ -7,7 +7,7 @@ export default function PhotographyPage() {
   const photos = [
     {
       id: 1,
-      src: "/public/vite.svg",
+      src: "/vite.svg",
       alt: "Street Photography in Milan",
       category: "Sport",
       location: "Milan, Italy",
@@ -134,62 +134,6 @@ export default function PhotographyPage() {
                   </div>
                 </div>
               ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Equipment Section */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-2xl font-light tracking-tight mb-4">Equipment</h2>
-                <div className="h-px bg-gray-300 w-16 mx-auto"></div>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Camera Gear */}
-                <div className="tech-minimal-card">
-                  <h3 className="font-medium mb-4">Camera Bodies</h3>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li>Canon EOS R5</li>
-                    <li>Canon EOS 5D Mark IV</li>
-                  </ul>
-                </div>
-
-                {/* Lenses */}
-                <div className="tech-minimal-card">
-                  <h3 className="font-medium mb-4">Lenses</h3>
-                  <ul className="space-y-2 text-sm text-gray-600">
-                    <li>Canon RF 24-70mm f/2.8L</li>
-                    <li>Canon RF 85mm f/1.2L</li>
-                    <li>Canon RF 16-35mm f/2.8L</li>
-                    <li>Canon EF 70-200mm f/2.8L</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Section */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
-            <div className="max-w-2xl mx-auto text-center tech-minimal-card">
-              <h2 className="text-2xl font-light tracking-tight mb-4">
-                Let's Create Together
-              </h2>
-              <p className="text-gray-600 mb-6">
-                Available for portrait sessions, event photography, and commercial projects.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-3 bg-black text-white border border-black hover:bg-transparent hover:text-black transition-all">
-                  Book a Session
-                </button>
-                <button className="px-8 py-3 border border-gray-300 hover:border-black hover:text-black transition-all">
-                  View Portfolio
-                </button>
-              </div>
             </div>
           </div>
         </section>

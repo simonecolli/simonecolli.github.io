@@ -13,7 +13,7 @@ export default function Home() {
         <Hero />
         <AboutMe />
         <Projects />
-        <Photography />
+        {/* <Photography /> */}
       </main>
       <Footer />
     </div>
