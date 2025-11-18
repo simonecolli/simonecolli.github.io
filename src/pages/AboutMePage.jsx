@@ -1,5 +1,9 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Back2Home from '../components/Back2Home';
+
+import { timeline } from "../data/timeline";
+import { skills } from "../data/skills";
 
 export default function AboutMePage() {
   const openCven = () => {
@@ -8,106 +12,17 @@ export default function AboutMePage() {
   const openCvit = () => {
     window.open('/cv/cv_it.pdf', '_blank')
   }
-  const skills = [
-    {
-      category: "Main computer languages",
-      items: ["C++", "Python", "Java", "JavaScript", "HTML", "CSS", "Bash"]
-    },
-    {
-      category: "other computer languages",
-      items: ["C", "C#", "Objective-C", "PHP", "LaTeX", "Markdown", "StrictDoc", "Matlab", "YAML"]
-    },
-    {
-      category: "Databases",
-      items: ["MySQL", "PostgreSQL"]
-    },
-    {
-      category: "Operative systems",
-      items: ["Windows 8, 10, 11, Server 2019", "Linux", "MAC OSX"]
-    },
-    {
-      category: "Environments",
-      items: ["Visual Studio Code", "Eclipse", "Android Studio", "Xcode", "Jupiter notebook", "Google Colab"]
-    },
-    {
-      category: "Frameworks and other tools",
-      items: ["JQuery", "Bootstrap", "Tailwind", "React", "Laravel", "Flask", "nginx", "Apache web server", "Git", "Hyper-V", "Oracle virtual box", "Docker", "Kubernetes", "Masterwood", "AutoCAD"]
-    },
-    {
-      category: "Creative instruments",
-      items: ["Microsoft Office", "Darktable", "Adobe Lightroom Classic", "Adobe Photoshop", "Adobe Premiere Pro", "Davinci Resolve", "Audacity"]
-    },
-    {
-      category: "Soft skills",
-      items: ["Problem solving", "Critical thinking", "Time management", "Adaptability", "Flexibility", "Collaboration", "Creativity", "Organization", "Teamwork", "Stress management", "Self-development", "Resilience", "Patience", "Punctuality", "Perseverance"]
-    },
-    {
-      category: "Languages",
-      items: ["Italian (native)", "English (Intermediate)"]
-    }
-  ];
-
-  const timeline = [
-    {
-      year: "2025",
-      title: "Teaching Assistant & Seminars",
-      description: "Tutor for Operating Systems and Software Engineering courses at University of Parma. Speaker in seminars on tutoring and Python programming with graphical libraries.",
-      type: "work"
-    },
-    {
-      year: "2024",
-      title: "Bachelor's Degree in Computer Science",
-      description: "Graduated with thesis on a parallel algorithm for pangenomic sequence analysis. Started Master's degree in Computer Science at University of Parma.",
-      type: "education"
-    },
-    {
-      year: "2024",
-      title: "Internship in Bioinformatics",
-      description: "Developed parallel software for pangenome analysis using C++, Python, and Bash.",
-      type: "work"
-    },
-    {
-      year: "2024",
-      title: "Open Source Collaboration",
-      description: "Founded and maintained unipr-org, an organization for collaborative open-source projects among university students.",
-      type: "achievement"
-    },
-    {
-      year: "2023",
-      title: "Freelance Tutor & Photographer",
-      description: "Tutoring in C, C++, Java, Python, algorithms, and web development. Provided photography services for events.",
-      type: "work"
-    },
-    {
-      year: "2022",
-      title: "MazeProject - Science Outreach",
-      description: "Created a web application to visualize graph search algorithms for European Researchers’ Night.",
-      type: "project"
-    },
-    {
-      year: "2021",
-      title: "Cybersecurity Training",
-      description: "Completed CyberChallenge.it, a national program in cybersecurity and CTF competitions.",
-      type: "education"
-    },
-    {
-      year: "2007 - 2023",
-    title: "Artistic Roller Skating Athlete",
-    description: "Competitive high-level athlete, learning resilience, discipline, and teamwork.",
-    type: "achievement"
-  }
-];
 
   return (
     <div className="app">
       <Header />
       <main className="main-content pt-20">
-        {/* Hero Section */}
+        {/* Hero */}
         <section className="tech-minimal-section">
           <div className="tech-minimal-container">
             <div className="max-w-4xl mx-auto fade-in">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
-                {/* Text Content */}
+                {/* Text */}
                 <div>
                   <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
                     About Me
@@ -147,7 +62,7 @@ export default function AboutMePage() {
                   </div>
                 </div>
 
-                {/* Profile Image */}
+                {/* Profile */}
                 <div className="lg:order-first">
                   <div className="aspect-[3/4] bg-gray-100 relative overflow-hidden rounded-md">
                     <img
@@ -162,7 +77,7 @@ export default function AboutMePage() {
           </div>
         </section>
 
-        {/* Skills Section */}
+        {/* Skills */}
         <section className="tech-minimal-section">
           <div className="tech-minimal-container">
             <div className="max-w-4xl mx-auto">
@@ -189,7 +104,7 @@ export default function AboutMePage() {
           </div>
         </section>
 
-        {/* Timeline Section */}
+        {/* Timeline */}
         <section className="tech-minimal-section">
           <div className="tech-minimal-container">
             <div className="max-w-3xl mx-auto">
@@ -230,7 +145,7 @@ export default function AboutMePage() {
           </div>
         </section>
 
-        {/* Values Section */}
+        {/* Values */}
         <section className="tech-minimal-section">
           <div className="tech-minimal-container">
             <div className="max-w-4xl mx-auto">
@@ -274,6 +189,7 @@ export default function AboutMePage() {
             </div>
           </div>
         </section>
+        <Back2Home />
       </main>
       <Footer />
     </div>
