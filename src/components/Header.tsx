@@ -60,14 +60,6 @@ export default function Header() {
                 About
               </Link>
             </li>
-            <li>
-              <Link 
-                to="/contact" 
-                className="text-sm font-medium px-4 py-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600 transition-all"
-              >
-                Contact
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>
