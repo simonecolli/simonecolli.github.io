@@ -2,16 +2,37 @@ export interface TimelineEvent {
   year: string;
   title: string;
   description: string;
-  type: "work" | "education" | "personal" | "project";
+  type: "work" | "education" | "personal" | "project" | "talk";
 }
 
 export const timeline: TimelineEvent[] = [
+  {
+    year: "2025",
+    title: "PanDelos-plus preprint",
+    description:
+      "First author of the paper 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', released on arXiv.",
+    type: "work",
+  },
   {
     year: "2025",
     title: "Teaching Assistant & Seminars",
     description:
       "Tutor for Operating Systems and Software Engineering courses at University of Parma. Speaker in seminars on tutoring and Python programming with graphical libraries.",
     type: "work",
+  },
+  {
+    year: "2025",
+    title: "Tutoring under different perspectives",
+    description:
+      "Delivered the talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focusing on methodologies and software tools for academic mentoring.",
+    type: "talk",
+  },
+  {
+    year: "2024",
+    title: "BBCC2024 Conference - Naples",
+    description:
+      "Presented PanDelos-plus at the BBCC2024 conference in Naples.",
+    type: "education",
   },
   {
     year: "2024",
@@ -45,7 +66,7 @@ export const timeline: TimelineEvent[] = [
     year: "2022",
     title: "MazeProject - Science Outreach",
     description:
-      "Created a web application to visualize graph search algorithms for European Researchers’ Night.",
+      "Created a web application to visualize graph search algorithms for European Researchers' Night.",
     type: "project",
   },
   {

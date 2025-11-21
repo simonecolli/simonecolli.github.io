@@ -30,8 +30,8 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link 
-                to="/projects" 
+              <Link
+                to="/projects"
                 className={`text-sm font-medium transition-colors hover:text-blue-600 ${
                   isActive('/projects') ? 'text-blue-600' : 'text-gray-600'
                 }`}
@@ -39,9 +39,19 @@ export default function Header() {
                 Projects
               </Link>
             </li>
+            <li>
+              <Link
+                to="/blog"
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  isActive('/blog') ? 'text-blue-600' : 'text-gray-600'
+                }`}
+              >
+                Blog
+              </Link>
+            </li>
             {/* <li>
-               <Link 
-                to="/photography" 
+               <Link
+                to="/photography"
                 className={`text-sm font-medium transition-colors hover:text-blue-600 ${
                   isActive('/photography') ? 'text-blue-600' : 'text-gray-600'
                 }`}
@@ -51,21 +61,13 @@ export default function Header() {
             </li>
             */}
             <li>
-              <Link 
-                to="/about" 
+              <Link
+                to="/about"
                 className={`text-sm font-medium transition-colors hover:text-blue-600 ${
                   isActive('/about') ? 'text-blue-600' : 'text-gray-600'
                 }`}
               >
                 About
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/contact" 
-                className="text-sm font-medium px-4 py-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600 transition-all"
-              >
-                Contact
               </Link>
             </li>
           </ul>

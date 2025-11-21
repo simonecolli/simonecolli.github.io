@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="tech-minimal-section pt-32">
+    <section className="tech-minimal-section pt-32 mt-5">
       <div className="tech-minimal-container">
         <div className="max-w-4xl mx-auto text-center fade-in flex flex-col items-center">
 
