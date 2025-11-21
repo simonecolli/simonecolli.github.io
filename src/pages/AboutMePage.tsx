@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Back2Home from '../components/Back2Home';
+import Back2Home from '../components/utils/Back2Home';
 
 import { timeline } from "../data/timeline";
 import { skills } from "../data/skills";

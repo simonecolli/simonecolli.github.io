@@ -6,6 +6,7 @@ export interface Project {
   github: string;
   demo: string;
   year: string;
+  favourite?: boolean;
 }
 
 export const projects: Project[] = [
@@ -18,6 +19,7 @@ export const projects: Project[] = [
     github: "",
     demo: "",
     year: "2025",
+    favourite: true,
   },
   {
     title: "Quantum Portfolio Optimization",
@@ -48,6 +50,7 @@ export const projects: Project[] = [
     github: "https://github.com/simonecolli/PanDelos-plus/tree/main",
     demo: "",
     year: "2024",
+    favourite: true,
   },
   {
     title: "Deep neural network library",
@@ -62,11 +65,12 @@ export const projects: Project[] = [
   {
     title: "MazeProject",
     description:
-      "An application developed in occasion of the European Researchers' Night 2022.",
+      "An application developed in occasion of the European Researchers' Night 2022.This project involves creating an interactive maze game that educates users about scientific concepts while they navigate through various challenges.",
     tags: ["JavaScript", "CSS", "HTML"],
     status: "Completed",
     github: "https://github.com/simonecolli/MazeProject",
     demo: "https://simonecolli.github.io/MazeProject/",
     year: "2022",
+    favourite: true,
   },
 ];

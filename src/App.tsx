@@ -3,7 +3,7 @@ import './App.css'
 import Home from "./pages/Home.tsx"
 import ProjectsPage from "./pages/ProjectsPage.tsx"
 import PhotographyPage from "./pages/PhotographyPage.tsx"
-import AboutMePage from "./pages/AboutMePage.jsx"
+import AboutMePage from "./pages/AboutMePage.tsx"
 
 function App() {
   return (
