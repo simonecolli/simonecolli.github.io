@@ -77,33 +77,6 @@ export default function AboutMePage() {
           </div>
         </section>
 
-        {/* Skills */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-2xl font-light tracking-tight mb-4">Skills & Expertise</h2>
-                <div className="h-px bg-gray-300 w-16 mx-auto"></div>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {skills.map((skillGroup, index) => (
-                  <div key={index} className="tech-minimal-card">
-                    <h3 className="font-medium mb-4 text-center">{skillGroup.category}</h3>
-                    <ul className="space-y-2 mt-3">
-                      {skillGroup.items.map((skill, skillIndex) => (
-                        <li key={skillIndex} className="text-sm text-gray-600 text-center">
-                          {skill}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Timeline */}
         <section className="tech-minimal-section">
           <div className="tech-minimal-container">
@@ -126,6 +99,7 @@ export default function AboutMePage() {
                       <div className={`w-3 h-3 rounded-full border-2 ${
                         item.type === 'education' ? 'bg-blue-600 border-blue-600' :
                         item.type === 'work' ? 'bg-green-600 border-green-600' :
+                        item.type === 'project' ? 'bg-orange-600 border-orange-600' :
                         'bg-purple-600 border-purple-600'
                       }`}></div>
                       {index !== timeline.length - 1 && (
@@ -138,6 +112,33 @@ export default function AboutMePage() {
                       <h3 className="font-medium mb-2">{item.title}</h3>
                       <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
                     </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Skills */}
+        <section className="tech-minimal-section">
+          <div className="tech-minimal-container">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-2xl font-light tracking-tight mb-4">Skills & Expertise</h2>
+                <div className="h-px bg-gray-300 w-16 mx-auto"></div>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {skills.map((skillGroup, index) => (
+                  <div key={index} className="tech-minimal-card">
+                    <h3 className="font-medium mb-4 text-center">{skillGroup.category}</h3>
+                    <ul className="space-y-2 mt-3">
+                      {skillGroup.items.map((skill, skillIndex) => (
+                        <li key={skillIndex} className="text-sm text-gray-600 text-center">
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 ))}
               </div>
