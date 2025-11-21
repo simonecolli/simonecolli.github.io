@@ -2,7 +2,7 @@ import Header from "./../components/Header.tsx"
 import Hero from "./../components/home/Hero.tsx"
 import Projects from "./../components/home/Projects.tsx"
 import AboutMe from "./../components/home/AboutMe.tsx"
-import Photography from "./../components/home/Photography.tsx"
+// import Photography from "./../components/home/Photography.tsx"
 import Footer from "./../components/Footer.tsx"
 
 export default function Home() {
