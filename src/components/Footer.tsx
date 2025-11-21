@@ -1,11 +1,12 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaCamera } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaCamera, FaOrcid } from "react-icons/fa";
 export default function Footer() {
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/simonecolli/", icon: <FaGithub /> },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/simone-colli-085683223/", icon: <FaLinkedin /> },
     { name: "Instagram", url: "https://instagram.com/colli_02", icon: <FaInstagram /> },
     { name: "Instagram photo", url: "https://www.instagram.com/__sc_photo__/", icon: <FaCamera /> },
-    { name: "Email", url: "mailto:s.colli.dev@gmail.com", icon: <FaEnvelope /> }
+    { name: "Email", url: "mailto:s.colli.dev@gmail.com", icon: <FaEnvelope /> },
+    { name: "ORCiD", url: "https://orcid.org/0009-0008-9596-0608", icon: <FaOrcid /> },
   ];
 
   return (
