@@ -14,10 +14,10 @@ export const projects: Project[] = [
     title: "Personal website",
     description:
       "A personal website showcasing my projects, skills, and experience.",
-    tags: ["Web Development", "React", "JavaScript"],
+    tags: ["Web Development", "React", "TypeScript", "Tailwind CSS"],
     status: "In Progress",
-    github: "",
-    demo: "",
+    github: "https://github.com/simonecolli/simonecolli.github.io",
+    demo: "https://www.simonecolli.com",
     year: "2025",
     favourite: true,
   },
