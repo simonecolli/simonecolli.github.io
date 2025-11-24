@@ -1,4 +1,4 @@
-import { useParams, Navigate } from "react-router-dom";
+import { useParams, Navigate, Link } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
@@ -21,15 +21,15 @@ export default function ProjectDetailPage() {
           <div className="tech-minimal-container">
             <div className="max-w-4xl mx-auto fade-in">
               {/* Back button */}
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-blue-600 transition-colors mb-8"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
-                Back to Projects
-              </a>
+                Back to projects
+              </Link>
 
               {/* Project title */}
               <div className="mb-8">
