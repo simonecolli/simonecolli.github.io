@@ -1,5 +1,8 @@
+import { Link } from "react-router-dom";
+
 interface ProjectCardProps {
   project: {
+    slug: string;
     title: string;
     description: string;
     status: string;
@@ -20,7 +23,7 @@ export default function ProjectCard({
   compact = false
 }: ProjectCardProps) {
   return (
-    <div className="tech-minimal-card group hover:cursor-pointer">
+    <Link to={`/projects/${project.slug}`} className="tech-minimal-card group hover:cursor-pointer block">
       {/* Project Header */}
       <div className="flex justify-between items-start mb-4">
         <div className="flex items-center gap-3">
@@ -67,6 +70,7 @@ export default function ProjectCard({
               className="text-sm font-medium hover:text-blue-600 transition-colors flex items-center gap-1"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
             >
               <span>GitHub</span>
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,6 +84,7 @@ export default function ProjectCard({
               className="text-sm font-medium hover:text-blue-600 transition-colors flex items-center gap-1"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
             >
               <span>Live demo</span>
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -89,6 +94,6 @@ export default function ProjectCard({
           )}
         </div>
       )}
-    </div>
+    </Link>
   );
 }
