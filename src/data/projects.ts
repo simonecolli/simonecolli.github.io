@@ -21,7 +21,6 @@ export const projects: Project[] = [
     github: "https://github.com/simonecolli/simonecolli.github.io",
     demo: "https://www.simonecolli.com",
     year: "2025",
-    favourite: true,
   },
   {
     slug: "quantum-portfolio-optimization",
@@ -61,12 +60,31 @@ export const projects: Project[] = [
     slug: "deep-neural-network-library",
     title: "Deep neural network library",
     description:
-      "A C++ library for building, training, and using deep neural networks.",
+      "Deep Neural Network Library: A flexible C++ library for building,\
+      training, and using deep neural networks. Modular, easy-to-use, and\
+      high-performance.",
     tags: ["Neural Networks", "C++"],
     status: "Completed",
     github: "https://github.com/unipr-org/deep-neural-network",
     demo: "",
     year: "2024",
+  },
+  {
+    slug: "unipr-org",
+    title: "Unipr-org",
+    description:
+      "A collaborative GitHub organization that brings together\
+      Computer Science students at the University of Parma to\
+      create and share a comprehensive collection of course notes,\
+      study materials, and academic resources. The platform promotes\
+      open collaboration and knowledge sharing, making university\
+      learning more accessible for all students.",
+    tags: ["Open Source", "Community", "Collaboration", "GitHub"],
+    status: "In Progress",
+    github: "https://github.com/unipr-org",
+    demo: "https://unipr-org.github.io/",
+    year: "2023",
+    favourite: true,
   },
   {
     slug: "maze-project",
