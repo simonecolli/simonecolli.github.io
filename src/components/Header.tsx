@@ -49,7 +49,7 @@ export default function Header() {
                 Blog
               </Link>
             </li>
-            {/* <li>
+            <li>
                <Link
                 to="/photography"
                 className={`text-sm font-medium transition-colors hover:text-blue-600 ${
@@ -59,7 +59,7 @@ export default function Header() {
                 Photography
               </Link>
             </li>
-            */}
+           
             <li>
               <Link
                 to="/about"

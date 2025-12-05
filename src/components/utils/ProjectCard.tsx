@@ -22,8 +22,13 @@ export default function ProjectCard({
   showLinks = false,
   compact = false
 }: ProjectCardProps) {
+  const truncateDescription = (text: string, maxLength: number = 150) => {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength) + "...";
+  };
+
   return (
-    <Link to={`/projects/${project.slug}`} className="tech-minimal-card group hover:cursor-pointer block">
+    <Link to={`/projects/${project.slug}`} className="tech-minimal-card group hover:cursor-pointer block h-[400px] flex flex-col">
       {/* Project Header */}
       <div className="flex justify-between items-start mb-4">
         <div className="flex items-center gap-3">
@@ -43,8 +48,8 @@ export default function ProjectCard({
       <h3 className="text-xl font-medium mb-3 group-hover:text-blue-600 transition-colors">
         {project.title}
       </h3>
-      <p className="text-gray-600 mb-4 leading-relaxed">
-        {project.description}
+      <p className="text-gray-600 mb-4 leading-relaxed flex-grow">
+        {truncateDescription(project.description)}
       </p>
 
       {!compact && <div className="h-1 my-4"></div>}
