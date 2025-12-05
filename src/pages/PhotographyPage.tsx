@@ -2,8 +2,8 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import WorkInProgress from "../components/utils/WorkInProgress";
 import Back2Home from "../components/utils/Back2Home";
-import { Photos } from "../data/photography";
-import { photoCategories } from "../data/photo_categories";
+// import { Photos } from "../data/photography";
+// import { photoCategories } from "../data/photo_categories";
 
 export default function PhotographyPage() {
 
