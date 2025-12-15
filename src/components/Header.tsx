@@ -22,8 +22,8 @@ export default function Header() {
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
             <li>
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 className={`text-sm font-medium transition-colors hover:text-blue-600 ${
                   isActive('/') ? 'text-blue-600' : 'text-gray-600'
                 }`}
@@ -39,6 +39,16 @@ export default function Header() {
                 }`}
               >
                 Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/talks"
+                className={`text-sm font-medium transition-colors hover:text-blue-600 ${
+                  isActive('/talks') ? 'text-blue-600' : 'text-gray-600'
+                }`}
+              >
+                Talks
               </Link>
             </li>
             <li>
@@ -61,7 +71,7 @@ export default function Header() {
                 Photography
               </Link>
             </li>
-           
+
             <li>
               <Link
                 to="/about"
@@ -110,6 +120,17 @@ export default function Header() {
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/talks"
+                  className={`block text-sm font-medium transition-colors hover:text-blue-600 ${
+                    isActive('/talks') ? 'text-blue-600' : 'text-gray-600'
+                  }`}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Talks
                 </Link>
               </li>
               <li>

@@ -5,6 +5,8 @@ import './App.css'
 import Home from "./pages/Home.tsx"
 import ProjectsPage from "./pages/ProjectsPage.tsx"
 import ProjectDetailPage from "./pages/ProjectDetailPage.tsx"
+import TalksPage from "./pages/TalksPage.tsx"
+import TalkDetailPage from "./pages/TalkDetailPage.tsx"
 import PhotographyPage from "./pages/PhotographyPage.tsx"
 import AboutMePage from "./pages/AboutMePage.tsx"
 import Blog from "./pages/Blog.tsx"
@@ -31,6 +33,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:slug" element={<ProjectDetailPage />} />
+        <Route path="/talks" element={<TalksPage />} />
+        <Route path="/talks/:slug" element={<TalkDetailPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/photography" element={<PhotographyPage />} />
         <Route path="/about" element={<AboutMePage />} />
