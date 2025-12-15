@@ -14,13 +14,15 @@ interface ProjectCardProps {
   showYear?: boolean;
   showLinks?: boolean;
   compact?: boolean;
+  basePath?: string;
 }
 
 export default function ProjectCard({
   project,
   showYear = false,
   showLinks = false,
-  compact = false
+  compact = false,
+  basePath = "projects"
 }: ProjectCardProps) {
   const truncateDescription = (text: string, maxLength: number = 150) => {
     if (text.length <= maxLength) return text;
@@ -28,7 +30,7 @@ export default function ProjectCard({
   };
 
   return (
-    <Link to={`/projects/${project.slug}`} className="tech-minimal-card group hover:cursor-pointer block h-[400px] flex flex-col">
+    <Link to={`/${basePath}/${project.slug}`} className="tech-minimal-card group hover:cursor-pointer block h-[400px] flex flex-col">
       {/* Project Header */}
       <div className="flex justify-between items-start mb-4">
         <div className="flex items-center gap-3">
