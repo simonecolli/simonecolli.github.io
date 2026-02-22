@@ -9,58 +9,58 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "CS student, Developer & Photographer",
-    "description": "Master's student in Computer Science passionate about challenging problems, software development, collaborations, and visual storytelling through photography."
+    "subtitle": "CS Master's Student, Developer & Photographer",
+    "description": "Computer Science Master's student passionate about solving complex problems, software development, open collaboration, and visual storytelling through photography."
   },
   "home": {
     "aboutMe": {
       "title": "About Me",
-      "description": "I'm Simone Colli, a Computer Science master's student from Italy who bridges technology and creativity. I build custom software solutions, and express my creativity through photography.",
+      "description": "I'm Simone Colli, a Computer Science Master's student based in Italy. I bridge the gap between technology and creativity, building custom software solutions while capturing the world through photography.",
       "discoverMore": "Discover more"
     },
     "projects": {
-      "title": "Favorite projects",
+      "title": "Selected Projects",
       "viewAll": "View all projects"
     },
     "talks": {
-      "title": "Favorite talks",
+      "title": "Selected Talks",
       "viewAll": "View all talks"
     }
   },
   "footer": {
-    "description": "Computer Science student passionate about technology, and photography. Always learning, always creating.",
-    "socialLabel": "Social & email",
+    "description": "Computer Science student passionate about technology and photography. Always learning, always creating.",
+    "socialLabel": "Social & Contact",
     "copyright": "All rights reserved."
   },
   "projects": {
     "pageTitle": "Projects",
-    "pageDescription": "A collection of software projects, experiments, and ideas brought to life. Each project represents a step in my journey as a developer.",
+    "pageDescription": "A collection of software projects, experiments, and ideas turned into reality. Each project represents a milestone in my journey as a developer.",
     "backToProjects": "Back to projects"
   },
   "talks": {
     "pageTitle": "Talks",
-    "pageDescription": "A collection of academic presentations and talks delivered at the University of Parma. Each presentation represents research, exploration, and knowledge sharing in various computer science domains.",
+    "pageDescription": "A collection of academic presentations and talks delivered at the University of Parma. These presentations cover research, exploration, and knowledge sharing across various computer science domains.",
     "backToTalks": "Back to talks"
   },
   "photography": {
     "pageTitle": "Photography",
-    "pageDescription": "Through my lens, I capture moments, emotions, and stories. Photography is my way of freezing time and creating meaningful memories.",
+    "pageDescription": "Through my lens, I capture moments, emotions, and stories. Photography is my way of freezing time and preserving meaningful memories.",
     "noPhotos": "No photos found in this category.",
     "showAll": "Show all photos",
     "filterAll": "All"
   },
   "blog": {
     "pageTitle": "Blog",
-    "pageDescription": "Thoughts on software development, technology, photography and other topics I'm passionate about."
+    "pageDescription": "Thoughts on software development, technology, photography, and other topics I'm passionate about."
   },
   "about": {
     "pageTitle": "About Me",
-    "bio1": "I'm Simone Colli, a Computer Science master's student passionate about building software solutions and exploring creativity through photography. My path combines the analytical rigor of programming with the expressive power of visual storytelling.",
-    "bio2": "Throughout my studies and projects, I have worked on areas ranging from web development and parallel computing to bioinformatics and open-source collaboration. At the same time, photography allows me to capture authentic moments and translate emotions into images.",
-    "bio3": "Based in Italy, I spend my time contributing to collaborative projects, tutoring students, experimenting with new technologies, and telling stories through my camera lens. Years as a competitive athlete have taught me resilience, discipline, and perseverance—values I now bring into both my academic and creative work.",
-    "downloadCvEn": "Download CV (en)",
-    "downloadCvIt": "Download CV (it)",
-    "journey": "Journey",
+    "bio1": "I'm Simone Colli, a Computer Science Master's student passionate about building robust software solutions and exploring creativity through photography. My journey combines the analytical rigor of programming with the expressive power of visual storytelling.",
+    "bio2": "Throughout my academic and professional career, I have worked on diverse areas ranging from web development and parallel computing to bioinformatics and open-source collaboration. Simultaneously, photography allows me to capture authentic moments and translate emotions into images.",
+    "bio3": "Based in Italy, I dedicate my time to contributing to collaborative projects, tutoring students, experimenting with new technologies, and telling stories through my camera lens. Years as a competitive athlete have instilled in me resilience, discipline, and perseverance—values I bring to both my academic and creative endeavors.",
+    "downloadCvEn": "Download CV (EN)",
+    "downloadCvIt": "Download CV (IT)",
+    "journey": "My Journey",
     "skillsTitle": "Skills & Expertise"
   },
   "common": {
@@ -86,99 +86,99 @@
   },
   "seo": {
     "home": {
-      "description": "Simone Colli - CS master's student, software developer and photographer based in Parma and Piacenza, Italy. Portfolio of projects, talks, and photography.",
-      "keywords": "Simone Colli, software developer, photographer, computer science, portfolio, web development, React, Python, C++, Parma, Piacenza, Italy, freelance developer Parma, freelance photographer Parma, photographer Piacenza, event photographer, portrait photographer, University of Parma"
+      "description": "Simone Colli - Computer Science Master's student, software developer, and photographer based in Parma and Piacenza, Italy. Portfolio of projects, talks, and photography.",
+      "keywords": "Simone Colli, software developer, photographer, computer science, portfolio, web development, React, Python, C++, Parma, Piacenza, Italy, freelance developer, event photographer, portrait photographer, University of Parma"
     },
     "projects": {
-      "description": "Software projects by Simone Colli - web development, bioinformatics, parallel computing, open source. Developer based in Parma and Piacenza.",
+      "description": "Software projects by Simone Colli - Web development, bioinformatics, parallel computing, and open source. Developer based in Parma and Piacenza.",
       "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Piacenza, University of Parma"
     },
     "talks": {
-      "description": "Academic presentations and talks by Simone Colli delivered at the University of Parma. Research in AI, cybersecurity, big data and compilers.",
+      "description": "Academic presentations and talks by Simone Colli delivered at the University of Parma. Covering research in AI, cybersecurity, big data, and compilers.",
       "keywords": "Simone Colli talks, academic presentations, University of Parma, research, artificial intelligence, cybersecurity, big data, data mining, compilers, static analysis"
     },
     "photography": {
-      "description": "Photography portfolio by Simone Colli - portrait, sport, wildlife, macro and ceremony photography. Photographer based in Parma and Piacenza, Emilia-Romagna.",
-      "keywords": "Simone Colli photography, photographer Parma, photographer Piacenza, portrait photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer, fotografo Parma, fotografo Piacenza"
+      "description": "Photography portfolio by Simone Colli - Portrait, sport, wildlife, macro, and ceremony photography. Based in Parma and Piacenza, Emilia-Romagna.",
+      "keywords": "Simone Colli photography, photographer Parma, photographer Piacenza, portrait photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer"
     },
     "about": {
-      "description": "About Simone Colli - CS master's student at University of Parma, software developer and freelance photographer in Parma and Piacenza. Skills, journey and CV.",
+      "description": "About Simone Colli - CS Master's student at the University of Parma, software developer, and freelance photographer. Skills, journey, and CV.",
       "keywords": "Simone Colli, about, curriculum, skills, University of Parma, master student, computer science, developer Parma, photographer Piacenza, freelance, Italy, Emilia-Romagna"
     },
     "blog": {
-      "description": "Blog by Simone Colli - thoughts on software development, technology, photography and more.",
+      "description": "Blog by Simone Colli - Thoughts on software development, technology, photography, and more.",
       "keywords": "Simone Colli blog, software development, technology, programming, photography, tech blog, developer blog"
     }
   },
   "data": {
     "projects": {
       "personalWebsite": {
-        "title": "Personal website",
-        "description": "A personal website showcasing my projects, skills, and experience."
+        "title": "Personal Website",
+        "description": "A personal portfolio website showcasing my projects, skills, and professional experience."
       },
       "quantumPortfolioOptimization": {
         "title": "Quantum Portfolio Optimization",
-        "description": "A research project focused on optimizing portfolio allocation, enhancing traditional methods for improved risk-return management."
+        "description": "A research project focused on optimizing portfolio allocation, enhancing traditional methods for improved risk-return management using quantum computing concepts."
       },
       "academicGuaranteeOptimization": {
         "title": "Academic Guarantee Optimization",
-        "description": "Answer Set Programming (ASP)-based tool for optimizing the assignment of academic guarantors to university courses."
+        "description": "An Answer Set Programming (ASP) tool designed to optimize the assignment of academic guarantors to university courses."
       },
       "pandelosPlus": {
         "title": "PanDelos-plus",
-        "description": "PanDelos-plus: a parallel algorithm for computing sequence homology in pangenomic analysis"
+        "description": "A parallel algorithm for efficiently computing sequence homology in pangenomic analysis."
       },
       "deepNeuralNetworkLibrary": {
-        "title": "Deep neural network library",
-        "description": "Deep Neural Network Library: A flexible C++ library for building, training, and using deep neural networks. Modular, easy-to-use, and high-performance."
+        "title": "Deep Neural Network Library",
+        "description": "A flexible, high-performance C++ library for building, training, and deploying deep neural networks. Designed to be modular and easy to use."
       },
       "uniprOrg": {
         "title": "Unipr-org",
-        "description": "A collaborative GitHub organization that brings together Computer Science students at the University of Parma to create and share a comprehensive collection of course notes, study materials, and academic resources. The platform promotes open collaboration and knowledge sharing, making university learning more accessible for all students."
+        "description": "A collaborative GitHub organization uniting Computer Science students at the University of Parma. We create and share a comprehensive collection of course notes, study materials, and academic resources, promoting open collaboration and accessible learning."
       },
       "mazeProject": {
         "title": "MazeProject",
-        "description": "An application developed in occasion of the European Researchers' Night 2022. This project involves creating an interactive maze game that educates users about scientific concepts while they navigate through various challenges."
+        "description": "An interactive maze game application developed for the European Researchers' Night 2022. It educates users on scientific concepts as they navigate through various challenges."
       }
     },
     "talks": {
       "academicPresentationSASVExam": {
-        "title": "Academic presentation for Static analysis and software verification exam",
-        "description": "A presentation created for the static analysis and software exam at the University of Parma. The presentation talks about a chosen research paper."
+        "title": "Static Analysis & Software Verification",
+        "description": "An in-depth analysis of a selected research paper, presented for the Static Analysis and Software Verification exam at the University of Parma."
       },
       "academicPresentationBddmExam": {
-        "title": "Academic presentation for Big Data and Data Mining exam",
-        "description": "A presentation created for the Big Data and Data Mining exam at the University of Parma. The presentation talks about a chosen research paper."
+        "title": "Big Data & Data Mining",
+        "description": "A presentation exploring a specific research paper in the field of Big Data, delivered for the Big Data and Data Mining exam."
       },
       "academicPresentationBddmReverse": {
-        "title": "Academic presentation for Big Data and Data Mining reverse class.",
-        "description": "A presentation created for the Big Data and Data Mining reverse class at the University of Parma. The presentation talks about synthetic data generation."
+        "title": "Synthetic Data Generation",
+        "description": "A lecture on synthetic data generation techniques, presented during the Big Data and Data Mining reverse class."
       },
       "academicPresentationCsExam": {
-        "title": "Academic presentation for Cybersecurity exam",
-        "description": "A presentation created for the Cybersecurity exam at the University of Parma. The presentation talks about the infostealers."
+        "title": "Cybersecurity: Infostealers",
+        "description": "A detailed presentation on Infostealers, analyzing their mechanisms and impact, created for the Cybersecurity exam."
       },
       "academicPresentationFAIExam": {
-        "title": "Academic presentation for Fundamentals of Artificial Intelligence exam",
-        "description": "A presentation created for the fundamentals of artificial intelligence exam at the University of Parma. The presentation talks about contrastive learning in spatial transcriptomics data."
+        "title": "AI: Contrastive Learning",
+        "description": "An exploration of contrastive learning in spatial transcriptomics data, presented for the Fundamentals of Artificial Intelligence exam."
       },
       "academicPresentationLIaCExam": {
-        "title": "Academic presentation for Languages, Interpreters and Compilers exam",
-        "description": "A presentation created for the languages, interpreters and compilers exam at the University of Parma. The presentation talks about loop unrolling."
+        "title": "Compilers: Loop Unrolling",
+        "description": "A technical presentation on loop unrolling optimization techniques, delivered for the Languages, Interpreters, and Compilers exam."
       }
     },
     "timeline": {
       "0": {
-        "title": "PanDelos-plus preprint",
+        "title": "PanDelos-plus Preprint",
         "description": "First author of the paper 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', released on arXiv."
       },
       "1": {
         "title": "Teaching Assistant & Seminars",
-        "description": "Tutor for Operating Systems and Software Engineering courses at University of Parma. Speaker in seminars on tutoring and Python programming with graphical libraries."
+        "description": "Tutor for Operating Systems and Software Engineering courses at the University of Parma. Speaker at seminars on tutoring methodologies and Python programming with graphical libraries."
       },
       "2": {
-        "title": "Tutoring under different perspectives",
-        "description": "Delivered the talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focusing on methodologies and software tools for academic mentoring."
+        "title": "Tutoring Perspectives",
+        "description": "Delivered the talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focusing on methodologies and software tools to support academic mentoring."
       },
       "3": {
         "title": "BBCC2024 Conference - Naples",
@@ -186,43 +186,43 @@
       },
       "4": {
         "title": "Bachelor's Degree in Computer Science",
-        "description": "Graduated with thesis on a parallel algorithm for pangenomic sequence analysis. Started Master's degree in Computer Science at University of Parma."
+        "description": "Graduated with a thesis on a parallel algorithm for pangenomic sequence analysis. Enrolled in the Master's degree program in Computer Science at the University of Parma."
       },
       "5": {
-        "title": "Internship in Bioinformatics",
+        "title": "Bioinformatics Internship",
         "description": "Developed parallel software for pangenome analysis using C++, Python, and Bash."
       },
       "6": {
         "title": "Open Source Collaboration",
-        "description": "Founded and maintained unipr-org, an organization for collaborative open-source projects among university students."
+        "description": "Founded and maintained unipr-org, an organization dedicated to collaborative open-source projects for university students."
       },
       "7": {
         "title": "Freelance Tutor & Photographer",
-        "description": "Tutoring in C, C++, Java, Python, algorithms, and web development. Provided photography services for events."
+        "description": "Provided tutoring in C, C++, Java, Python, algorithms, and web development. Offered professional photography services for events."
       },
       "8": {
         "title": "MazeProject - Science Outreach",
-        "description": "Created a web application to visualize graph search algorithms for European Researchers' Night."
+        "description": "Created a web application to visualize graph search algorithms for the European Researchers' Night."
       },
       "9": {
         "title": "Cybersecurity Training",
-        "description": "Completed CyberChallenge.it, a national program in cybersecurity and CTF competitions."
+        "description": "Completed CyberChallenge.it, a national training program in cybersecurity and CTF competitions."
       },
       "10": {
         "title": "Artistic Roller Skating Athlete",
-        "description": "Competitive high-level athlete, learning resilience, discipline, and teamwork."
+        "description": "Competed as a high-level athlete, developing resilience, discipline, and teamwork skills."
       }
     },
     "skills": {
-      "0": "Main computer languages",
-      "1": "Other computer languages",
+      "0": "Primary Languages",
+      "1": "Other Languages",
       "2": "Databases",
-      "3": "Operative systems",
-      "4": "IDEs, environments and text editors",
-      "5": "Frameworks and other tools",
-      "6": "Creative instruments",
-      "7": "Soft skills",
-      "8": "Languages"
+      "3": "Operating Systems",
+      "4": "IDEs & Editors",
+      "5": "Frameworks & Tools",
+      "6": "Creative Tools",
+      "7": "Soft Skills",
+      "8": "Spoken Languages"
     }
   }
 }
