@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 
 interface SEOProps {
@@ -27,8 +26,7 @@ export default function SEO({
   const imageUrl = image.startsWith("http") ? image : `${BASE_URL}${image}`;
 
   return (
-    <Helmet>
-      <html lang={i18n.language} />
+    <>
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
@@ -48,6 +46,6 @@ export default function SEO({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageUrl} />
-    </Helmet>
+    </>
   );
 }
