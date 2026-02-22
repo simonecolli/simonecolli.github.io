@@ -1,11 +1,21 @@
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import WorkInProgress from "../components/utils/WorkInProgress";
+import SEO from "../components/SEO";
 
 export default function Blog() {
+  const { t } = useTranslation();
+
   return (
     <div className="app">
+      <SEO
+        titleKey="blog.pageTitle"
+        descriptionKey="seo.blog.description"
+        keywordsKey="seo.blog.keywords"
+        path="/blog"
+      />
       <Header />
       <main className="main-content pt-20">
         {/* Page header */}
@@ -13,12 +23,11 @@ export default function Blog() {
           <div className="tech-minimal-container">
             <div className="max-w-3xl mx-auto text-center fade-in">
               <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                Blog
+                {t('blog.pageTitle')}
               </h1>
               <div className="h-px bg-gray-300 w-24 mx-auto mb-6"></div>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Thoughts on software development, technology, photography and other topics
-                I'm passionate about.
+                {t('blog.pageDescription')}
               </p>
             </div>
           </div>

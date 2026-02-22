@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
+  const { t } = useTranslation();
+
   return (
     <section className="tech-minimal-section">
       <div className="tech-minimal-container">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-light tracking-tight mb-4">About Me</h2>
+          <h2 className="text-3xl font-light tracking-tight mb-4">{t('home.aboutMe.title')}</h2>
           <div className="h-px bg-gray-300 w-24 mx-auto mb-6"></div>
           <div className="flex justify-center">
             <p className="text-gray-600 max-w-2xl mx-auto text-center">
-              I'm Simone Colli, a Computer Science master's student from Italy
-              who bridges technology and creativity. I build software solutions,
-              and express my creativity through photography.
+              {t('home.aboutMe.description')}
             </p>
           </div>
         </div>
@@ -23,7 +24,7 @@ export default function AboutMe() {
           to="/about"
           className="inline-flex items-center gap-2 text-sm font-medium hover:text-blue-600 transition-colors"
         >
-          Discover more
+          {t('home.aboutMe.discoverMore')}
           <svg
             className="w-4 h-4"
             fill="none"

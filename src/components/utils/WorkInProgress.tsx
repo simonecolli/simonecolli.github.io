@@ -1,10 +1,8 @@
-interface WorkInProgressProps {
-  message?: string;
-}
+import { useTranslation } from "react-i18next";
 
-export default function WorkInProgress({
-  message = "I'm currently working on this section. Check back soon for updates!"
-}: WorkInProgressProps) {
+export default function WorkInProgress() {
+  const { t } = useTranslation();
+
   return (
     <section className="tech-minimal-section">
       <div className="tech-minimal-container">
@@ -28,14 +26,14 @@ export default function WorkInProgress({
               </div>
             </div>
             <h2 className="text-2xl font-medium mb-4">
-              Work in progress...
+              {t('common.workInProgress')}
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              {message}
+              {t('common.workInProgressMessage')}
             </p>
             <div className="inline-flex items-center gap-2 text-sm text-gray-500">
               <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-              <span>Coming soon</span>
+              <span>{t('common.comingSoon')}</span>
             </div>
           </div>
         </div>

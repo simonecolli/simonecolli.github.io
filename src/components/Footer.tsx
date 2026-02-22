@@ -1,5 +1,9 @@
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaCamera, FaOrcid } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+
 export default function Footer() {
+  const { t } = useTranslation();
+
   const socialLinks = [
     { name: "GitHub", url: "https://github.com/simonecolli/", icon: <FaGithub /> },
     { name: "LinkedIn", url: "https://www.linkedin.com/in/simone-colli-085683223/", icon: <FaLinkedin /> },
@@ -21,8 +25,7 @@ export default function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Simone Colli</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Computer Science student passionate about technology,
-                and photography. Always learning, always creating.
+                {t('footer.description')}
               </p>
             </div>
             <div>
@@ -31,7 +34,7 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="text-right">
-              <h4 className="text-sm font-black mb-4 text-gray-900">Social & email</h4>
+              <h4 className="text-sm font-black mb-4 text-gray-900">{t('footer.socialLabel')}</h4>
               <div className="flex gap-4 mt-4 justify-end">
                 {socialLinks.map((link, index) => (
                   <a
@@ -53,9 +56,9 @@ export default function Footer() {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-gray-200 flex justify-center items-center gap-4">
             <p className="text-sm text-gray-600 text-center">
-              © {new Date().getFullYear()} Simone Colli. 
+              © {new Date().getFullYear()} Simone Colli.
               <br />
-              All rights reserved.
+              {t('footer.copyright')}
             </p>
           </div>
         </div>

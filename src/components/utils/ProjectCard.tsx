@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardProps {
   project: {
@@ -24,6 +25,8 @@ export default function ProjectCard({
   compact = false,
   basePath = "projects"
 }: ProjectCardProps) {
+  const { t } = useTranslation();
+
   const truncateDescription = (text: string, maxLength: number = 150) => {
     if (text.length <= maxLength) return text;
     return text.slice(0, maxLength) + "...";
@@ -35,7 +38,7 @@ export default function ProjectCard({
       <div className="flex justify-between items-start mb-4">
         <div className="flex items-center gap-3">
           <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
-            {project.status}
+            {t(project.status)}
           </span>
           {showYear && project.year && (
             <span className="text-xs text-gray-500">{project.year}</span>
@@ -48,10 +51,10 @@ export default function ProjectCard({
 
       {/* Project Content */}
       <h3 className="text-xl font-medium mb-3 group-hover:text-blue-600 transition-colors">
-        {project.title}
+        {t(project.title)}
       </h3>
       <p className="text-gray-600 mb-4 leading-relaxed flex-grow">
-        {truncateDescription(project.description)}
+        {truncateDescription(t(project.description))}
       </p>
 
       {!compact && <div className="h-1 my-4"></div>}
@@ -79,7 +82,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
             >
-              <span>GitHub</span>
+              <span>{t('common.github')}</span>
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>
@@ -93,7 +96,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
             >
-              <span>Live demo</span>
+              <span>{t('common.liveDemo')}</span>
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>

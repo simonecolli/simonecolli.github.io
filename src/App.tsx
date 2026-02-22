@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
 
 import './App.css'
 import Home from "./pages/Home.tsx"
@@ -24,10 +25,21 @@ function AnalyticsTracker() {
   return null;
 }
 
-function App() {
+function LanguageSync() {
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
+
+  return null;
+}
+
+export function AppRoutes() {
   return (
-    <Router>
+    <>
       <AnalyticsTracker />
+      <LanguageSync />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -39,8 +51,14 @@ function App() {
         <Route path="/photography" element={<PhotographyPage />} />
         <Route path="/about" element={<AboutMePage />} />
       </Routes>
-    </Router>
+    </>
   )
 }
 
-export default App
+export default function App() {
+  return (
+    <Router>
+      <AppRoutes />
+    </Router>
+  )
+}
