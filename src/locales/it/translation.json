@@ -9,42 +9,42 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "Studente Magistrale di Informatica, Sviluppatore & Fotografo",
-    "description": "Studente magistrale in Informatica appassionato di problemi complessi, sviluppo software, collaborazioni open source e narrazione visiva attraverso la fotografia."
+    "subtitle": "Studente Magistrale in Scienze Informatiche, Sviluppatore & Fotografo",
+    "description": "Studente magistrale in scienze informatiche e fotografo. Dedico la mia carriera alla risoluzione di problemi e alla cattura del dettaglio"
   },
   "home": {
     "aboutMe": {
       "title": "Chi sono",
-      "description": "Sono Simone Colli, studente magistrale di Informatica. Unisco tecnologia e creatività sviluppando soluzioni software su misura e raccontando storie attraverso la fotografia.",
-      "discoverMore": "Scopri di più"
+      "description": "Piacere, sono Simone! Sono uno studente magistrale in scienze informatiche, appassionato di sviluppo software e fotografia. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del percorso accademico e la cura per il dettaglio che applico nei miei progetti.",
+      "discoverMore": "Scopri di più su di me"
     },
     "projects": {
-      "title": "Progetti selezionati",
+      "title": "I miei progetti preferiti",
       "viewAll": "Vedi tutti i progetti"
     },
     "talks": {
-      "title": "Presentazioni selezionate",
+      "title": "Le mie presentazioni preferite",
       "viewAll": "Vedi tutte le presentazioni"
     }
   },
   "footer": {
-    "description": "Studente di Informatica appassionato di tecnologia e fotografia. Sempre in apprendimento, sempre a creare.",
+    "description": "Studente in scienze informatiche con la passione per la tecnologia e la fotografia sportiva. Sempre in apprendimento, tra codice e scatti.",
     "socialLabel": "Social & Contatti",
-    "copyright": "Tutti i diritti riservati."
+    "copyright": "© 2026 Simone Colli. Tutti i diritti riservati."
   },
   "projects": {
     "pageTitle": "Progetti",
-    "pageDescription": "Una raccolta di progetti software, esperimenti e idee che diventano realtà. Ogni progetto rappresenta un passo importante nel mio percorso di sviluppatore.",
+    "pageDescription": "Una raccolta di progetti software, esperimenti e idee che diventano realtà. Ogni progetto rappresenta un passo importante nel mio percorso.",
     "backToProjects": "Torna ai progetti"
   },
   "talks": {
     "pageTitle": "Presentazioni",
-    "pageDescription": "Una raccolta di presentazioni accademiche tenute presso l'Università di Parma. Questi lavori spaziano dalla ricerca alla divulgazione in vari ambiti dell'informatica.",
+    "pageDescription": "Una raccolta di presentazioni accademiche tenute presso l'Università degli Studi di Parma.",
     "backToTalks": "Torna alle presentazioni"
   },
   "photography": {
     "pageTitle": "Fotografia",
-    "pageDescription": "Attraverso il mio obiettivo catturo momenti, emozioni e storie. La fotografia è il mio modo di fermare il tempo e preservare ricordi significativi.",
+    "pageDescription": "Attraverso il mio obiettivo catturo momenti, emozioni e storie. La fotografia mi permette di congelare il tempo e preservare ricordi significativi.",
     "noPhotos": "Nessuna foto trovata in questa categoria.",
     "showAll": "Mostra tutte le foto",
     "filterAll": "Tutte"
@@ -55,9 +55,9 @@
   },
   "about": {
     "pageTitle": "Chi sono",
-    "bio1": "Sono Simone Colli, studente magistrale di Informatica appassionato di sviluppo software e fotografia. Il mio percorso unisce il rigore analitico della programmazione con il potere espressivo della narrazione visiva.",
-    "bio2": "Durante la mia carriera accademica e professionale, ho approfondito ambiti che spaziano dallo sviluppo web e il calcolo parallelo alla bioinformatica e la collaborazione open source. Allo stesso tempo, la fotografia mi permette di catturare momenti autentici e tradurre emozioni in immagini.",
-    "bio3": "Vivo in Italia e dedico il mio tempo a contribuire a progetti collaborativi, fare tutoraggio, sperimentare nuove tecnologie e raccontare storie attraverso l'obiettivo. Anni come atleta agonista mi hanno insegnato resilienza, disciplina e perseveranza — valori che porto sia nel mio lavoro accademico che in quello creativo.",
+    "bio1": "Piacere, sono Simone! Sono uno studente magistrale ijn scienze informatiche, appassionato di sviluppo software e fotografia. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del percorso accademico e la cura per il dettaglio che applico nei miei progetti.",
+    "bio2": "Durante la mia carriera accademica e professionale, ho approfondito ambiti complessi e differenti tra loro: dalla bioinformatica e il calcolo parallelo all'intelligenza artificiale e la sicurezza informatica. La mia esperienza spazia dallo sviluppo web fino alla gestione e configurazione di sistemi operativi e ambienti server, ambiti che mi hanno permesso di acquisire una visione abbastanza vasta dell'infrastruttura software. Credo nel valore della condivisione tecnica, motivo per cui partecipo attivamente a progetti open source e collaborazioni comunitarie.",
+    "bio3": "La passione che ho dedicato allo sport per tanti anni mi ha portato a tornare dove sono cresciuto, ma con una nuova prospettiva. Il mio obiettivo oggi è immortalare il gesto atletico e l'emozione della competizione attraverso la fotografia sportiva. Lungo questo percorso, adoro catturare anche i momenti più significativi della vita delle persone, come lauree ed eventi e i piccoli dettagli della natura.",
     "downloadCvEn": "Scarica CV (EN)",
     "downloadCvIt": "Scarica CV (IT)",
     "journey": "Il mio percorso",
@@ -169,60 +169,64 @@
     },
     "timeline": {
       "0": {
+        "title": "Libero professionista",
+        "description": "Apertura della carriera freelance focalizzata sullo sviluppo di soluzioni software su misura e sulla produzione di contenuti visivi professionali."
+      },
+      "1": {
         "title": "Preprint PanDelos-plus",
         "description": "Primo autore dell'articolo 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', pubblicato su arXiv."
       },
-      "1": {
+      "2": {
         "title": "Tutor Didattico e Seminari",
         "description": "Tutor per i corsi di Sistemi Operativi e Ingegneria del Software all'Università di Parma. Relatore in seminari su metodologie di tutoraggio e programmazione Python."
       },
-      "2": {
+      "3": {
         "title": "Il tutorato da diverse prospettive",
         "description": "Ho tenuto il talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focalizzato su metodologie e strumenti software per il supporto accademico."
       },
-      "3": {
+      "4": {
         "title": "Conferenza BBCC2024 - Napoli",
         "description": "Presentazione di PanDelos-plus alla conferenza BBCC2024 a Napoli."
       },
-      "4": {
+      "5": {
         "title": "Laurea Triennale in Informatica",
         "description": "Laurea conseguita con tesi su un algoritmo parallelo per l'analisi di sequenze pangenomiche. Iscrizione alla Laurea Magistrale in Informatica presso l'Università di Parma."
       },
-      "5": {
+      "6": {
         "title": "Tirocinio in Bioinformatica",
         "description": "Sviluppo di software parallelo per l'analisi del pangenoma utilizzando C++, Python e Bash."
       },
-      "6": {
+      "7": {
         "title": "Collaborazione Open Source",
         "description": "Fondazione e gestione di unipr-org, organizzazione dedicata a progetti open source collaborativi per studenti universitari."
       },
-      "7": {
+      "8": {
         "title": "Tutor Freelance e Fotografo",
         "description": "Attività di tutoraggio in C, C++, Java, Python, algoritmi e sviluppo web. Servizi fotografici professionali per eventi."
       },
-      "8": {
+      "9": {
         "title": "MazeProject - Divulgazione",
         "description": "Creazione di un'applicazione web per visualizzare algoritmi di ricerca su grafi in occasione della Notte Europea dei Ricercatori."
       },
-      "9": {
+      "10": {
         "title": "Formazione Cybersecurity",
         "description": "Completamento di CyberChallenge.it, programma nazionale di formazione in cybersecurity e competizioni CTF."
       },
-      "10": {
+      "11": {
         "title": "Atleta di Pattinaggio Artistico",
         "description": "Atleta agonista di alto livello: un'esperienza che mi ha insegnato resilienza, disciplina e lavoro di squadra."
       }
     },
     "skills": {
-      "0": "Linguaggi Principali",
-      "1": "Altri Linguaggi",
+      "0": "Linguaggi principali",
+      "1": "Altri linguaggi",
       "2": "Database",
-      "3": "Sistemi Operativi",
+      "3": "Sistemi operativi",
       "4": "IDE e Editor",
-      "5": "Framework e Strumenti",
-      "6": "Strumenti Creativi",
-      "7": "Soft Skills",
-      "8": "Lingue Parlate"
+      "5": "Framework e strumenti",
+      "6": "Strumenti creativi",
+      "7": "Soft skills",
+      "8": "Lingue parlate"
     }
   }
 }

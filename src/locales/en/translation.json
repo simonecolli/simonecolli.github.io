@@ -10,27 +10,27 @@
   "hero": {
     "name": "Simone Colli",
     "subtitle": "CS Master's Student, Developer & Photographer",
-    "description": "Computer Science Master's student passionate about solving complex problems, software development, open collaboration, and visual storytelling through photography."
+    "description": "Computer Science Master's student and photographer. I dedicate my career to solving problems and capturing detail."
   },
   "home": {
     "aboutMe": {
       "title": "About Me",
-      "description": "I'm Simone Colli, a Computer Science Master's student based in Italy. I bridge the gap between technology and creativity, building custom software solutions while capturing the world through photography.",
+      "description": "Hi, I'm Simone! I'm a Computer Science Master's student, passionate about software development and photography. My journey, both personal and academic, began as a child with artistic roller skating—a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons allow me to manage the rigor of my academic path and the attention to detail I apply to my projects.",
       "discoverMore": "Discover more"
     },
     "projects": {
-      "title": "Selected Projects",
+      "title": "My favorite projects",
       "viewAll": "View all projects"
     },
     "talks": {
-      "title": "Selected Talks",
+      "title": "My favorite talks",
       "viewAll": "View all talks"
     }
   },
   "footer": {
-    "description": "Computer Science student passionate about technology and photography. Always learning, always creating.",
+    "description": "Computer Science student passionate about technology and sports photography. Always learning, between code and shots.",
     "socialLabel": "Social & Contact",
-    "copyright": "All rights reserved."
+    "copyright": "© 2026 Simone Colli. All rights reserved."
   },
   "projects": {
     "pageTitle": "Projects",
@@ -39,7 +39,7 @@
   },
   "talks": {
     "pageTitle": "Talks",
-    "pageDescription": "A collection of academic presentations and talks delivered at the University of Parma. These presentations cover research, exploration, and knowledge sharing across various computer science domains.",
+    "pageDescription": "A collection of academic presentations delivered at the University of Parma.",
     "backToTalks": "Back to talks"
   },
   "photography": {
@@ -55,9 +55,9 @@
   },
   "about": {
     "pageTitle": "About Me",
-    "bio1": "I'm Simone Colli, a Computer Science Master's student passionate about building robust software solutions and exploring creativity through photography. My journey combines the analytical rigor of programming with the expressive power of visual storytelling.",
-    "bio2": "Throughout my academic and professional career, I have worked on diverse areas ranging from web development and parallel computing to bioinformatics and open-source collaboration. Simultaneously, photography allows me to capture authentic moments and translate emotions into images.",
-    "bio3": "Based in Italy, I dedicate my time to contributing to collaborative projects, tutoring students, experimenting with new technologies, and telling stories through my camera lens. Years as a competitive athlete have instilled in me resilience, discipline, and perseverance—values I bring to both my academic and creative endeavors.",
+    "bio1": "Hi, I'm Simone! I'm a Computer Science Master's student, passionate about software development and photography. My journey, both personal and academic, began as a child with artistic roller skating—a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons allow me to manage the rigor of my academic path and the attention to detail I apply to my projects.",
+    "bio2": "Throughout my academic and professional career, I have explored complex and diverse fields: from bioinformatics and parallel computing to artificial intelligence and cybersecurity. My experience spans from web development to operating system management and server environment configuration—areas that have given me a broad understanding of software infrastructure. I believe in the value of technical knowledge sharing, which is why I actively participate in open-source projects and community collaborations.",
+    "bio3": "The passion I dedicated to sport for many years led me back to where I grew up, but with a new perspective. My goal today is to immortalize athletic gestures and the emotion of competition through sports photography. Along the way, I also love capturing the most significant moments in people's lives, such as graduations and events, as well as the small details of nature.",
     "downloadCvEn": "Download CV (EN)",
     "downloadCvIt": "Download CV (IT)",
     "journey": "My Journey",
@@ -169,46 +169,50 @@
     },
     "timeline": {
       "0": {
+        "title": "Freelancer",
+        "description": "Launch of freelance career focused on developing custom software solutions and producing professional visual content."
+      },
+      "1": {
         "title": "PanDelos-plus Preprint",
         "description": "First author of the paper 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', released on arXiv."
       },
-      "1": {
-        "title": "Teaching Assistant & Seminars",
-        "description": "Tutor for Operating Systems and Software Engineering courses at the University of Parma. Speaker at seminars on tutoring methodologies and Python programming with graphical libraries."
-      },
       "2": {
+        "title": "Teaching Assistant & Seminars",
+        "description": "Tutor for Operating Systems and Software Engineering courses at the University of Parma. Speaker at seminars on tutoring methodologies and Python programming."
+      },
+      "3": {
         "title": "Tutoring Perspectives",
         "description": "Delivered the talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focusing on methodologies and software tools to support academic mentoring."
       },
-      "3": {
+      "4": {
         "title": "BBCC2024 Conference - Naples",
         "description": "Presented PanDelos-plus at the BBCC2024 conference in Naples."
       },
-      "4": {
+      "5": {
         "title": "Bachelor's Degree in Computer Science",
         "description": "Graduated with a thesis on a parallel algorithm for pangenomic sequence analysis. Enrolled in the Master's degree program in Computer Science at the University of Parma."
       },
-      "5": {
+      "6": {
         "title": "Bioinformatics Internship",
         "description": "Developed parallel software for pangenome analysis using C++, Python, and Bash."
       },
-      "6": {
+      "7": {
         "title": "Open Source Collaboration",
         "description": "Founded and maintained unipr-org, an organization dedicated to collaborative open-source projects for university students."
       },
-      "7": {
+      "8": {
         "title": "Freelance Tutor & Photographer",
         "description": "Provided tutoring in C, C++, Java, Python, algorithms, and web development. Offered professional photography services for events."
       },
-      "8": {
+      "9": {
         "title": "MazeProject - Science Outreach",
         "description": "Created a web application to visualize graph search algorithms for the European Researchers' Night."
       },
-      "9": {
+      "10": {
         "title": "Cybersecurity Training",
         "description": "Completed CyberChallenge.it, a national training program in cybersecurity and CTF competitions."
       },
-      "10": {
+      "11": {
         "title": "Artistic Roller Skating Athlete",
         "description": "Competed as a high-level athlete, developing resilience, discipline, and teamwork skills."
       }
