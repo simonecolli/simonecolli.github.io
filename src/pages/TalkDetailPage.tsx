@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
+import SEO from "../components/SEO";
 import { talks } from "../data/talks";
 
 export default function TalkDetailPage() {
@@ -16,6 +17,12 @@ export default function TalkDetailPage() {
 
   return (
     <div className="app">
+      <SEO
+        titleKey={talk.title}
+        descriptionKey={talk.description}
+        keywordsKey="seo.talks.keywords"
+        path={`/talks/${talk.slug}`}
+      />
       <Header />
       <main className="main-content pt-20">
         {/* Talk header */}

@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from '../components/utils/Back2Home';
+import SEO from "../components/SEO";
 
 import { timeline } from "../data/timeline";
 import { skills } from "../data/skills";
@@ -18,6 +19,12 @@ export default function AboutMePage() {
 
   return (
     <div className="app">
+      <SEO
+        titleKey="about.pageTitle"
+        descriptionKey="seo.about.description"
+        keywordsKey="seo.about.keywords"
+        path="/about"
+      />
       <Header />
       <main className="main-content pt-20">
         {/* Hero */}

@@ -9,7 +9,7 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "Computer Science Student & Photographer",
+    "subtitle": "CS student, Developer & Photographer",
     "description": "Master's student in Computer Science passionate about challenging problems, software development, collaborations, and visual storytelling through photography."
   },
   "home": {
@@ -83,6 +83,32 @@
     "Wildlife": "Wildlife",
     "Macro": "Macro",
     "Ceremonies": "Ceremonies"
+  },
+  "seo": {
+    "home": {
+      "description": "Simone Colli - CS master's student, software developer and photographer based in Parma and Piacenza, Italy. Portfolio of projects, talks, and photography.",
+      "keywords": "Simone Colli, software developer, photographer, computer science, portfolio, web development, React, Python, C++, Parma, Piacenza, Italy, freelance developer Parma, freelance photographer Parma, photographer Piacenza, event photographer, portrait photographer, University of Parma"
+    },
+    "projects": {
+      "description": "Software projects by Simone Colli - web development, bioinformatics, parallel computing, open source. Developer based in Parma and Piacenza.",
+      "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Piacenza, University of Parma"
+    },
+    "talks": {
+      "description": "Academic presentations and talks by Simone Colli delivered at the University of Parma. Research in AI, cybersecurity, big data and compilers.",
+      "keywords": "Simone Colli talks, academic presentations, University of Parma, research, artificial intelligence, cybersecurity, big data, data mining, compilers, static analysis"
+    },
+    "photography": {
+      "description": "Photography portfolio by Simone Colli - portrait, sport, wildlife, macro and ceremony photography. Photographer based in Parma and Piacenza, Emilia-Romagna.",
+      "keywords": "Simone Colli photography, photographer Parma, photographer Piacenza, portrait photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer, fotografo Parma, fotografo Piacenza"
+    },
+    "about": {
+      "description": "About Simone Colli - CS master's student at University of Parma, software developer and freelance photographer in Parma and Piacenza. Skills, journey and CV.",
+      "keywords": "Simone Colli, about, curriculum, skills, University of Parma, master student, computer science, developer Parma, photographer Piacenza, freelance, Italy, Emilia-Romagna"
+    },
+    "blog": {
+      "description": "Blog by Simone Colli - thoughts on software development, technology, photography and more.",
+      "keywords": "Simone Colli blog, software development, technology, programming, photography, tech blog, developer blog"
+    }
   },
   "data": {
     "projects": {

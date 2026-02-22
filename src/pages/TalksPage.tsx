@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import ProjectCard from "../components/utils/ProjectCard";
+import SEO from "../components/SEO";
 
 // data
 import { talks } from "../data/talks";
@@ -12,6 +13,12 @@ export default function TalksPage() {
 
   return (
     <div className="app">
+      <SEO
+        titleKey="talks.pageTitle"
+        descriptionKey="seo.talks.description"
+        keywordsKey="seo.talks.keywords"
+        path="/talks"
+      />
       <Header />
       <main className="main-content pt-20">
         {/* Page Header */}

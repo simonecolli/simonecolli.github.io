@@ -9,13 +9,13 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "Studente di Informatica & Fotografo",
+    "subtitle": "Studente di scienze informatiche, sviluppatore & Fotografo",
     "description": "Studente magistrale in Informatica appassionato di problemi complessi, sviluppo software, collaborazioni e narrazione visiva attraverso la fotografia."
   },
   "home": {
     "aboutMe": {
       "title": "Chi sono",
-      "description": "Sono Simone Colli, studente magistrale di Informatica dall'Italia che unisce tecnologia e creativita'. Sviluppo soluzioni personalizzate software ed esprimo la mia creativita' attraverso la fotografia.",
+      "description": "Sono Simone Colli, studente magistrale di scienze informatiche dall'Italia che unisce tecnologia e creativita'. Sviluppo soluzioni personalizzate software ed esprimo la mia creativita' attraverso la fotografia.",
       "discoverMore": "Scopri di piu'"
     },
     "projects": {
@@ -83,6 +83,32 @@
     "Wildlife": "Natura",
     "Macro": "Macro",
     "Ceremonies": "Cerimonie"
+  },
+  "seo": {
+    "home": {
+      "description": "Simone Colli - Studente magistrale di scienze informatiche, sviluppatore software e fotografo a Parma e Piacenza. Portfolio di progetti, presentazioni e fotografia.",
+      "keywords": "Simone Colli, sviluppatore software, fotografo, informatica, portfolio, sviluppo web, React, Python, C++, Parma, Piacenza, Italia, sviluppatore freelance Parma, fotografo freelance Parma, fotografo Piacenza, fotografo eventi, fotografo ritratti, Universita di Parma"
+    },
+    "projects": {
+      "description": "Progetti software di Simone Colli - sviluppo web, bioinformatica, calcolo parallelo, open source. Sviluppatore a Parma e Piacenza.",
+      "keywords": "Simone Colli progetti, sviluppo software, open source, React, C++, Python, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Piacenza, Universita di Parma"
+    },
+    "talks": {
+      "description": "Presentazioni accademiche di Simone Colli tenute all'Universita di Parma. Ricerca in IA, cybersecurity, big data e compilatori.",
+      "keywords": "Simone Colli presentazioni, presentazioni accademiche, Universita di Parma, ricerca, intelligenza artificiale, cybersecurity, big data, data mining, compilatori, analisi statica"
+    },
+    "photography": {
+      "description": "Portfolio fotografico di Simone Colli - ritratti, sport, natura, macro e cerimonie. Fotografo a Parma e Piacenza, Emilia-Romagna.",
+      "keywords": "Simone Colli fotografia, fotografo Parma, fotografo Piacenza, fotografia ritratto, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie, photographer Parma, photographer Piacenza"
+    },
+    "about": {
+      "description": "Chi e' Simone Colli - Studente magistrale di scienze informatiche all'Universita di Parma, sviluppatore software e fotografo freelance a Parma e Piacenza. Competenze, percorso e CV.",
+      "keywords": "Simone Colli, chi sono, curriculum, competenze, Universita di Parma, studente magistrale, scienze informatiche, sviluppatore Parma, fotografo Piacenza, freelance, Italia, Emilia-Romagna"
+    },
+    "blog": {
+      "description": "Blog di Simone Colli - riflessioni su sviluppo software, tecnologia, fotografia e altro.",
+      "keywords": "Simone Colli blog, sviluppo software, tecnologia, programmazione, fotografia, tech blog, blog sviluppatore"
+    }
   },
   "data": {
     "projects": {

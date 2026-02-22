@@ -3,12 +3,19 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import WorkInProgress from "../components/utils/WorkInProgress";
+import SEO from "../components/SEO";
 
 export default function Blog() {
   const { t } = useTranslation();
 
   return (
     <div className="app">
+      <SEO
+        titleKey="blog.pageTitle"
+        descriptionKey="seo.blog.description"
+        keywordsKey="seo.blog.keywords"
+        path="/blog"
+      />
       <Header />
       <main className="main-content pt-20">
         {/* Page header */}

@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
+import SEO from "../components/SEO";
 import PhotoCard from "../components/photography/PhotoCard";
 import Lightbox from "../components/photography/Lightbox";
 import { Photos, type Photo } from "../data/photography";
@@ -18,6 +19,12 @@ export default function PhotographyPage() {
 
   return (
     <div className="app">
+      <SEO
+        titleKey="photography.pageTitle"
+        descriptionKey="seo.photography.description"
+        keywordsKey="seo.photography.keywords"
+        path="/photography"
+      />
       <Header />
 
       <main className="main-content pt-20">
