@@ -4,7 +4,7 @@ import './i18n'
 import { AppRoutes } from './App.tsx'
 
 export async function prerender(data: { url: string }) {
-  const { parseLinks } = await import('vite-prerender-plugin/parse')
+  // const { parseLinks } = await import('vite-prerender-plugin/parse')
 
   const html = renderToString(
     <StaticRouter location={data.url}>
@@ -12,11 +12,12 @@ export async function prerender(data: { url: string }) {
     </StaticRouter>
   )
 
-  const links = parseLinks(html)
+  // const links = parseLinks(html)
 
   return {
     html,
-    links: new Set(links),
+    // links: new Set(links),
+    links: new Set<string>(),
     head: {
       lang: 'en',
     },
