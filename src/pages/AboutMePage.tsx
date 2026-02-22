@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from '../components/utils/Back2Home';
@@ -6,6 +7,8 @@ import { timeline } from "../data/timeline";
 import { skills } from "../data/skills";
 
 export default function AboutMePage() {
+  const { t } = useTranslation();
+
   const openCven = () => {
     window.open('/cv/cv_en.pdf', '_blank')
   }
@@ -25,39 +28,22 @@ export default function AboutMePage() {
                 {/* Text */}
                 <div>
                   <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                    About Me
+                    {t('about.pageTitle')}
                   </h1>
                   <div className="h-px bg-gray-300 w-24 mb-8"></div>
-                  
+
                   <div className="space-y-6 text-gray-600 leading-relaxed">
-                    <p>
-                      I'm Simone Colli, a Computer Science master's student passionate about
-                      building software solutions and exploring creativity through photography.
-                      My path combines the analytical rigor of programming with the expressive
-                      power of visual storytelling.
-                    </p>
-                    
-                    <p>
-                      Throughout my studies and projects, I have worked on areas ranging from
-                      web development and parallel computing to bioinformatics and open-source
-                      collaboration. At the same time, photography allows me to capture authentic
-                      moments and translate emotions into images.
-                    </p>
-                    <p>
-                      Based in Italy, I spend my time contributing to collaborative projects,
-                      tutoring students, experimenting with new technologies, and telling stories
-                      through my camera lens. Years as a competitive athlete have taught me
-                      resilience, discipline, and perseverance—values I now bring into both my
-                      academic and creative work.
-                    </p>
+                    <p>{t('about.bio1')}</p>
+                    <p>{t('about.bio2')}</p>
+                    <p>{t('about.bio3')}</p>
                   </div>
                   <div className="flex gap-4 mt-8">
                     <button className="px-8 py-3 bg-black text-white border border-black hover:bg-transparent hover:text-black transition-all" onClick={openCven}>
-                      Download CV (en)
+                      {t('about.downloadCvEn')}
                     </button>
 
                     <button className="px-8 py-3 bg-black text-white border border-black hover:bg-transparent hover:text-black transition-all" onClick={openCvit}>
-                      Download CV (it)
+                      {t('about.downloadCvIt')}
                     </button>
                   </div>
                 </div>
@@ -82,7 +68,7 @@ export default function AboutMePage() {
           <div className="tech-minimal-container">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-2xl font-light tracking-tight mb-4">Journey</h2>
+                <h2 className="text-2xl font-light tracking-tight mb-4">{t('about.journey')}</h2>
                 <div className="h-px bg-gray-300 w-16 mx-auto"></div>
               </div>
 
@@ -109,8 +95,8 @@ export default function AboutMePage() {
 
                     {/* Content */}
                     <div className="flex-1 pb-8">
-                      <h3 className="font-medium mb-2">{item.title}</h3>
-                      <p className="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                      <h3 className="font-medium mb-2">{t(item.title)}</h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">{t(item.description)}</p>
                     </div>
                   </div>
                 ))}
@@ -118,20 +104,20 @@ export default function AboutMePage() {
             </div>
           </div>
         </section>
-        
+
         {/* Skills */}
         <section className="tech-minimal-section">
           <div className="tech-minimal-container">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <h2 className="text-2xl font-light tracking-tight mb-4">Skills & Expertise</h2>
+                <h2 className="text-2xl font-light tracking-tight mb-4">{t('about.skillsTitle')}</h2>
                 <div className="h-px bg-gray-300 w-16 mx-auto"></div>
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {skills.map((skillGroup, index) => (
                   <div key={index} className="tech-minimal-card">
-                    <h3 className="font-medium mb-4 text-center">{skillGroup.category}</h3>
+                    <h3 className="font-medium mb-4 text-center">{t(skillGroup.category)}</h3>
                     <ul className="space-y-2 mt-3">
                       {skillGroup.items.map((skill, skillIndex) => (
                         <li key={skillIndex} className="text-sm text-gray-600 text-center">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import type { Photo } from "../../data/photography";
 
 interface PhotoCardProps {
@@ -9,6 +10,7 @@ interface PhotoCardProps {
 export default function PhotoCard({ photo, onClick }: PhotoCardProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <div
@@ -50,7 +52,7 @@ export default function PhotoCard({ photo, onClick }: PhotoCardProps) {
         {/* Error */}
         {hasError && (
           <div className="absolute inset-0 flex items-center justify-center bg-gray-200">
-            <span className="text-gray-500 text-sm">Failed to load</span>
+            <span className="text-gray-500 text-sm">{t('common.failedToLoad')}</span>
           </div>
         )}
 
@@ -64,7 +66,7 @@ export default function PhotoCard({ photo, onClick }: PhotoCardProps) {
               key={cat}
               className="text-xs px-2 py-1 bg-white/95 border border-gray-200 rounded text-gray-600 backdrop-blur-sm shadow-sm"
             >
-              {cat}
+              {t('photoCategories.' + cat)}
             </span>
           ))}
         </div>

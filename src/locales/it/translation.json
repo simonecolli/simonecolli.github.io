@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Progetti",
+    "talks": "Presentazioni",
+    "blog": "Blog",
+    "photography": "Fotografia",
+    "about": "Chi sono"
+  },
+  "hero": {
+    "name": "Simone Colli",
+    "subtitle": "Studente di Informatica & Fotografo",
+    "description": "Studente magistrale in Informatica appassionato di problemi complessi, sviluppo software, collaborazioni e narrazione visiva attraverso la fotografia."
+  },
+  "home": {
+    "aboutMe": {
+      "title": "Chi sono",
+      "description": "Sono Simone Colli, studente magistrale di Informatica dall'Italia che unisce tecnologia e creativita'. Sviluppo soluzioni personalizzate software ed esprimo la mia creativita' attraverso la fotografia.",
+      "discoverMore": "Scopri di piu'"
+    },
+    "projects": {
+      "title": "Progetti preferiti",
+      "viewAll": "Vedi tutti i progetti"
+    },
+    "talks": {
+      "title": "Presentazioni preferite",
+      "viewAll": "Vedi tutte le presentazioni"
+    }
+  },
+  "footer": {
+    "description": "Studente di Informatica appassionato di tecnologia e fotografia. Sempre in apprendimento, sempre a creare.",
+    "socialLabel": "Social & email",
+    "copyright": "Tutti i diritti riservati."
+  },
+  "projects": {
+    "pageTitle": "Progetti",
+    "pageDescription": "Una raccolta di progetti software, esperimenti e idee prese vita. Ogni progetto rappresenta un passo nel mio percorso come sviluppatore.",
+    "backToProjects": "Torna ai progetti"
+  },
+  "talks": {
+    "pageTitle": "Presentazioni",
+    "pageDescription": "Una raccolta di presentazioni accademiche tenute presso l'Universita' di Parma. Ogni presentazione rappresenta ricerca, esplorazione e condivisione della conoscenza in vari ambiti dell'informatica.",
+    "backToTalks": "Torna alle presentazioni"
+  },
+  "photography": {
+    "pageTitle": "Fotografia",
+    "pageDescription": "Attraverso il mio obiettivo, cattura momenti, emozioni e storie. La fotografia e' il mio modo di fermare il tempo e creare ricordi significativi.",
+    "noPhotos": "Nessuna foto trovata in questa categoria.",
+    "showAll": "Mostra tutte le foto",
+    "filterAll": "Tutte"
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "pageDescription": "Riflessioni sullo sviluppo software, tecnologia, fotografia e altri argomenti che mi appassionano."
+  },
+  "about": {
+    "pageTitle": "Chi sono",
+    "bio1": "Sono Simone Colli, studente magistrale di Informatica appassionato di sviluppo software e creativita' attraverso la fotografia. Il mio percorso combina il rigore analitico della programmazione con il potere espressivo della narrazione visiva.",
+    "bio2": "Durante i miei studi e progetti, ho lavorato in ambiti che spaziano dallo sviluppo web e il calcolo parallelo alla bioinformatica e la collaborazione open-source. Allo stesso tempo, la fotografia mi permette di catturare momenti autentici e tradurre le emozioni in immagini.",
+    "bio3": "Vivo in Italia e dedico il mio tempo a contribuire a progetti collaborativi, fare tutoraggio agli studenti, sperimentare con nuove tecnologie e raccontare storie attraverso il mio obiettivo. Anni come atleta agonista mi hanno insegnato resilienza, disciplina e perseveranza — valori che ora porto sia nel mio lavoro accademico che creativo.",
+    "downloadCvEn": "Scarica CV (en)",
+    "downloadCvIt": "Scarica CV (it)",
+    "journey": "Percorso",
+    "skillsTitle": "Competenze & Specializzazioni"
+  },
+  "common": {
+    "backToHome": "Torna alla Home",
+    "workInProgress": "Lavori in corso...",
+    "workInProgressMessage": "Sto attualmente lavorando a questa sezione. Torna presto per gli aggiornamenti!",
+    "comingSoon": "Prossimamente",
+    "github": "GitHub",
+    "viewOnGithub": "Vedi su GitHub",
+    "liveDemo": "Demo live",
+    "failedToLoad": "Caricamento fallito"
+  },
+  "status": {
+    "inProgress": "In Corso",
+    "completed": "Completato"
+  },
+  "photoCategories": {
+    "Portrait": "Ritratto",
+    "Sport": "Sport",
+    "Wildlife": "Natura",
+    "Macro": "Macro",
+    "Ceremonies": "Cerimonie"
+  },
+  "data": {
+    "projects": {
+      "personalWebsite": {
+        "title": "Sito personale",
+        "description": "Un sito personale che mostra i miei progetti, competenze ed esperienze."
+      },
+      "quantumPortfolioOptimization": {
+        "title": "Ottimizzazione quantistica del portafoglio",
+        "description": "Un progetto di ricerca focalizzato sull'ottimizzazione dell'allocazione del portafoglio, migliorando i metodi tradizionali per una migliore gestione rischio-rendimento."
+      },
+      "academicGuaranteeOptimization": {
+        "title": "Ottimizzazione garanti accademici",
+        "description": "Strumento basato su Answer Set Programming (ASP) per ottimizzare l'assegnazione dei garanti accademici ai corsi universitari."
+      },
+      "pandelosPlus": {
+        "title": "PanDelos-plus",
+        "description": "PanDelos-plus: un algoritmo parallelo per il calcolo dell'omologia di sequenza nell'analisi pangenomica"
+      },
+      "deepNeuralNetworkLibrary": {
+        "title": "Libreria reti neurali profonde",
+        "description": "Deep Neural Network Library: una libreria C++ flessibile per costruire, addestrare e utilizzare reti neurali profonde. Modulare, facile da usare e ad alte prestazioni."
+      },
+      "uniprOrg": {
+        "title": "Unipr-org",
+        "description": "Un'organizzazione GitHub collaborativa che riunisce studenti di Informatica dell'Universita' di Parma per creare e condividere una raccolta completa di appunti, materiali di studio e risorse accademiche. La piattaforma promuove la collaborazione aperta e la condivisione della conoscenza, rendendo l'apprendimento universitario piu' accessibile a tutti gli studenti."
+      },
+      "mazeProject": {
+        "title": "MazeProject",
+        "description": "Un'applicazione sviluppata in occasione della Notte Europea dei Ricercatori 2022. Il progetto prevede la creazione di un gioco a labirinto interattivo che educa gli utenti sui concetti scientifici mentre navigano attraverso varie sfide."
+      }
+    },
+    "talks": {
+      "academicPresentationSASVExam": {
+        "title": "Presentazione accademica per l'esame di Analisi statica e verifica del software",
+        "description": "Una presentazione creata per l'esame di analisi statica e verifica del software all'Universita' di Parma. La presentazione tratta di un articolo di ricerca scelto."
+      },
+      "academicPresentationBddmExam": {
+        "title": "Presentazione accademica per l'esame di Big Data e Data Mining",
+        "description": "Una presentazione creata per l'esame di Big Data e Data Mining all'Universita' di Parma. La presentazione tratta di un articolo di ricerca scelto."
+      },
+      "academicPresentationBddmReverse": {
+        "title": "Presentazione accademica per la lezione invertita di Big Data e Data Mining",
+        "description": "Una presentazione creata per la lezione invertita di Big Data e Data Mining all'Universita' di Parma. La presentazione tratta della generazione di dati sintetici."
+      },
+      "academicPresentationCsExam": {
+        "title": "Presentazione accademica per l'esame di Cybersecurity",
+        "description": "Una presentazione creata per l'esame di Cybersecurity all'Universita' di Parma. La presentazione tratta degli infostealer."
+      },
+      "academicPresentationFAIExam": {
+        "title": "Presentazione accademica per l'esame di Fondamenti di Intelligenza Artificiale",
+        "description": "Una presentazione creata per l'esame di fondamenti di intelligenza artificiale all'Universita' di Parma. La presentazione tratta dell'apprendimento contrastivo nei dati di trascrittomica spaziale."
+      },
+      "academicPresentationLIaCExam": {
+        "title": "Presentazione accademica per l'esame di Linguaggi, Interpreti e Compilatori",
+        "description": "Una presentazione creata per l'esame di linguaggi, interpreti e compilatori all'Universita' di Parma. La presentazione tratta dello srotolamento dei cicli."
+      }
+    },
+    "timeline": {
+      "0": {
+        "title": "Preprint PanDelos-plus",
+        "description": "Primo autore dell'articolo 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', pubblicato su arXiv."
+      },
+      "1": {
+        "title": "Assistente alla didattica & Seminari",
+        "description": "Tutor per i corsi di Sistemi Operativi e Ingegneria del Software all'Universita' di Parma. Relatore in seminari sul tutoraggio e la programmazione Python con librerie grafiche."
+      },
+      "2": {
+        "title": "Il tutorato da diverse prospettive",
+        "description": "Presentazione 'Il tutorato da diverse prospettive e strumenti informatici a supporto', incentrata su metodologie e strumenti software per il mentoring accademico."
+      },
+      "3": {
+        "title": "Conferenza BBCC2024 - Napoli",
+        "description": "Presentazione di PanDelos-plus alla conferenza BBCC2024 a Napoli."
+      },
+      "4": {
+        "title": "Laurea triennale in Informatica",
+        "description": "Laureato con tesi su un algoritmo parallelo per l'analisi di sequenze pangenomiche. Inizio della laurea magistrale in Informatica all'Universita' di Parma."
+      },
+      "5": {
+        "title": "Tirocinio in Bioinformatica",
+        "description": "Sviluppo di software parallelo per l'analisi del pangenoma utilizzando C++, Python e Bash."
+      },
+      "6": {
+        "title": "Collaborazione Open Source",
+        "description": "Fondazione e mantenimento di unipr-org, un'organizzazione per progetti open-source collaborativi tra studenti universitari."
+      },
+      "7": {
+        "title": "Tutor freelance & Fotografo",
+        "description": "Tutoraggio in C, C++, Java, Python, algoritmi e sviluppo web. Servizi fotografici per eventi."
+      },
+      "8": {
+        "title": "MazeProject - Divulgazione scientifica",
+        "description": "Creazione di un'applicazione web per visualizzare algoritmi di ricerca su grafi per la Notte Europea dei Ricercatori."
+      },
+      "9": {
+        "title": "Formazione in Cybersecurity",
+        "description": "Completamento di CyberChallenge.it, un programma nazionale in cybersecurity e competizioni CTF."
+      },
+      "10": {
+        "title": "Atleta di pattinaggio artistico a rotelle",
+        "description": "Atleta agonista di alto livello, apprendendo resilienza, disciplina e lavoro di squadra."
+      }
+    },
+    "skills": {
+      "0": "Linguaggi principali",
+      "1": "Altri linguaggi",
+      "2": "Database",
+      "3": "Sistemi operativi",
+      "4": "IDE, ambienti e editor di testo",
+      "5": "Framework e altri strumenti",
+      "6": "Strumenti creativi",
+      "7": "Soft skills",
+      "8": "Lingue"
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "talks": "Talks",
+    "blog": "Blog",
+    "photography": "Photography",
+    "about": "About"
+  },
+  "hero": {
+    "name": "Simone Colli",
+    "subtitle": "Computer Science Student & Photographer",
+    "description": "Master's student in Computer Science passionate about challenging problems, software development, collaborations, and visual storytelling through photography."
+  },
+  "home": {
+    "aboutMe": {
+      "title": "About Me",
+      "description": "I'm Simone Colli, a Computer Science master's student from Italy who bridges technology and creativity. I build custom software solutions, and express my creativity through photography.",
+      "discoverMore": "Discover more"
+    },
+    "projects": {
+      "title": "Favorite projects",
+      "viewAll": "View all projects"
+    },
+    "talks": {
+      "title": "Favorite talks",
+      "viewAll": "View all talks"
+    }
+  },
+  "footer": {
+    "description": "Computer Science student passionate about technology, and photography. Always learning, always creating.",
+    "socialLabel": "Social & email",
+    "copyright": "All rights reserved."
+  },
+  "projects": {
+    "pageTitle": "Projects",
+    "pageDescription": "A collection of software projects, experiments, and ideas brought to life. Each project represents a step in my journey as a developer.",
+    "backToProjects": "Back to projects"
+  },
+  "talks": {
+    "pageTitle": "Talks",
+    "pageDescription": "A collection of academic presentations and talks delivered at the University of Parma. Each presentation represents research, exploration, and knowledge sharing in various computer science domains.",
+    "backToTalks": "Back to talks"
+  },
+  "photography": {
+    "pageTitle": "Photography",
+    "pageDescription": "Through my lens, I capture moments, emotions, and stories. Photography is my way of freezing time and creating meaningful memories.",
+    "noPhotos": "No photos found in this category.",
+    "showAll": "Show all photos",
+    "filterAll": "All"
+  },
+  "blog": {
+    "pageTitle": "Blog",
+    "pageDescription": "Thoughts on software development, technology, photography and other topics I'm passionate about."
+  },
+  "about": {
+    "pageTitle": "About Me",
+    "bio1": "I'm Simone Colli, a Computer Science master's student passionate about building software solutions and exploring creativity through photography. My path combines the analytical rigor of programming with the expressive power of visual storytelling.",
+    "bio2": "Throughout my studies and projects, I have worked on areas ranging from web development and parallel computing to bioinformatics and open-source collaboration. At the same time, photography allows me to capture authentic moments and translate emotions into images.",
+    "bio3": "Based in Italy, I spend my time contributing to collaborative projects, tutoring students, experimenting with new technologies, and telling stories through my camera lens. Years as a competitive athlete have taught me resilience, discipline, and perseverance—values I now bring into both my academic and creative work.",
+    "downloadCvEn": "Download CV (en)",
+    "downloadCvIt": "Download CV (it)",
+    "journey": "Journey",
+    "skillsTitle": "Skills & Expertise"
+  },
+  "common": {
+    "backToHome": "Back to Home",
+    "workInProgress": "Work in progress...",
+    "workInProgressMessage": "I'm currently working on this section. Check back soon for updates!",
+    "comingSoon": "Coming soon",
+    "github": "GitHub",
+    "viewOnGithub": "View on GitHub",
+    "liveDemo": "Live Demo",
+    "failedToLoad": "Failed to load"
+  },
+  "status": {
+    "inProgress": "In Progress",
+    "completed": "Completed"
+  },
+  "photoCategories": {
+    "Portrait": "Portrait",
+    "Sport": "Sport",
+    "Wildlife": "Wildlife",
+    "Macro": "Macro",
+    "Ceremonies": "Ceremonies"
+  },
+  "data": {
+    "projects": {
+      "personalWebsite": {
+        "title": "Personal website",
+        "description": "A personal website showcasing my projects, skills, and experience."
+      },
+      "quantumPortfolioOptimization": {
+        "title": "Quantum Portfolio Optimization",
+        "description": "A research project focused on optimizing portfolio allocation, enhancing traditional methods for improved risk-return management."
+      },
+      "academicGuaranteeOptimization": {
+        "title": "Academic Guarantee Optimization",
+        "description": "Answer Set Programming (ASP)-based tool for optimizing the assignment of academic guarantors to university courses."
+      },
+      "pandelosPlus": {
+        "title": "PanDelos-plus",
+        "description": "PanDelos-plus: a parallel algorithm for computing sequence homology in pangenomic analysis"
+      },
+      "deepNeuralNetworkLibrary": {
+        "title": "Deep neural network library",
+        "description": "Deep Neural Network Library: A flexible C++ library for building, training, and using deep neural networks. Modular, easy-to-use, and high-performance."
+      },
+      "uniprOrg": {
+        "title": "Unipr-org",
+        "description": "A collaborative GitHub organization that brings together Computer Science students at the University of Parma to create and share a comprehensive collection of course notes, study materials, and academic resources. The platform promotes open collaboration and knowledge sharing, making university learning more accessible for all students."
+      },
+      "mazeProject": {
+        "title": "MazeProject",
+        "description": "An application developed in occasion of the European Researchers' Night 2022. This project involves creating an interactive maze game that educates users about scientific concepts while they navigate through various challenges."
+      }
+    },
+    "talks": {
+      "academicPresentationSASVExam": {
+        "title": "Academic presentation for Static analysis and software verification exam",
+        "description": "A presentation created for the static analysis and software exam at the University of Parma. The presentation talks about a chosen research paper."
+      },
+      "academicPresentationBddmExam": {
+        "title": "Academic presentation for Big Data and Data Mining exam",
+        "description": "A presentation created for the Big Data and Data Mining exam at the University of Parma. The presentation talks about a chosen research paper."
+      },
+      "academicPresentationBddmReverse": {
+        "title": "Academic presentation for Big Data and Data Mining reverse class.",
+        "description": "A presentation created for the Big Data and Data Mining reverse class at the University of Parma. The presentation talks about synthetic data generation."
+      },
+      "academicPresentationCsExam": {
+        "title": "Academic presentation for Cybersecurity exam",
+        "description": "A presentation created for the Cybersecurity exam at the University of Parma. The presentation talks about the infostealers."
+      },
+      "academicPresentationFAIExam": {
+        "title": "Academic presentation for Fundamentals of Artificial Intelligence exam",
+        "description": "A presentation created for the fundamentals of artificial intelligence exam at the University of Parma. The presentation talks about contrastive learning in spatial transcriptomics data."
+      },
+      "academicPresentationLIaCExam": {
+        "title": "Academic presentation for Languages, Interpreters and Compilers exam",
+        "description": "A presentation created for the languages, interpreters and compilers exam at the University of Parma. The presentation talks about loop unrolling."
+      }
+    },
+    "timeline": {
+      "0": {
+        "title": "PanDelos-plus preprint",
+        "description": "First author of the paper 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', released on arXiv."
+      },
+      "1": {
+        "title": "Teaching Assistant & Seminars",
+        "description": "Tutor for Operating Systems and Software Engineering courses at University of Parma. Speaker in seminars on tutoring and Python programming with graphical libraries."
+      },
+      "2": {
+        "title": "Tutoring under different perspectives",
+        "description": "Delivered the talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focusing on methodologies and software tools for academic mentoring."
+      },
+      "3": {
+        "title": "BBCC2024 Conference - Naples",
+        "description": "Presented PanDelos-plus at the BBCC2024 conference in Naples."
+      },
+      "4": {
+        "title": "Bachelor's Degree in Computer Science",
+        "description": "Graduated with thesis on a parallel algorithm for pangenomic sequence analysis. Started Master's degree in Computer Science at University of Parma."
+      },
+      "5": {
+        "title": "Internship in Bioinformatics",
+        "description": "Developed parallel software for pangenome analysis using C++, Python, and Bash."
+      },
+      "6": {
+        "title": "Open Source Collaboration",
+        "description": "Founded and maintained unipr-org, an organization for collaborative open-source projects among university students."
+      },
+      "7": {
+        "title": "Freelance Tutor & Photographer",
+        "description": "Tutoring in C, C++, Java, Python, algorithms, and web development. Provided photography services for events."
+      },
+      "8": {
+        "title": "MazeProject - Science Outreach",
+        "description": "Created a web application to visualize graph search algorithms for European Researchers' Night."
+      },
+      "9": {
+        "title": "Cybersecurity Training",
+        "description": "Completed CyberChallenge.it, a national program in cybersecurity and CTF competitions."
+      },
+      "10": {
+        "title": "Artistic Roller Skating Athlete",
+        "description": "Competitive high-level athlete, learning resilience, discipline, and teamwork."
+      }
+    },
+    "skills": {
+      "0": "Main computer languages",
+      "1": "Other computer languages",
+      "2": "Databases",
+      "3": "Operative systems",
+      "4": "IDEs, environments and text editors",
+      "5": "Frameworks and other tools",
+      "6": "Creative instruments",
+      "7": "Soft skills",
+      "8": "Languages"
+    }
+  }
+}

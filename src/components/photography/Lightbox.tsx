@@ -1,4 +1,5 @@
 import { useEffect, useCallback, useState } from "react";
+import { useTranslation } from "react-i18next";
 import type { Photo } from "../../data/photography";
 
 interface LightboxProps {
@@ -11,6 +12,7 @@ interface LightboxProps {
 export default function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const { t } = useTranslation();
 
   const currentIndex = photos.findIndex((p) => p.id === photo.id);
   const hasPrev = currentIndex > 0;
@@ -189,7 +191,7 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
                 key={cat}
                 className="text-xs px-2 py-1 bg-white/20 text-white rounded-full"
               >
-                {cat}
+                {t('photoCategories.' + cat)}
               </span>
             ))}
           </div>

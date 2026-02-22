@@ -1,4 +1,5 @@
 import { useParams, Navigate, Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
@@ -7,6 +8,7 @@ import { talks } from "../data/talks";
 export default function TalkDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const talk = talks.find((t) => t.slug === slug);
+  const { t } = useTranslation();
 
   if (!talk) {
     return <Navigate to="/talks" replace />;
@@ -28,19 +30,19 @@ export default function TalkDetailPage() {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
-                Back to talks
+                {t('talks.backToTalks')}
               </Link>
 
               {/* Talk title */}
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
-                    {talk.status}
+                    {t(talk.status)}
                   </span>
                   <span className="text-xs text-gray-500">{talk.year}</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-4">
-                  {talk.title}
+                  {t(talk.title)}
                 </h1>
                 <div className="h-px bg-gray-300 w-24 mb-6"></div>
               </div>
@@ -48,7 +50,7 @@ export default function TalkDetailPage() {
               {/* Talk description */}
               <div className="prose max-w-none mb-8">
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  {talk.description}
+                  {t(talk.description)}
                 </p>
               </div>
 
@@ -73,7 +75,7 @@ export default function TalkDetailPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>View on GitHub</span>
+                    <span>{t('common.viewOnGithub')}</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
@@ -86,7 +88,7 @@ export default function TalkDetailPage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span>Live Demo</span>
+                    <span>{t('common.liveDemo')}</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>

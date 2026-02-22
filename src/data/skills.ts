@@ -5,11 +5,11 @@ export interface Skill {
 
 export const skills: Skill[] = [
   {
-    category: "Main computer languages",
+    category: "data.skills.0",
     items: ["C++", "Python", "Java", "JavaScript", "HTML", "CSS", "Bash"],
   },
   {
-    category: "Other computer languages",
+    category: "data.skills.1",
     items: [
       "C",
       "C#",
@@ -24,15 +24,15 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "Databases",
+    category: "data.skills.2",
     items: ["MySQL", "PostgreSQL"],
   },
   {
-    category: "Operative systems",
+    category: "data.skills.3",
     items: ["Linux", "MAC OSX", "Windows", "Windows Server 2019"],
   },
   {
-    category: "IDEs, environments and text editors",
+    category: "data.skills.4",
     items: [
       "Visual Studio Code",
       "Eclipse",
@@ -46,7 +46,7 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "Frameworks and other tools",
+    category: "data.skills.5",
     items: [
       "JQuery",
       "Bootstrap",
@@ -70,7 +70,7 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "Creative instruments",
+    category: "data.skills.6",
     items: [
       "Microsoft Office",
       "Darktable",
@@ -82,7 +82,7 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "Soft skills",
+    category: "data.skills.7",
     items: [
       "Problem solving",
       "Critical thinking",
@@ -102,7 +102,7 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "Languages",
+    category: "data.skills.8",
     items: ["Italian (native)", "English (Intermediate)"],
   },
 ];

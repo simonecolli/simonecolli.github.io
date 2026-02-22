@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
@@ -11,6 +12,7 @@ import { usePhotoFilter, type FilterValue } from "../hooks/usePhotoFilter";
 export default function PhotographyPage() {
   const { activeFilter, setActiveFilter, filteredPhotos } = usePhotoFilter(Photos);
   const [lightboxPhoto, setLightboxPhoto] = useState<Photo | null>(null);
+  const { t } = useTranslation();
 
   const filterOptions: FilterValue[] = ["All", ...photoCategories];
 
@@ -24,13 +26,11 @@ export default function PhotographyPage() {
           <div className="tech-minimal-container">
             <div className="max-w-3xl mx-auto text-center fade-in">
               <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
-                Photography
+                {t('photography.pageTitle')}
               </h1>
               <div className="h-px bg-gray-300 w-24 mx-auto mb-6"></div>
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                Through my lens, I capture moments, emotions, and stories.
-                Photography is my way of freezing time and creating meaningful
-                memories.
+                {t('photography.pageDescription')}
               </p>
 
               {/* Category Filter */}
@@ -46,7 +46,7 @@ export default function PhotographyPage() {
                     }`}
                     aria-pressed={activeFilter === filter}
                   >
-                    {filter}
+                    {filter === "All" ? t('photography.filterAll') : t('photoCategories.' + filter)}
                   </button>
                 ))}
               </div>
@@ -56,7 +56,7 @@ export default function PhotographyPage() {
 
         {/* Photo Gallery */}
         <section className="tech-minimal-section">
-          
+
           <div className="tech-minimal-container">
             {filteredPhotos.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -71,13 +71,13 @@ export default function PhotographyPage() {
             ) : (
               <div className="text-center py-16">
                 <p className="text-gray-500 text-lg">
-                  No photos found in this category.
+                  {t('photography.noPhotos')}
                 </p>
                 <button
                   onClick={() => setActiveFilter("All")}
                   className="mt-4 px-6 py-2 text-sm border border-gray-300 rounded-full hover:border-black hover:text-black transition-all"
                 >
-                  Show all photos
+                  {t('photography.showAll')}
                 </button>
               </div>
             )}

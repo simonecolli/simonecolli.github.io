@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { talks } from "../../data/talks";
 import ProjectCard from "../utils/ProjectCard";
 
 export default function Talks() {
+  const { t } = useTranslation();
 
   return (
     <section className="tech-minimal-section">
@@ -10,7 +12,7 @@ export default function Talks() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl font-light tracking-tight mb-4">
-            Favorite talks
+            {t('home.talks.title')}
           </h2>
           <div className="h-px bg-gray-300 w-24 mx-auto"></div>
         </div>
@@ -33,7 +35,7 @@ export default function Talks() {
             to="/talks"
             className="inline-flex items-center gap-2 text-sm font-medium hover:text-blue-600 transition-colors"
           >
-            View all talks
+            {t('home.talks.viewAll')}
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
