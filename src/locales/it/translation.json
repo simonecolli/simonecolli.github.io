@@ -181,53 +181,57 @@
       }
     },
     "timeline": {
-      "0": {
+      "masterDegree": {
+        "title": "Laurea Magistrale in Scienze Informatiche",
+        "description": "Laurea magistrale all'Università di Parma, voto 110/110 con lode. Tesi: arricchimento dei flussi di lavoro di pangenomica computazionale, relatore Prof. V. Bonnici."
+      },
+      "freelance": {
         "title": "Libero professionista",
-        "description": "Apertura della carriera freelance focalizzata sullo sviluppo di soluzioni software su misura e sulla produzione di contenuti visivi professionali."
+        "description": "Avvio dell'attività da libero professionista come sviluppatore software e fotografo: soluzioni su misura per privati e piccole imprese, curando l'intero ciclo di vita del software, e servizi fotografici per privati ed eventi."
       },
-      "1": {
+      "seminars": {
+        "title": "Seminari all'Università di Parma",
+        "description": "Due seminari: «Il tutorato sotto diverse prospettive e strumenti informatici a supporto» e un bootcamp intensivo sull'uso di librerie grafiche in Python, culminato nella realizzazione del gioco Pong."
+      },
+      "pandelosPreprint": {
         "title": "Preprint PanDelos-plus",
-        "description": "Primo autore dell'articolo 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', pubblicato su arXiv."
+        "description": "Primo autore dell'articolo «PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis», pubblicato su arXiv."
       },
-      "2": {
-        "title": "Tutor Didattico e Seminari",
-        "description": "Tutor per i corsi di Sistemi Operativi e Ingegneria del Software all'Università di Parma. Relatore in seminari su metodologie di tutoraggio e programmazione Python."
+      "universityTutor": {
+        "title": "Tutor didattico",
+        "description": "Tutor dei corsi di «Sistemi operativi» e «Ingegneria del Software» per la laurea triennale in Informatica all'Università di Parma, su quattro semestri."
       },
-      "3": {
-        "title": "Il tutorato da diverse prospettive",
-        "description": "Ho tenuto il talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focalizzato su metodologie e strumenti software per il supporto accademico."
-      },
-      "4": {
+      "bbcc2024": {
         "title": "Conferenza BBCC2024 - Napoli",
-        "description": "Presentazione di PanDelos-plus alla conferenza BBCC2024 a Napoli."
+        "description": "Presentazione orale di PanDelos-plus alla conferenza BBCC2024 di Napoli."
       },
-      "5": {
+      "bachelorDegree": {
         "title": "Laurea Triennale in Informatica",
-        "description": "Laurea conseguita con tesi su un algoritmo parallelo per l'analisi di sequenze pangenomiche. Iscrizione alla Laurea Magistrale in Informatica presso l'Università di Parma."
+        "description": "Laurea triennale all'Università di Parma, voto 108/110. Tesi: un algoritmo parallelo per il calcolo dell'omologia di sequenza in analisi pangenomiche, relatore Prof. V. Bonnici."
       },
-      "6": {
+      "internship": {
         "title": "Tirocinio in Bioinformatica",
-        "description": "Sviluppo di software parallelo per l'analisi del pangenoma utilizzando C++, Python e Bash."
+        "description": "Tirocinio universitario dedicato allo sviluppo di software parallelo per analisi pangenomiche. Linguaggi: C++, Python, Bash."
       },
-      "7": {
-        "title": "Collaborazione Open Source",
-        "description": "Fondazione e gestione di unipr-org, organizzazione dedicata a progetti open source collaborativi per studenti universitari."
+      "uniprOrg": {
+        "title": "Fondazione di unipr-org",
+        "description": "Fondazione e manutenzione di unipr-org, organizzazione che riunisce gli studenti dell'Università di Parma per collaborare su materiali didattici e progetti open source."
       },
-      "8": {
-        "title": "Tutor Freelance e Fotografo",
-        "description": "Attività di tutoraggio in C, C++, Java, Python, algoritmi e sviluppo web. Servizi fotografici professionali per eventi."
+      "freelanceTutor": {
+        "title": "Tutor freelance",
+        "description": "Servizi di tutoraggio in presenza e online per studenti universitari e delle scuole superiori. Argomenti: C, C++, Java, Python, algoritmi e strutture dati, sviluppo web."
       },
-      "9": {
+      "mazeProject": {
         "title": "MazeProject - Divulgazione",
-        "description": "Creazione di un'applicazione web per visualizzare algoritmi di ricerca su grafi in occasione della Notte Europea dei Ricercatori."
+        "description": "Applicazione web per visualizzare algoritmi di ricerca su grafi, realizzata per la Notte Europea dei Ricercatori."
       },
-      "10": {
-        "title": "Formazione Cybersecurity",
-        "description": "Completamento di CyberChallenge.it, programma nazionale di formazione in cybersecurity e competizioni CTF."
+      "cyberChallenge": {
+        "title": "CyberChallenge.it",
+        "description": "Programma nazionale di formazione in cybersecurity e competizioni CTF organizzato dal Laboratorio Nazionale di Cybersecurity, con il team havce dell'Università di Parma."
       },
-      "11": {
+      "skating": {
         "title": "Atleta di Pattinaggio Artistico",
-        "description": "Atleta agonista di alto livello: un'esperienza che mi ha insegnato resilienza, disciplina e lavoro di squadra."
+        "description": "Sedici anni di pattinaggio artistico a rotelle a livello agonistico. Lo sport ad alto livello insegna organizzazione, perseveranza, pazienza e resilienza: competenze che porto nel lavoro di ogni giorno."
       }
     },
     "skills": {

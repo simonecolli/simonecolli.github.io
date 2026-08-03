@@ -181,53 +181,57 @@
       }
     },
     "timeline": {
-      "0": {
-        "title": "Freelancer",
-        "description": "Launch of freelance career focused on developing custom software solutions and producing professional visual content."
+      "masterDegree": {
+        "title": "Master's Degree in Computer Science",
+        "description": "Master's degree at the University of Parma, grade 110/110 cum laude. Thesis: enhancing computational pangenomics workflows, advisor Prof. V. Bonnici."
       },
-      "1": {
+      "freelance": {
+        "title": "Self-employed",
+        "description": "Started working as a self-employed software developer and photographer: custom solutions for private clients and small businesses across the full software life cycle, plus photography services for individuals and events."
+      },
+      "seminars": {
+        "title": "Seminars at the University of Parma",
+        "description": "Two seminars: “Tutoring from different perspectives and supporting IT tools”, and an intensive bootcamp on using graphics libraries in Python that culminated in building the Pong game."
+      },
+      "pandelosPreprint": {
         "title": "PanDelos-plus Preprint",
-        "description": "First author of the paper 'PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis', released on arXiv."
+        "description": "First author of the paper “PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis”, released on arXiv."
       },
-      "2": {
-        "title": "Teaching Assistant & Seminars",
-        "description": "Tutor for Operating Systems and Software Engineering courses at the University of Parma. Speaker at seminars on tutoring methodologies and Python programming."
+      "universityTutor": {
+        "title": "Teaching Assistant",
+        "description": "Tutor for the “Operating Systems” and “Software Engineering” bachelor courses in Computer Science at the University of Parma, across four semesters."
       },
-      "3": {
-        "title": "Tutoring Perspectives",
-        "description": "Delivered the talk 'Il tutorato da diverse prospettive e strumenti informatici a supporto', focusing on methodologies and software tools to support academic mentoring."
-      },
-      "4": {
+      "bbcc2024": {
         "title": "BBCC2024 Conference - Naples",
-        "description": "Presented PanDelos-plus at the BBCC2024 conference in Naples."
+        "description": "Oral presentation of PanDelos-plus at the BBCC2024 conference in Naples."
       },
-      "5": {
+      "bachelorDegree": {
         "title": "Bachelor's Degree in Computer Science",
-        "description": "Graduated with a thesis on a parallel algorithm for pangenomic sequence analysis. Enrolled in the Master's degree program in Computer Science at the University of Parma."
+        "description": "Bachelor's degree at the University of Parma, grade 108/110. Thesis: a parallel algorithm for computing sequence homology in pangenomic analysis, advisor Prof. V. Bonnici."
       },
-      "6": {
+      "internship": {
         "title": "Bioinformatics Internship",
-        "description": "Developed parallel software for pangenome analysis using C++, Python, and Bash."
+        "description": "University internship focused on developing parallel software for pangenomic analysis. Languages: C++, Python, Bash."
       },
-      "7": {
-        "title": "Open Source Collaboration",
-        "description": "Founded and maintained unipr-org, an organization dedicated to collaborative open-source projects for university students."
+      "uniprOrg": {
+        "title": "Founded unipr-org",
+        "description": "Founded and maintain unipr-org, an organization bringing together University of Parma students to collaborate on open-source educational materials and projects."
       },
-      "8": {
-        "title": "Freelance Tutor & Photographer",
-        "description": "Provided tutoring in C, C++, Java, Python, algorithms, and web development. Offered professional photography services for events."
+      "freelanceTutor": {
+        "title": "Freelance Tutor",
+        "description": "In-person and online tutoring for university and high school students. Topics: C, C++, Java, Python, algorithms and data structures, web development."
       },
-      "9": {
+      "mazeProject": {
         "title": "MazeProject - Science Outreach",
-        "description": "Created a web application to visualize graph search algorithms for the European Researchers' Night."
+        "description": "A web application to visualize graph search algorithms, built for the European Researchers' Night."
       },
-      "10": {
-        "title": "Cybersecurity Training",
-        "description": "Completed CyberChallenge.it, a national training program in cybersecurity and CTF competitions."
+      "cyberChallenge": {
+        "title": "CyberChallenge.it",
+        "description": "National training program in cybersecurity and CTF competitions run by the National Cybersecurity Lab, with the University of Parma's havce team."
       },
-      "11": {
+      "skating": {
         "title": "Artistic Roller Skating Athlete",
-        "description": "Competed as a high-level athlete, developing resilience, discipline, and teamwork skills."
+        "description": "Sixteen years of competitive artistic roller skating. Sport at a high level teaches organization, perseverance, patience and resilience — skills I bring to my work every day."
       }
     },
     "skills": {

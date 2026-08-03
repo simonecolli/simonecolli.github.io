@@ -82,8 +82,9 @@ export default function AboutMePage() {
               <div className="space-y-8">
                 {timeline.map((item, index) => (
                   <div key={index} className="flex gap-6">
-                    {/* Year */}
-                    <div className="flex-shrink-0 w-16 text-right">
+                    {/* Year — wide enough for ranges like "2024 – 2026", but not at the
+                        expense of the description column on phones */}
+                    <div className="flex-shrink-0 w-16 md:w-24 text-right">
                       <span className="text-sm font-medium text-gray-900">{item.year}</span>
                     </div>
 
@@ -93,6 +94,7 @@ export default function AboutMePage() {
                         item.type === 'education' ? 'bg-blue-600 border-blue-600' :
                         item.type === 'work' ? 'bg-green-600 border-green-600' :
                         item.type === 'project' ? 'bg-orange-600 border-orange-600' :
+                        item.type === 'talk' ? 'bg-teal-600 border-teal-600' :
                         'bg-purple-600 border-purple-600'
                       }`}></div>
                       {index !== timeline.length - 1 && (
