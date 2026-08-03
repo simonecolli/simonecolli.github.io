@@ -4,6 +4,33 @@ import tailwindcss from '@tailwindcss/vite'
 import { vitePrerenderPlugin } from 'vite-prerender-plugin'
 import { projects } from './src/data/projects'
 import { talks } from './src/data/talks'
+import { SITE_URL } from './src/siteConfig'
+
+// Built from the prerender routes so the sitemap can never list a page that isn't
+// generated, or miss one that is. `.html` routes are the 404 fallback, which is noindex.
+function sitemap(routes: string[]): Plugin {
+  return {
+    name: 'sitemap',
+    apply: 'build',
+    applyToEnvironment: (environment) => environment.name === 'client',
+    generateBundle() {
+      const entries = ['/', ...routes]
+        .filter((route) => !route.endsWith('.html'))
+        .map((route) => `  <url><loc>${SITE_URL}${route}</loc></url>`)
+        .join('\n')
+
+      this.emitFile({
+        type: 'asset',
+        fileName: 'sitemap.xml',
+        source:
+          '<?xml version="1.0" encoding="UTF-8"?>\n' +
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+          `${entries}\n` +
+          '</urlset>\n',
+      })
+    },
+  }
+}
 
 function forceExit(): Plugin {
   return {
@@ -39,6 +66,7 @@ export default defineConfig({
       renderTarget: '#root',
       additionalPrerenderRoutes: prerenderRoutes,
     }),
+    sitemap(prerenderRoutes),
     forceExit(),
   ],
 })

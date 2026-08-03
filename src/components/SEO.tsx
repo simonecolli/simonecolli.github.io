@@ -1,6 +1,7 @@
 import { createElement } from "react";
 import { useTranslation } from "react-i18next";
 import { collectHead, isCollectingHead, type HeadElement } from "../seoHead";
+import { SITE_URL } from "../siteConfig";
 
 interface SEOProps {
   titleKey?: string;
@@ -10,8 +11,6 @@ interface SEOProps {
   image?: string;
   noindex?: boolean;
 }
-
-const BASE_URL = "https://www.simonecolli.com";
 
 export default function SEO({
   titleKey,
@@ -26,8 +25,8 @@ export default function SEO({
   const title = titleKey ? `${t(titleKey)} | Simone Colli` : "Simone Colli";
   const description = t(descriptionKey);
   const keywords = t(keywordsKey);
-  const url = `${BASE_URL}${path}`;
-  const imageUrl = image.startsWith("http") ? image : `${BASE_URL}${image}`;
+  const url = `${SITE_URL}${path}`;
+  const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image}`;
   // Detected languages carry a region ("it-IT"), so match on the prefix
   const locale = i18n.language.startsWith("it") ? "it_IT" : "en_GB";
 
