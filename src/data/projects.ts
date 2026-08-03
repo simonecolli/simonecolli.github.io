@@ -12,6 +12,25 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "photography-delivery",
+    title: "data.projects.photographyDelivery.title",
+    description: "data.projects.photographyDelivery.description",
+    tags: [
+      "Web Development",
+      "FastAPI",
+      "Nuxt",
+      "Python",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+    ],
+    status: "status.inProgress",
+    github: "",
+    demo: "",
+    year: "2026",
+    favourite: true,
+  },
+  {
     slug: "personal-website",
     title: "data.projects.personalWebsite.title",
     description: "data.projects.personalWebsite.description",

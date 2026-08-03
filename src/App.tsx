@@ -11,6 +11,7 @@ import TalkDetailPage from "./pages/TalkDetailPage.tsx"
 import PhotographyPage from "./pages/PhotographyPage.tsx"
 import AboutMePage from "./pages/AboutMePage.tsx"
 import Blog from "./pages/Blog.tsx"
+import NotFound from "./pages/NotFound.tsx"
 import ReactGA from "react-ga4";
 
 ReactGA.initialize("G-BVG3YZR5C5");
@@ -50,6 +51,7 @@ export function AppRoutes() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/photography" element={<PhotographyPage />} />
         <Route path="/about" element={<AboutMePage />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   )

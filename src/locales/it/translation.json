@@ -53,6 +53,11 @@
     "pageTitle": "Blog",
     "pageDescription": "Riflessioni su sviluppo software, tecnologia, fotografia e altri argomenti che mi appassionano."
   },
+  "notFound": {
+    "pageTitle": "Pagina non trovata",
+    "description": "Questa pagina non esiste, oppure è stata spostata. Il link potrebbe non essere più aggiornato.",
+    "browseProjects": "Vedi i progetti"
+  },
   "about": {
     "pageTitle": "Chi sono",
     "bio1": "Piacere, sono Simone! Sono uno studente magistrale ijn scienze informatiche, appassionato di sviluppo software e fotografia. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del percorso accademico e la cura per il dettaglio che applico nei miei progetti.",
@@ -108,10 +113,18 @@
     "blog": {
       "description": "Blog di Simone Colli - Riflessioni su sviluppo software, tecnologia, fotografia e altro.",
       "keywords": "Simone Colli blog, sviluppo software, tecnologia, programmazione, fotografia, tech blog, blog sviluppatore"
+    },
+    "notFound": {
+      "description": "La pagina richiesta non è stata trovata su simonecolli.com.",
+      "keywords": "Simone Colli, pagina non trovata, 404"
     }
   },
   "data": {
     "projects": {
+      "photographyDelivery": {
+        "title": "Photo Delivery",
+        "description": "Prototipo di un servizio didelivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel — il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria — gitleaks, ruff, pytest, typecheck — prima che il codice entri in branch."
+      },
       "personalWebsite": {
         "title": "Sito Personale",
         "description": "Il mio sito portfolio personale dove mostro progetti, competenze ed esperienze professionali."

@@ -6,6 +6,7 @@ interface SEOProps {
   keywordsKey: string;
   path?: string;
   image?: string;
+  noindex?: boolean;
 }
 
 const BASE_URL = "https://www.simonecolli.com";
@@ -16,6 +17,7 @@ export default function SEO({
   keywordsKey,
   path = "",
   image = "/profile.jpg",
+  noindex = false,
 }: SEOProps) {
   const { t, i18n } = useTranslation();
 
@@ -30,7 +32,12 @@ export default function SEO({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      <link rel="canonical" href={url} />
+      {/* The 404 page answers for any unknown URL, so a canonical would be wrong */}
+      {noindex ? (
+        <meta name="robots" content="noindex" />
+      ) : (
+        <link rel="canonical" href={url} />
+      )}
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />

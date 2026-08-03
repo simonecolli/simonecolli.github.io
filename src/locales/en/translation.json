@@ -53,6 +53,11 @@
     "pageTitle": "Blog",
     "pageDescription": "Thoughts on software development, technology, photography, and other topics I'm passionate about."
   },
+  "notFound": {
+    "pageTitle": "Page not found",
+    "description": "This page doesn't exist, or it has moved. The link may be outdated.",
+    "browseProjects": "Browse projects"
+  },
   "about": {
     "pageTitle": "About Me",
     "bio1": "Hi, I'm Simone! I'm a Computer Science Master's student, passionate about software development and photography. My journey, both personal and academic, began as a child with artistic roller skating—a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons allow me to manage the rigor of my academic path and the attention to detail I apply to my projects.",
@@ -108,10 +113,18 @@
     "blog": {
       "description": "Blog by Simone Colli - Thoughts on software development, technology, photography, and more.",
       "keywords": "Simone Colli blog, software development, technology, programming, photography, tech blog, developer blog"
+    },
+    "notFound": {
+      "description": "The requested page could not be found on simonecolli.com.",
+      "keywords": "Simone Colli, page not found, 404"
     }
   },
   "data": {
     "projects": {
+      "photographyDelivery": {
+        "title": "Photo Delivery",
+        "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model — access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel — the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate — gitleaks, ruff, pytest, typecheck — before it lands on the branch."
+      },
       "personalWebsite": {
         "title": "Personal Website",
         "description": "A personal portfolio website showcasing my projects, skills, and professional experience."
