@@ -3,13 +3,15 @@ export interface Skill {
   items: string[];
 }
 
+// Named keys rather than positional ones: the numeric scheme is what let the timeline
+// drift out of sync with its translations.
 export const skills: Skill[] = [
   {
-    category: "data.skills.0",
+    category: "data.skills.primaryLanguages",
     items: ["C++", "Python", "Java", "JavaScript", "HTML", "CSS", "Bash"],
   },
   {
-    category: "data.skills.1",
+    category: "data.skills.otherLanguages",
     items: [
       "C",
       "C#",
@@ -24,15 +26,15 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "data.skills.2",
+    category: "data.skills.databases",
     items: ["MySQL", "PostgreSQL"],
   },
   {
-    category: "data.skills.3",
+    category: "data.skills.operatingSystems",
     items: ["Linux", "MAC OSX", "Windows", "Windows Server 2019"],
   },
   {
-    category: "data.skills.4",
+    category: "data.skills.ides",
     items: [
       "Visual Studio Code",
       "Eclipse",
@@ -46,31 +48,36 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "data.skills.5",
+    category: "data.skills.frameworks",
     items: [
-      "JQuery",
-      "Bootstrap",
-      "Tailwind",
       "React",
-      "Laravel",
+      "Spring",
+      "FastAPI",
+      "GraphQL",
+      "LLM & RAG",
+      "On-premise deployment",
       "Flask",
+      "Laravel",
+      "Tailwind",
+      "Bootstrap",
+      "JQuery",
       "nginx",
       "Apache web server",
       "Git",
-      "Hyper-V",
-      "Oracle virtual box",
+      "GitHub",
       "Docker",
       "Kubernetes",
-      "Masterwork",
-      "AutoCAD",
-      "GitHub",
+      "Hyper-V",
+      "Oracle virtual box",
       "OpenMP",
       "MPI",
-      "CUDA"
+      "CUDA",
+      "Masterwork",
+      "AutoCAD",
     ],
   },
   {
-    category: "data.skills.6",
+    category: "data.skills.creativeTools",
     items: [
       "Microsoft Office",
       "Darktable",
@@ -82,7 +89,7 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "data.skills.7",
+    category: "data.skills.softSkills",
     items: [
       "Problem solving",
       "Critical thinking",
@@ -102,7 +109,7 @@ export const skills: Skill[] = [
     ],
   },
   {
-    category: "data.skills.8",
+    category: "data.skills.spokenLanguages",
     items: ["Italian (native)", "English (Intermediate)"],
   },
 ];

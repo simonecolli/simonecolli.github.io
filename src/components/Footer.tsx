@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaCamera, FaOrcid } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaEnvelopeOpen, FaCamera, FaOrcid } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -9,7 +9,8 @@ export default function Footer() {
     { name: "LinkedIn", url: "https://www.linkedin.com/in/simone-colli-085683223/", icon: <FaLinkedin /> },
     { name: "Instagram", url: "https://instagram.com/colli_02", icon: <FaInstagram /> },
     { name: "Instagram photo", url: "https://www.instagram.com/__sc_photo__/", icon: <FaCamera /> },
-    { name: "Email", url: "mailto:s.colli.dev@gmail.com", icon: <FaEnvelope /> },
+    { name: "Email - sviluppo", url: "mailto:info.dev@simonecolli.com", icon: <FaEnvelope /> },
+    { name: "Email - fotografia", url: "mailto:info.photo@simonecolli.com", icon: <FaEnvelopeOpen /> },
     { name: "ORCiD", url: "https://orcid.org/0009-0008-9596-0608", icon: <FaOrcid /> },
   ];
 

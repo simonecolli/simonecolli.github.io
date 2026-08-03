@@ -21,7 +21,6 @@ const PERSON = {
   email: ['info.dev@simonecolli.com', 'info.photo@simonecolli.com'],
   // Mirrors the focus areas listed on the About page
   knowsAbout: [
-    'Network science',
     'Retrieval-Augmented Generation',
     'On-premise deployment',
     'Software development',
@@ -36,7 +35,7 @@ const PERSON = {
     '@type': 'PostalAddress',
     addressLocality: 'Salsomaggiore Terme',
     // schema.org wants the first-level administrative division, which for Italy is
-    // the region, not the province — "Parma" is carried by the SEO keywords instead.
+    // the region, not the province - "Parma" is carried by the SEO keywords instead.
     addressRegion: 'Emilia-Romagna',
     addressCountry: 'IT',
   },

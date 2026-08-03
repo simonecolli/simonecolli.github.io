@@ -9,13 +9,13 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "CS Master's Student, Developer & Photographer",
-    "description": "Computer Science Master's student and photographer. I dedicate my career to solving problems and capturing detail."
+    "subtitle": "Freelance Developer & Photographer | M.Sc. in Computer Science",
+    "description": "Freelance software developer and photographer. I dedicate my career to solving problems and capturing detail."
   },
   "home": {
     "aboutMe": {
       "title": "About Me",
-      "description": "Hi, I'm Simone! I'm a Computer Science Master's student, passionate about software development and photography. My journey, both personal and academic, began as a child with artistic roller skating—a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons allow me to manage the rigor of my academic path and the attention to detail I apply to my projects.",
+      "description": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
       "discoverMore": "Discover more"
     },
     "projects": {
@@ -28,7 +28,7 @@
     }
   },
   "footer": {
-    "description": "Computer Science student passionate about technology and sports photography. Always learning, between code and shots.",
+    "description": "Freelance software developer and photographer, passionate about technology and sports photography. Always learning, between code and shots.",
     "socialLabel": "Social & Contact",
     "copyright": "© 2026 Simone Colli. All rights reserved."
   },
@@ -60,8 +60,8 @@
   },
   "about": {
     "pageTitle": "About Me",
-    "bio1": "Hi, I'm Simone! I'm a Computer Science Master's student, passionate about software development and photography. My journey, both personal and academic, began as a child with artistic roller skating—a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons allow me to manage the rigor of my academic path and the attention to detail I apply to my projects.",
-    "bio2": "Throughout my academic and professional career, I have explored complex and diverse fields: from bioinformatics and parallel computing to artificial intelligence and cybersecurity. My experience spans from web development to operating system management and server environment configuration—areas that have given me a broad understanding of software infrastructure. I believe in the value of technical knowledge sharing, which is why I actively participate in open-source projects and community collaborations.",
+    "bio1": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
+    "bio2": "Throughout my academic and professional career, I have explored complex and diverse fields: from bioinformatics and parallel computing to artificial intelligence and cybersecurity. My experience spans from web development to operating system management and server environment configuration-areas that have given me a broad understanding of software infrastructure. I believe in the value of technical knowledge sharing, which is why I actively participate in open-source projects and community collaborations. My work today centers on LLM- and RAG-based systems and on-premise deployment.",
     "bio3": "The passion I dedicated to sport for many years led me back to where I grew up, but with a new perspective. My goal today is to immortalize athletic gestures and the emotion of competition through sports photography. Along the way, I also love capturing the most significant moments in people's lives, such as graduations and events, as well as the small details of nature.",
     "downloadCvEn": "Download CV (EN)",
     "downloadCvIt": "Download CV (IT)",
@@ -91,24 +91,24 @@
   },
   "seo": {
     "home": {
-      "description": "Simone Colli - Computer Science Master's student, software developer, and photographer based in Parma and Piacenza, Italy. Portfolio of projects, talks, and photography.",
-      "keywords": "Simone Colli, software developer, photographer, computer science, portfolio, web development, React, Python, C++, Parma, Piacenza, Italy, freelance developer, event photographer, portrait photographer, University of Parma"
+      "description": "Simone Colli - Freelance software developer and photographer based in Parma and Salsomaggiore Terme, Italy. M.Sc. in Computer Science. Portfolio of projects, talks, and photography.",
+      "keywords": "Simone Colli, software developer, photographer, LLM, RAG, on-premise deployment, portfolio, web development, React, Python, C++, Parma, Salsomaggiore Terme, Italy, freelance developer, event photographer, portrait photographer, University of Parma"
     },
     "projects": {
-      "description": "Software projects by Simone Colli - Web development, bioinformatics, parallel computing, and open source. Developer based in Parma and Piacenza.",
-      "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Piacenza, University of Parma"
+      "description": "Software projects by Simone Colli - Web development, bioinformatics, parallel computing, and open source. Developer based in Parma and Salsomaggiore Terme.",
+      "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Salsomaggiore Terme, University of Parma"
     },
     "talks": {
       "description": "Academic presentations and talks by Simone Colli delivered at the University of Parma. Covering research in AI, cybersecurity, big data, and compilers.",
       "keywords": "Simone Colli talks, academic presentations, University of Parma, research, artificial intelligence, cybersecurity, big data, data mining, compilers, static analysis"
     },
     "photography": {
-      "description": "Photography portfolio by Simone Colli - Portrait, sport, wildlife, macro, and ceremony photography. Based in Parma and Piacenza, Emilia-Romagna.",
-      "keywords": "Simone Colli photography, photographer Parma, photographer Piacenza, portrait photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer"
+      "description": "Photography portfolio by Simone Colli - Portrait, sport, wildlife, macro, and ceremony photography. Based in Parma and Salsomaggiore Terme, Emilia-Romagna.",
+      "keywords": "Simone Colli photography, photographer Parma, photographer Salsomaggiore Terme, portrait photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer"
     },
     "about": {
-      "description": "About Simone Colli - CS Master's student at the University of Parma, software developer, and freelance photographer. Skills, journey, and CV.",
-      "keywords": "Simone Colli, about, curriculum, skills, University of Parma, master student, computer science, developer Parma, photographer Piacenza, freelance, Italy, Emilia-Romagna"
+      "description": "About Simone Colli - Freelance software developer and photographer, M.Sc. in Computer Science from the University of Parma. Skills, journey, and CV.",
+      "keywords": "Simone Colli, about, curriculum, skills, University of Parma, master's degree, LLM, RAG, on-premise deployment, developer Parma, photographer Salsomaggiore Terme, freelance, Italy, Emilia-Romagna"
     },
     "blog": {
       "description": "Blog by Simone Colli - Thoughts on software development, technology, photography, and more.",
@@ -123,7 +123,7 @@
     "projects": {
       "photographyDelivery": {
         "title": "Photo Delivery",
-        "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model — access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel — the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate — gitleaks, ruff, pytest, typecheck — before it lands on the branch."
+        "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model - access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel - the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate - gitleaks, ruff, pytest, typecheck - before it lands on the branch."
       },
       "personalWebsite": {
         "title": "Personal Website",
@@ -231,19 +231,19 @@
       },
       "skating": {
         "title": "Artistic Roller Skating Athlete",
-        "description": "Sixteen years of competitive artistic roller skating. Sport at a high level teaches organization, perseverance, patience and resilience — skills I bring to my work every day."
+        "description": "Sixteen years of competitive artistic roller skating. Sport at a high level teaches organization, perseverance, patience and resilience - skills I bring to my work every day."
       }
     },
     "skills": {
-      "0": "Primary Languages",
-      "1": "Other Languages",
-      "2": "Databases",
-      "3": "Operating Systems",
-      "4": "IDEs & Editors",
-      "5": "Frameworks & Tools",
-      "6": "Creative Tools",
-      "7": "Soft Skills",
-      "8": "Spoken Languages"
+      "primaryLanguages": "Primary Languages",
+      "otherLanguages": "Other Languages",
+      "databases": "Databases",
+      "operatingSystems": "Operating Systems",
+      "ides": "IDEs & Editors",
+      "frameworks": "Frameworks & Tools",
+      "creativeTools": "Creative Tools",
+      "softSkills": "Soft Skills",
+      "spokenLanguages": "Spoken Languages"
     }
   }
 }

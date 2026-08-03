@@ -9,13 +9,13 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "Studente Magistrale in Scienze Informatiche, Sviluppatore & Fotografo",
-    "description": "Studente magistrale in scienze informatiche e fotografo. Dedico la mia carriera alla risoluzione di problemi e alla cattura del dettaglio"
+    "subtitle": "Sviluppatore & Fotografo freelance | Laurea Magistrale in Scienze Informatiche",
+    "description": "Sviluppatore software e fotografo freelance. Dedico la mia carriera alla risoluzione di problemi e alla cattura del dettaglio."
   },
   "home": {
     "aboutMe": {
       "title": "Chi sono",
-      "description": "Piacere, sono Simone! Sono uno studente magistrale in scienze informatiche, appassionato di sviluppo software e fotografia. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del percorso accademico e la cura per il dettaglio che applico nei miei progetti.",
+      "description": "Piacere, sono Simone! Sono uno sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del lavoro tecnico e la cura per il dettaglio che applico nei miei progetti.",
       "discoverMore": "Scopri di più su di me"
     },
     "projects": {
@@ -28,7 +28,7 @@
     }
   },
   "footer": {
-    "description": "Studente in scienze informatiche con la passione per la tecnologia e la fotografia sportiva. Sempre in apprendimento, tra codice e scatti.",
+    "description": "Sviluppatore software e fotografo freelance, con la passione per la tecnologia e la fotografia sportiva. Sempre in apprendimento, tra codice e scatti.",
     "socialLabel": "Social & Contatti",
     "copyright": "© 2026 Simone Colli. Tutti i diritti riservati."
   },
@@ -60,8 +60,8 @@
   },
   "about": {
     "pageTitle": "Chi sono",
-    "bio1": "Piacere, sono Simone! Sono uno studente magistrale ijn scienze informatiche, appassionato di sviluppo software e fotografia. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del percorso accademico e la cura per il dettaglio che applico nei miei progetti.",
-    "bio2": "Durante la mia carriera accademica e professionale, ho approfondito ambiti complessi e differenti tra loro: dalla bioinformatica e il calcolo parallelo all'intelligenza artificiale e la sicurezza informatica. La mia esperienza spazia dallo sviluppo web fino alla gestione e configurazione di sistemi operativi e ambienti server, ambiti che mi hanno permesso di acquisire una visione abbastanza vasta dell'infrastruttura software. Credo nel valore della condivisione tecnica, motivo per cui partecipo attivamente a progetti open source e collaborazioni comunitarie.",
+    "bio1": "Piacere, sono Simone! Sono uno sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del lavoro tecnico e la cura per il dettaglio che applico nei miei progetti.",
+    "bio2": "Durante la mia carriera accademica e professionale, ho approfondito ambiti complessi e differenti tra loro: dalla bioinformatica e il calcolo parallelo all'intelligenza artificiale e la sicurezza informatica. La mia esperienza spazia dallo sviluppo web fino alla gestione e configurazione di sistemi operativi e ambienti server, ambiti che mi hanno permesso di acquisire una visione abbastanza vasta dell'infrastruttura software. Credo nel valore della condivisione tecnica, motivo per cui partecipo attivamente a progetti open source e collaborazioni comunitarie. Oggi il mio lavoro si concentra su sistemi basati su LLM e RAG e su deploy on-premise.",
     "bio3": "La passione che ho dedicato allo sport per tanti anni mi ha portato a tornare dove sono cresciuto, ma con una nuova prospettiva. Il mio obiettivo oggi è immortalare il gesto atletico e l'emozione della competizione attraverso la fotografia sportiva. Lungo questo percorso, adoro catturare anche i momenti più significativi della vita delle persone, come lauree ed eventi e i piccoli dettagli della natura.",
     "downloadCvEn": "Scarica CV (EN)",
     "downloadCvIt": "Scarica CV (IT)",
@@ -91,24 +91,24 @@
   },
   "seo": {
     "home": {
-      "description": "Simone Colli - Studente magistrale di Informatica, sviluppatore software e fotografo a Parma e Piacenza. Portfolio di progetti, presentazioni e fotografia.",
-      "keywords": "Simone Colli, sviluppatore software, fotografo, informatica, portfolio, sviluppo web, React, Python, C++, Parma, Piacenza, Italia, sviluppatore freelance, fotografo eventi, fotografo ritratti, Università di Parma"
+      "description": "Simone Colli - Sviluppatore software e fotografo freelance a Parma e Salsomaggiore Terme. Laurea magistrale in Scienze Informatiche. Portfolio di progetti, presentazioni e fotografia.",
+      "keywords": "Simone Colli, sviluppatore software, fotografo, LLM, RAG, deploy on-premise, portfolio, sviluppo web, React, Python, C++, Parma, Salsomaggiore Terme, Italia, sviluppatore freelance, fotografo eventi, fotografo ritratti, Università di Parma"
     },
     "projects": {
-      "description": "Progetti software di Simone Colli - Sviluppo web, bioinformatica, calcolo parallelo, open source. Sviluppatore a Parma e Piacenza.",
-      "keywords": "Simone Colli progetti, sviluppo software, open source, React, C++, Python, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Piacenza, Università di Parma"
+      "description": "Progetti software di Simone Colli - Sviluppo web, bioinformatica, calcolo parallelo, open source. Sviluppatore a Parma e Salsomaggiore Terme.",
+      "keywords": "Simone Colli progetti, sviluppo software, open source, React, C++, Python, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Salsomaggiore Terme, Università di Parma"
     },
     "talks": {
       "description": "Presentazioni accademiche di Simone Colli tenute all'Università di Parma. Ricerca in IA, cybersecurity, big data e compilatori.",
       "keywords": "Simone Colli presentazioni, presentazioni accademiche, Università di Parma, ricerca, intelligenza artificiale, cybersecurity, big data, data mining, compilatori, analisi statica"
     },
     "photography": {
-      "description": "Portfolio fotografico di Simone Colli - Ritratti, sport, natura, macro e cerimonie. Fotografo a Parma e Piacenza, Emilia-Romagna.",
-      "keywords": "Simone Colli fotografia, fotografo Parma, fotografo Piacenza, fotografia ritratto, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie"
+      "description": "Portfolio fotografico di Simone Colli - Ritratti, sport, natura, macro e cerimonie. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.",
+      "keywords": "Simone Colli fotografia, fotografo Parma, fotografo Salsomaggiore Terme, fotografia ritratto, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie"
     },
     "about": {
-      "description": "Chi è Simone Colli - Studente magistrale di Informatica all'Università di Parma, sviluppatore software e fotografo freelance. Competenze, percorso e CV.",
-      "keywords": "Simone Colli, chi sono, curriculum, competenze, Università di Parma, studente magistrale, informatica, sviluppatore Parma, fotografo Piacenza, freelance, Italia, Emilia-Romagna"
+      "description": "Chi è Simone Colli - Sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Competenze, percorso e CV.",
+      "keywords": "Simone Colli, chi sono, curriculum, competenze, Università di Parma, laurea magistrale, LLM, RAG, deploy on-premise, sviluppatore Parma, fotografo Salsomaggiore Terme, freelance, Italia, Emilia-Romagna"
     },
     "blog": {
       "description": "Blog di Simone Colli - Riflessioni su sviluppo software, tecnologia, fotografia e altro.",
@@ -123,7 +123,7 @@
     "projects": {
       "photographyDelivery": {
         "title": "Photo Delivery",
-        "description": "Prototipo di un servizio didelivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel — il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria — gitleaks, ruff, pytest, typecheck — prima che il codice entri in branch."
+        "description": "Prototipo di un servizio didelivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel - il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria - gitleaks, ruff, pytest, typecheck - prima che il codice entri in branch."
       },
       "personalWebsite": {
         "title": "Sito Personale",
@@ -235,15 +235,15 @@
       }
     },
     "skills": {
-      "0": "Linguaggi principali",
-      "1": "Altri linguaggi",
-      "2": "Database",
-      "3": "Sistemi operativi",
-      "4": "IDE e Editor",
-      "5": "Framework e strumenti",
-      "6": "Strumenti creativi",
-      "7": "Soft skills",
-      "8": "Lingue parlate"
+      "primaryLanguages": "Linguaggi principali",
+      "otherLanguages": "Altri linguaggi",
+      "databases": "Database",
+      "operatingSystems": "Sistemi operativi",
+      "ides": "IDE & Editor",
+      "frameworks": "Framework & Strumenti",
+      "creativeTools": "Strumenti creativi",
+      "softSkills": "Soft skill",
+      "spokenLanguages": "Lingue parlate"
     }
   }
 }

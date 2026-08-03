@@ -45,7 +45,7 @@ function forceExit(): Plugin {
 // own 404 and the client router never boots. Every route therefore needs a real file.
 // Detail routes are derived from the data so new entries are covered automatically.
 // Routes ending in `.html` are emitted verbatim rather than nested in a directory,
-// so `/404.html` becomes `dist/404.html` — the SPA fallback for anything unlisted.
+// so `/404.html` becomes `dist/404.html` - the SPA fallback for anything unlisted.
 const prerenderRoutes = [
   '/projects',
   '/talks',

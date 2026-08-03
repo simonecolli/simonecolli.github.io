@@ -4,7 +4,7 @@ export interface HeadElement {
 }
 
 // React only hoists <title>/<meta>/<link> into document.head in the browser.
-// Under renderToString they stay where they were rendered — inside <body> — where
+// Under renderToString they stay where they were rendered - inside <body> - where
 // social scrapers never look. During prerender the SEO component registers its tags
 // here instead of rendering them, and prerender.tsx hands them to the plugin, which
 // injects them into the real <head>.

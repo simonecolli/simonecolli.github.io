@@ -82,7 +82,7 @@ export default function AboutMePage() {
               <div className="space-y-8">
                 {timeline.map((item, index) => (
                   <div key={index} className="flex gap-6">
-                    {/* Year — wide enough for ranges like "2024 – 2026", but not at the
+                    {/* Year - wide enough for ranges like "2024 – 2026", but not at the
                         expense of the description column on phones */}
                     <div className="flex-shrink-0 w-16 md:w-24 text-right">
                       <span className="text-sm font-medium text-gray-900">{item.year}</span>
