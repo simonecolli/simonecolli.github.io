@@ -7,6 +7,7 @@ import SEO from "../components/SEO";
 import { projects } from "../data/projects";
 
 export default function ProjectDetailPage() {
+  // Look up the project by its slug, returning to the list if it is missing.
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
   const { t } = useTranslation();
@@ -19,20 +20,18 @@ export default function ProjectDetailPage() {
     <div className="app">
       <SEO
         titleKey={project.title}
-        descriptionKey={project.description}
+        descriptionKey={project.shortDescription}
         keywordsKey="seo.projects.keywords"
         path={`/projects/${project.slug}`}
       />
       <Header />
       <main className="main-content pt-20">
-        {/* Project header */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
+        <section className="site-section">
+          <div className="site-container">
             <div className="max-w-4xl mx-auto fade-in">
-              {/* Back button */}
               <Link
                 to="/projects"
-                className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-blue-600 transition-colors mb-8"
+                className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-dev transition-colors mb-8"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -40,45 +39,41 @@ export default function ProjectDetailPage() {
                 {t('projects.backToProjects')}
               </Link>
 
-              {/* Project title */}
               <div className="mb-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
+                  <span className="text-xs px-2 py-1 bg-fg/5 text-muted rounded">
                     {t(project.status)}
                   </span>
-                  <span className="text-xs text-gray-500">{project.year}</span>
+                  <span className="text-xs text-muted">{project.year}</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-4">
                   {t(project.title)}
                 </h1>
-                <div className="h-px bg-gray-300 w-24 mb-6"></div>
+                <div className="h-px bg-line w-24 mb-6"></div>
               </div>
 
-              {/* Project description */}
               <div className="prose max-w-none mb-8">
-                <p className="text-lg text-gray-600 leading-relaxed">
+                <p className="text-lg text-muted leading-relaxed">
                   {t(project.description)}
                 </p>
               </div>
 
-              {/* Tags */}
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="text-xs px-3 py-1 border border-gray-200 rounded text-gray-600"
+                    className="text-xs px-3 py-1 border border-line rounded text-muted"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              {/* Links */}
               <div className="flex gap-4">
                 {project.github && (
                   <a
                     href={project.github}
-                    className="px-8 py-3 bg-white text-black border border-gray-300 hover:bg-transparent hover:text-black transition-all flex items-center gap-2"
+                    className="px-8 py-3 bg-bg text-fg border border-line hover:bg-transparent hover:text-fg transition-all flex items-center gap-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -91,7 +86,7 @@ export default function ProjectDetailPage() {
                 {project.demo && (
                   <a
                     href={project.demo}
-                    className="px-8 py-3 border border-gray-300 text-gray-900 hover:border-blue-600 hover:text-blue-600 transition-all flex items-center gap-2"
+                    className="px-8 py-3 border border-line text-fg hover:border-accent-dev hover:text-accent-dev transition-all flex items-center gap-2"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

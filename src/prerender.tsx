@@ -5,12 +5,8 @@ import { AppRoutes } from './App.tsx'
 import { drainHead, startHeadCollection } from './seoHead'
 import { SITE_URL } from './siteConfig'
 
-// Only the pages that are actually about the person carry the Person node, so the
-// same entity isn't asserted from every URL on the site.
 const PERSON_PAGES = ['/', '/about']
 
-// Keep this in step with what the footer shows: structured data that contradicts the
-// visible page is worse than none.
 const PERSON = {
   '@context': 'https://schema.org',
   '@type': 'Person',
@@ -19,7 +15,6 @@ const PERSON = {
   image: `${SITE_URL}/profile.jpg`,
   jobTitle: ['Freelance Software Developer', 'Photographer'],
   email: ['info.dev@simonecolli.com', 'info.photo@simonecolli.com'],
-  // Mirrors the focus areas listed on the About page
   knowsAbout: [
     'Retrieval-Augmented Generation',
     'On-premise deployment',
@@ -34,8 +29,6 @@ const PERSON = {
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Salsomaggiore Terme',
-    // schema.org wants the first-level administrative division, which for Italy is
-    // the region, not the province - "Parma" is carried by the SEO keywords instead.
     addressRegion: 'Emilia-Romagna',
     addressCountry: 'IT',
   },
@@ -49,10 +42,7 @@ const PERSON = {
 }
 
 export async function prerender(data: { url: string }) {
-  // const { parseLinks } = await import('vite-prerender-plugin/parse')
-
-  // Node exposes `navigator.language` from the machine's locale, so without this the
-  // language detector would pick a different one locally than on CI.
+  // Render each route in Italian and add Person metadata only on home and about.
   await i18n.changeLanguage(PRERENDER_LANGUAGE)
 
   startHeadCollection()
@@ -62,8 +52,6 @@ export async function prerender(data: { url: string }) {
       <AppRoutes />
     </StaticRouter>
   )
-
-  // const links = parseLinks(html)
 
   const { title, elements } = drainHead()
 
@@ -79,7 +67,6 @@ export async function prerender(data: { url: string }) {
 
   return {
     html,
-    // links: new Set(links),
     links: new Set<string>(),
     head: {
       lang: i18n.language,

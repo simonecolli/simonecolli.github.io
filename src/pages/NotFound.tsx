@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 
 export default function NotFound() {
+  // Help visitors return home from an unknown URL.
   const { t } = useTranslation();
 
   return (
@@ -17,30 +18,30 @@ export default function NotFound() {
       />
       <Header />
       <main className="main-content pt-20">
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
+        <section className="site-section">
+          <div className="site-container">
             <div className="max-w-2xl mx-auto text-center fade-in">
-              <p className="text-7xl md:text-8xl font-light tracking-tight text-gray-300 mb-4">
+              <p className="text-7xl md:text-8xl font-light tracking-tight text-muted mb-4">
                 404
               </p>
               <h1 className="text-3xl md:text-4xl font-light tracking-tight mb-6">
                 {t('notFound.pageTitle')}
               </h1>
-              <div className="h-px bg-gray-300 w-24 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-600 leading-relaxed mb-10">
+              <div className="h-px bg-line w-24 mx-auto mb-6"></div>
+              <p className="text-lg text-muted leading-relaxed mb-10">
                 {t('notFound.description')}
               </p>
 
               <div className="flex flex-wrap justify-center gap-4">
                 <Link
                   to="/"
-                  className="px-8 py-3 bg-black text-white border border-black hover:bg-transparent hover:text-black transition-all"
+                  className="px-8 py-3 bg-fg text-bg border border-fg hover:bg-transparent hover:text-fg transition-all"
                 >
                   {t('common.backToHome')}
                 </Link>
                 <Link
                   to="/projects"
-                  className="px-8 py-3 border border-gray-300 text-gray-900 hover:border-blue-600 hover:text-blue-600 transition-all"
+                  className="px-8 py-3 border border-line text-fg hover:border-fg hover:text-fg transition-all"
                 >
                   {t('notFound.browseProjects')}
                 </Link>

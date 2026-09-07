@@ -1,4 +1,5 @@
 import { defineConfig, type Plugin } from 'vite'
+import { readdirSync, rmSync } from 'node:fs'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import { vitePrerenderPlugin } from 'vite-prerender-plugin'
@@ -6,9 +7,8 @@ import { projects } from './src/data/projects'
 import { talks } from './src/data/talks'
 import { SITE_URL } from './src/siteConfig'
 
-// Built from the prerender routes so the sitemap can never list a page that isn't
-// generated, or miss one that is. `.html` routes are the 404 fallback, which is noindex.
 function sitemap(routes: string[]): Plugin {
+  // Build the sitemap from static routes, excluding the HTML fallback page.
   return {
     name: 'sitemap',
     apply: 'build',
@@ -32,7 +32,24 @@ function sitemap(routes: string[]): Plugin {
   }
 }
 
+function dropFinderJunk(): Plugin {
+  // Remove Finder metadata copied into the build from public assets.
+  return {
+    name: 'drop-finder-junk',
+    apply: 'build',
+    writeBundle(options) {
+      const outDir = options.dir
+      if (!outDir) return
+      for (const entry of readdirSync(outDir, { recursive: true })) {
+        const file = String(entry)
+        if (file.endsWith('.DS_Store')) rmSync(`${outDir}/${file}`, { force: true })
+      }
+    },
+  }
+}
+
 function forceExit(): Plugin {
+  // Exit after the build because prerendering leaves an open handle.
   return {
     name: 'force-exit',
     closeBundle() {
@@ -41,23 +58,18 @@ function forceExit(): Plugin {
   }
 }
 
-// GitHub Pages serves static files only: a URL without a matching file returns its
-// own 404 and the client router never boots. Every route therefore needs a real file.
-// Detail routes are derived from the data so new entries are covered automatically.
-// Routes ending in `.html` are emitted verbatim rather than nested in a directory,
-// so `/404.html` becomes `dist/404.html` - the SPA fallback for anything unlisted.
 const prerenderRoutes = [
+  '/development',
   '/projects',
   '/talks',
-  '/blog',
   '/photography',
   '/about',
+  '/privacy',
   ...projects.map((project) => `/projects/${project.slug}`),
   ...talks.map((talk) => `/talks/${talk.slug}`),
   '/404.html',
 ]
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react(),
@@ -67,6 +79,7 @@ export default defineConfig({
       additionalPrerenderRoutes: prerenderRoutes,
     }),
     sitemap(prerenderRoutes),
+    dropFinderJunk(),
     forceExit(),
   ],
 })

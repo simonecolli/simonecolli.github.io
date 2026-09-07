@@ -1,36 +1,54 @@
 {
   "nav": {
     "home": "Home",
+    "development": "Development",
+    "photography": "Photography",
+    "about": "About",
+    "blog": "Blog",
     "projects": "Projects",
     "talks": "Talks",
-    "blog": "Blog",
-    "photography": "Photography",
-    "about": "About"
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme",
+    "brand": "Simone Colli - home",
+    "language": "Change language",
+    "menu": "Toggle menu"
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "Freelance Developer & Photographer | M.Sc. in Computer Science",
-    "description": "Freelance software developer and photographer. I dedicate my career to solving problems and capturing detail."
+    "role": "M.Sc. in Computer Science",
+    "devTitle": "Software development",
+    "devText": "Custom software for your business. Built around the way you work, to improve and streamline it.",
+    "devCta": "What I build",
+    "photoTitle": "Professional photographer",
+    "photoText": "A moment, forever. Sport, events and details: the moments that matter should last over time.",
+    "photoCta": "What I shoot"
   },
   "home": {
     "aboutMe": {
       "title": "About Me",
-      "description": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
-      "discoverMore": "Discover more"
+      "description": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as a competitive athlete and a student. Today, those lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
+      "cta": "My background",
+      "imageAlt": "Portrait of Simone Colli"
     },
-    "projects": {
-      "title": "My favorite projects",
-      "viewAll": "View all projects"
+    "dev": {
+      "title": "Software development",
+      "text": "I design and build custom software for your business. Web applications, automation of repetitive procedures, automatic document generation, integration between systems. I cover the full cycle: requirements analysis, development, deployment and maintenance.",
+      "cta": "Development services"
     },
-    "talks": {
-      "title": "My favorite talks",
-      "viewAll": "View all talks"
+    "photo": {
+      "title": "Professional photographer",
+      "text": "I shoot sport, events and details. Sixteen years of competitive artistic roller skating taught me to read a movement a moment before it happens, and that is where the shot comes from.",
+      "cta": "Photography services"
     }
   },
   "footer": {
-    "description": "Freelance software developer and photographer, passionate about technology and sports photography. Always learning, between code and shots.",
-    "socialLabel": "Social & Contact",
-    "copyright": "© 2026 Simone Colli. All rights reserved."
+    "description": "Freelance software developer and photographer. Custom software, and sport, event and detail photography.",
+    "socialLabel": "Social and contact",
+    "vat": "VAT 03133540348",
+    "legalStatus": "Professionista di cui alla Legge n. 4/2013",
+    "photoCopyright": "All photographs are protected by copyright.",
+    "privacy": "Privacy",
+    "copyright": "All rights reserved."
   },
   "projects": {
     "pageTitle": "Projects",
@@ -44,10 +62,81 @@
   },
   "photography": {
     "pageTitle": "Photography",
-    "pageDescription": "Through my lens, I capture moments, emotions, and stories. Photography is my way of freezing time and preserving meaningful memories.",
+    "intro": "I shoot sport, events, details and portraits. Here you will find how I work, a selection of my shots, and some of the packages available.",
+    "heroCta": "See the packages",
+    "infoTitle": "How I work",
+    "info1Title": "First we talk",
+    "info1Body": "Before the shoot we talk through what you need: how many hours, which moments cannot be missed, where and in what light. That process produces a written quote, so there are no surprises afterwards.",
+    "info2Title": "On the day",
+    "info2Body": "I work without interrupting what is happening: in sport and at events the best images arrive when nobody is posing.",
+    "info3Title": "The photos are delivered",
+    "info3Body": "I deliver every selected shot at full resolution, through a link reserved for you alone.",
+    "galleryTitle": "Gallery",
     "noPhotos": "No photos found in this category.",
     "showAll": "Show all photos",
-    "filterAll": "All"
+    "filterAll": "All",
+    "packagesTitle": "Packages",
+    "packagesIntro": "Five starting points, not five boxes: they are there to give you something concrete to work from, and your own service is built from here, around what you need. All of them include selecting and developing the shots and delivery at full resolution.",
+    "priceFrom": "From {{price}} €",
+    "priceOnRequest": "Price on request",
+    "packagesNote": "The price depends on duration, location and number of shots, so it is agreed before the shoot and written into the quote. Prints, albums and travel beyond 15 km are not included and are quoted separately.",
+    "packages": {
+      "sport": {
+        "title": "Sport",
+        "subtitle": "Races, training, tournaments and team portraits",
+        "includes": [
+          "Coverage of the agreed race or session",
+          "Action shots, with an eye for the technical movement",
+          "Individual and group portraits, where wanted",
+          "Fast turnaround on request, for anyone publishing straight away",
+          "Use of the images agreed together"
+        ]
+      },
+      "events": {
+        "title": "Events",
+        "subtitle": "Private parties, conferences, openings and launches",
+        "includes": [
+          "Coverage for the agreed hours, with the programme settled beforehand",
+          "Atmosphere shots, details of the setting and key moments",
+          "Group portraits and photographs of speakers or guests",
+          "A selection that works both in print and on social channels"
+        ]
+      },
+      "ceremonies": {
+        "title": "Ceremonies",
+        "subtitle": "Graduations, birthdays and anniversaries",
+        "fromNote": "for 2 hours of shooting, within 15 km",
+        "includes": [
+          "Present for the agreed moments",
+          "Details, portraits and group photographs",
+          "Timing built around the programme",
+          "Delivery you can share with family and guests"
+        ]
+      },
+      "portraits": {
+        "title": "Portraits",
+        "subtitle": "Professional portraits",
+        "includes": [
+          "A session at your home, at your office or outdoors",
+          "Time to try poses, light and framing without rushing",
+          "The selection made together, if you want to be there",
+          "Formats ready for a CV, professional profiles and print"
+        ]
+      },
+      "custom": {
+        "title": "Bespoke",
+        "subtitle": "Particular projects, wildlife, macro and still life",
+        "includes": [
+          "Work that does not fit the other packages",
+          "Still life, product details, wildlife and macro",
+          "Scope and timing agreed together before starting",
+          "A quote built around the individual project"
+        ]
+      }
+    },
+    "ctaTitle": "Let's talk",
+    "ctaBody": "Tell me what you need photographed, when and where. I reply with a written proposal and a price, with no obligation.",
+    "ctaButton": "Email me for a quote"
   },
   "blog": {
     "pageTitle": "Blog",
@@ -60,13 +149,14 @@
   },
   "about": {
     "pageTitle": "About Me",
-    "bio1": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as an athlete and a student. Today, those same lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
+    "bio1": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as a competitive athlete and a student. Today, those lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
     "bio2": "Throughout my academic and professional career, I have explored complex and diverse fields: from bioinformatics and parallel computing to artificial intelligence and cybersecurity. My experience spans from web development to operating system management and server environment configuration-areas that have given me a broad understanding of software infrastructure. I believe in the value of technical knowledge sharing, which is why I actively participate in open-source projects and community collaborations. My work today centers on LLM- and RAG-based systems and on-premise deployment.",
     "bio3": "The passion I dedicated to sport for many years led me back to where I grew up, but with a new perspective. My goal today is to immortalize athletic gestures and the emotion of competition through sports photography. Along the way, I also love capturing the most significant moments in people's lives, such as graduations and events, as well as the small details of nature.",
     "downloadCvEn": "Download CV (EN)",
     "downloadCvIt": "Download CV (IT)",
     "journey": "My Journey",
-    "skillsTitle": "Skills & Expertise"
+    "skillsTitle": "Skills & Expertise",
+    "skillsSecondary": "These too, when needed"
   },
   "common": {
     "backToHome": "Back to Home",
@@ -91,8 +181,8 @@
   },
   "seo": {
     "home": {
-      "description": "Simone Colli - Freelance software developer and photographer based in Parma and Salsomaggiore Terme, Italy. M.Sc. in Computer Science. Portfolio of projects, talks, and photography.",
-      "keywords": "Simone Colli, software developer, photographer, LLM, RAG, on-premise deployment, portfolio, web development, React, Python, C++, Parma, Salsomaggiore Terme, Italy, freelance developer, event photographer, portrait photographer, University of Parma"
+      "description": "Simone Colli - Freelance software developer and photographer in Parma and Salsomaggiore Terme, Italy. Custom software, sport, event and detail photography.",
+      "keywords": "Simone Colli, software developer, photographer, LLM, RAG, on-premise deployment, portfolio, web development, React, Python, C++, Parma, Salsomaggiore Terme, Italy, freelance developer, event photographer, sports photographer, University of Parma"
     },
     "projects": {
       "description": "Software projects by Simone Colli - Web development, bioinformatics, parallel computing, and open source. Developer based in Parma and Salsomaggiore Terme.",
@@ -103,8 +193,8 @@
       "keywords": "Simone Colli talks, academic presentations, University of Parma, research, artificial intelligence, cybersecurity, big data, data mining, compilers, static analysis"
     },
     "photography": {
-      "description": "Photography portfolio by Simone Colli - Portrait, sport, wildlife, macro, and ceremony photography. Based in Parma and Salsomaggiore Terme, Emilia-Romagna.",
-      "keywords": "Simone Colli photography, photographer Parma, photographer Salsomaggiore Terme, portrait photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer"
+      "description": "Photography portfolio by Simone Colli - Sport, ceremony, wildlife, macro, and detail photography. Based in Parma and Salsomaggiore Terme, Emilia-Romagna.",
+      "keywords": "Simone Colli photography, professional photographer, photographer Parma, photographer Salsomaggiore Terme, detail photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer"
     },
     "about": {
       "description": "About Simone Colli - Freelance software developer and photographer, M.Sc. in Computer Science from the University of Parma. Skills, journey, and CV.",
@@ -117,41 +207,67 @@
     "notFound": {
       "description": "The requested page could not be found on simonecolli.com.",
       "keywords": "Simone Colli, page not found, 404"
+    },
+    "privacy": {
+      "description": "Privacy policy for simonecolli.com: no cookies, no profiling, no analytics tools.",
+      "keywords": "Simone Colli, privacy, policy, GDPR, cookies"
+    },
+    "development": {
+      "description": "Custom software development: web applications, constraint optimisation, heavy computation, deployment. Simone Colli, Parma, Italy.",
+      "keywords": "custom software development, showcase website, portfolio website, production management software, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, developer Parma, freelance, manufacturing software"
     }
   },
   "data": {
     "projects": {
+      "freelanceHub": {
+        "title": "Freelance hub",
+        "description": "CRM and automation for my freelance practice: clients, projects, requests, quotes, contracts, activities, costs and invoicing, with reports generated as PDFs. Twenty-eight feature modules across four services — backend, frontend, CLI and scheduler. The assistant runs on language models hosted locally, through Ollama or LM Studio, so client data never leaves the machine. Built test-first: 843 tests with a 100% coverage gate enforced by the pipeline, mypy --strict type checking, and a full DevSecOps chain across gitleaks, bandit, safety, pip-audit, OSV-Scanner, Trivy and SonarQube.",
+        "shortDescription": "CRM and automation for freelance work: 28 modules, an assistant on locally hosted models, 843 tests behind a 100% coverage gate."
+      },
+      "mgp": {
+        "title": "MGP - Production management",
+        "description": "Full-stack web platform for a manufacturing company's production department: product configuration, automatic generation of bills of materials and PDF/DXF documents, truck load-plan optimization. Polyglot microservices architecture documented with ADRs and C4 diagrams. OT/IT integration: communication with shop-floor PLCs over OPC-UA, and constraint-based optimization with MiniZinc and OR-Tools. Continuous delivery on Kubernetes with Grafana and Loki observability.",
+        "shortDescription": "Web platform for a production department: configurator, automatic bills of materials and documents, load-plan optimisation."
+      },
       "photographyDelivery": {
         "title": "Photo Delivery",
-        "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model - access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel - the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate - gitleaks, ruff, pytest, typecheck - before it lands on the branch."
+        "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model - access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel - the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate - gitleaks, ruff, pytest, typecheck - before it lands on the branch.",
+        "shortDescription": "Self-hosted photo delivery service: galleries behind an access code, encrypted orders, delivery after payment."
       },
       "personalWebsite": {
         "title": "Personal Website",
-        "description": "A personal portfolio website showcasing my projects, skills, and professional experience."
+        "description": "A personal portfolio website showcasing my projects, skills, and professional experience.",
+        "shortDescription": "My portfolio site: projects, skills and professional experience, bilingual and prerendered."
       },
       "quantumPortfolioOptimization": {
         "title": "Quantum Portfolio Optimization",
-        "description": "A research project focused on optimizing portfolio allocation, enhancing traditional methods for improved risk-return management using quantum computing concepts."
+        "description": "A research project focused on optimizing portfolio allocation, enhancing traditional methods for improved risk-return management using quantum computing concepts.",
+        "shortDescription": "Research on portfolio allocation using quantum computing concepts, to improve risk-return management."
       },
       "academicGuaranteeOptimization": {
         "title": "Academic Guarantee Optimization",
-        "description": "An Answer Set Programming (ASP) tool designed to optimize the assignment of academic guarantors to university courses."
+        "description": "An Answer Set Programming (ASP) tool designed to optimize the assignment of academic guarantors to university courses.",
+        "shortDescription": "An Answer Set Programming tool to optimise the assignment of academic guarantors to university courses."
       },
       "pandelosPlus": {
         "title": "PanDelos-plus",
-        "description": "A parallel algorithm for efficiently computing sequence homology in pangenomic analysis."
+        "description": "A parallel algorithm for efficiently computing sequence homology in pangenomic analysis.",
+        "shortDescription": "Parallel algorithm for computing sequence homology in pangenomic analysis, published as a preprint on arXiv."
       },
       "deepNeuralNetworkLibrary": {
         "title": "Deep Neural Network Library",
-        "description": "A flexible, high-performance C++ library for building, training, and deploying deep neural networks. Designed to be modular and easy to use."
+        "description": "A flexible, high-performance C++ library for building, training, and deploying deep neural networks. Designed to be modular and easy to use.",
+        "shortDescription": "A modular, high-performance C++ library for building, training and running deep neural networks."
       },
       "uniprOrg": {
         "title": "Unipr-org",
-        "description": "A collaborative GitHub organization uniting Computer Science students at the University of Parma. We create and share a comprehensive collection of course notes, study materials, and academic resources, promoting open collaboration and accessible learning."
+        "description": "A collaborative GitHub organization uniting Computer Science students at the University of Parma. We create and share a comprehensive collection of course notes, study materials, and academic resources, promoting open collaboration and accessible learning.",
+        "shortDescription": "The GitHub organisation of Computer Science students at the University of Parma: shared notes and materials."
       },
       "mazeProject": {
         "title": "MazeProject",
-        "description": "An interactive maze game application developed for the European Researchers' Night 2022. It educates users on scientific concepts as they navigate through various challenges."
+        "description": "An interactive maze game application developed for the European Researchers' Night 2022. It educates users on scientific concepts as they navigate through various challenges.",
+        "shortDescription": "A maze video game for the 2022 European Researchers' Night, teaching scientific concepts through interactive challenges."
       }
     },
     "talks": {
@@ -243,7 +359,56 @@
       "frameworks": "Frameworks & Tools",
       "creativeTools": "Creative Tools",
       "softSkills": "Soft Skills",
+      "otherTools": "Other tools",
       "spokenLanguages": "Spoken Languages"
     }
+  },
+  "privacy": {
+    "pageTitle": "Privacy policy",
+    "updated": "Last updated: August 2026",
+    "controllerTitle": "Data controller",
+    "controllerBody": "Simone Colli, VAT 03133540348, professional under Italian Law no. 4/2013. For any request about your data you can write to info.dev@simonecolli.com.",
+    "dataTitle": "What data is collected",
+    "dataBody": "This site uses no cookies, does not profile visitors and runs no analytics tools. There are no contact forms: the contact buttons open your own mail client and no data passes through this site.",
+    "hostingTitle": "Hosting and technical logs",
+    "hostingBody": "The site is hosted on GitHub Pages (GitHub, Inc.). The provider automatically records technical logs, which may include the IP address, to keep the service running and secure.",
+    "fontsTitle": "Fonts and external resources",
+    "fontsBody": "Typefaces are hosted directly on this site. No requests are made to external providers while you browse.",
+    "emailTitle": "Email communication",
+    "emailBody": "If you write to me, I will process your address and the content of your message in order to reply and to manage any resulting professional relationship. The legal basis is the performance of pre-contractual measures and the legitimate interest in replying.",
+    "rightsTitle": "Your rights",
+    "rightsBody": "You can request access, rectification, erasure, restriction and object to the processing of your data by writing to the address above. You also have the right to lodge a complaint with the Italian data protection authority."
+  },
+  "contact": {
+    "title": "Let's talk",
+    "text": "Two activities, two addresses. Write to the right one and I will get back to you.",
+    "devCta": "Email me about a software project",
+    "photoCta": "Email me about a photo shoot"
+  },
+  "development": {
+    "pageTitle": "Software development",
+    "intro": "I design and build custom software for your business. I cover the whole cycle, from requirements analysis to maintenance after release.",
+    "servicesTitle": "What I do",
+    "service1Title": "Custom web applications",
+    "service1Body": "Applications to govern processes that today live in spreadsheets and email threads: configurators, automatic document generation, integration between systems that do not talk to each other. From requirements analysis to deployment.",
+    "service2Title": "Optimisation and constraint problems",
+    "service2Body": "Planning problems with too many variables to solve by hand: load plans, assignments, allocations. I have worked on them in industrial production, in university administration and in finance, with MiniZinc, OR-Tools and Answer Set Programming.",
+    "service3Title": "Heavy computation and algorithms",
+    "service3Body": "When the problem does not fit a simple loop: parallelisation, purpose-built algorithms, C++ where performance matters.",
+    "service4Title": "Deployment and maintenance",
+    "service4Body": "Containerised releases, reproducible environments, observability and maintenance after release. The project does not end at delivery.",
+    "service5Title": "Showcase and portfolio sites",
+    "service5Body": "Presentation sites for professionals and small businesses: a few pages, considered content, quick to load and easy to find. This site is one of them.",
+    "service6Title": "Process automation",
+    "service6Body": "The same data typed in three times, documents redone by hand at every stage, spreadsheets nobody is sure who updates any more. I bring the stages together into one system, where each hands the next what it has already worked out.",
+    "howTitle": "How I work",
+    "howBody": "We start from a requirements analysis done together, with goals and constraints written down. From there we agree on a scope and an estimate. I develop in verifiable increments, with automated tests and documented architectural decisions, so that by the end the code stays readable to someone who did not write it.",
+    "projectsTitle": "Selected projects",
+    "projectsCta": "See all projects",
+    "talksCta": "See the talks",
+    "heroCta": "See the services",
+    "contactTitle": "Got a project in mind?",
+    "contactBody": "Tell me what problem you need to solve, under what constraints and by when. I reply with a written proposal and an estimate, with no obligation.",
+    "contactCta": "Let's talk about your project"
   }
 }

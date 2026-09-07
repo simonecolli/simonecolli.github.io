@@ -1,36 +1,54 @@
 {
   "nav": {
     "home": "Home",
+    "development": "Sviluppo",
+    "photography": "Fotografia",
+    "about": "Chi sono",
+    "blog": "Blog",
     "projects": "Progetti",
     "talks": "Presentazioni",
-    "blog": "Blog",
-    "photography": "Fotografia",
-    "about": "Chi sono"
+    "themeLight": "Passa al tema chiaro",
+    "themeDark": "Passa al tema scuro",
+    "brand": "Simone Colli - home",
+    "language": "Cambia lingua",
+    "menu": "Apri o chiudi il menu"
   },
   "hero": {
     "name": "Simone Colli",
-    "subtitle": "Sviluppatore & Fotografo freelance | Laurea Magistrale in Scienze Informatiche",
-    "description": "Sviluppatore software e fotografo freelance. Dedico la mia carriera alla risoluzione di problemi e alla cattura del dettaglio."
+    "role": "M.Sc. in Scienze Informatiche",
+    "devTitle": "Sviluppo software",
+    "devText": "Software su misura per la tua attività. Costruito sul tuo metodo di lavoro con l'obbiettivo di migliorarlo o ottimizzarlo.",
+    "devCta": "Cosa sviluppo",
+    "photoTitle": "Fotografo professionista",
+    "photoText": "Un momento, per sempre. Sport, eventi e dettagli: i momenti importanti devono rimanere nel tempo.",
+    "photoCta": "Cosa fotografo"
   },
   "home": {
     "aboutMe": {
       "title": "Chi sono",
-      "description": "Piacere, sono Simone! Sono uno sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del lavoro tecnico e la cura per il dettaglio che applico nei miei progetti.",
-      "discoverMore": "Scopri di più su di me"
+      "description": "Piacere, sono Simone! Sono uno sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta agonista con quella da studente. Oggi, quegli insegnamenti mi permettono di gestire con equilibrio il rigore del lavoro tecnico e la cura per il dettaglio che applico nei miei progetti.",
+      "cta": "Il mio percorso",
+      "imageAlt": "Ritratto di Simone Colli"
     },
-    "projects": {
-      "title": "I miei progetti preferiti",
-      "viewAll": "Vedi tutti i progetti"
+    "dev": {
+      "title": "Sviluppo software",
+      "text": "Progetto e realizzo software su misura per la tua attività. Applicazioni web, automazione di procedure ripetitive, generazione automatica di documenti, integrazione fra sistemi. Seguo il ciclo completo: analisi dei requisiti, sviluppo, messa in produzione e manutenzione.",
+      "cta": "Servizi di sviluppo"
     },
-    "talks": {
-      "title": "Le mie presentazioni preferite",
-      "viewAll": "Vedi tutte le presentazioni"
+    "photo": {
+      "title": "Fotografo professionista",
+      "text": "Fotografo sport, eventi e dettagli. Sedici anni di pattinaggio artistico agonistico mi hanno insegnato a leggere il gesto un istante prima che accada, ed è lì che nasce lo scatto.",
+      "cta": "Servizi fotografici"
     }
   },
   "footer": {
-    "description": "Sviluppatore software e fotografo freelance, con la passione per la tecnologia e la fotografia sportiva. Sempre in apprendimento, tra codice e scatti.",
-    "socialLabel": "Social & Contatti",
-    "copyright": "© 2026 Simone Colli. Tutti i diritti riservati."
+    "description": "Sviluppatore software e fotografo freelance. Software su misura, e fotografia di sport, eventi e dettagli.",
+    "socialLabel": "Social e contatti",
+    "vat": "P. IVA 03133540348",
+    "legalStatus": "Professionista di cui alla Legge n. 4/2013",
+    "photoCopyright": "Tutte le fotografie sono protette da diritto d'autore.",
+    "privacy": "Privacy",
+    "copyright": "Tutti i diritti riservati."
   },
   "projects": {
     "pageTitle": "Progetti",
@@ -44,10 +62,81 @@
   },
   "photography": {
     "pageTitle": "Fotografia",
-    "pageDescription": "Attraverso il mio obiettivo catturo momenti, emozioni e storie. La fotografia mi permette di congelare il tempo e preservare ricordi significativi.",
+    "intro": "Fotografo sport, eventi, dettagli e ritratti. Qui trovi le informazioni in merito alla mia metodologia di lavoro, alcuni esempi dei miei scatti ed alcuni pacchetti.",
+    "heroCta": "Vedi i pacchetti",
+    "infoTitle": "Il mio metodo di lavoro",
+    "info1Title": "Prima parliamo",
+    "info1Body": "Prima delle riprese discutiamo insieme di cosa ti serve: quante ore, quali momenti non possono mancare, dove e con che luce. Da questo processo esce un preventivo scritto, così non ci sono sorprese dopo.",
+    "info2Title": "Il giorno del servizio",
+    "info2Body": "Lavoro senza interrompere quello che sta succedendo: nello sport e negli eventi le immagini migliori arrivano quando nessuno sta posando.",
+    "info3Title": "Le foto vengono consegnate",
+    "info3Body": "Consegno tutti gli scatti scelti in alta risoluzione, tramite un link riservato solo a te.",
+    "galleryTitle": "Galleria",
     "noPhotos": "Nessuna foto trovata in questa categoria.",
     "showAll": "Mostra tutte le foto",
-    "filterAll": "Tutte"
+    "filterAll": "Tutte",
+    "packagesTitle": "Pacchetti",
+    "packagesIntro": "Cinque punti di partenza, non cinque gabbie: servono a darti un riferimento concreto, e il tuo servizio si costruisce da qui, sulle tue esigenze. In tutti sono compresi la selezione e lo sviluppo degli scatti e la consegna in alta risoluzione.",
+    "priceFrom": "A partire da {{price}} €",
+    "priceOnRequest": "Prezzo su richiesta",
+    "packagesNote": "Il prezzo dipende da durata, luogo e numero di scatti, quindi si concorda prima delle riprese e resta scritto nel preventivo. Non sono compresi stampe, album e le trasferte oltre i 15 km, che si quotano a parte.",
+    "packages": {
+      "sport": {
+        "title": "Sport",
+        "subtitle": "Gare, allenamenti, tornei e ritratti di squadra",
+        "includes": [
+          "Copertura della gara o della sessione concordata",
+          "Scatti d'azione, con attenzione al gesto tecnico",
+          "Ritratti individuali e di gruppo, se richiesti",
+          "Consegna rapida su richiesta, per chi deve pubblicare subito",
+          "Utilizzo delle immagini concordato insieme"
+        ]
+      },
+      "events": {
+        "title": "Eventi",
+        "subtitle": "Feste private, conferenze, inaugurazioni e presentazioni",
+        "includes": [
+          "Copertura per le ore concordate, con il programma definito prima",
+          "Immagini d'ambiente, dettagli di allestimento e momenti chiave",
+          "Ritratti di gruppo e foto dei relatori o degli ospiti",
+          "Selezione utilizzabile sia in stampa sia sui canali social"
+        ]
+      },
+      "ceremonies": {
+        "title": "Cerimonie",
+        "subtitle": "Lauree, compleanni e ricorrenze",
+        "fromNote": "per 2 ore di riprese, entro 15 km",
+        "includes": [
+          "Presenza sui momenti concordati",
+          "Dettagli, ritratti e immagini di gruppo",
+          "Tempi costruiti sul programma",
+          "Consegna condivisibile con familiari e invitati"
+        ]
+      },
+      "portraits": {
+        "title": "Ritratti",
+        "subtitle": "Ritratti professionali",
+        "includes": [
+          "Sessione a casa tua, in ufficio o in esterna",
+          "Tempo per provare pose, luci e inquadrature senza fretta",
+          "Selezione degli scatti fatta insieme, se vuoi esserci",
+          "Formati pronti per curriculum, profili professionali e stampa"
+        ]
+      },
+      "custom": {
+        "title": "Su misura",
+        "subtitle": "Progetti particolari, natura, macro e still life",
+        "includes": [
+          "Servizi che non rientrano negli altri pacchetti",
+          "Still life, dettagli di prodotto, natura e macro",
+          "Tempi e modi definiti insieme prima di cominciare",
+          "Preventivo costruito sul singolo progetto"
+        ]
+      }
+    },
+    "ctaTitle": "Parliamone",
+    "ctaBody": "Raccontami che cosa devi fotografare, quando e dove. Rispondo con una proposta scritta e un prezzo, senza impegno.",
+    "ctaButton": "Scrivimi per un preventivo"
   },
   "blog": {
     "pageTitle": "Blog",
@@ -60,13 +149,14 @@
   },
   "about": {
     "pageTitle": "Chi sono",
-    "bio1": "Piacere, sono Simone! Sono uno sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta con quella da studente. Oggi, quegli stessi insegnamenti mi permettono di gestire con equilibrio il rigore del lavoro tecnico e la cura per il dettaglio che applico nei miei progetti.",
+    "bio1": "Piacere, sono Simone! Sono uno sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Il mio percorso, formativo e personale, è iniziato da piccolo con il pattinaggio artistico, uno sport che mi ha insegnato i valori della resilienza, della disciplina e della pazienza. Con il passare degli anni, ho imparato l'organizzazione necessaria per far conciliare la vita da atleta agonista con quella da studente. Oggi, quegli insegnamenti mi permettono di gestire con equilibrio il rigore del lavoro tecnico e la cura per il dettaglio che applico nei miei progetti.",
     "bio2": "Durante la mia carriera accademica e professionale, ho approfondito ambiti complessi e differenti tra loro: dalla bioinformatica e il calcolo parallelo all'intelligenza artificiale e la sicurezza informatica. La mia esperienza spazia dallo sviluppo web fino alla gestione e configurazione di sistemi operativi e ambienti server, ambiti che mi hanno permesso di acquisire una visione abbastanza vasta dell'infrastruttura software. Credo nel valore della condivisione tecnica, motivo per cui partecipo attivamente a progetti open source e collaborazioni comunitarie. Oggi il mio lavoro si concentra su sistemi basati su LLM e RAG e su deploy on-premise.",
     "bio3": "La passione che ho dedicato allo sport per tanti anni mi ha portato a tornare dove sono cresciuto, ma con una nuova prospettiva. Il mio obiettivo oggi è immortalare il gesto atletico e l'emozione della competizione attraverso la fotografia sportiva. Lungo questo percorso, adoro catturare anche i momenti più significativi della vita delle persone, come lauree ed eventi e i piccoli dettagli della natura.",
     "downloadCvEn": "Scarica CV (EN)",
     "downloadCvIt": "Scarica CV (IT)",
     "journey": "Il mio percorso",
-    "skillsTitle": "Competenze & Specializzazioni"
+    "skillsTitle": "Competenze & Specializzazioni",
+    "skillsSecondary": "Anche queste, all'occorrenza"
   },
   "common": {
     "backToHome": "Torna alla Home",
@@ -91,8 +181,8 @@
   },
   "seo": {
     "home": {
-      "description": "Simone Colli - Sviluppatore software e fotografo freelance a Parma e Salsomaggiore Terme. Laurea magistrale in Scienze Informatiche. Portfolio di progetti, presentazioni e fotografia.",
-      "keywords": "Simone Colli, sviluppatore software, fotografo, LLM, RAG, deploy on-premise, portfolio, sviluppo web, React, Python, C++, Parma, Salsomaggiore Terme, Italia, sviluppatore freelance, fotografo eventi, fotografo ritratti, Università di Parma"
+      "description": "Simone Colli - Sviluppatore software e fotografo freelance a Parma e Salsomaggiore Terme. Software su misura, fotografia di sport, eventi e dettagli.",
+      "keywords": "Simone Colli, sviluppatore software, fotografo, LLM, RAG, deploy on-premise, portfolio, sviluppo web, React, Python, C++, Parma, Salsomaggiore Terme, Italia, sviluppatore freelance, fotografo eventi, fotografo sportivo, Università di Parma"
     },
     "projects": {
       "description": "Progetti software di Simone Colli - Sviluppo web, bioinformatica, calcolo parallelo, open source. Sviluppatore a Parma e Salsomaggiore Terme.",
@@ -103,8 +193,8 @@
       "keywords": "Simone Colli presentazioni, presentazioni accademiche, Università di Parma, ricerca, intelligenza artificiale, cybersecurity, big data, data mining, compilatori, analisi statica"
     },
     "photography": {
-      "description": "Portfolio fotografico di Simone Colli - Ritratti, sport, natura, macro e cerimonie. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.",
-      "keywords": "Simone Colli fotografia, fotografo Parma, fotografo Salsomaggiore Terme, fotografia ritratto, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie"
+      "description": "Portfolio fotografico di Simone Colli - Sport, cerimonie, natura, macro e dettagli. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.",
+      "keywords": "Simone Colli fotografia, fotografo professionista, fotografo Parma, fotografo Salsomaggiore Terme, fotografia di dettaglio, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie"
     },
     "about": {
       "description": "Chi è Simone Colli - Sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Competenze, percorso e CV.",
@@ -117,41 +207,67 @@
     "notFound": {
       "description": "La pagina richiesta non è stata trovata su simonecolli.com.",
       "keywords": "Simone Colli, pagina non trovata, 404"
+    },
+    "privacy": {
+      "description": "Informativa privacy di simonecolli.com: nessun cookie, nessuna profilazione, nessuno strumento di analisi statistica.",
+      "keywords": "Simone Colli, privacy, informativa, GDPR, cookie"
+    },
+    "development": {
+      "description": "Sviluppo software su misura: applicazioni web, ottimizzazione a vincoli, calcolo intensivo, messa in produzione. Simone Colli, Parma.",
+      "keywords": "sviluppo software su misura, sito vetrina, sito portfolio, gestionale produzione, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore Parma, freelance, software manifatturiero"
     }
   },
   "data": {
     "projects": {
+      "freelanceHub": {
+        "title": "Freelance hub",
+        "description": "CRM e automazione per la mia attività da libero professionista: clienti, progetti, richieste, preventivi, contratti, attività, costi e fatturazione, con report generati in PDF. Ventotto moduli funzionali distribuiti su quattro servizi — backend, frontend, CLI e scheduler. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa fra gitleaks, bandit, safety, pip-audit, OSV-Scanner, Trivy e SonarQube.",
+        "shortDescription": "CRM e automazione per l'attività freelance: 28 moduli, assistente su modelli in locale, 843 test con copertura al 100% imposta dalla pipeline."
+      },
+      "mgp": {
+        "title": "MGP - Gestione produzione",
+        "description": "Piattaforma web full-stack per il reparto produzione di un'azienda manifatturiera: configurazione di prodotto, generazione automatica di distinte base e documenti in PDF e DXF, ottimizzazione del piano di carico dei camion. Architettura a microservizi poliglotti documentata con ADR e diagrammi C4. Integrazione OT/IT: comunicazione con i PLC di reparto via OPC-UA e ottimizzazione a vincoli con MiniZinc e OR-Tools. Rilascio continuo su Kubernetes con osservabilità Grafana e Loki.",
+        "shortDescription": "Piattaforma web per il reparto produzione: configuratore, distinte base e documenti automatici, ottimizzazione del piano di carico."
+      },
       "photographyDelivery": {
         "title": "Photo Delivery",
-        "description": "Prototipo di un servizio didelivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel - il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria - gitleaks, ruff, pytest, typecheck - prima che il codice entri in branch."
+        "description": "Prototipo di un servizio didelivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel - il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria - gitleaks, ruff, pytest, typecheck - prima che il codice entri in branch.",
+        "shortDescription": "Servizio di consegna fotografica self-hosted: gallerie con codice d'accesso, ordini cifrati e consegna dopo il pagamento."
       },
       "personalWebsite": {
         "title": "Sito Personale",
-        "description": "Il mio sito portfolio personale dove mostro progetti, competenze ed esperienze professionali."
+        "description": "Il mio sito portfolio personale dove mostro progetti, competenze ed esperienze professionali.",
+        "shortDescription": "Il mio sito portfolio: progetti, competenze ed esperienze professionali, bilingue e prerenderizzato."
       },
       "quantumPortfolioOptimization": {
         "title": "Ottimizzazione Quantistica del Portafoglio",
-        "description": "Progetto di ricerca sull'ottimizzazione dell'allocazione del portafoglio, che migliora i metodi tradizionali di gestione rischio-rendimento utilizzando concetti di calcolo quantistico."
+        "description": "Progetto di ricerca sull'ottimizzazione dell'allocazione del portafoglio, che migliora i metodi tradizionali di gestione rischio-rendimento utilizzando concetti di calcolo quantistico.",
+        "shortDescription": "Ricerca sull'allocazione di portafoglio con concetti di calcolo quantistico, per migliorare la gestione rischio-rendimento."
       },
       "academicGuaranteeOptimization": {
         "title": "Ottimizzazione Garanti Accademici",
-        "description": "Strumento basato su Answer Set Programming (ASP) per ottimizzare l'assegnazione dei garanti accademici ai corsi universitari."
+        "description": "Strumento basato su Answer Set Programming (ASP) per ottimizzare l'assegnazione dei garanti accademici ai corsi universitari.",
+        "shortDescription": "Strumento in Answer Set Programming per ottimizzare l'assegnazione dei garanti accademici ai corsi universitari."
       },
       "pandelosPlus": {
         "title": "PanDelos-plus",
-        "description": "Algoritmo parallelo per il calcolo efficiente dell'omologia di sequenza nell'analisi pangenomica."
+        "description": "Algoritmo parallelo per il calcolo efficiente dell'omologia di sequenza nell'analisi pangenomica.",
+        "shortDescription": "Algoritmo parallelo per il calcolo dell'omologia di sequenza nell'analisi pangenomica, pubblicato come preprint su arXiv."
       },
       "deepNeuralNetworkLibrary": {
         "title": "Libreria Reti Neurali Profonde",
-        "description": "Libreria C++ flessibile e ad alte prestazioni per costruire, addestrare e utilizzare reti neurali profonde. Progettata per essere modulare e facile da usare."
+        "description": "Libreria C++ flessibile e ad alte prestazioni per costruire, addestrare e utilizzare reti neurali profonde. Progettata per essere modulare e facile da usare.",
+        "shortDescription": "Libreria C++ modulare e ad alte prestazioni per costruire, addestrare e usare reti neurali profonde."
       },
       "uniprOrg": {
         "title": "Unipr-org",
-        "description": "Organizzazione GitHub collaborativa che riunisce studenti di Informatica dell'Università di Parma. Creiamo e condividiamo appunti, materiali di studio e risorse accademiche, promuovendo la collaborazione aperta e l'apprendimento accessibile."
+        "description": "Organizzazione GitHub collaborativa che riunisce studenti di Informatica dell'Università di Parma. Creiamo e condividiamo appunti, materiali di studio e risorse accademiche, promuovendo la collaborazione aperta e l'apprendimento accessibile.",
+        "shortDescription": "Organizzazione GitHub degli studenti di Informatica dell'Università di Parma: appunti e materiali condivisi."
       },
       "mazeProject": {
         "title": "MazeProject",
-        "description": "Videogioco a labirinto sviluppato per la Notte Europea dei Ricercatori 2022. Educa gli utenti su concetti scientifici attraverso sfide interattive."
+        "description": "Videogioco a labirinto sviluppato per la Notte Europea dei Ricercatori 2022. Educa gli utenti su concetti scientifici attraverso sfide interattive.",
+        "shortDescription": "Videogioco a labirinto per la Notte Europea dei Ricercatori 2022, che insegna concetti scientifici con sfide interattive."
       }
     },
     "talks": {
@@ -243,7 +359,56 @@
       "frameworks": "Framework & Strumenti",
       "creativeTools": "Strumenti creativi",
       "softSkills": "Soft skill",
+      "otherTools": "Altri strumenti",
       "spokenLanguages": "Lingue parlate"
     }
+  },
+  "privacy": {
+    "pageTitle": "Informativa privacy",
+    "updated": "Ultimo aggiornamento: agosto 2026",
+    "controllerTitle": "Titolare del trattamento",
+    "controllerBody": "Simone Colli, P. IVA 03133540348, professionista di cui alla Legge n. 4/2013. Per qualsiasi richiesta relativa ai tuoi dati puoi scrivere a info.dev@simonecolli.com.",
+    "dataTitle": "Quali dati vengono raccolti",
+    "dataBody": "Questo sito non usa cookie, non profila i visitatori e non impiega strumenti di analisi statistica. Non sono presenti moduli di contatto: i pulsanti di contatto aprono il tuo programma di posta e nessun dato transita da questo sito.",
+    "hostingTitle": "Hosting e log tecnici",
+    "hostingBody": "Il sito è ospitato su GitHub Pages (GitHub, Inc.). Il fornitore registra automaticamente log tecnici, che possono includere l'indirizzo IP, per garantire il funzionamento e la sicurezza del servizio.",
+    "fontsTitle": "Font e risorse esterne",
+    "fontsBody": "I caratteri tipografici sono ospitati direttamente su questo sito. Durante la navigazione non viene effettuata nessuna richiesta a fornitori esterni.",
+    "emailTitle": "Comunicazioni via email",
+    "emailBody": "Se mi scrivi, tratterò il tuo indirizzo e il contenuto del messaggio per rispondere e per gestire l'eventuale rapporto professionale. La base giuridica è l'esecuzione di misure precontrattuali e il legittimo interesse a rispondere.",
+    "rightsTitle": "I tuoi diritti",
+    "rightsBody": "Puoi chiedere accesso, rettifica, cancellazione, limitazione e opposizione al trattamento dei tuoi dati scrivendo all'indirizzo indicato sopra. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali."
+  },
+  "contact": {
+    "title": "Parliamone",
+    "text": "Due attività, due indirizzi. Scrivi a quello giusto e ti rispondo.",
+    "devCta": "Scrivi per un progetto software",
+    "photoCta": "Scrivi per un servizio fotografico"
+  },
+  "development": {
+    "pageTitle": "Sviluppo software",
+    "intro": "Progetto e realizzo software su misura per la tua attività. Seguo l'intero ciclo, dall'analisi dei requisiti alla manutenzione dopo il rilascio.",
+    "servicesTitle": "Cosa faccio",
+    "service1Title": "Applicazioni web su misura",
+    "service1Body": "Applicazioni per governare processi che oggi vivono su fogli di calcolo e scambi di email: configuratori, generazione automatica di documenti, integrazione fra sistemi che non si parlano. Dall'analisi dei requisiti alla messa in produzione.",
+    "service2Title": "Ottimizzazione e problemi a vincoli",
+    "service2Body": "Problemi di pianificazione con troppe variabili per essere risolti a mano: piani di carico, assegnazioni, allocazioni. Li ho affrontati nella produzione industriale, nell'organizzazione universitaria e in ambito finanziario, con MiniZinc, OR-Tools e Answer Set Programming.",
+    "service3Title": "Calcolo intensivo e algoritmi",
+    "service3Body": "Quando il problema non sta in un ciclo semplice: parallelizzazione, algoritmi su misura, C++ dove la prestazione conta.",
+    "service4Title": "Messa in produzione e manutenzione",
+    "service4Body": "Rilascio containerizzato, ambienti riproducibili, osservabilità e manutenzione dopo il rilascio. Il progetto non finisce alla consegna.",
+    "service5Title": "Siti vetrina e portfolio",
+    "service5Body": "Siti di presentazione per professionisti e piccole attività: poche pagine, contenuti curati, veloci da caricare e trovabili sui motori di ricerca. Questo sito è uno di quelli.",
+    "service6Title": "Automazione di processo",
+    "service6Body": "Lo stesso dato inserito tre volte, i documenti rifatti a mano a ogni passaggio, fogli di calcolo che nessuno sa più chi aggiorna. Metto insieme le fasi in un sistema solo, dove ognuna passa alla successiva quello che ha già calcolato.",
+    "howTitle": "Come lavoro",
+    "howBody": "Si parte da un'analisi dei requisiti fatta insieme, con obiettivi e vincoli messi per iscritto. Da lì definiamo un perimetro e una stima. Sviluppo per incrementi verificabili, con test automatici e decisioni architetturali documentate, così a fine progetto il codice resta leggibile anche da chi non l'ha scritto.",
+    "projectsTitle": "Progetti in evidenza",
+    "projectsCta": "Guarda tutti i progetti",
+    "talksCta": "Guarda le presentazioni",
+    "heroCta": "Vedi i servizi",
+    "contactTitle": "Hai un progetto in mente?",
+    "contactBody": "Raccontami che problema devi risolvere, con che vincoli e per quando. Rispondo con una proposta scritta e una stima, senza impegno.",
+    "contactCta": "Parliamo del tuo progetto"
   }
 }

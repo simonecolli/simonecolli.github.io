@@ -5,9 +5,6 @@ export interface TimelineEvent {
   type: "work" | "education" | "personal" | "project" | "talk";
 }
 
-// Ordered by start year, most recent first. Keys are named rather than positional:
-// the previous numeric ones drifted out of sync with the translation files and half
-// the entries rendered someone else's text.
 export const timeline: TimelineEvent[] = [
   {
     year: "2026",

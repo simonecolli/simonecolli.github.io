@@ -5,10 +5,10 @@ import Back2Home from "../components/utils/Back2Home";
 import ProjectCard from "../components/utils/ProjectCard";
 import SEO from "../components/SEO";
 
-// data
 import { talks } from "../data/talks";
 
 export default function TalksPage() {
+  // List talks with their topics and links to the detail pages.
   const { t } = useTranslation();
 
   return (
@@ -21,24 +21,22 @@ export default function TalksPage() {
       />
       <Header />
       <main className="main-content pt-20">
-        {/* Page Header */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
+        <section className="site-section">
+          <div className="site-container">
             <div className="max-w-3xl mx-auto text-center fade-in">
               <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
                 {t('talks.pageTitle')}
               </h1>
-              <div className="h-px bg-gray-300 w-24 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <div className="h-px bg-line w-24 mx-auto mb-6"></div>
+              <p className="text-lg text-muted leading-relaxed">
                 {t('talks.pageDescription')}
               </p>
             </div>
           </div>
         </section>
 
-        {/* Talks Grid */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
+        <section className="site-section">
+          <div className="site-container">
             <div className="grid lg:grid-cols-2 gap-8">
               {talks.map((talk, index) => (
                 <ProjectCard

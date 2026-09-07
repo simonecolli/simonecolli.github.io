@@ -11,22 +11,12 @@ import TalkDetailPage from "./pages/TalkDetailPage.tsx"
 import PhotographyPage from "./pages/PhotographyPage.tsx"
 import AboutMePage from "./pages/AboutMePage.tsx"
 import Blog from "./pages/Blog.tsx"
+import DevelopmentPage from "./pages/DevelopmentPage.tsx"
+import PrivacyPage from "./pages/PrivacyPage.tsx"
 import NotFound from "./pages/NotFound.tsx"
-import ReactGA from "react-ga4";
-
-ReactGA.initialize("G-BVG3YZR5C5");
-
-function AnalyticsTracker() {
-  const location = useLocation();
-
-  useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
-  }, [location]);
-
-  return null;
-}
 
 function LanguageSync() {
+  // Keep the document language in sync with the selected translation.
   const { i18n } = useTranslation();
 
   useEffect(() => {
@@ -36,11 +26,24 @@ function LanguageSync() {
   return null;
 }
 
+function ScrollToTop() {
+  // Reset scroll on navigation, leaving in-page anchors to the browser.
+  const { pathname, hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) return;
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
+
+  return null;
+}
+
 export function AppRoutes() {
+  // Share the same routes between the browser and static rendering.
   return (
     <>
-      <AnalyticsTracker />
       <LanguageSync />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -51,6 +54,8 @@ export function AppRoutes() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/photography" element={<PhotographyPage />} />
         <Route path="/about" element={<AboutMePage />} />
+        <Route path="/development" element={<DevelopmentPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
@@ -58,6 +63,7 @@ export function AppRoutes() {
 }
 
 export default function App() {
+  // Set up browser navigation for the site.
   return (
     <Router>
       <AppRoutes />

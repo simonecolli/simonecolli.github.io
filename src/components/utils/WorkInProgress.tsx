@@ -1,17 +1,18 @@
 import { useTranslation } from "react-i18next";
 
 export default function WorkInProgress() {
+  // Show a translated placeholder for content still in progress.
   const { t } = useTranslation();
 
   return (
-    <section className="tech-minimal-section">
-      <div className="tech-minimal-container">
+    <section className="site-section">
+      <div className="site-container">
         <div className="max-w-2xl mx-auto">
-          <div className="tech-minimal-card text-center py-16">
+          <div className="site-card text-center py-16">
             <div className="mb-6">
-              <div className="w-16 h-16 mx-auto border-2 border-gray-300 rounded-full flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto border-2 border-line rounded-full flex items-center justify-center">
                 <svg
-                  className="w-8 h-8 text-gray-400"
+                  className="w-8 h-8 text-muted"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -28,10 +29,10 @@ export default function WorkInProgress() {
             <h2 className="text-2xl font-medium mb-4">
               {t('common.workInProgress')}
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-6">
+            <p className="text-muted leading-relaxed mb-6">
               {t('common.workInProgressMessage')}
             </p>
-            <div className="inline-flex items-center gap-2 text-sm text-gray-500">
+            <div className="inline-flex items-center gap-2 text-sm text-muted">
               <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
               <span>{t('common.comingSoon')}</span>
             </div>

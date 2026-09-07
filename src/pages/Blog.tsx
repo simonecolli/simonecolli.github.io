@@ -6,6 +6,7 @@ import WorkInProgress from "../components/utils/WorkInProgress";
 import SEO from "../components/SEO";
 
 export default function Blog() {
+  // Show the blog placeholder until posts are available.
   const { t } = useTranslation();
 
   return (
@@ -18,15 +19,14 @@ export default function Blog() {
       />
       <Header />
       <main className="main-content pt-20">
-        {/* Page header */}
-        <section className="tech-minimal-section">
-          <div className="tech-minimal-container">
+        <section className="site-section">
+          <div className="site-container">
             <div className="max-w-3xl mx-auto text-center fade-in">
               <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
                 {t('blog.pageTitle')}
               </h1>
-              <div className="h-px bg-gray-300 w-24 mx-auto mb-6"></div>
-              <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              <div className="h-px bg-line w-24 mx-auto mb-6"></div>
+              <p className="text-lg text-muted leading-relaxed mb-8">
                 {t('blog.pageDescription')}
               </p>
             </div>

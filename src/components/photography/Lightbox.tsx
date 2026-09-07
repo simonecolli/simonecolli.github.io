@@ -10,6 +10,7 @@ interface LightboxProps {
 }
 
 export default function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) {
+  // Browse photos with arrow keys, lock scrolling and restore focus on unmount.
   const [isLoaded, setIsLoaded] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const { t } = useTranslation();
@@ -39,7 +40,6 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
     }
   }, [hasNext, currentIndex, photos, onNavigate]);
 
-  // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       switch (e.key) {
@@ -59,7 +59,6 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [handleClose, handlePrev, handleNext]);
 
-  // Prevent body scroll when lightbox is open
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -68,7 +67,6 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
     };
   }, []);
 
-  // Focus trap - focus the modal on mount
   useEffect(() => {
     const previousActiveElement = document.activeElement as HTMLElement;
     return () => {
@@ -85,16 +83,13 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
       aria-modal="true"
       aria-label={`Photo: ${photo.alt}`}
     >
-      {/* Backdrop */}
       <div
         className="absolute inset-0 bg-black/90 backdrop-blur-sm"
         onClick={handleClose}
         aria-hidden="true"
       />
 
-      {/* Content container */}
       <div className="relative z-10 w-full h-full flex flex-col items-center justify-center p-4 md:p-8">
-        {/* Close button */}
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 md:top-6 md:right-6 w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white border-0"
@@ -116,7 +111,6 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
           </svg>
         </button>
 
-        {/* Navigation - Previous */}
         {hasPrev && (
           <button
             onClick={handlePrev}
@@ -139,7 +133,6 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
           </button>
         )}
 
-        {/* Navigation - Next */}
         {hasNext && (
           <button
             onClick={handleNext}
@@ -162,16 +155,13 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
           </button>
         )}
 
-        {/* Image container */}
         <div className="relative max-w-full max-h-[calc(100vh-8rem)] flex items-center justify-center">
-          {/* Loading spinner */}
           {!isLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin" />
             </div>
           )}
 
-          {/* Main image */}
           <img
             src={photo.src}
             alt={photo.alt}
@@ -182,7 +172,6 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
           />
         </div>
 
-        {/* Photo info */}
         <div className="absolute bottom-4 md:bottom-6 left-4 right-4 text-center">
           <p className="text-white text-sm md:text-base mb-2">{photo.alt}</p>
           <div className="flex justify-center gap-2 flex-wrap">
@@ -195,7 +184,6 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
               </span>
             ))}
           </div>
-          {/* Photo counter */}
           <p className="text-white/60 text-xs mt-2">
             {currentIndex + 1} / {photos.length}
           </p>

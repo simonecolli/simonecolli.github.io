@@ -2,6 +2,7 @@ export interface Project {
   slug: string;
   title: string;
   description: string;
+  shortDescription: string;
   tags: string[];
   status: string;
   github: string;
@@ -12,9 +13,56 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "freelance-hub",
+    title: "data.projects.freelanceHub.title",
+    description: "data.projects.freelanceHub.description",
+    shortDescription: "data.projects.freelanceHub.shortDescription",
+    tags: [
+      "Python",
+      "FastAPI",
+      "GraphQL",
+      "Nuxt",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "Ollama",
+      "DevSecOps",
+    ],
+    status: "status.inProgress",
+    github: "",
+    demo: "",
+    year: "2026",
+    favourite: true,
+  },
+  {
+    slug: "mgp-gestione-produzione",
+    title: "data.projects.mgp.title",
+    description: "data.projects.mgp.description",
+    shortDescription: "data.projects.mgp.shortDescription",
+    tags: [
+      "Laravel",
+      "React",
+      "TypeScript",
+      "Python",
+      "FastAPI",
+      "MySQL",
+      "Docker",
+      "Kubernetes",
+      "OPC-UA",
+      "MiniZinc",
+      "OR-Tools",
+    ],
+    status: "status.inProgress",
+    github: "",
+    demo: "",
+    year: "2026",
+    favourite: true,
+  },
+  {
     slug: "photography-delivery",
     title: "data.projects.photographyDelivery.title",
     description: "data.projects.photographyDelivery.description",
+    shortDescription: "data.projects.photographyDelivery.shortDescription",
     tags: [
       "Web Development",
       "FastAPI",
@@ -34,6 +82,7 @@ export const projects: Project[] = [
     slug: "personal-website",
     title: "data.projects.personalWebsite.title",
     description: "data.projects.personalWebsite.description",
+    shortDescription: "data.projects.personalWebsite.shortDescription",
     tags: ["Web Development", "React", "TypeScript", "Tailwind CSS"],
     status: "status.inProgress",
     github: "https://github.com/simonecolli/simonecolli.github.io",
@@ -44,6 +93,7 @@ export const projects: Project[] = [
     slug: "quantum-portfolio-optimization",
     title: "data.projects.quantumPortfolioOptimization.title",
     description: "data.projects.quantumPortfolioOptimization.description",
+    shortDescription: "data.projects.quantumPortfolioOptimization.shortDescription",
     tags: ["Research", "Quantum Computing", "Finance", "Python", "Exam"],
     status: "status.completed",
     github: "https://github.com/simonecolli/quantum-portfolio-optimization",
@@ -54,6 +104,7 @@ export const projects: Project[] = [
     slug: "academic-guarantee-optimization",
     title: "data.projects.academicGuaranteeOptimization.title",
     description: "data.projects.academicGuaranteeOptimization.description",
+    shortDescription: "data.projects.academicGuaranteeOptimization.shortDescription",
     tags: ["Research", "Answer set programming", "Clingo", "Python", "Exam"],
     status: "status.completed",
     github: "https://github.com/simonecolli/ottimizzazione-garanti-accademici",
@@ -64,6 +115,7 @@ export const projects: Project[] = [
     slug: "pandelos-plus",
     title: "data.projects.pandelosPlus.title",
     description: "data.projects.pandelosPlus.description",
+    shortDescription: "data.projects.pandelosPlus.shortDescription",
     tags: ["Research", "C++", "Python", "Docker"],
     status: "status.completed",
     github: "https://github.com/simonecolli/PanDelos-plus/tree/main",
@@ -75,6 +127,7 @@ export const projects: Project[] = [
     slug: "deep-neural-network-library",
     title: "data.projects.deepNeuralNetworkLibrary.title",
     description: "data.projects.deepNeuralNetworkLibrary.description",
+    shortDescription: "data.projects.deepNeuralNetworkLibrary.shortDescription",
     tags: ["Neural Networks", "C++"],
     status: "status.completed",
     github: "https://github.com/unipr-org/deep-neural-network",
@@ -85,6 +138,7 @@ export const projects: Project[] = [
     slug: "unipr-org",
     title: "data.projects.uniprOrg.title",
     description: "data.projects.uniprOrg.description",
+    shortDescription: "data.projects.uniprOrg.shortDescription",
     tags: ["Open Source", "Community", "Collaboration", "GitHub"],
     status: "status.inProgress",
     github: "https://github.com/unipr-org",
@@ -96,6 +150,7 @@ export const projects: Project[] = [
     slug: "maze-project",
     title: "data.projects.mazeProject.title",
     description: "data.projects.mazeProject.description",
+    shortDescription: "data.projects.mazeProject.shortDescription",
     tags: ["JavaScript", "CSS", "HTML"],
     status: "status.completed",
     github: "https://github.com/simonecolli/MazeProject",

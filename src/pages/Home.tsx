@@ -1,13 +1,15 @@
-import Header from "./../components/Header.tsx"
-import Hero from "./../components/home/Hero.tsx"
-import Projects from "./../components/home/Projects.tsx"
-import Talks from "./../components/home/Talks.tsx"
-import AboutMe from "./../components/home/AboutMe.tsx"
-// import Photography from "./../components/home/Photography.tsx"
-import Footer from "./../components/Footer.tsx"
-import SEO from "./../components/SEO.tsx"
+import Header from "../components/Header";
+import HeroSplit from "../components/home/HeroSplit";
+import AboutSplit from "../components/home/AboutSplit";
+import TerritorySection from "../components/home/TerritorySection";
+import ContactBlock from "../components/home/ContactBlock";
+import PhotoMosaic from "../components/home/PhotoMosaic";
+import NodeGraph from "../components/home/NodeGraph";
+import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 
 export default function Home() {
+  // Bring together the introduction, services and contact links.
   return (
     <div className="app">
       <SEO
@@ -17,11 +19,21 @@ export default function Home() {
       />
       <Header />
       <main className="main-content">
-        <Hero />
-        <AboutMe />
-        <Projects />
-        <Talks />
-        {/* <Photography /> */}
+        <HeroSplit />
+        <AboutSplit />
+        <TerritorySection
+          id="home-dev"
+          territory="dev"
+          to="/development"
+          background={<NodeGraph fade="left" />}
+        />
+        <TerritorySection
+          id="home-photo"
+          territory="photo"
+          to="/photography"
+          background={<PhotoMosaic fade="right" />}
+        />
+        <ContactBlock />
       </main>
       <Footer />
     </div>
