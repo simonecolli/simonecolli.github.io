@@ -9,8 +9,10 @@ interface LightboxProps {
   onNavigate: (photo: Photo) => void;
 }
 
+// Escape closes, the arrows step through photos, and body scroll is frozen
+// while it is open. On unmount focus goes back to whatever held it before, so
+// closing returns the keyboard to the card.
 export default function Lightbox({ photo, photos, onClose, onNavigate }: LightboxProps) {
-  // Browse photos with arrow keys, lock scrolling and restore focus on unmount.
   const [isLoaded, setIsLoaded] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
   const { t } = useTranslation();

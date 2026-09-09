@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 
 export default function WorkInProgress() {
-  // Show a translated placeholder for content still in progress.
   const { t } = useTranslation();
 
   return (

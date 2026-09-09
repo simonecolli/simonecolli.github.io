@@ -5,8 +5,9 @@ import Back2Home from "../components/utils/Back2Home";
 import WorkInProgress from "../components/utils/WorkInProgress";
 import SEO from "../components/SEO";
 
+// Off the nav bar and out of the sitemap until there are posts, but the route
+// stays reachable so putting it back is a two-line change.
 export default function Blog() {
-  // Show the blog placeholder until posts are available.
   const { t } = useTranslation();
 
   return (

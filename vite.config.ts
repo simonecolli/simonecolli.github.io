@@ -7,8 +7,9 @@ import { projects } from './src/data/projects'
 import { talks } from './src/data/talks'
 import { SITE_URL } from './src/siteConfig'
 
+// Built from the prerender routes, so the sitemap cannot list a page that is
+// not generated or miss one that is. `.html` routes are the 404 fallback.
 function sitemap(routes: string[]): Plugin {
-  // Build the sitemap from static routes, excluding the HTML fallback page.
   return {
     name: 'sitemap',
     apply: 'build',
@@ -32,8 +33,9 @@ function sitemap(routes: string[]): Plugin {
   }
 }
 
+// Vite copies `public/` into `dist` verbatim and macOS keeps recreating
+// .DS_Store in any folder opened in Finder, so deleting it once is not enough.
 function dropFinderJunk(): Plugin {
-  // Remove Finder metadata copied into the build from public assets.
   return {
     name: 'drop-finder-junk',
     apply: 'build',
@@ -48,8 +50,9 @@ function dropFinderJunk(): Plugin {
   }
 }
 
+// The prerender pass leaves a handle open and the build otherwise hangs after
+// writing everything it had to write.
 function forceExit(): Plugin {
-  // Exit after the build because prerendering leaves an open handle.
   return {
     name: 'force-exit',
     closeBundle() {
@@ -58,6 +61,11 @@ function forceExit(): Plugin {
   }
 }
 
+// GitHub Pages serves static files only: a URL with no matching file returns
+// its own 404 and the client router never boots, so every route needs a real
+// file. Detail routes come from the data, which covers new entries on their
+// own, and a route ending in `.html` is emitted verbatim, so `/404.html` lands
+// at `dist/404.html` and acts as the fallback for anything unlisted.
 const prerenderRoutes = [
   '/development',
   '/projects',

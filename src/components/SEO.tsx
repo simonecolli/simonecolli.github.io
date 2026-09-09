@@ -12,6 +12,11 @@ interface SEOProps {
   noindex?: boolean;
 }
 
+// Head tags for one page. Under prerender they go to the plugin, which injects
+// them into the real <head>; in the browser React hoists them itself. The
+// locale matches on the prefix because detected languages carry a region
+// ("it-IT"), and noindex replaces the canonical, since the 404 page answers
+// for any unknown URL.
 export default function SEO({
   titleKey,
   descriptionKey,
@@ -20,7 +25,6 @@ export default function SEO({
   image = "/profile.jpg",
   noindex = false,
 }: SEOProps) {
-  // Collect head tags during prerendering; let React place them in the browser.
   const { t, i18n } = useTranslation();
 
   const title = titleKey ? `${t(titleKey)} | Simone Colli` : "Simone Colli";

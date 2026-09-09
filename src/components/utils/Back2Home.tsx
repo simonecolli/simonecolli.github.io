@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+// No flex wrapper: with no icon to align this is a plain link, so the
+// underline from @layer base is what marks hover.
 export default function Back2Home() {
-  // Link back to the home page using the current language.
     const { t } = useTranslation();
 
     return (

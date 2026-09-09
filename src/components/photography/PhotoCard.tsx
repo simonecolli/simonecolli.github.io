@@ -8,7 +8,6 @@ interface PhotoCardProps {
 }
 
 export default function PhotoCard({ photo, onClick }: PhotoCardProps) {
-  // Open a photo by click or keyboard, with loading and error states.
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
   const { t } = useTranslation();

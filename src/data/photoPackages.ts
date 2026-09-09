@@ -1,3 +1,7 @@
+// Every value is a translation key, not text. Without `fromPrice` the card
+// falls back to "on request", so prices can land one at a time; `fromNote` says
+// what that minimum actually buys, which is what makes a "from" price lawful
+// towards consumers.
 export interface PhotoPackage {
   id: string;
   title: string;

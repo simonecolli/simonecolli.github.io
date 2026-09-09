@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 
 export default function NotFound() {
-  // Help visitors return home from an unknown URL.
   const { t } = useTranslation();
 
   return (

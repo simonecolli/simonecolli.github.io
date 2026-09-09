@@ -4,6 +4,9 @@ export interface Skill {
   secondary?: boolean;
 }
 
+// Named keys rather than positional ones, so adding a category cannot shift the
+// translations of every other. `secondary` groups render last, under their own
+// heading.
 export const skills: Skill[] = [
   {
     category: "data.skills.primaryLanguages",

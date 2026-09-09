@@ -7,8 +7,10 @@ import {
   type Theme,
 } from "../theme";
 
+// The stored choice is read after mount, since neither localStorage nor
+// matchMedia exist during prerender; the inline script in <head> has already
+// set the attribute on <html> by then, so nothing flashes.
 export function useTheme() {
-  // Read the saved theme after mount and follow system changes when selected.
   const [theme, setThemeState] = useState<Theme>("system");
   const [resolved, setResolved] = useState<ResolvedTheme>("light");
 

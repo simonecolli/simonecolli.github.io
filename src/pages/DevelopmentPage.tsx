@@ -12,8 +12,11 @@ const DEV_EMAIL = "info.dev@simonecolli.com";
 
 const SERVICES = [1, 6, 2, 3, 4, 5] as const;
 
+// Built to the same shape as /photography, differing only in title face, logo
+// and accent. linkClass leaves out hover:no-underline on purpose, so the
+// underline from @layer base marks hover on the two links out to projects and
+// talks, the routes kept off the nav bar.
 export default function DevelopmentPage() {
-  // Present development services, selected projects and the email contact.
   const { t } = useTranslation();
   const featured = projects.filter((project) => project.favourite);
   const linkClass = "text-sm font-medium text-accent-dev transition-colors";

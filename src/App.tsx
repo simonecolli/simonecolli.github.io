@@ -16,7 +16,6 @@ import PrivacyPage from "./pages/PrivacyPage.tsx"
 import NotFound from "./pages/NotFound.tsx"
 
 function LanguageSync() {
-  // Keep the document language in sync with the selected translation.
   const { i18n } = useTranslation();
 
   useEffect(() => {
@@ -26,8 +25,11 @@ function LanguageSync() {
   return null;
 }
 
+// Client-side navigation swaps the route without loading a document, so the
+// browser keeps the scroll position of the page being left. URLs carrying a
+// hash are skipped: those are in-page anchors, and resetting would fight the
+// jump they ask for.
 function ScrollToTop() {
-  // Reset scroll on navigation, leaving in-page anchors to the browser.
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
@@ -38,8 +40,9 @@ function ScrollToTop() {
   return null;
 }
 
+// Shared by the browser and the prerender pass, which wraps it in a
+// StaticRouter instead of a BrowserRouter.
 export function AppRoutes() {
-  // Share the same routes between the browser and static rendering.
   return (
     <>
       <LanguageSync />
@@ -63,7 +66,6 @@ export function AppRoutes() {
 }
 
 export default function App() {
-  // Set up browser navigation for the site.
   return (
     <Router>
       <AppRoutes />

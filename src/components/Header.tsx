@@ -9,6 +9,9 @@ const languages = [
   { code: 'it', label: 'Italiano' },
 ] as const;
 
+// The blog stays out of the bar and out of the sitemap until it has posts. Its
+// route and translations are untouched, so bringing it back is one line here
+// and one in the prerender routes.
 const NAV_ITEMS = [
   { to: "/", key: "nav.home" },
   { to: "/development", key: "nav.development" },
@@ -17,7 +20,6 @@ const NAV_ITEMS = [
 ] as const;
 
 function LanguageDropdown() {
-  // Switch language and close the menu when the visitor clicks outside it.
   const { i18n, t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -72,7 +74,6 @@ function LanguageDropdown() {
 }
 
 export default function Header() {
-  // Render the main navigation with language and theme controls.
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();

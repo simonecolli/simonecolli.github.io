@@ -3,8 +3,9 @@ import { useTranslation } from "react-i18next";
 const DEV_EMAIL = "info.dev@simonecolli.com";
 const PHOTO_EMAIL = "info.photo@simonecolli.com";
 
+// No form: the hosting is static and there is no backend to receive one. Two
+// mailto links add no external processor, so nothing for the privacy notice.
 export default function ContactBlock() {
-  // Offer separate email contacts for development and photography.
   const { t } = useTranslation();
 
   return (

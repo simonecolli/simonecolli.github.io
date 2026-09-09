@@ -10,13 +10,16 @@ interface TerritorySectionProps {
   background?: ReactNode;
 }
 
+// One half of the home page. territory picks the title face, accent, logo and
+// the side the text sits on; to is an anchor on this page when it starts with
+// "#" and a route otherwise. A background takes the logo's place, since logos
+// carry their own painted square and would print a rectangle over it.
 export default function TerritorySection({
   id,
   territory,
   to,
   background,
 }: TerritorySectionProps) {
-  // Render a service section with its own accent and a route or anchor link.
   const { t } = useTranslation();
 
   const isDev = territory === "dev";

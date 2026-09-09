@@ -41,8 +41,10 @@ const PERSON = {
   ],
 }
 
+// Renders one route to static HTML. The language is pinned first because Node
+// exposes navigator.language from the machine's locale, so the detector would
+// otherwise pick a different one locally than on CI.
 export async function prerender(data: { url: string }) {
-  // Render each route in Italian and add Person metadata only on home and about.
   await i18n.changeLanguage(PRERENDER_LANGUAGE)
 
   startHeadCollection()

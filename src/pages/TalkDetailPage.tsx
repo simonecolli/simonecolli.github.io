@@ -7,7 +7,6 @@ import SEO from "../components/SEO";
 import { talks } from "../data/talks";
 
 export default function TalkDetailPage() {
-  // Look up the talk by its slug, returning to the list if it is missing.
   const { slug } = useParams<{ slug: string }>();
   const talk = talks.find((t) => t.slug === slug);
   const { t } = useTranslation();

@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 
 export default function Home() {
-  // Bring together the introduction, services and contact links.
   return (
     <div className="app">
       <SEO

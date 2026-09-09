@@ -12,8 +12,15 @@ const DOT_COLOR: Record<TimelineEvent["type"], string> = {
   personal: "bg-purple-600",
 };
 
+// Serpentine path: from lg up it runs left to right, drops, and comes back
+// right to left; below that it is a single column. DOM order stays
+// chronological even on the rows that read backwards, where only the flex
+// direction is reversed.
+//
+// One openId rather than a flag per entry, driven by pointer, focus and tap
+// together: :hover alone leaves out keyboard and touch. The tooltip stays in
+// the DOM when closed because aria-describedby points at it.
 export default function JourneyPath() {
-  // Keep events chronological in the DOM and show one description at a time.
   const { t } = useTranslation();
   const [openId, setOpenId] = useState<string | null>(null);
 

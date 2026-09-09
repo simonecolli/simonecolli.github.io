@@ -11,7 +11,6 @@ interface UsePhotoFilterReturn {
 }
 
 export function usePhotoFilter(photos: Photo[]): UsePhotoFilterReturn {
-  // Filter photos by category, keeping the full list when All is selected.
   const [activeFilter, setActiveFilter] = useState<FilterValue>("All");
 
   const filteredPhotos = useMemo(() => {

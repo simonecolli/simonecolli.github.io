@@ -18,6 +18,9 @@ interface ProjectCardProps {
   basePath?: string;
 }
 
+// A <div> rather than an <a>: the link sits on the title and covers the card
+// through .stretched-link, because with showLinks the card carries its own
+// links and nesting an <a> inside an <a> is invalid markup.
 export default function ProjectCard({
   project,
   showYear = false,
@@ -25,7 +28,6 @@ export default function ProjectCard({
   compact = false,
   basePath = "projects"
 }: ProjectCardProps) {
-  // Make the title link cover the card while keeping external links separate.
   const { t } = useTranslation();
 
   const truncateDescription = (text: string, maxLength: number = 150) => {

@@ -16,8 +16,11 @@ const PHOTO_EMAIL = "info.photo@simonecolli.com";
 
 const INFO = [1, 2, 3] as const;
 
+// The gallery renders only while Photos has something in it, since an empty
+// array would leave a heading over an empty state; it comes back on its own
+// once the array is filled. The includes list is guarded because i18next
+// returns the key itself, not an array, when a key is missing.
 export default function PhotographyPage() {
-  // Show packages and contact details, adding the gallery when photos are available.
   const { activeFilter, setActiveFilter, filteredPhotos } = usePhotoFilter(Photos);
   const [lightboxPhoto, setLightboxPhoto] = useState<Photo | null>(null);
   const { t } = useTranslation();

@@ -1,3 +1,5 @@
+// Every field but `tags` is a translation key. `shortDescription` is the ~150
+// character version, used as the meta description.
 export interface Project {
   slug: string;
   title: string;

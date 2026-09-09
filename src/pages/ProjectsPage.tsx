@@ -8,7 +8,6 @@ import SEO from "../components/SEO";
 import { projects } from "../data/projects";
 
 export default function ProjectsPage() {
-  // List projects with their status, technologies and links.
   const { t } = useTranslation();
 
   return (

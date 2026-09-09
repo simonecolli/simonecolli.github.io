@@ -4,6 +4,8 @@ import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import SEO from "../components/SEO";
 
+// Title/body pairs sharing a prefix in translation.json: adding a section
+// means two keys and an entry here.
 const SECTIONS = [
   "controller",
   "data",
@@ -14,7 +16,6 @@ const SECTIONS = [
 ] as const;
 
 export default function PrivacyPage() {
-  // Render the translated privacy sections in their reading order.
   const { t } = useTranslation();
 
   return (

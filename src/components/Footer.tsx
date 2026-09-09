@@ -3,8 +3,9 @@ import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaEnvelopeOpen, FaCamera
 import { useTranslation } from "react-i18next";
 import Logo from "./utils/Logo";
 
+// Surface inverted against the page: dark in the light theme, light in the
+// dark one. Everything inside reads the "-inv" tokens, logos included.
 export default function Footer() {
-  // Show profile and contact links on a surface opposite to the page theme.
   const { t } = useTranslation();
 
   const socialLinks = [

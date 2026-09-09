@@ -7,7 +7,6 @@ import SEO from "../components/SEO";
 import { projects } from "../data/projects";
 
 export default function ProjectDetailPage() {
-  // Look up the project by its slug, returning to the list if it is missing.
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
   const { t } = useTranslation();

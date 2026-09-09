@@ -8,7 +8,6 @@ import SEO from "../components/SEO";
 import { talks } from "../data/talks";
 
 export default function TalksPage() {
-  // List talks with their topics and links to the detail pages.
   const { t } = useTranslation();
 
   return (

@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import { useTheme } from "../../hooks/useTheme";
 
 export default function ThemeToggle() {
-  // Toggle between light and dark based on the currently resolved theme.
   const { resolved, setTheme } = useTheme();
   const { t } = useTranslation();
 

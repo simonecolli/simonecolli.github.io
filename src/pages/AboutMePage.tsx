@@ -7,8 +7,11 @@ import SEO from "../components/SEO";
 import JourneyPath from "../components/about/JourneyPath";
 import { skills } from "../data/skills";
 
+// Skills render one category per row with the entries as inline labels that
+// wrap on their own: categories hold anywhere from 2 to 16 entries, and grid
+// cells of equal height would make the short ones carry the tallest one's
+// slack. The secondary block below the rule keeps the rest visible.
 export default function AboutMePage() {
-  // Present the bio, CV downloads, timeline and grouped skills.
   const { t } = useTranslation();
 
   const openCven = () => {

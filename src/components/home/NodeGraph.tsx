@@ -33,8 +33,10 @@ interface NodeGraphProps {
   fade: "left" | "right";
 }
 
+// Nodes are [x, y, radius] and edges index into them. Both are written out
+// rather than generated: a layout randomised per render would not match the
+// prerendered HTML on hydration.
 export default function NodeGraph({ fade }: NodeGraphProps) {
-  // Use fixed node positions so the graph matches the prerendered HTML.
   return (
     <SectionBackground fade={fade}>
       <svg viewBox="0 0 1400 880" preserveAspectRatio="xMidYMid slice" className="node-graph-svg">

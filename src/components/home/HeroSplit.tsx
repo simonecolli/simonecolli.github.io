@@ -4,8 +4,11 @@ import Logo from "../utils/Logo";
 const TITLE_CLASS = "type-hero-title";
 const TEXT_CLASS = "type-lead text-fg mt-3 max-w-xl";
 
+// Two halves over one photograph, split by a hairline the mark covers at the
+// centre. text-fg on the paragraphs is not redundant: @layer base paints every
+// <p> in the muted grey, which over the photograph reaches only 4.80 contrast.
+// The halos behind each block carry the rest.
 export default function HeroSplit() {
-  // Present development and photography side by side over the hero image.
   const { t } = useTranslation();
 
   return (

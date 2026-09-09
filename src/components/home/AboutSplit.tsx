@@ -2,8 +2,10 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import SectionBackground from "./SectionBackground";
 
+// The portrait doubles as the section background and thins out towards the
+// left, where the text sits. It is cut out, so it rests straight on the
+// background with no frame.
 export default function AboutSplit() {
-  // Introduce Simone and link to the full bio.
   const { t } = useTranslation();
 
   return (
