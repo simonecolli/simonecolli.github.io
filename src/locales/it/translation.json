@@ -195,7 +195,7 @@
       "keywords": "Simone Colli, sviluppatore software, fotografo, LLM, RAG, deploy on-premise, portfolio, sviluppo web, React, Python, C++, Parma, Salsomaggiore Terme, Italia, sviluppatore freelance, fotografo eventi, fotografo sportivo, Università di Parma"
     },
     "projects": {
-      "description": "Progetti software di Simone Colli - Sviluppo web, bioinformatica, calcolo parallelo, open source. Sviluppatore a Parma e Salsomaggiore Terme.",
+      "description": "Casi studio dei progetti di Simone Colli: gestione della produzione, automazione di processi aziendali, ottimizzazione. Sviluppatore freelance a Parma.",
       "keywords": "Simone Colli progetti, sviluppo software, open source, React, C++, Python, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Salsomaggiore Terme, Università di Parma"
     },
     "talks": {
@@ -232,12 +232,14 @@
       "freelanceHub": {
         "title": "Freelance hub",
         "description": "Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
-        "shortDescription": "Dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo. In TDD, 843 test, copertura al 100%."
+        "shortDescription": "Dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo. In TDD, 843 test, copertura al 100%.",
+        "keywords": "gestionale per freelance, CRM libero professionista, automazione attività freelance, previsione incassi, pianificazione del carico di lavoro, preventivi e contratti, self-hosted, LLM in locale, Ollama, software su misura"
       },
       "mgp": {
         "title": "MGP - Gestione produzione",
         "description": "Un'azienda manifatturiera preparava ogni commessa passando da un file Excel, sette o otto schede da impaginare a mano e una serie di script, con un limite di 21 righe di prodotto. MGP è la piattaforma che ha preso in carico quel processo: l'operatore compila la commessa, il sistema calcola, genera documenti e file di produzione e restituisce un archivio già organizzato. L'azienda configura da sé le proprie tipologie di prodotto, dai campi alle formule ai file da produrre, senza toccare il codice. In seguito estesa alla pianificazione dei carichi su autocarro per produzione e preventivi, al collegamento con i macchinari via OPC UA e a un modulo di assistenza integrato.",
-        "shortDescription": "Da un processo tra Excel, macro e script a una piattaforma che genera i file di produzione e pianifica i carichi, configurabile senza codice."
+        "shortDescription": "Da un processo tra Excel, macro e script a una piattaforma che genera i file di produzione e pianifica i carichi, configurabile senza codice.",
+        "keywords": "gestionale produzione, software gestione commesse, automazione processi produttivi, configuratore di prodotto, generazione DXF, piano di carico, nesting, ottimizzazione dei carichi, OPC UA, integrazione macchinari, software su misura azienda manifatturiera"
       },
       "photographyDelivery": {
         "title": "Photo Delivery",

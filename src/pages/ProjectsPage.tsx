@@ -17,6 +17,7 @@ export default function ProjectsPage() {
         descriptionKey="seo.projects.description"
         keywordsKey="seo.projects.keywords"
         path="/projects"
+        image="/og/projects.png"
       />
       <Header />
       <main className="main-content pt-20">

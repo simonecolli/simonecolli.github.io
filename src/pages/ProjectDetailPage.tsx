@@ -27,8 +27,9 @@ export default function ProjectDetailPage() {
       <SEO
         titleKey={project.title}
         descriptionKey={project.shortDescription}
-        keywordsKey="seo.projects.keywords"
+        keywordsKey={project.keywords ?? "seo.projects.keywords"}
         path={`/projects/${project.slug}`}
+        image={project.image}
       />
       <Header />
       <main className="main-content pt-20">

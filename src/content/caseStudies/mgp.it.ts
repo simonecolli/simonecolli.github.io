@@ -12,7 +12,7 @@ export const mgpIt: CaseStudy = {
   metrics: [
     { value: "21", label: "righe di prodotti al massimo per commessa, il limite del foglio di partenza" },
     { value: "7–8", label: "schede Excel da compilare e impaginare a mano, una commessa alla volta" },
-    { value: "4", label: "tipologie di prodotto, ognuna con lo stesso processo da ripetere" },
+    { value: "4/5", label: "tipologie di prodotto, ognuna con lo stesso processo da ripetere" },
     { value: "10–15 s", label: "per una proposta di piano di carico, contro le ore richieste in AutoCAD" },
   ],
 
@@ -48,7 +48,7 @@ export const mgpIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "Il processo si ripeteva per quattro tipologie di prodotto. Anche modificarlo era laborioso: formule, costanti e condizioni erano distribuite tra macro e script difficili da leggere, con dipendenze poco evidenti e scarsa documentazione. Aggiornare una regola richiedeva di ricostruire il funzionamento delle parti coinvolte.",
+          text: "Il processo si ripeteva per quattro o cinque tipologie di prodotto. Anche modificarlo era laborioso: formule, costanti e condizioni erano distribuite tra macro e script difficili da leggere, con dipendenze poco evidenti e scarsa documentazione. Aggiornare una regola richiedeva di ricostruire il funzionamento delle parti coinvolte.",
         },
       ],
     },

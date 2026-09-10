@@ -12,7 +12,7 @@ export const mgpEn: CaseStudy = {
   metrics: [
     { value: "21", label: "product rows per job at most, the hard limit of the original spreadsheet" },
     { value: "7–8", label: "Excel sheets to fill in and lay out for print, one job at a time" },
-    { value: "4", label: "product types, each repeating the same process from the start" },
+    { value: "4/5", label: "product types, each repeating the same process from the start" },
     { value: "10–15 s", label: "for a proposed load plan, against the hours it took in AutoCAD" },
   ],
 
@@ -48,7 +48,7 @@ export const mgpEn: CaseStudy = {
         },
         {
           kind: "p",
-          text: "The whole process repeated for four product types. Changing it was laborious too: formulas, constants, and conditions were scattered across macros and scripts that were hard to read, with dependencies that were not obvious and little documentation. Updating one rule meant reconstructing how the surrounding pieces worked.",
+          text: "The whole process repeated for four or five product types. Changing it was laborious too: formulas, constants, and conditions were scattered across macros and scripts that were hard to read, with dependencies that were not obvious and little documentation. Updating one rule meant reconstructing how the surrounding pieces worked.",
         },
       ],
     },

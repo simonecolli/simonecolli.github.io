@@ -195,7 +195,7 @@
       "keywords": "Simone Colli, software developer, photographer, LLM, RAG, on-premise deployment, portfolio, web development, React, Python, C++, Parma, Salsomaggiore Terme, Italy, freelance developer, event photographer, sports photographer, University of Parma"
     },
     "projects": {
-      "description": "Software projects by Simone Colli - Web development, bioinformatics, parallel computing, and open source. Developer based in Parma and Salsomaggiore Terme.",
+      "description": "Case studies of Simone Colli's projects: production management, business process automation, optimisation. Freelance software developer based in Parma, Italy.",
       "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Salsomaggiore Terme, University of Parma"
     },
     "talks": {
@@ -232,12 +232,14 @@
       "freelanceHub": {
         "title": "Freelance hub",
         "description": "I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 843 tests with a 100% coverage threshold enforced by the pipeline, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
-        "shortDescription": "From first lead to payment in one place, with revenue forecasts and time planning. Built in TDD: 843 tests, 100% coverage enforced by the pipeline."
+        "shortDescription": "From first lead to payment in one place, with revenue forecasts and time planning. Built in TDD: 843 tests, 100% coverage enforced by the pipeline.",
+        "keywords": "freelance management system, freelance CRM, business automation, revenue forecasting, workload planning, quotations and contracts, self-hosted, local LLM, Ollama, custom software"
       },
       "mgp": {
         "title": "MGP - Production management",
         "description": "A manufacturing company prepared every work order through an Excel file, seven or eight sheets laid out by hand and a chain of scripts, with a hard limit of 21 product rows. MGP is the platform that took that process over: the operator fills in the work order, the system runs the calculations, generates the documents and production files, and returns an archive already organised. The company configures its own product types, from the fields to the formulas to the files produced, without touching the code. Later extended to truck load planning for production and quotations, a link to the machines over OPC UA, and a built-in support module.",
-        "shortDescription": "From a process spread across Excel, macros and scripts to a platform that generates production files and plans truck loads, configurable without code."
+        "shortDescription": "From a process spread across Excel, macros and scripts to a platform that generates production files and plans truck loads, configurable without code.",
+        "keywords": "production management software, work order management, manufacturing process automation, product configurator, DXF generation, truck load planning, nesting, load optimisation, OPC UA, machine integration, custom manufacturing software"
       },
       "photographyDelivery": {
         "title": "Photo Delivery",
