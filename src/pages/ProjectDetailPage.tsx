@@ -4,16 +4,23 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import SEO from "../components/SEO";
+import CaseStudy from "../components/projects/CaseStudy";
 import { projects } from "../data/projects";
+import { getCaseStudy } from "../content/caseStudies";
+import { DEV_EMAIL } from "../siteConfig";
 
 export default function ProjectDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   if (!project) {
     return <Navigate to="/projects" replace />;
   }
+
+  // Projects that carry the positioning have a long form; the others keep the
+  // single paragraph, so both shapes render from the same page.
+  const caseStudy = getCaseStudy(project.slug, i18n.language);
 
   return (
     <div className="app">
@@ -27,7 +34,7 @@ export default function ProjectDetailPage() {
       <main className="main-content pt-20">
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-4xl mx-auto fade-in">
+            <div className={`${caseStudy ? "max-w-6xl" : "max-w-4xl"} mx-auto fade-in`}>
               <Link
                 to="/projects"
                 className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-dev transition-colors mb-8"
@@ -51,13 +58,17 @@ export default function ProjectDetailPage() {
                 <div className="h-px bg-line w-24 mb-6"></div>
               </div>
 
-              <div className="prose max-w-none mb-8">
-                <p className="text-lg text-muted leading-relaxed">
-                  {t(project.description)}
-                </p>
-              </div>
+              {caseStudy ? (
+                <CaseStudy content={caseStudy} />
+              ) : (
+                <div className="prose max-w-none mb-8">
+                  <p className="text-lg text-muted leading-relaxed">
+                    {t(project.description)}
+                  </p>
+                </div>
+              )}
 
-              <div className="flex flex-wrap gap-2 mb-8">
+              <div className={`flex flex-wrap gap-2 mb-8 ${caseStudy ? "mt-16 pt-8 border-t border-line" : ""}`}>
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
@@ -96,6 +107,20 @@ export default function ProjectDetailPage() {
                   </a>
                 )}
               </div>
+
+              {caseStudy && (
+                <aside className="mt-16 border border-line rounded-lg p-8 md:p-10 max-w-3xl">
+                  <h2 className="text-2xl font-light tracking-tight mb-3">
+                    {t('projects.caseStudy.ctaTitle')}
+                  </h2>
+                  <p className="type-body text-muted mb-6">
+                    {t('projects.caseStudy.ctaText')}
+                  </p>
+                  <a href={`mailto:${DEV_EMAIL}`} className="btn btn-dev">
+                    {t('projects.caseStudy.ctaButton')}
+                  </a>
+                </aside>
+              )}
             </div>
           </div>
         </section>

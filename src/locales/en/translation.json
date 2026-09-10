@@ -53,7 +53,14 @@
   "projects": {
     "pageTitle": "Projects",
     "pageDescription": "A collection of software projects, experiments, and ideas turned into reality. Each project represents a milestone in my journey as a developer.",
-    "backToProjects": "Back to projects"
+    "backToProjects": "Back to projects",
+    "caseStudy": {
+      "contents": "Contents",
+      "ctaTitle": "Does this look like a process you have?",
+      "ctaText": "If one of your procedures lives across spreadsheets, macros and manual steps, tell me about it. I will study it and tell you what can be automated and what is better left alone.",
+      "ctaButton": "Get in touch",
+      "badge": "Case study"
+    }
   },
   "talks": {
     "pageTitle": "Talks",
@@ -170,7 +177,10 @@
   },
   "status": {
     "inProgress": "In Progress",
-    "completed": "Completed"
+    "completed": "Completed",
+    "expanding": "Continuously expanding",
+    "v1Released": "v1 complete",
+    "beyondPrototype": "Beyond the prototype"
   },
   "photoCategories": {
     "Portrait": "Portrait",
@@ -221,13 +231,13 @@
     "projects": {
       "freelanceHub": {
         "title": "Freelance hub",
-        "description": "CRM and automation for my freelance practice: clients, projects, requests, quotes, contracts, activities, costs and invoicing, with reports generated as PDFs. Twenty-eight feature modules across four services — backend, frontend, CLI and scheduler. The assistant runs on language models hosted locally, through Ollama or LM Studio, so client data never leaves the machine. Built test-first: 843 tests with a 100% coverage gate enforced by the pipeline, mypy --strict type checking, and a full DevSecOps chain across gitleaks, bandit, safety, pip-audit, OSV-Scanner, Trivy and SonarQube.",
-        "shortDescription": "CRM and automation for freelance work: 28 modules, an assistant on locally hosted models, 843 tests behind a 100% coverage gate."
+        "description": "I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 843 tests with a 100% coverage threshold enforced by the pipeline, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
+        "shortDescription": "From first lead to payment in one place, with revenue forecasts and time planning. Built in TDD: 843 tests, 100% coverage enforced by the pipeline."
       },
       "mgp": {
         "title": "MGP - Production management",
-        "description": "Full-stack web platform for a manufacturing company's production department: product configuration, automatic generation of bills of materials and PDF/DXF documents, truck load-plan optimization. Polyglot microservices architecture documented with ADRs and C4 diagrams. OT/IT integration: communication with shop-floor PLCs over OPC-UA, and constraint-based optimization with MiniZinc and OR-Tools. Continuous delivery on Kubernetes with Grafana and Loki observability.",
-        "shortDescription": "Web platform for a production department: configurator, automatic bills of materials and documents, load-plan optimisation."
+        "description": "A manufacturing company prepared every work order through an Excel file, seven or eight sheets laid out by hand and a chain of scripts, with a hard limit of 21 product rows. MGP is the platform that took that process over: the operator fills in the work order, the system runs the calculations, generates the documents and production files, and returns an archive already organised. The company configures its own product types, from the fields to the formulas to the files produced, without touching the code. Later extended to truck load planning for production and quotations, a link to the machines over OPC UA, and a built-in support module.",
+        "shortDescription": "From a process spread across Excel, macros and scripts to a platform that generates production files and plans truck loads, configurable without code."
       },
       "photographyDelivery": {
         "title": "Photo Delivery",
@@ -410,5 +420,79 @@
     "contactTitle": "Got a project in mind?",
     "contactBody": "Tell me what problem you need to solve, under what constraints and by when. I reply with a written proposal and an estimate, with no obligation.",
     "contactCta": "Let's talk about your project"
+  },
+  "diagrams": {
+    "mgpProcess": {
+      "alt": "A comparison: above, the six manual steps across Excel, scripts, further xlsx files and file sorting; below, the four steps of the path through MGP.",
+      "beforeLane": "Before",
+      "afterLane": "With MGP",
+      "before1": "Copy the Excel file",
+      "before2": "By hand, 21 rows max",
+      "before3": "7–8 sheets to lay out",
+      "before4": "Export and PowerShell scripts",
+      "before5": "More xlsx files to fill in",
+      "after1": "Work order filled in",
+      "after2": "Order confirmed",
+      "after3": "Calculation and output",
+      "after4": "ZIP already organised",
+      "repeat": "x 4/5 product types",
+      "before6": "PDFs and sorting by hand"
+    },
+    "mgpRuleGraph": {
+      "alt": "The rule engine: input rows feed formulas held in another table, a checkpoint holds back the rows that cannot be evaluated yet, and the results reach the PDF, DXF, TLF and CSV files.",
+      "inputs": "Table a — input data",
+      "formulas": "Table b — formulas and conditions",
+      "outputs": "Outputs",
+      "quantity": "quantity",
+      "height": "height",
+      "width": "width",
+      "area": "area",
+      "condition": "condition",
+      "totalArea": "total area",
+      "threshold": "threshold",
+      "checkpoint": "checkpoint"
+    },
+    "mgpLoadPlan": {
+      "alt": "Top view of a truck bed with seven pieces nested and numbered, beside the two sequences read off the plan: assembly order and loading order.",
+      "bed": "Truck bed",
+      "assembly": "Assembly order",
+      "loading": "Loading order"
+    },
+    "fhFlow": {
+      "alt": "A comparison: above, the five tools that held the same information with no link between them; below, the chain that runs from first contact to payment and feeds the analytics.",
+      "beforeLane": "Before",
+      "afterLane": "With Freelance Hub",
+      "before1": "Folders and notes in Obsidian",
+      "before2": "Request forms",
+      "before3": "Email",
+      "before4": "WhatsApp",
+      "before5": "Quotation template",
+      "step1": "Lead",
+      "step2": "Client",
+      "step3": "Project",
+      "step4": "Work and hours",
+      "step5": "Payment",
+      "outcome": "Analytics, forecasts and time planning"
+    },
+    "fhForecast": {
+      "alt": "Bar chart: twelve recorded months, with the recurring share picked out at the base of each bar, and twelve projected months drawn as outlines, marked at three, six and twelve months.",
+      "history": "history",
+      "recurring": "recurring income",
+      "forecast": "forecast",
+      "months": "m"
+    },
+    "fhSchedule": {
+      "alt": "A week grid: the hours declared available, the fixed and personal commitments, and the work the optimisation service placed in the space that was left.",
+      "available": "available",
+      "fixed": "fixed and personal commitments",
+      "planned": "planned work",
+      "day1": "Mon",
+      "day2": "Tue",
+      "day3": "Wed",
+      "day4": "Thu",
+      "day5": "Fri",
+      "day6": "Sat",
+      "day7": "Sun"
+    }
   }
 }

@@ -631,4 +631,167 @@
   .logo-dev-inv { background-image: var(--logo-dev-inv); }
   .logo-photo-inv { background-image: var(--logo-photo-inv); }
 
+  /* Long-form project pages -------------------------------------------- */
+
+  .case-study-toc {
+    counter-reset: toc;
+  }
+
+  .case-study-toc li {
+    counter-increment: toc;
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .case-study-toc li::before {
+    content: counter(toc, decimal-leading-zero);
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1.5;
+    color: var(--c-muted);
+    flex: none;
+  }
+
+  /* Diagrams. Labels keep a readable size, so a narrow screen scrolls the
+     drawing sideways instead of shrinking the text with it. Every colour comes
+     from a token, which is what makes the drawings follow the theme. */
+
+  .diagram-scroll {
+    overflow-x: auto;
+  }
+
+  .diagram {
+    display: block;
+    width: 100%;
+    min-width: 620px;
+    height: auto;
+  }
+
+  .diagram-box {
+    fill: color-mix(in srgb, var(--c-fg) 3%, var(--c-bg));
+    stroke: var(--c-line);
+    stroke-width: 1;
+  }
+
+  .diagram-box-dashed {
+    stroke-dasharray: 5 4;
+  }
+
+  .diagram-box-accent {
+    fill: color-mix(in srgb, var(--c-accent-dev) 10%, var(--c-bg));
+    stroke: color-mix(in srgb, var(--c-accent-dev) 45%, var(--c-bg));
+  }
+
+  .diagram-row {
+    fill: color-mix(in srgb, var(--c-fg) 6%, var(--c-bg));
+    stroke: none;
+  }
+
+  .diagram-piece {
+    fill: color-mix(in srgb, var(--c-accent-dev) 14%, var(--c-bg));
+    stroke: color-mix(in srgb, var(--c-accent-dev) 40%, var(--c-bg));
+    stroke-width: 1;
+  }
+
+  .diagram-chip {
+    fill: color-mix(in srgb, var(--c-fg) 6%, var(--c-bg));
+    stroke: var(--c-line);
+    stroke-width: 1;
+  }
+
+  .diagram-text {
+    fill: var(--c-fg);
+    font-family: var(--font-sans);
+    font-size: 12px;
+  }
+
+  .diagram-text-sm {
+    fill: var(--c-muted);
+    font-family: var(--font-sans);
+    font-size: 11px;
+  }
+
+  .diagram-caption,
+  .diagram-note {
+    fill: var(--c-muted);
+    font-family: var(--font-sans);
+    font-size: 11px;
+  }
+
+  .diagram-lane {
+    fill: var(--c-muted);
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+  }
+
+  .diagram-lane-accent {
+    fill: var(--c-accent-dev);
+  }
+
+  .diagram-mono {
+    fill: var(--c-accent-dev);
+    font-family: var(--font-mono);
+    font-size: 11px;
+  }
+
+  .diagram-piece-label {
+    fill: var(--c-fg);
+    font-family: var(--font-sans);
+    font-size: 13px;
+  }
+
+  .diagram-link {
+    stroke: var(--c-line);
+    stroke-width: 1.2;
+    fill: none;
+  }
+
+  .diagram-rule {
+    stroke: var(--c-line);
+    stroke-width: 1;
+  }
+
+  .diagram-arrow-head {
+    fill: var(--c-muted);
+  }
+
+  .diagram-rule-dashed {
+    stroke-dasharray: 4 4;
+  }
+
+  .diagram-bar {
+    fill: color-mix(in srgb, var(--c-accent-dev) 45%, var(--c-bg));
+  }
+
+  .diagram-bar-base {
+    fill: color-mix(in srgb, var(--c-accent-dev) 22%, var(--c-bg));
+  }
+
+  .diagram-bar-forecast {
+    fill: color-mix(in srgb, var(--c-accent-dev) 8%, var(--c-bg));
+    stroke: color-mix(in srgb, var(--c-accent-dev) 45%, var(--c-bg));
+    stroke-width: 1;
+    stroke-dasharray: 3 2;
+  }
+
+  .diagram-slot {
+    fill: color-mix(in srgb, var(--c-fg) 4%, var(--c-bg));
+    stroke: var(--c-line);
+    stroke-width: 1;
+  }
+
+  .diagram-block-task {
+    fill: color-mix(in srgb, var(--c-accent-dev) 18%, var(--c-bg));
+    stroke: color-mix(in srgb, var(--c-accent-dev) 45%, var(--c-bg));
+    stroke-width: 1;
+  }
+
+  .diagram-block-fixed {
+    fill: color-mix(in srgb, var(--c-fg) 12%, var(--c-bg));
+    stroke: var(--c-line);
+    stroke-width: 1;
+  }
+
 }

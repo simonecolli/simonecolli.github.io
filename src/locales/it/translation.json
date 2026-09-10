@@ -53,7 +53,14 @@
   "projects": {
     "pageTitle": "Progetti",
     "pageDescription": "Una raccolta di progetti software, esperimenti e idee che diventano realtà. Ogni progetto rappresenta un passo importante nel mio percorso.",
-    "backToProjects": "Torna ai progetti"
+    "backToProjects": "Torna ai progetti",
+    "caseStudy": {
+      "contents": "Indice",
+      "ctaTitle": "Hai un processo che assomiglia a questo?",
+      "ctaText": "Se una tua procedura vive tra fogli di calcolo, macro e passaggi manuali, raccontamela. La studio, ti dico cosa si può automatizzare e cosa conviene lasciare com'è.",
+      "ctaButton": "Scrivimi",
+      "badge": "Caso studio"
+    }
   },
   "talks": {
     "pageTitle": "Presentazioni",
@@ -170,7 +177,10 @@
   },
   "status": {
     "inProgress": "In Corso",
-    "completed": "Completato"
+    "completed": "Completato",
+    "expanding": "In continua espansione",
+    "v1Released": "v1 completata",
+    "beyondPrototype": "Oltre il prototipo"
   },
   "photoCategories": {
     "Portrait": "Ritratti",
@@ -221,13 +231,13 @@
     "projects": {
       "freelanceHub": {
         "title": "Freelance hub",
-        "description": "CRM e automazione per la mia attività da libero professionista: clienti, progetti, richieste, preventivi, contratti, attività, costi e fatturazione, con report generati in PDF. Ventotto moduli funzionali distribuiti su quattro servizi — backend, frontend, CLI e scheduler. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa fra gitleaks, bandit, safety, pip-audit, OSV-Scanner, Trivy e SonarQube.",
-        "shortDescription": "CRM e automazione per l'attività freelance: 28 moduli, assistente su modelli in locale, 843 test con copertura al 100% imposta dalla pipeline."
+        "description": "Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
+        "shortDescription": "Dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo. In TDD, 843 test, copertura al 100%."
       },
       "mgp": {
         "title": "MGP - Gestione produzione",
-        "description": "Piattaforma web full-stack per il reparto produzione di un'azienda manifatturiera: configurazione di prodotto, generazione automatica di distinte base e documenti in PDF e DXF, ottimizzazione del piano di carico dei camion. Architettura a microservizi poliglotti documentata con ADR e diagrammi C4. Integrazione OT/IT: comunicazione con i PLC di reparto via OPC-UA e ottimizzazione a vincoli con MiniZinc e OR-Tools. Rilascio continuo su Kubernetes con osservabilità Grafana e Loki.",
-        "shortDescription": "Piattaforma web per il reparto produzione: configuratore, distinte base e documenti automatici, ottimizzazione del piano di carico."
+        "description": "Un'azienda manifatturiera preparava ogni commessa passando da un file Excel, sette o otto schede da impaginare a mano e una serie di script, con un limite di 21 righe di prodotto. MGP è la piattaforma che ha preso in carico quel processo: l'operatore compila la commessa, il sistema calcola, genera documenti e file di produzione e restituisce un archivio già organizzato. L'azienda configura da sé le proprie tipologie di prodotto, dai campi alle formule ai file da produrre, senza toccare il codice. In seguito estesa alla pianificazione dei carichi su autocarro per produzione e preventivi, al collegamento con i macchinari via OPC UA e a un modulo di assistenza integrato.",
+        "shortDescription": "Da un processo tra Excel, macro e script a una piattaforma che genera i file di produzione e pianifica i carichi, configurabile senza codice."
       },
       "photographyDelivery": {
         "title": "Photo Delivery",
@@ -410,5 +420,79 @@
     "contactTitle": "Hai un progetto in mente?",
     "contactBody": "Raccontami che problema devi risolvere, con che vincoli e per quando. Rispondo con una proposta scritta e una stima, senza impegno.",
     "contactCta": "Parliamo del tuo progetto"
+  },
+  "diagrams": {
+    "mgpProcess": {
+      "alt": "Schema di confronto: sopra i sei passaggi manuali tra Excel, script, altri file xlsx e smistamento dei file; sotto i quattro passaggi del percorso dentro MGP.",
+      "beforeLane": "Prima",
+      "afterLane": "Con MGP",
+      "before1": "Copia del file Excel",
+      "before2": "Quote a mano, max 21 righe",
+      "before3": "7–8 schede da impaginare",
+      "before4": "Export e script PowerShell",
+      "before5": "Altri file xlsx da compilare",
+      "after1": "Commessa compilata",
+      "after2": "Conferma dell'ordine",
+      "after3": "Calcoli e generazione",
+      "after4": "ZIP già organizzato",
+      "repeat": "x 4/5 tipologie di prodotto",
+      "before6": "PDF e file smistati a mano"
+    },
+    "mgpRuleGraph": {
+      "alt": "Schema del motore di regole: le righe dei dati di ingresso alimentano le formule di un'altra tabella, un checkpoint trattiene le righe non ancora valutabili e i risultati arrivano ai file PDF, DXF, TLF e CSV.",
+      "inputs": "Tabella a — dati di ingresso",
+      "formulas": "Tabella b — formule e condizioni",
+      "outputs": "Output",
+      "quantity": "quantità",
+      "height": "altezza",
+      "width": "larghezza",
+      "area": "superficie",
+      "condition": "condizione",
+      "totalArea": "superficie totale",
+      "threshold": "soglia",
+      "checkpoint": "checkpoint"
+    },
+    "mgpLoadPlan": {
+      "alt": "Vista dall'alto di un pianale con sette pezzi disposti e numerati, accanto alle due sequenze ricavate dal piano: ordine di montaggio e ordine di caricamento.",
+      "bed": "Pianale",
+      "assembly": "Ordine di montaggio",
+      "loading": "Ordine di caricamento"
+    },
+    "fhFlow": {
+      "alt": "Confronto: sopra i cinque strumenti che tenevano le stesse informazioni senza collegamenti tra loro; sotto la catena che va dal contatto all'incasso e alimenta le analisi.",
+      "beforeLane": "Prima",
+      "afterLane": "Con Freelance Hub",
+      "before1": "Cartelle e note in Obsidian",
+      "before2": "Moduli per le richieste",
+      "before3": "Email",
+      "before4": "WhatsApp",
+      "before5": "Template dei preventivi",
+      "step1": "Contatto",
+      "step2": "Cliente",
+      "step3": "Progetto",
+      "step4": "Lavoro e ore",
+      "step5": "Incasso",
+      "outcome": "Analisi, previsioni e pianificazione del tempo"
+    },
+    "fhForecast": {
+      "alt": "Grafico a barre: dodici mesi registrati, con la quota di entrate ricorrenti evidenziata alla base, e dodici mesi di previsione tratteggiati, con i riferimenti a tre, sei e dodici mesi.",
+      "history": "storico",
+      "recurring": "entrate ricorrenti",
+      "forecast": "previsione",
+      "months": "m"
+    },
+    "fhSchedule": {
+      "alt": "Griglia di una settimana: le ore dichiarate disponibili, gli impegni fissi e personali, e le attività collocate dal servizio di ottimizzazione nello spazio rimasto.",
+      "available": "disponibile",
+      "fixed": "impegni fissi e personali",
+      "planned": "attività pianificate",
+      "day1": "Lun",
+      "day2": "Mar",
+      "day3": "Mer",
+      "day4": "Gio",
+      "day5": "Ven",
+      "day6": "Sab",
+      "day7": "Dom"
+    }
   }
 }

@@ -1,7 +1,5 @@
 import { useTranslation } from "react-i18next";
-
-const DEV_EMAIL = "info.dev@simonecolli.com";
-const PHOTO_EMAIL = "info.photo@simonecolli.com";
+import { DEV_EMAIL, PHOTO_EMAIL } from "../../siteConfig";
 
 // No form: the hosting is static and there is no backend to receive one. Two
 // mailto links add no external processor, so nothing for the privacy notice.

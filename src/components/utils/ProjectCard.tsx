@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { hasCaseStudy } from "../../content/caseStudies";
 
 interface ProjectCardProps {
   project: {
@@ -30,6 +31,10 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   const { t } = useTranslation();
 
+  // Only projects carry long-form pages, so a talk reusing this card never
+  // claims one.
+  const isCaseStudy = basePath === "projects" && hasCaseStudy(project.slug);
+
   const truncateDescription = (text: string, maxLength: number = 150) => {
     if (text.length <= maxLength) return text;
     return text.slice(0, maxLength) + "...";
@@ -44,6 +49,11 @@ export default function ProjectCard({
           </span>
           {showYear && project.year && (
             <span className="text-xs text-muted">{project.year}</span>
+          )}
+          {isCaseStudy && (
+            <span className="text-xs px-2 py-1 border border-accent-dev text-accent-dev rounded">
+              {t('projects.caseStudy.badge')}
+            </span>
           )}
         </div>
         <div className="w-6 h-6 border border-line rounded-full flex items-center justify-center group-hover:border-accent-dev transition-colors">
