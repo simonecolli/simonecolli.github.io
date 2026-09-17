@@ -3,6 +3,26 @@ import type { CaseStudy } from "./types";
 export const mgpEn: CaseStudy = {
   facts: ["In production", "Installed on the company server"],
 
+  highlight: {
+    context: "A platform built for a manufacturing company, now running on the company's own server.",
+    before: {
+      title: "Before",
+      items: [
+        "7–8 Excel sheets to fill in and lay out by hand for every work order",
+        "Macros and PowerShell scripts, with files sorted into folders by hand",
+        "Load plans drawn up in AutoCAD, taking hours of work",
+      ],
+    },
+    after: {
+      title: "With MGP",
+      items: [
+        "The work order is filled in once: the system produces the calculations, documents and production files",
+        "A ZIP archive already organised by product type",
+        "A proposed load plan in about 10–15 seconds",
+      ],
+    },
+  },
+
   lead: [
     "MGP is a platform I built for a manufacturing company to handle the preparation of work orders, the calculation of production data, and the generation of the documents and files the shop floor needs.",
     "The project started from a real process that needed rethinking: a sequence of steps spread across Excel, Visual Basic macros, and PowerShell scripts, with a great deal of manual work and rules that were hard to change. From that base, MGP grew to cover load planning for both production and quotations, a link to the shop-floor machines, and an integrated support module.",

@@ -40,12 +40,27 @@ export interface CaseStudySection {
   blocks: Block[];
 }
 
+export interface HighlightSide {
+  title: string;
+  items: string[];
+}
+
+// The before and after in a few lines, for pages that point to the case study
+// without room for the long form. Items on the two sides pair up by position.
+export interface Highlight {
+  context: string;
+  before: HighlightSide;
+  after: HighlightSide;
+}
+
 export interface CaseStudy {
   // Short qualifiers shown as chips under the title.
   facts: string[];
   // Opening paragraphs, before the first section and outside the table of
   // contents.
   lead: string[];
+  contact?: { title: string; text: string; button: string };
   metrics?: Metric[];
+  highlight?: Highlight;
   sections: CaseStudySection[];
 }

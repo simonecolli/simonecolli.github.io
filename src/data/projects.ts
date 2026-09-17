@@ -20,31 +20,12 @@ export interface Project {
   favourite?: boolean;
 }
 
+// The case a company recognises itself in, pointed to from the home hero and
+// shown beside the opening of /development.
+export const FEATURED_CASE_SLUG = "mgp-gestione-produzione";
+
+// Listed in display order, which is not by year.
 export const projects: Project[] = [
-  {
-    slug: "freelance-hub",
-    title: "data.projects.freelanceHub.title",
-    description: "data.projects.freelanceHub.description",
-    shortDescription: "data.projects.freelanceHub.shortDescription",
-    keywords: "data.projects.freelanceHub.keywords",
-    image: "/og/freelance-hub.png",
-    tags: [
-      "Python",
-      "FastAPI",
-      "GraphQL",
-      "Nuxt",
-      "TypeScript",
-      "PostgreSQL",
-      "Docker",
-      "Ollama",
-      "DevSecOps",
-    ],
-    status: "status.v1Released",
-    github: "",
-    demo: "",
-    year: "2026",
-    favourite: true,
-  },
   {
     slug: "mgp-gestione-produzione",
     title: "data.projects.mgp.title",
@@ -66,6 +47,30 @@ export const projects: Project[] = [
       "OR-Tools",
     ],
     status: "status.expanding",
+    github: "",
+    demo: "",
+    year: "2026",
+    favourite: true,
+  },
+  {
+    slug: "freelance-hub",
+    title: "data.projects.freelanceHub.title",
+    description: "data.projects.freelanceHub.description",
+    shortDescription: "data.projects.freelanceHub.shortDescription",
+    keywords: "data.projects.freelanceHub.keywords",
+    image: "/og/freelance-hub.png",
+    tags: [
+      "Python",
+      "FastAPI",
+      "GraphQL",
+      "Nuxt",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "Ollama",
+      "DevSecOps",
+    ],
+    status: "status.v1Released",
     github: "",
     demo: "",
     year: "2026",
@@ -97,12 +102,13 @@ export const projects: Project[] = [
     title: "data.projects.personalWebsite.title",
     description: "data.projects.personalWebsite.description",
     shortDescription: "data.projects.personalWebsite.shortDescription",
+    keywords: "data.projects.personalWebsite.keywords",
     image: "/og/personal-website.png",
     tags: ["Web Development", "React", "TypeScript", "Tailwind CSS"],
     status: "status.inProgress",
     github: "https://github.com/simonecolli/simonecolli.github.io",
     demo: "https://www.simonecolli.com",
-    year: "2025",
+    year: "2025–2026",
   },
   {
     slug: "quantum-portfolio-optimization",

@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Logo from "../utils/Logo";
+import { useMailHref } from "../../hooks/useMailHref";
+import { FEATURED_CASE_SLUG } from "../../data/projects";
 
 const TITLE_CLASS = "type-hero-title";
 const TEXT_CLASS = "type-lead text-fg mt-3 max-w-xl";
+const LINK_CLASS = "hero-link text-sm font-medium text-fg underline underline-offset-4";
 
 // Two halves over one photograph, split by a hairline the mark covers at the
 // centre. text-fg on the paragraphs is not redundant: @layer base paints every
@@ -10,9 +14,11 @@ const TEXT_CLASS = "type-lead text-fg mt-3 max-w-xl";
 // The halos behind each block carry the rest.
 export default function HeroSplit() {
   const { t } = useTranslation();
+  const devMail = useMailHref("dev");
+  const photoMail = useMailHref("photo");
 
   return (
-    <section className="hero-split relative min-h-svh flex pt-24 pb-12 lg:pt-40 lg:pb-16">
+    <section className="hero-split relative lg:min-h-svh flex pt-24 pb-12 lg:pt-40 lg:pb-16">
       <div className="hero-bg" aria-hidden="true">
         <img src="/assets/other/hero.webp" alt="" width={2048} height={1365} />
       </div>
@@ -35,9 +41,14 @@ export default function HeroSplit() {
             <h2 className={`font-mono ${TITLE_CLASS}`}>{t("hero.devTitle")}</h2>
             <p className={TEXT_CLASS}>{t("hero.devText")}</p>
           </div>
-          <a href="#home-dev" className="btn btn-dev hero-halo-btn mt-6 lg:mt-0 lg:self-end">
-            {t("hero.devCta")}
-          </a>
+          <div className="flex flex-col items-start lg:items-end gap-3 mt-6 lg:mt-0 lg:self-end">
+            <a href={devMail} className="btn btn-dev hero-halo-btn">
+              {t("hero.devCta")}
+            </a>
+            <Link to={`/projects/${FEATURED_CASE_SLUG}`} className={LINK_CLASS}>
+              {t("hero.devLink")}
+            </Link>
+          </div>
         </div>
 
         <div className="hero-half hero-half-photo order-3 lg:order-none flex flex-col items-end text-right lg:justify-between lg:pl-40 py-6 lg:pt-0 lg:pb-[28vh]">
@@ -45,9 +56,14 @@ export default function HeroSplit() {
             <h2 className={`font-display ${TITLE_CLASS}`}>{t("hero.photoTitle")}</h2>
             <p className={TEXT_CLASS}>{t("hero.photoText")}</p>
           </div>
-          <a href="#home-photo" className="btn btn-photo hero-halo-btn mt-6 lg:mt-0 lg:self-start">
-            {t("hero.photoCta")}
-          </a>
+          <div className="flex flex-col items-end lg:items-start gap-3 mt-6 lg:mt-0 lg:self-start">
+            <a href={photoMail} className="btn btn-photo hero-halo-btn">
+              {t("hero.photoCta")}
+            </a>
+            <Link to="/photography" className={LINK_CLASS}>
+              {t("hero.photoLink")}
+            </Link>
+          </div>
         </div>
       </div>
     </section>

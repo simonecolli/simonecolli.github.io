@@ -41,6 +41,49 @@
     box-sizing: border-box;
   }
 
+  :root {
+    --scrollbar-accent: var(--c-muted);
+    --scrollbar-thumb: color-mix(in srgb, var(--scrollbar-accent) 75%, var(--c-muted));
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--c-bg);
+  }
+
+  :root[data-theme="light"] { color-scheme: light; }
+  :root[data-theme="dark"] { color-scheme: dark; }
+  :root[data-scroll-accent="dev"] { --scrollbar-accent: var(--c-accent-dev); }
+  :root[data-scroll-accent="photo"] { --scrollbar-accent: var(--c-accent-photo); }
+
+  /* scrollbar-width is not inherited, so include internal scrolling panels. */
+  * {
+    scrollbar-width: thin;
+  }
+
+  @supports not (scrollbar-color: auto) {
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-corner {
+      background: var(--c-bg);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-thumb);
+      border: 2px solid var(--c-bg);
+      border-radius: 999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--scrollbar-accent);
+    }
+  }
+
+  @media (forced-colors: active) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: auto;
+    }
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -142,15 +185,24 @@
     padding: 80px 0;
   }
 
+  /* One screen per section only where the screen is wide enough to hold the
+     layout. On a phone the rule stretched short content to full height and
+     pushed everything after it a screen further down. */
   .site-section-full {
-    min-height: 100svh;
     display: flex;
     align-items: center;
-    padding-block: 5rem;
+    padding-block: 3.5rem;
   }
 
   .site-section-full > .site-container {
     width: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    .site-section-full {
+      min-height: 100svh;
+      padding-block: 5rem;
+    }
   }
 
   @media (max-height: 820px) {
@@ -256,6 +308,13 @@
   .btn-photo:hover {
     background-color: var(--c-accent-photo);
     color: var(--c-bg);
+  }
+
+  /* Compact size for the header bar. Declared after .btn so it wins over the
+     fluid padding and type size at equal specificity. */
+  .btn-sm {
+    padding: 0.375rem 0.875rem;
+    font-size: 0.875rem;
   }
 
   .photo-mosaic-inner {
@@ -380,6 +439,13 @@
 
       box-shadow: color-mix(in srgb, var(--c-bg) 30%, transparent);
 
+    }
+
+    /* The same plate as the button: small text over the photograph needs it. */
+    .hero-link {
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      background-color: color-mix(in srgb, var(--c-bg) 84%, transparent);
     }
 
     .hero-divider {
@@ -794,4 +860,21 @@
     stroke-width: 1;
   }
 
+}
+
+/* A soft photographic accent that follows both existing colour themes. */
+.graduation-groups {
+  background: color-mix(in srgb, var(--c-accent-photo) 8%, var(--c-bg));
+  border: 1px solid color-mix(in srgb, var(--c-accent-photo) 25%, var(--c-line));
+}
+
+.graduation-page .btn {
+  white-space: normal;
+  text-align: center;
+  max-width: 100%;
+}
+
+.graduation-page summary:focus-visible {
+  outline: 2px solid var(--c-accent-photo);
+  outline-offset: 6px;
 }

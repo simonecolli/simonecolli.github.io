@@ -71,6 +71,7 @@ const prerenderRoutes = [
   '/projects',
   '/talks',
   '/photography',
+  '/photography/degree',
   '/about',
   '/privacy',
   ...projects.map((project) => `/projects/${project.slug}`),

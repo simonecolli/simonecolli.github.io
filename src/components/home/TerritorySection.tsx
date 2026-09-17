@@ -41,11 +41,13 @@ export default function TerritorySection({
       ) : (
         <Link to={to} className={ctaClass}>{label}</Link>
       )}
+      {!isDev && <Link to="/photography/degree" className="block mt-4 text-accent-photo underline underline-offset-4">{t("home.photo.graduationLink")}</Link>}
     </div>
   );
 
+  // Once stacked, an empty shoulder would still cost a grid gap above the text.
   const spallaSinistra = background ? (
-    <div className={isDev ? "order-1 lg:order-2" : "order-1"} />
+    <div className={`hidden lg:block ${isDev ? "order-1 lg:order-2" : "order-1"}`} />
   ) : (
     <div className={`flex justify-center ${isDev ? "order-1 lg:order-2" : "order-1"}`}>
       <Logo

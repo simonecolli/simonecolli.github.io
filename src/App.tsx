@@ -3,11 +3,13 @@ import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import './App.css'
+import AnalyticsConsent from './components/AnalyticsConsent'
 import Home from "./pages/Home.tsx"
 import ProjectsPage from "./pages/ProjectsPage.tsx"
 import ProjectDetailPage from "./pages/ProjectDetailPage.tsx"
 import TalksPage from "./pages/TalksPage.tsx"
 import TalkDetailPage from "./pages/TalkDetailPage.tsx"
+import GraduationPage from "./pages/GraduationPage.tsx"
 import PhotographyPage from "./pages/PhotographyPage.tsx"
 import AboutMePage from "./pages/AboutMePage.tsx"
 import Blog from "./pages/Blog.tsx"
@@ -25,15 +27,32 @@ function LanguageSync() {
   return null;
 }
 
+// Native scrollbars follow the activity colour, including detail routes.
+function ScrollbarAccentSync() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    document.documentElement.dataset.scrollAccent = /^\/photography(?:\/|$)/.test(pathname)
+      ? "photo"
+      : /^\/(development|projects|talks)(?:\/|$)/.test(pathname) ? "dev" : "neutral";
+  }, [pathname]);
+
+  return null;
+}
+
 // Client-side navigation swaps the route without loading a document, so the
-// browser keeps the scroll position of the page being left. URLs carrying a
-// hash are skipped: those are in-page anchors, and resetting would fight the
-// jump they ask for.
+// browser keeps the scroll position of the page being left. A URL carrying a
+// hash goes to that element instead: the router does not jump to an anchor on
+// its own when it sits on another page, as with the header's link to the
+// contact block.
 function ScrollToTop() {
   const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    if (hash) return;
+    if (hash) {
+      document.getElementById(decodeURIComponent(hash.slice(1)))?.scrollIntoView();
+      return;
+    }
     window.scrollTo(0, 0);
   }, [pathname, hash]);
 
@@ -46,7 +65,9 @@ export function AppRoutes() {
   return (
     <>
       <LanguageSync />
+      <ScrollbarAccentSync />
       <ScrollToTop />
+      <AnalyticsConsent />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -56,6 +77,7 @@ export function AppRoutes() {
         <Route path="/talks/:slug" element={<TalkDetailPage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/photography" element={<PhotographyPage />} />
+        <Route path="/photography/degree" element={<GraduationPage />} />
         <Route path="/about" element={<AboutMePage />} />
         <Route path="/development" element={<DevelopmentPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />

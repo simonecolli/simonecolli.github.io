@@ -9,9 +9,23 @@ export interface PhotoPackage {
   includes: string;
   fromPrice?: number;
   fromNote?: string;
+  priceLabel?: string;
+  note?: string;
+  href?: string;
+  cta?: string;
 }
 
 export const photoPackages: PhotoPackage[] = [
+  {
+    id: "graduation",
+    title: "photography.packages.graduation.title",
+    subtitle: "photography.packages.graduation.subtitle",
+    includes: "photography.packages.graduation.includes",
+    priceLabel: "photography.packages.graduation.price",
+    note: "photography.packages.graduation.note",
+    href: "/photography/degree",
+    cta: "photography.packages.graduation.cta",
+  },
   {
     id: "sport",
     title: "photography.packages.sport.title",

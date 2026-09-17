@@ -4,20 +4,23 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import ProjectCard from "../components/utils/ProjectCard";
+import PlainAddress from "../components/utils/PlainAddress";
+import CaseHighlight from "../components/projects/CaseHighlight";
 import SEO from "../components/SEO";
-import Logo from "../components/utils/Logo";
-import { projects } from "../data/projects";
-
-const DEV_EMAIL = "info.dev@simonecolli.com";
+import { FEATURED_CASE_SLUG, projects } from "../data/projects";
+import { DEV_EMAIL } from "../siteConfig";
+import { useMailHref } from "../hooks/useMailHref";
 
 const SERVICES = [1, 6, 2, 3, 4, 5] as const;
 
-// Built to the same shape as /photography, differing only in title face, logo
-// and accent. linkClass leaves out hover:no-underline on purpose, so the
-// underline from @layer base marks hover on the two links out to projects and
-// talks, the routes kept off the nav bar.
+// Built to the same shape as /photography, differing in title face, accent and
+// what stands beside the opening text: here the before and after of a real
+// case, the proof a company arriving from an email needs first. linkClass
+// leaves out hover:no-underline on purpose, so the underline from @layer base
+// marks hover on the links.
 export default function DevelopmentPage() {
   const { t } = useTranslation();
+  const devMail = useMailHref("dev");
   const featured = projects.filter((project) => project.favourite);
   const linkClass = "text-sm font-medium text-accent-dev transition-colors";
 
@@ -42,15 +45,17 @@ export default function DevelopmentPage() {
                 <p className="type-lead text-muted">
                   {t("development.intro")}
                 </p>
-                <a href="#servizi" className="btn btn-dev mt-6">
-                  {t("development.heroCta")}
-                </a>
+                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mt-6">
+                  <a href={devMail} className="btn btn-dev">
+                    {t("development.heroCta")}
+                  </a>
+                  <a href="#servizi" className={linkClass}>
+                    {t("development.heroServices")}
+                  </a>
+                </div>
               </div>
-              <div className="flex justify-center order-2">
-                <Logo
-                  variant="dev"
-                  className="w-[clamp(8rem,min(26vh,34vw),18rem)] h-[clamp(8rem,min(26vh,34vw),18rem)]"
-                />
+              <div className="order-2">
+                <CaseHighlight slug={FEATURED_CASE_SLUG} />
               </div>
             </div>
           </div>
@@ -70,6 +75,16 @@ export default function DevelopmentPage() {
                   <p className="text-muted leading-relaxed">
                     {t(`development.service${n}Body`)}
                   </p>
+                  {n === 5 && (
+                    <div className="flex flex-col items-start gap-3 mt-4">
+                      <Link to="/projects/personal-website" className={linkClass}>
+                        {t("development.websiteCaseStudy")}
+                      </Link>
+                      <Link to="/#idee" className={linkClass}>
+                        {t("contact.ideas.linkLabel")}
+                      </Link>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
@@ -117,9 +132,10 @@ export default function DevelopmentPage() {
               <p className="text-muted leading-relaxed mb-8">
                 {t("development.contactBody")}
               </p>
-              <a href={`mailto:${DEV_EMAIL}`} className="btn btn-dev">
+              <a href={devMail} className="btn btn-dev">
                 {t("development.contactCta")}
               </a>
+              <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
             </div>
           </div>
         </section>

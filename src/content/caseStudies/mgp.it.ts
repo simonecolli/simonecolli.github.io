@@ -3,6 +3,26 @@ import type { CaseStudy } from "./types";
 export const mgpIt: CaseStudy = {
   facts: ["Operativo", "Installato su server aziendale"],
 
+  highlight: {
+    context: "Piattaforma sviluppata per un'azienda manifatturiera, oggi operativa sul server aziendale.",
+    before: {
+      title: "Prima",
+      items: [
+        "7–8 schede Excel da compilare e impaginare a mano per ogni commessa",
+        "Macro e script PowerShell, con i file da smistare a mano nelle cartelle",
+        "Piani di carico preparati in AutoCAD, con ore di lavoro",
+      ],
+    },
+    after: {
+      title: "Con MGP",
+      items: [
+        "La commessa si compila una volta: calcoli, documenti e file di produzione li genera il sistema",
+        "Un archivio ZIP già organizzato per tipologia di prodotto",
+        "Una proposta di piano di carico in circa 10–15 secondi",
+      ],
+    },
+  },
+
   lead: [
     "MGP è una piattaforma che ho sviluppato per un'azienda manifatturiera per gestire la preparazione delle commesse, il calcolo dei dati di produzione e la generazione dei documenti e dei file necessari alle lavorazioni.",
     "Il progetto nasce da un processo concreto da ripensare: una sequenza di operazioni distribuite tra Excel, macro Visual Basic e script PowerShell, con numerosi passaggi manuali e regole difficili da aggiornare. Da questa base, MGP si è ampliato con la pianificazione dei carichi per produzione e preventivi, il collegamento ai macchinari e un modulo di assistenza integrato.",

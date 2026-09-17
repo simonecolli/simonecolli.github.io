@@ -19,7 +19,6 @@ export default function Home() {
       <Header />
       <main className="main-content">
         <HeroSplit />
-        <AboutSplit />
         <TerritorySection
           id="home-dev"
           territory="dev"
@@ -32,6 +31,7 @@ export default function Home() {
           to="/photography"
           background={<PhotoMosaic fade="right" />}
         />
+        <AboutSplit />
         <ContactBlock />
       </main>
       <Footer />

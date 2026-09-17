@@ -5,14 +5,17 @@ import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import SEO from "../components/SEO";
 import CaseStudy from "../components/projects/CaseStudy";
+import PlainAddress from "../components/utils/PlainAddress";
 import { projects } from "../data/projects";
 import { getCaseStudy } from "../content/caseStudies";
 import { DEV_EMAIL } from "../siteConfig";
+import { useMailHref } from "../hooks/useMailHref";
 
 export default function ProjectDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
   const { t, i18n } = useTranslation();
+  const devMail = useMailHref("dev");
 
   if (!project) {
     return <Navigate to="/projects" replace />;
@@ -112,14 +115,15 @@ export default function ProjectDetailPage() {
               {caseStudy && (
                 <aside className="mt-16 border border-line rounded-lg p-8 md:p-10 max-w-3xl">
                   <h2 className="text-2xl font-light tracking-tight mb-3">
-                    {t('projects.caseStudy.ctaTitle')}
+                    {caseStudy.contact?.title ?? t('projects.caseStudy.ctaTitle')}
                   </h2>
                   <p className="type-body text-muted mb-6">
-                    {t('projects.caseStudy.ctaText')}
+                    {caseStudy.contact?.text ?? t('projects.caseStudy.ctaText')}
                   </p>
-                  <a href={`mailto:${DEV_EMAIL}`} className="btn btn-dev">
-                    {t('projects.caseStudy.ctaButton')}
+                  <a href={devMail} className="btn btn-dev">
+                    {caseStudy.contact?.button ?? t('projects.caseStudy.ctaButton')}
                   </a>
+                  <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
                 </aside>
               )}
             </div>

@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Logo from "./utils/Logo";
 import ThemeToggle from "./utils/ThemeToggle";
+import { useMailHref } from "../hooks/useMailHref";
 
 const languages = [
   { code: 'en', label: 'English' },
@@ -18,6 +19,8 @@ const NAV_ITEMS = [
   { to: "/photography", key: "nav.photography" },
   { to: "/about", key: "nav.about" },
 ] as const;
+
+const DEV_PATHS = ["/development", "/projects", "/talks"] as const;
 
 function LanguageDropdown() {
   const { i18n, t } = useTranslation();
@@ -73,6 +76,27 @@ function LanguageDropdown() {
   );
 }
 
+// Stays in the bar on phones too, outside the menu. A page that belongs to one
+// activity opens that inbox; the neutral pages lead to the contact block, which
+// offers both.
+function ContactButton() {
+  const { pathname } = useLocation();
+  const { t } = useTranslation();
+  const devHref = useMailHref("dev");
+  const photoHref = useMailHref("photo");
+  const label = t("nav.contact");
+
+  if (DEV_PATHS.some((path) => pathname.startsWith(path))) {
+    return <a href={devHref} className="btn btn-sm btn-dev">{label}</a>;
+  }
+
+  if (pathname.startsWith("/photography")) {
+    return <a href={photoHref} className="btn btn-sm btn-photo">{label}</a>;
+  }
+
+  return <Link to="/#contact" className="btn btn-sm btn-neutral">{label}</Link>;
+}
+
 export default function Header() {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -101,6 +125,9 @@ export default function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <ContactButton />
+            </li>
             <li className="flex items-center gap-2">
               <ThemeToggle />
               <LanguageDropdown />
@@ -108,6 +135,7 @@ export default function Header() {
           </ul>
 
           <div className="md:hidden flex items-center gap-2">
+            <ContactButton />
             <ThemeToggle />
             <LanguageDropdown />
             <button

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
@@ -7,12 +8,13 @@ import SEO from "../components/SEO";
 import Logo from "../components/utils/Logo";
 import PhotoCard from "../components/photography/PhotoCard";
 import Lightbox from "../components/photography/Lightbox";
+import PlainAddress from "../components/utils/PlainAddress";
 import { Photos, type Photo } from "../data/photography";
 import { photoCategories } from "../data/photo_categories";
 import { photoPackages } from "../data/photoPackages";
 import { usePhotoFilter, type FilterValue } from "../hooks/usePhotoFilter";
-
-const PHOTO_EMAIL = "info.photo@simonecolli.com";
+import { useMailHref } from "../hooks/useMailHref";
+import { PHOTO_EMAIL } from "../siteConfig";
 
 const INFO = [1, 2, 3] as const;
 
@@ -24,6 +26,7 @@ export default function PhotographyPage() {
   const { activeFilter, setActiveFilter, filteredPhotos } = usePhotoFilter(Photos);
   const [lightboxPhoto, setLightboxPhoto] = useState<Photo | null>(null);
   const { t } = useTranslation();
+  const photoMail = useMailHref("photo");
 
   const filterOptions: FilterValue[] = ["All", ...photoCategories];
 
@@ -163,13 +166,15 @@ export default function PhotographyPage() {
                     </ul>
                     <div className="mt-6">
                       <p className="text-sm font-medium text-accent-photo">
-                        {pkg.fromPrice
+                        {pkg.priceLabel ? t(pkg.priceLabel) : pkg.fromPrice
                           ? t("photography.priceFrom", { price: pkg.fromPrice })
                           : t("photography.priceOnRequest")}
                       </p>
                       {pkg.fromPrice && pkg.fromNote && (
                         <p className="text-xs text-muted mt-1">{t(pkg.fromNote)}</p>
                       )}
+                      {pkg.note && <p className="text-sm text-muted mt-2">{t(pkg.note)}</p>}
+                      {pkg.href && pkg.cta && <Link to={pkg.href} className="mt-4 inline-block text-accent-photo underline underline-offset-4">{t(pkg.cta)}</Link>}
                     </div>
                   </div>
                 );
@@ -191,9 +196,10 @@ export default function PhotographyPage() {
               <p className="text-muted leading-relaxed mb-8">
                 {t("photography.ctaBody")}
               </p>
-              <a href={`mailto:${PHOTO_EMAIL}`} className="btn btn-photo">
+              <a href={photoMail} className="btn btn-photo">
                 {t("photography.ctaButton")}
               </a>
+              <PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" />
             </div>
           </div>
         </section>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaEnvelopeOpen, FaCamera, FaOrcid } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { PREFERENCES_EVENT } from "../lib/analytics";
 import Logo from "./utils/Logo";
 
 // Surface inverted against the page: dark in the light theme, light in the
@@ -60,12 +61,14 @@ export default function Footer() {
               {t('footer.vat')} · {t('footer.legalStatus')}
             </p>
             <p className="text-sm text-muted-inv">{t('footer.photoCopyright')}</p>
-            <Link
-              to="/privacy"
-              className="text-sm text-fg-inv underline underline-offset-4"
-            >
-              {t('footer.privacy')}
-            </Link>
+            <div className="flex items-center justify-center gap-6 text-sm">
+              <Link to="/privacy" className="text-fg-inv underline underline-offset-4">
+                {t('footer.privacy')}
+              </Link>
+              <button type="button" onClick={() => window.dispatchEvent(new Event(PREFERENCES_EVENT))} className="border-0 bg-transparent p-0 text-fg-inv underline underline-offset-4">
+                {t("cookies.preferences")}
+              </button>
+            </div>
           </div>
         </div>
       </div>
