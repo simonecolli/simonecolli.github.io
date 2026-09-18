@@ -8,7 +8,7 @@ export const mgpEn: CaseStudy = {
     before: {
       title: "Before",
       items: [
-        "7–8 Excel sheets to fill in and lay out by hand for every work order",
+        "7-8 Excel sheets to fill in and lay out by hand for every work order",
         "Macros and PowerShell scripts, with files sorted into folders by hand",
         "Load plans drawn up in AutoCAD, taking hours of work",
       ],
@@ -18,7 +18,7 @@ export const mgpEn: CaseStudy = {
       items: [
         "The work order is filled in once: the system produces the calculations, documents and production files",
         "A ZIP archive already organised by product type",
-        "A proposed load plan in about 10–15 seconds",
+        "A proposed load plan in about 10-15 seconds",
       ],
     },
   },
@@ -31,9 +31,9 @@ export const mgpEn: CaseStudy = {
 
   metrics: [
     { value: "21", label: "product rows per job at most, the hard limit of the original spreadsheet" },
-    { value: "7–8", label: "Excel sheets to fill in and lay out for print, one job at a time" },
+    { value: "7-8", label: "Excel sheets to fill in and lay out for print, one job at a time" },
     { value: "4/5", label: "product types, each repeating the same process from the start" },
-    { value: "10–15 s", label: "for a proposed load plan, against the hours it took in AutoCAD" },
+    { value: "10-15 s", label: "for a proposed load plan, against the hours it took in AutoCAD" },
   ],
 
   sections: [
@@ -179,7 +179,7 @@ export const mgpEn: CaseStudy = {
         },
         {
           kind: "p",
-          text: "In production, the system reuses data already entered in the work order to derive each piece's footprint on the bed. The optimisation engine uses heuristics to keep processing time down and proposes an arrangement in roughly 10–15 seconds in the cases described here.",
+          text: "In production, the system reuses data already entered in the work order to derive each piece's footprint on the bed. The optimisation engine uses heuristics to keep processing time down and proposes an arrangement in roughly 10-15 seconds in the cases described here.",
         },
         {
           kind: "p",
@@ -254,7 +254,7 @@ export const mgpEn: CaseStudy = {
         },
         {
           kind: "callout",
-          text: "In the cases the company reported, preparing the plan by hand in AutoCAD took hours. With MGP, the engine returns a proposal in roughly 10–15 seconds, on top of which come entering the data and reviewing the result.",
+          text: "In the cases the company reported, preparing the plan by hand in AutoCAD took hours. With MGP, the engine returns a proposal in roughly 10-15 seconds, on top of which come entering the data and reviewing the result.",
         },
       ],
     },

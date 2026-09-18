@@ -10,6 +10,12 @@ export interface TimelineEvent {
 export const timeline: TimelineEvent[] = [
   {
     year: "2026",
+    title: "data.timeline.pandelosPublication.title",
+    description: "data.timeline.pandelosPublication.description",
+    type: "project",
+  },
+  {
+    year: "2026",
     title: "data.timeline.masterDegree.title",
     description: "data.timeline.masterDegree.description",
     type: "education",
@@ -33,7 +39,7 @@ export const timeline: TimelineEvent[] = [
     type: "project",
   },
   {
-    year: "2024 – 2026",
+    year: "2024 - 2026",
     title: "data.timeline.universityTutor.title",
     description: "data.timeline.universityTutor.description",
     type: "work",
@@ -63,7 +69,7 @@ export const timeline: TimelineEvent[] = [
     type: "project",
   },
   {
-    year: "2022 – 2026",
+    year: "2022 - 2026",
     title: "data.timeline.freelanceTutor.title",
     description: "data.timeline.freelanceTutor.description",
     type: "work",
@@ -81,7 +87,7 @@ export const timeline: TimelineEvent[] = [
     type: "education",
   },
   {
-    year: "2007 – 2023",
+    year: "2007 - 2023",
     title: "data.timeline.skating.title",
     description: "data.timeline.skating.description",
     type: "personal",

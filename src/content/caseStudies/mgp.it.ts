@@ -8,7 +8,7 @@ export const mgpIt: CaseStudy = {
     before: {
       title: "Prima",
       items: [
-        "7–8 schede Excel da compilare e impaginare a mano per ogni commessa",
+        "7-8 schede Excel da compilare e impaginare a mano per ogni commessa",
         "Macro e script PowerShell, con i file da smistare a mano nelle cartelle",
         "Piani di carico preparati in AutoCAD, con ore di lavoro",
       ],
@@ -18,7 +18,7 @@ export const mgpIt: CaseStudy = {
       items: [
         "La commessa si compila una volta: calcoli, documenti e file di produzione li genera il sistema",
         "Un archivio ZIP già organizzato per tipologia di prodotto",
-        "Una proposta di piano di carico in circa 10–15 secondi",
+        "Una proposta di piano di carico in circa 10-15 secondi",
       ],
     },
   },
@@ -31,9 +31,9 @@ export const mgpIt: CaseStudy = {
 
   metrics: [
     { value: "21", label: "righe di prodotti al massimo per commessa, il limite del foglio di partenza" },
-    { value: "7–8", label: "schede Excel da compilare e impaginare a mano, una commessa alla volta" },
+    { value: "7-8", label: "schede Excel da compilare e impaginare a mano, una commessa alla volta" },
     { value: "4/5", label: "tipologie di prodotto, ognuna con lo stesso processo da ripetere" },
-    { value: "10–15 s", label: "per una proposta di piano di carico, contro le ore richieste in AutoCAD" },
+    { value: "10-15 s", label: "per una proposta di piano di carico, contro le ore richieste in AutoCAD" },
   ],
 
   sections: [
@@ -179,7 +179,7 @@ export const mgpIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "In produzione, il sistema utilizza alcuni dei dati già inseriti nella commessa per ricavare l'impronta dei pezzi sul pianale. Il motore di ottimizzazione impiega euristiche per contenere i tempi di elaborazione e proporre una disposizione in circa 10–15 secondi nei casi d'uso descritti.",
+          text: "In produzione, il sistema utilizza alcuni dei dati già inseriti nella commessa per ricavare l'impronta dei pezzi sul pianale. Il motore di ottimizzazione impiega euristiche per contenere i tempi di elaborazione e proporre una disposizione in circa 10-15 secondi nei casi d'uso descritti.",
         },
         {
           kind: "p",
@@ -254,7 +254,7 @@ export const mgpIt: CaseStudy = {
         },
         {
           kind: "callout",
-          text: "Nei casi d'uso riportati dall'azienda, la preparazione manuale del piano in AutoCAD richiedeva ore di lavoro. Con MGP, l'elaborazione restituisce una proposta in circa 10–15 secondi, a cui si aggiungono l'inserimento iniziale dei dati e la revisione del risultato.",
+          text: "Nei casi d'uso riportati dall'azienda, la preparazione manuale del piano in AutoCAD richiedeva ore di lavoro. Con MGP, l'elaborazione restituisce una proposta in circa 10-15 secondi, a cui si aggiungono l'inserimento iniziale dei dati e la revisione del risultato.",
         },
       ],
     },

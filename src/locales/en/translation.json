@@ -190,10 +190,12 @@
     "comingSoon": "Coming soon",
     "github": "GitHub",
     "viewOnGithub": "View on GitHub",
+    "readPaper": "Read the paper",
     "liveDemo": "Live Demo",
     "failedToLoad": "Failed to load"
   },
   "status": {
+    "published": "Published",
     "inProgress": "In Progress",
     "completed": "Completed",
     "expanding": "Continuously expanding",
@@ -287,8 +289,8 @@
       },
       "pandelosPlus": {
         "title": "PanDelos-plus",
-        "description": "A parallel algorithm for efficiently computing sequence homology in pangenomic analysis.",
-        "shortDescription": "Parallel algorithm for computing sequence homology in pangenomic analysis, published as a preprint on arXiv."
+        "description": "A parallel algorithm for efficiently computing sequence homology in pangenomic analysis. The paper was published in PLOS Computational Biology on September 17, 2026.",
+        "shortDescription": "PanDelos-plus: a parallel algorithm for pangenomic analysis, published in PLOS Computational Biology."
       },
       "deepNeuralNetworkLibrary": {
         "title": "Deep Neural Network Library",
@@ -344,6 +346,10 @@
       "seminars": {
         "title": "Seminars at the University of Parma",
         "description": "Two seminars: “Tutoring from different perspectives and supporting IT tools”, and an intensive bootcamp on using graphics libraries in Python that culminated in building the Pong game."
+      },
+      "pandelosPublication": {
+        "title": "PanDelos-plus publication",
+        "description": "First author of the paper “PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis”, published in PLOS Computational Biology on September 17, 2026."
       },
       "pandelosPreprint": {
         "title": "PanDelos-plus Preprint",
@@ -499,7 +505,7 @@
       "afterLane": "With MGP",
       "before1": "Copy the Excel file",
       "before2": "By hand, 21 rows max",
-      "before3": "7–8 sheets to lay out",
+      "before3": "7-8 sheets to lay out",
       "before4": "Export and PowerShell scripts",
       "before5": "More xlsx files to fill in",
       "after1": "Work order filled in",
@@ -578,7 +584,7 @@
     "individual": "Exclusive individual service",
     "proclamation": {
       "title": "Graduation ceremony",
-      "duration": "1–1.5 hours at university",
+      "duration": "1-1.5 hours at university",
       "body": "Your milestone, from arrival to the celebrations outside.",
       "includes": [
         "Arrival and anticipation before your presentation",

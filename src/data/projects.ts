@@ -16,6 +16,7 @@ export interface Project {
   status: string;
   github: string;
   demo: string;
+  paper?: string;
   year: string;
   favourite?: boolean;
 }
@@ -108,7 +109,7 @@ export const projects: Project[] = [
     status: "status.inProgress",
     github: "https://github.com/simonecolli/simonecolli.github.io",
     demo: "https://www.simonecolli.com",
-    year: "2025–2026",
+    year: "2025-2026",
   },
   {
     slug: "quantum-portfolio-optimization",
@@ -141,10 +142,11 @@ export const projects: Project[] = [
     shortDescription: "data.projects.pandelosPlus.shortDescription",
     image: "/og/pandelos-plus.png",
     tags: ["Research", "C++", "Python", "Docker"],
-    status: "status.completed",
+    status: "status.published",
     github: "https://github.com/simonecolli/PanDelos-plus/tree/main",
     demo: "",
-    year: "2024",
+    paper: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014724",
+    year: "2024-2026",
     favourite: true,
   },
   {

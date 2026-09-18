@@ -190,10 +190,12 @@
     "comingSoon": "Prossimamente",
     "github": "GitHub",
     "viewOnGithub": "Vedi su GitHub",
+    "readPaper": "Leggi il paper",
     "liveDemo": "Demo live",
     "failedToLoad": "Caricamento fallito"
   },
   "status": {
+    "published": "Pubblicato",
     "inProgress": "In Corso",
     "completed": "Completato",
     "expanding": "In continua espansione",
@@ -287,8 +289,8 @@
       },
       "pandelosPlus": {
         "title": "PanDelos-plus",
-        "description": "Algoritmo parallelo per il calcolo efficiente dell'omologia di sequenza nell'analisi pangenomica.",
-        "shortDescription": "Algoritmo parallelo per il calcolo dell'omologia di sequenza nell'analisi pangenomica, pubblicato come preprint su arXiv."
+        "description": "Algoritmo parallelo per il calcolo efficiente dell'omologia di sequenza nell'analisi pangenomica. Il paper è stato pubblicato su PLOS Computational Biology il 17 settembre 2026.",
+        "shortDescription": "PanDelos-plus: algoritmo parallelo per l'analisi pangenomica, pubblicato su PLOS Computational Biology."
       },
       "deepNeuralNetworkLibrary": {
         "title": "Libreria Reti Neurali Profonde",
@@ -344,6 +346,10 @@
       "seminars": {
         "title": "Seminari all'Università di Parma",
         "description": "Due seminari: «Il tutorato sotto diverse prospettive e strumenti informatici a supporto» e un bootcamp intensivo sull'uso di librerie grafiche in Python, culminato nella realizzazione del gioco Pong."
+      },
+      "pandelosPublication": {
+        "title": "Pubblicazione di PanDelos-plus",
+        "description": "Primo autore del paper «PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis», pubblicato su PLOS Computational Biology il 17 settembre 2026."
       },
       "pandelosPreprint": {
         "title": "Preprint PanDelos-plus",
@@ -499,7 +505,7 @@
       "afterLane": "Con MGP",
       "before1": "Copia del file Excel",
       "before2": "Quote a mano, max 21 righe",
-      "before3": "7–8 schede da impaginare",
+      "before3": "7-8 schede da impaginare",
       "before4": "Export e script PowerShell",
       "before5": "Altri file xlsx da compilare",
       "after1": "Commessa compilata",
