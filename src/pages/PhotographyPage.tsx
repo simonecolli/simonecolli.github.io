@@ -28,7 +28,12 @@ export default function PhotographyPage() {
   const { t } = useTranslation();
   const photoMail = useMailHref("photo");
 
-  const filterOptions: FilterValue[] = ["All", ...photoCategories];
+  const filterOptions: FilterValue[] = [
+    "All",
+    ...photoCategories.filter((category) =>
+      Photos.some((photo) => photo.category.includes(category)),
+    ),
+  ];
 
   return (
     <div className="app">

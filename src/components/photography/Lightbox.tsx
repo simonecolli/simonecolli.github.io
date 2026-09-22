@@ -94,10 +94,12 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
       <div className="relative z-10 w-full h-full flex flex-col items-center justify-center p-4 md:p-8">
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 md:top-6 md:right-6 w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white border-0"
+          className="absolute top-4 right-4 md:top-6 md:right-6 w-10 h-10 flex items-center justify-center z-20 p-0 bg-black/70 hover:bg-black/90 rounded-full transition-colors text-white border-0 focus-visible:outline-white"
           aria-label="Close lightbox"
         >
           <svg
+            className="shrink-0"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -116,10 +118,12 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
         {hasPrev && (
           <button
             onClick={handlePrev}
-            className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white border-0"
+            className="absolute left-4 md:left-6 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center z-20 p-0 bg-black/70 hover:bg-black/90 rounded-full transition-colors text-white border-0 focus-visible:outline-white"
             aria-label="Previous photo"
           >
             <svg
+              className="shrink-0"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -138,10 +142,12 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
         {hasNext && (
           <button
             onClick={handleNext}
-            className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-white/20 rounded-full transition-colors text-white border-0"
+            className="absolute right-4 md:right-6 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center z-20 p-0 bg-black/70 hover:bg-black/90 rounded-full transition-colors text-white border-0 focus-visible:outline-white"
             aria-label="Next photo"
           >
             <svg
+              className="shrink-0"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"

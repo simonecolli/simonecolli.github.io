@@ -28,7 +28,11 @@ export default function TerritorySection({
   const label = t(`home.${territory}.cta`);
 
   const text = (
-    <div className={isDev ? "order-2 lg:order-1" : "order-2"}>
+    <div
+      className={isDev
+        ? "order-2 lg:order-1"
+        : "order-2 rounded-lg border border-line bg-bg p-6 sm:p-8 lg:p-10 shadow-sm"}
+    >
       <h2 className={`${titleFont} type-section-title`}>
         {t(`home.${territory}.title`)}
       </h2>

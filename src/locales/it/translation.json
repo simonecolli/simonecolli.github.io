@@ -574,6 +574,7 @@
   },
   "graduation": {
     "pageTitle": "Servizi fotografici di laurea",
+    "galleryTitle": "Storie di laurea, in fotografia",
     "eyebrow": "LA TUA LAUREA, OVUNQUE SIA",
     "title": "I tuoi traguardi, catturati per sempre.",
     "intro": "Dall’attesa prima della discussione alla corona d’alloro, fino agli abbracci con chi ami: racconto la tua laurea attraverso le emozioni della giornata.",
@@ -584,7 +585,7 @@
     "individual": "Servizio individuale esclusivo",
     "proclamation": {
       "title": "Proclamazione",
-      "duration": "Da 1 a 1,5 ore in Università",
+      "duration": "Fino a 90 minuti in università",
       "body": "Il racconto del tuo traguardo, dall’arrivo ai festeggiamenti fuori dalla sede.",
       "includes": [
         "Arrivo e attesa prima della discussione",

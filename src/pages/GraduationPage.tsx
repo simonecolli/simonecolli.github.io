@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FiArrowLeft, FiCamera, FiCheck, FiMessageCircle, FiSliders, FiLink, FiUsers } from "react-icons/fi";
@@ -6,13 +7,19 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import PlainAddress from "../components/utils/PlainAddress";
+import PhotoCard from "../components/photography/PhotoCard";
+import Lightbox from "../components/photography/Lightbox";
+import { Photos, type Photo } from "../data/photography";
 import { PHOTO_EMAIL, mailtoHref } from "../siteConfig";
 
 const GROUPS = [{ people: 2, price: 80 }, { people: 3, price: 75 }, { people: 4, price: 70 }, { people: 5, price: 65 }];
 const BENEFIT_ICONS = [FiMessageCircle, FiCamera, FiSliders, FiLink];
+const graduationPhotos = Photos.filter((photo) => photo.tags?.includes("lauree"));
 
 export default function GraduationPage() {
   const { t, i18n } = useTranslation();
+  const [lightboxPhoto, setLightboxPhoto] = useState<Photo | null>(null);
+  const [showAllPhotos, setShowAllPhotos] = useState(false);
   const money = (value: number) => new Intl.NumberFormat(i18n.language, { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(value);
   const contact = (packageName = t("graduation.generic")) => mailtoHref(
     PHOTO_EMAIL,
@@ -39,6 +46,24 @@ export default function GraduationPage() {
             </div>
           </div>
         </section>
+
+        {graduationPhotos.length > 0 && (
+          <section className="site-section" aria-labelledby="graduation-gallery">
+            <div className="site-container">
+              <h2 id="graduation-gallery" className="type-page-title mb-8">{t("graduation.galleryTitle")}</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {(showAllPhotos ? graduationPhotos : graduationPhotos.slice(0, 6)).map((photo) => (
+                  <PhotoCard key={photo.id} photo={photo} onClick={() => setLightboxPhoto(photo)} />
+                ))}
+              </div>
+              {!showAllPhotos && graduationPhotos.length > 6 && (
+                <button className="btn btn-photo mt-6" onClick={() => setShowAllPhotos(true)}>
+                  {t("photography.showAll")}
+                </button>
+              )}
+            </div>
+          </section>
+        )}
 
         <section className="site-section" aria-labelledby="graduation-packages">
           <div className="site-container">
@@ -112,6 +137,14 @@ export default function GraduationPage() {
         </section>
       </main>
       <Footer />
+      {lightboxPhoto && (
+        <Lightbox
+          photo={lightboxPhoto}
+          photos={graduationPhotos}
+          onClose={() => setLightboxPhoto(null)}
+          onNavigate={setLightboxPhoto}
+        />
+      )}
     </div>
   );
 }
