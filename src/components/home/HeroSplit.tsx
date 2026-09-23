@@ -3,6 +3,12 @@ import { useTranslation } from "react-i18next";
 import Logo from "../utils/Logo";
 import { useMailHref } from "../../hooks/useMailHref";
 import { FEATURED_CASE_SLUG } from "../../data/projects";
+import { HERO_WIDTHS, variantSrcSet } from "../../lib/photos";
+
+// .hero-bg is display: none below 1024px, but a hidden <img> still downloads.
+// Below that width the <picture> falls back to this inline pixel, so phones
+// fetch nothing and the high priority only applies where the photo shows.
+const BLANK_PIXEL = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
 
 const TITLE_CLASS = "type-hero-title";
 const TEXT_CLASS = "type-lead text-fg mt-3 max-w-xl";
@@ -20,7 +26,14 @@ export default function HeroSplit() {
   return (
     <section className="hero-split relative lg:min-h-svh flex pt-24 pb-12 lg:pt-40 lg:pb-16">
       <div className="hero-bg" aria-hidden="true">
-        <img src="/assets/other/hero.webp" alt="" width={2048} height={1365} />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcSet={variantSrcSet("/assets/other/hero.webp", HERO_WIDTHS)}
+            sizes="100vw"
+          />
+          <img src={BLANK_PIXEL} alt="" width={2048} height={1365} fetchPriority="high" />
+        </picture>
       </div>
       <div className="hero-veil" aria-hidden="true" />
 
