@@ -1,4 +1,7 @@
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
+import Link from "../components/utils/LocalizedLink";
+import { useLang } from "../hooks/useLang";
+import { localizePath } from "../lib/lang";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -10,9 +13,10 @@ export default function TalkDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const talk = talks.find((t) => t.slug === slug);
   const { t } = useTranslation();
+  const lang = useLang();
 
   if (!talk) {
-    return <Navigate to="/talks/" replace />;
+    return <Navigate to={localizePath("/talks/", lang)} replace />;
   }
 
   return (

@@ -155,11 +155,16 @@ function safeReferrer() {
 }
 
 // Only authored routes can be measured; unknown URLs may contain personal data.
+// The English copies live under /en and keep the prefix, so the two languages
+// stay apart in the reports.
 function safePath(path: string) {
   const clean = path.split(/[?#]/)[0].replace(/\/$/, "") || "/";
-  if (["/", "/development", "/photography", "/photography/degree", "/projects", "/talks", "/about", "/privacy", "/blog"].includes(clean)) return clean;
-  if (projects.some(project => clean === `/projects/${project.slug}`) ||
-      talks.some(talk => clean === `/talks/${talk.slug}`)) return clean;
+  const prefix = /^\/en(?=\/|$)/.test(clean) ? "/en" : "";
+  const route = clean.slice(prefix.length) || "/";
+  const localized = prefix + (route === "/" && prefix ? "" : route);
+  if (["/", "/development", "/photography", "/photography/degree", "/projects", "/talks", "/about", "/privacy", "/blog"].includes(route)) return localized;
+  if (projects.some(project => route === `/projects/${project.slug}`) ||
+      talks.some(talk => route === `/talks/${talk.slug}`)) return localized;
   return "/404";
 }
 
@@ -177,7 +182,7 @@ export function trackPage(path: string) {
     page_location: `${SITE_URL}${clean}`,
     page_title: clean,
     page_referrer: lastPath ? `${SITE_URL}${lastPath}` : safeReferrer(),
-    area: clean.startsWith("/photography") ? "photo" : /^\/(development|projects|talks)(\/|$)/.test(clean) ? "dev" : "shared",
+    area: /^(\/en)?\/photography(\/|$)/.test(clean) ? "photo" : /^(\/en)?\/(development|projects|talks)(\/|$)/.test(clean) ? "dev" : "shared",
   });
   lastPath = clean;
 }

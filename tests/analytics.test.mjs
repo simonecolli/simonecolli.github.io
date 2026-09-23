@@ -105,6 +105,19 @@ test('routes are deduplicated, query/hash removed and unknown paths redacted', (
   assert.equal(JSON.stringify(events).includes('private@'), false);
 });
 
+test('english routes keep their /en prefix and unknown ones are still redacted', () => {
+  const s = setup(); accept(s);
+  for (const path of ['/en/', '/en/photography/', '/en/projects/public-project/', '/en/projects/private@example.org', '/english']) s.api.trackPage(path);
+  const events = s.commands().filter(x => x[0] === 'event');
+  assert.deepEqual(Array.from(events, x => x[2].page_location), [
+    'https://www.simonecolli.com/en',
+    'https://www.simonecolli.com/en/photography',
+    'https://www.simonecolli.com/en/projects/public-project',
+    'https://www.simonecolli.com/404',
+  ]);
+  assert.equal(events[1][2].area, 'photo'); assert.equal(events[2][2].area, 'dev');
+});
+
 test('contact events exclude mail contents and only allow known service labels', () => {
   const s = setup(); accept(s);
   for (const [email, service] of [['photo', 'party'], ['dev', 'private@example.org']]) {

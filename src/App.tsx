@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { Fragment, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import './App.css'
+import { LANGUAGES, DEFAULT_LANG, langFromPath, stripLang } from './lib/lang'
 import AnalyticsConsent from './components/AnalyticsConsent'
 import Home from "./pages/Home.tsx"
 import ProjectsPage from "./pages/ProjectsPage.tsx"
@@ -17,19 +18,24 @@ import DevelopmentPage from "./pages/DevelopmentPage.tsx"
 import PrivacyPage from "./pages/PrivacyPage.tsx"
 import NotFound from "./pages/NotFound.tsx"
 
+// The URL decides the language. main.tsx and the prerender set it before the
+// first render; this follows client-side moves between /… and /en/…, such as
+// the language switcher or the back button.
 function LanguageSync() {
   const { i18n } = useTranslation();
+  const lang = langFromPath(useLocation().pathname);
 
   useEffect(() => {
-    document.documentElement.lang = i18n.language;
-  }, [i18n.language]);
+    if (i18n.language !== lang) i18n.changeLanguage(lang);
+    document.documentElement.lang = lang;
+  }, [i18n, lang]);
 
   return null;
 }
 
 // Native scrollbars follow the activity colour, including detail routes.
 function ScrollbarAccentSync() {
-  const { pathname } = useLocation();
+  const pathname = stripLang(useLocation().pathname);
 
   useEffect(() => {
     document.documentElement.dataset.scrollAccent = /^\/photography(?:\/|$)/.test(pathname)
@@ -70,17 +76,24 @@ export function AppRoutes() {
       <AnalyticsConsent />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/projects/:slug" element={<ProjectDetailPage />} />
-        <Route path="/talks" element={<TalksPage />} />
-        <Route path="/talks/:slug" element={<TalkDetailPage />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/photography" element={<PhotographyPage />} />
-        <Route path="/photography/degree" element={<GraduationPage />} />
-        <Route path="/about" element={<AboutMePage />} />
-        <Route path="/development" element={<DevelopmentPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
+        {LANGUAGES.map((lang) => {
+          const base = lang === DEFAULT_LANG ? "" : `/${lang}`;
+          return (
+            <Fragment key={lang}>
+              <Route path={base || "/"} element={<Home />} />
+              <Route path={`${base}/projects`} element={<ProjectsPage />} />
+              <Route path={`${base}/projects/:slug`} element={<ProjectDetailPage />} />
+              <Route path={`${base}/talks`} element={<TalksPage />} />
+              <Route path={`${base}/talks/:slug`} element={<TalkDetailPage />} />
+              <Route path={`${base}/blog`} element={<Blog />} />
+              <Route path={`${base}/photography`} element={<PhotographyPage />} />
+              <Route path={`${base}/photography/degree`} element={<GraduationPage />} />
+              <Route path={`${base}/about`} element={<AboutMePage />} />
+              <Route path={`${base}/development`} element={<DevelopmentPage />} />
+              <Route path={`${base}/privacy`} element={<PrivacyPage />} />
+            </Fragment>
+          );
+        })}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

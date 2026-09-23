@@ -1,4 +1,7 @@
-import { useParams, Navigate, Link } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
+import Link from "../components/utils/LocalizedLink";
+import { useLang } from "../hooks/useLang";
+import { localizePath } from "../lib/lang";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -16,9 +19,10 @@ export default function ProjectDetailPage() {
   const project = projects.find((p) => p.slug === slug);
   const { t, i18n } = useTranslation();
   const devMail = useMailHref("dev");
+  const lang = useLang();
 
   if (!project) {
-    return <Navigate to="/projects/" replace />;
+    return <Navigate to={localizePath("/projects/", lang)} replace />;
   }
 
   // Projects that carry the positioning have a long form; the others keep the
@@ -28,7 +32,7 @@ export default function ProjectDetailPage() {
   return (
     <div className="app">
       <SEO
-        titleKey={project.title}
+        titleKey={project.seoTitle ?? project.title}
         descriptionKey={project.shortDescription}
         keywordsKey={project.keywords ?? "seo.projects.keywords"}
         path={`/projects/${project.slug}`}

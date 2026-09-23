@@ -13,7 +13,7 @@ export default function ProjectsPage() {
   return (
     <div className="app">
       <SEO
-        titleKey="projects.pageTitle"
+        titleKey="seo.projects.title"
         descriptionKey="seo.projects.description"
         keywordsKey="seo.projects.keywords"
         path="/projects"

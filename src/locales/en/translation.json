@@ -212,11 +212,13 @@
   "seo": {
     "home": {
       "description": "Simone Colli - Freelance software developer and photographer in Parma and Salsomaggiore Terme, Italy. Custom software, sport, event and detail photography.",
-      "keywords": "Simone Colli, software developer, photographer, LLM, RAG, on-premise deployment, portfolio, web development, React, Python, C++, Parma, Salsomaggiore Terme, Italy, freelance developer, event photographer, sports photographer, University of Parma"
+      "keywords": "Simone Colli, software developer, photographer, LLM, RAG, on-premise deployment, portfolio, web development, React, Python, C++, Parma, Salsomaggiore Terme, Italy, freelance developer, event photographer, sports photographer, University of Parma",
+      "title": "Software developer and photographer in Parma"
     },
     "projects": {
       "description": "Case studies of Simone Colli's projects: production management, business process automation, optimisation. Freelance software developer based in Parma, Italy.",
-      "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Salsomaggiore Terme, University of Parma"
+      "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Salsomaggiore Terme, University of Parma",
+      "title": "Case studies: custom software for businesses"
     },
     "talks": {
       "description": "Academic presentations and talks by Simone Colli delivered at the University of Parma. Covering research in AI, cybersecurity, big data, and compilers.",
@@ -224,11 +226,13 @@
     },
     "photography": {
       "description": "Photography portfolio by Simone Colli - Sport, ceremony, wildlife, macro, and detail photography. Based in Parma and Salsomaggiore Terme, Emilia-Romagna.",
-      "keywords": "Simone Colli photography, professional photographer, photographer Parma, photographer Salsomaggiore Terme, detail photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer"
+      "keywords": "Simone Colli photography, professional photographer, photographer Parma, photographer Salsomaggiore Terme, detail photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer",
+      "title": "Sports and event photographer in Parma"
     },
     "about": {
       "description": "About Simone Colli - Freelance software developer and photographer, M.Sc. in Computer Science from the University of Parma. Skills, journey, and CV.",
-      "keywords": "Simone Colli, about, curriculum, skills, University of Parma, master's degree, LLM, RAG, on-premise deployment, developer Parma, photographer Salsomaggiore Terme, freelance, Italy, Emilia-Romagna"
+      "keywords": "Simone Colli, about, curriculum, skills, University of Parma, master's degree, LLM, RAG, on-premise deployment, developer Parma, photographer Salsomaggiore Terme, freelance, Italy, Emilia-Romagna",
+      "title": "Developer and photographer in Salsomaggiore"
     },
     "blog": {
       "description": "Blog by Simone Colli - Thoughts on software development, technology, photography, and more.",
@@ -245,11 +249,13 @@
     },
     "development": {
       "description": "Custom software development: web applications, constraint optimisation, heavy computation, deployment. Simone Colli, Parma, Italy.",
-      "keywords": "custom software development, showcase website, portfolio website, production management software, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, developer Parma, freelance, manufacturing software"
+      "keywords": "custom software development, showcase website, portfolio website, production management software, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, developer Parma, freelance, manufacturing software",
+      "title": "Custom software for SMEs in Parma & Piacenza"
     },
     "graduation": {
       "description": "Graduation photography, with travel available: ceremony starting from €100, All Inclusive starting from €250 and groups starting from €65 per person for at least 5 graduates.",
-      "keywords": "graduation photographer, graduation photography, graduation ceremony, travelling photographer, Simone Colli"
+      "keywords": "graduation photographer, graduation photography, graduation ceremony, travelling photographer, Simone Colli",
+      "title": "Graduation photos in Parma: packages & prices"
     }
   },
   "data": {
@@ -264,7 +270,8 @@
         "title": "MGP - Production management",
         "description": "A manufacturing company prepared every work order through an Excel file, seven or eight sheets laid out by hand and a chain of scripts, with a hard limit of 21 product rows. MGP is the platform that took that process over: the operator fills in the work order, the system runs the calculations, generates the documents and production files, and returns an archive already organised. The company configures its own product types, from the fields to the formulas to the files produced, without touching the code. Later extended to truck load planning for production and quotations, a link to the machines over OPC UA, and a built-in support module.",
         "shortDescription": "From a process spread across Excel, macros and scripts to a platform that generates production files and plans truck loads, configurable without code.",
-        "keywords": "production management software, work order management, manufacturing process automation, product configurator, DXF generation, truck load planning, nesting, load optimisation, OPC UA, machine integration, custom manufacturing software"
+        "keywords": "production management software, work order management, manufacturing process automation, product configurator, DXF generation, truck load planning, nesting, load optimisation, OPC UA, machine integration, custom manufacturing software",
+        "seoTitle": "Manufacturing production management software"
       },
       "photographyDelivery": {
         "title": "Photo Delivery",
@@ -496,7 +503,16 @@
     "contactTitle": "Got a project in mind?",
     "contactBody": "Tell me what problem you need to solve, under what constraints and by when. I reply with a written proposal and an estimate, with no obligation.",
     "contactCta": "Let's talk about your project",
-    "websiteCaseStudy": "How I designed this website"
+    "websiteCaseStudy": "How I designed this website",
+    "areaTitle": "Where I work and which sectors",
+    "areaBody": "I work from Salsomaggiore Terme with small and medium-sized businesses in Parma, Fidenza, Piacenza and Reggio Emilia. My focus is manufacturing, window and door makers and logistics, where the same figures move from one Excel sheet to the next before they reach production.",
+    "sectorManufacturingTitle": "Manufacturing",
+    "sectorManufacturingBody": "From the order to the production files: calculations, bills of materials and documents generated by the system instead of being filled in again by hand, with the link to the machines.",
+    "sectorWindowsTitle": "Windows and doors",
+    "sectorWindowsBody": "Product configurators that turn the measurements and chosen options into a quote, a bill of materials and production documents, without copying data from one file to another.",
+    "sectorLogisticsTitle": "Logistics",
+    "sectorLogisticsBody": "Load plans and shipment planning calculated by the software from the order data, instead of being drawn by hand.",
+    "sectorCaseLink": "The MGP case: production and load plans"
   },
   "diagrams": {
     "mgpProcess": {
@@ -684,5 +700,24 @@
     "inactive": "Statistics are currently disabled. Google Analytics is not loaded and no new statistical cookies are set. Only preferences needed for the website to function remain active.",
     "storageError": "Your browser could not save this choice. Statistics remain disabled on this page. You may be asked again; if you previously accepted, clear this website’s browser data to remove the old saved choice too.",
     "googleTerms": "Google data processing terms"
+  },
+  "structuredData": {
+    "development": {
+      "name": "Simone Colli – Software development",
+      "serviceTypes": [
+        "Custom business software",
+        "Business process automation",
+        "Product configurators",
+        "Load planning"
+      ]
+    },
+    "photography": {
+      "name": "Simone Colli – Photography",
+      "serviceTypes": [
+        "Sports photography",
+        "Event photography",
+        "Graduation photography"
+      ]
+    }
   }
 }

@@ -1,10 +1,12 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import Link from "./utils/LocalizedLink";
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Logo from "./utils/Logo";
 import ThemeToggle from "./utils/ThemeToggle";
 import { useMailHref } from "../hooks/useMailHref";
 import { withTrailingSlash } from "../siteConfig";
+import { langFromPath, localizePath, stripLang } from "../lib/lang";
 
 const languages = [
   { code: 'en', label: 'English' },
@@ -24,11 +26,15 @@ const NAV_ITEMS = [
 const DEV_PATHS = ["/development", "/projects", "/talks"] as const;
 
 function LanguageDropdown() {
-  const { i18n, t } = useTranslation();
+  const { t } = useTranslation();
+  const { pathname, hash } = useLocation();
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const currentLang = languages.find(l => i18n.language.startsWith(l.code)) ?? languages[0];
+  // Each language has its own URL, so switching goes to the same page under the
+  // other prefix; App syncs i18next from the new path.
+  const currentLang = languages.find(l => l.code === langFromPath(pathname)) ?? languages[0];
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -60,7 +66,7 @@ function LanguageDropdown() {
             <button
               key={lang.code}
               onClick={() => {
-                i18n.changeLanguage(lang.code);
+                navigate(localizePath(stripLang(pathname), lang.code) + hash);
                 setIsOpen(false);
               }}
               className={`w-full flex items-center gap-2 px-3 py-2 text-sm border-0 rounded-none hover:bg-fg/5 transition-colors ${
@@ -81,7 +87,7 @@ function LanguageDropdown() {
 // activity opens that inbox; the neutral pages lead to the contact block, which
 // offers both.
 function ContactButton() {
-  const { pathname } = useLocation();
+  const pathname = stripLang(useLocation().pathname);
   const { t } = useTranslation();
   const devHref = useMailHref("dev");
   const photoHref = useMailHref("photo");
@@ -103,7 +109,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
 
-  const isActive = (path: string) => withTrailingSlash(location.pathname) === path;
+  const isActive = (path: string) => withTrailingSlash(stripLang(location.pathname)) === path;
 
   const linkClass = (path: string) =>
     `text-sm font-medium transition-colors hover:text-fg hover:no-underline ${

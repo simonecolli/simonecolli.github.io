@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "../components/utils/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -12,6 +12,11 @@ import { DEV_EMAIL } from "../siteConfig";
 import { useMailHref } from "../hooks/useMailHref";
 
 const SERVICES = [1, 6, 2, 3, 4, 5] as const;
+
+// The sectors the area block speaks to, named for the companies around Parma
+// the site is meant to reach. Named on what the software does for them, not
+// as past clients.
+const SECTORS = ["Manufacturing", "Windows", "Logistics"] as const;
 
 // Built to the same shape as /photography, differing in title face, accent and
 // what stands beside the opening text: here the before and after of a real
@@ -27,7 +32,7 @@ export default function DevelopmentPage() {
   return (
     <div className="app">
       <SEO
-        titleKey="development.pageTitle"
+        titleKey="seo.development.title"
         descriptionKey="seo.development.description"
         keywordsKey="seo.development.keywords"
         path="/development"
@@ -88,6 +93,32 @@ export default function DevelopmentPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="zona" className="site-section scroll-mt-16">
+          <div className="site-container">
+            <h2 className="type-page-title mb-6">
+              {t("development.areaTitle")}
+            </h2>
+            <p className="text-muted leading-relaxed mb-12">
+              {t("development.areaBody")}
+            </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {SECTORS.map((sector) => (
+                <div key={sector} className="site-card">
+                  <h3 className="text-lg font-medium mb-3">
+                    {t(`development.sector${sector}Title`)}
+                  </h3>
+                  <p className="text-muted leading-relaxed">
+                    {t(`development.sector${sector}Body`)}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <Link to={`/projects/${FEATURED_CASE_SLUG}/`} className={`${linkClass} inline-block mt-8`}>
+              {t("development.sectorCaseLink")}
+            </Link>
           </div>
         </section>
 

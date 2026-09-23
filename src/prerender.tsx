@@ -1,51 +1,16 @@
 import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
-import i18n, { PRERENDER_LANGUAGE } from './i18n'
+import i18n from './i18n'
 import { AppRoutes } from './App.tsx'
 import { drainHead, startHeadCollection } from './seoHead'
-import { SITE_URL } from './siteConfig'
+import { langFromPath, stripLang } from './lib/lang'
+import { structuredDataFor } from './structuredData'
 
-const PERSON_PAGES = ['/', '/about']
-
-const PERSON = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Simone Colli',
-  url: SITE_URL,
-  image: `${SITE_URL}/profile.jpg`,
-  jobTitle: ['Freelance Software Developer', 'Photographer'],
-  email: ['info.dev@simonecolli.com', 'info.photo@simonecolli.com'],
-  knowsAbout: [
-    'Retrieval-Augmented Generation',
-    'On-premise deployment',
-    'Software development',
-    'Photography',
-  ],
-  alumniOf: {
-    '@type': 'CollegeOrUniversity',
-    name: 'University of Parma',
-    url: 'https://www.unipr.it/',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Salsomaggiore Terme',
-    addressRegion: 'Emilia-Romagna',
-    addressCountry: 'IT',
-  },
-  sameAs: [
-    'https://github.com/simonecolli/',
-    'https://www.linkedin.com/in/simone-colli-085683223/',
-    'https://orcid.org/0009-0008-9596-0608',
-    'https://instagram.com/colli_02',
-    'https://www.instagram.com/__sc_photo__/',
-  ],
-}
-
-// Renders one route to static HTML. The language is pinned first because Node
-// exposes navigator.language from the machine's locale, so the detector would
-// otherwise pick a different one locally than on CI.
+// Renders one route to static HTML, in the language its URL carries: the root
+// is Italian and /en is English.
 export async function prerender(data: { url: string }) {
-  await i18n.changeLanguage(PRERENDER_LANGUAGE)
+  const lang = langFromPath(data.url)
+  await i18n.changeLanguage(lang)
 
   startHeadCollection()
 
@@ -57,12 +22,12 @@ export async function prerender(data: { url: string }) {
 
   const { title, elements } = drainHead()
 
-  if (PERSON_PAGES.includes(data.url)) {
+  for (const entry of structuredDataFor(stripLang(data.url), lang, i18n.t)) {
     elements.add({
       type: 'script',
       props: {
         type: 'application/ld+json',
-        children: JSON.stringify(PERSON),
+        children: JSON.stringify(entry),
       },
     })
   }
@@ -71,7 +36,7 @@ export async function prerender(data: { url: string }) {
     html,
     links: new Set<string>(),
     head: {
-      lang: i18n.language,
+      lang,
       title,
       elements,
     },

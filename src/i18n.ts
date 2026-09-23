@@ -1,36 +1,26 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import LanguageDetector from 'i18next-browser-languagedetector';
 
 import en from './locales/en/translation.json';
 import it from './locales/it/translation.json';
+import { DEFAULT_LANG, langFromPath } from './lib/lang';
 
-// The site ships as a single prerendered copy, so exactly one language ends up
-// in the static HTML that crawlers and social scrapers read. Italian, to match
-// the audience the geo-targeted keywords aim at. Leaving this to the detector
-// made the output depend on the build machine's locale: Italian locally,
-// English on CI. Serving both would need per-language URLs.
-export const PRERENDER_LANGUAGE = 'it';
-
+// The language comes from the URL alone: Italian at the root, English under
+// /en. Nothing is read from the browser, so the page a crawler renders always
+// matches the prerendered HTML and its hreflang, and each language is
+// indexed at its own address. The prerender sets it per route before rendering;
+// without a window there is no path to read yet.
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
       en: { translation: en },
       it: { translation: it },
     },
-    fallbackLng: PRERENDER_LANGUAGE,
+    lng: typeof window === 'undefined' ? DEFAULT_LANG : langFromPath(window.location.pathname),
+    fallbackLng: DEFAULT_LANG,
     interpolation: {
       escapeValue: false,
-    },
-    // Only an explicit choice from the language switcher overrides Italian.
-    // Reading navigator too made the client re-render the page in English for
-    // any en-US browser, Googlebot's renderer included, so the indexed DOM no
-    // longer matched the Italian HTML.
-    detection: {
-      order: ['localStorage'],
-      caches: ['localStorage'],
     },
   });
 

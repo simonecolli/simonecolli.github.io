@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
 
 // No flex wrapper: with no icon to align this is a plain link, so the

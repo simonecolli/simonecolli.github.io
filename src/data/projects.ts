@@ -9,6 +9,9 @@ export interface Project {
   description: string;
   shortDescription: string;
   keywords?: string;
+  // Replaces the title in <title> when the display name is not what people
+  // search for, as with MGP.
+  seoTitle?: string;
   // Link-preview card, 1200x630, built from the case study's own diagram.
   // Projects without one fall back to the portrait used everywhere else.
   image?: string;
@@ -30,6 +33,7 @@ export const projects: Project[] = [
   {
     slug: "mgp-gestione-produzione",
     title: "data.projects.mgp.title",
+    seoTitle: "data.projects.mgp.seoTitle",
     description: "data.projects.mgp.description",
     shortDescription: "data.projects.mgp.shortDescription",
     keywords: "data.projects.mgp.keywords",

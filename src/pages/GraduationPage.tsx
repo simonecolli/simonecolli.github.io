@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "../components/utils/LocalizedLink";
 import { useTranslation } from "react-i18next";
 import { FiArrowLeft, FiCamera, FiCheck, FiMessageCircle, FiSliders, FiLink, FiUsers } from "react-icons/fi";
 import { LuGraduationCap, LuPartyPopper } from "react-icons/lu";
@@ -31,7 +31,7 @@ export default function GraduationPage() {
 
   return (
     <div className="app">
-      <SEO titleKey="graduation.pageTitle" descriptionKey="seo.graduation.description" keywordsKey="seo.graduation.keywords" path="/photography/degree" />
+      <SEO titleKey="seo.graduation.title" descriptionKey="seo.graduation.description" keywordsKey="seo.graduation.keywords" path="/photography/degree" />
       <Header />
       <main className="main-content pt-20 graduation-page">
         <section className="site-section-compact">

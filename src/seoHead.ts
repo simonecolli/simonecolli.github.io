@@ -44,8 +44,7 @@ export function drainHead() {
 // static copies before the first render leaves one. The title carries no
 // marker, since the plugin writes it itself, but every page renders the SEO
 // component, so it always comes back. hydrateRoot would reuse the static tags
-// instead, but the client can detect a different language from the one the
-// pages are prerendered in, and hydration would fail.
+// instead; the app still mounts with createRoot.
 export function dropPrerenderedHead() {
   document.head
     .querySelectorAll(`title, [${PRERENDERED_ATTR}]`)

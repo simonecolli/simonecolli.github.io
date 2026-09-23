@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "../components/utils/LocalizedLink";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
@@ -38,7 +38,7 @@ export default function PhotographyPage() {
   return (
     <div className="app">
       <SEO
-        titleKey="photography.pageTitle"
+        titleKey="seo.photography.title"
         descriptionKey="seo.photography.description"
         keywordsKey="seo.photography.keywords"
         path="/photography"

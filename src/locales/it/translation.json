@@ -212,11 +212,13 @@
   "seo": {
     "home": {
       "description": "Simone Colli - Sviluppatore software e fotografo freelance a Parma e Salsomaggiore Terme. Software su misura, fotografia di sport, eventi e dettagli.",
-      "keywords": "Simone Colli, sviluppatore software, fotografo, LLM, RAG, deploy on-premise, portfolio, sviluppo web, React, Python, C++, Parma, Salsomaggiore Terme, Italia, sviluppatore freelance, fotografo eventi, fotografo sportivo, Università di Parma"
+      "keywords": "Simone Colli, sviluppatore software, fotografo, LLM, RAG, deploy on-premise, portfolio, sviluppo web, React, Python, C++, Parma, Salsomaggiore Terme, Italia, sviluppatore freelance, fotografo eventi, fotografo sportivo, Università di Parma",
+      "title": "Sviluppatore software e fotografo a Parma"
     },
     "projects": {
       "description": "Casi studio dei progetti di Simone Colli: gestione della produzione, automazione di processi aziendali, ottimizzazione. Sviluppatore freelance a Parma.",
-      "keywords": "Simone Colli progetti, sviluppo software, open source, React, C++, Python, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Salsomaggiore Terme, Università di Parma"
+      "keywords": "Simone Colli progetti, sviluppo software, open source, React, C++, Python, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Salsomaggiore Terme, Università di Parma",
+      "title": "Casi studio: software su misura per aziende"
     },
     "talks": {
       "description": "Presentazioni accademiche di Simone Colli tenute all'Università di Parma. Ricerca in IA, cybersecurity, big data e compilatori.",
@@ -224,11 +226,13 @@
     },
     "photography": {
       "description": "Portfolio fotografico di Simone Colli - Sport, cerimonie, natura, macro e dettagli. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.",
-      "keywords": "Simone Colli fotografia, fotografo professionista, fotografo Parma, fotografo Salsomaggiore Terme, fotografia di dettaglio, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie"
+      "keywords": "Simone Colli fotografia, fotografo professionista, fotografo Parma, fotografo Salsomaggiore Terme, fotografia di dettaglio, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie",
+      "title": "Fotografo sportivo e di eventi a Parma"
     },
     "about": {
       "description": "Chi è Simone Colli - Sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Competenze, percorso e CV.",
-      "keywords": "Simone Colli, chi sono, curriculum, competenze, Università di Parma, laurea magistrale, LLM, RAG, deploy on-premise, sviluppatore Parma, fotografo Salsomaggiore Terme, freelance, Italia, Emilia-Romagna"
+      "keywords": "Simone Colli, chi sono, curriculum, competenze, Università di Parma, laurea magistrale, LLM, RAG, deploy on-premise, sviluppatore Parma, fotografo Salsomaggiore Terme, freelance, Italia, Emilia-Romagna",
+      "title": "Sviluppatore e fotografo a Salsomaggiore"
     },
     "blog": {
       "description": "Blog di Simone Colli - Riflessioni su sviluppo software, tecnologia, fotografia e altro.",
@@ -245,11 +249,13 @@
     },
     "development": {
       "description": "Sviluppo software su misura: applicazioni web, ottimizzazione a vincoli, calcolo intensivo, messa in produzione. Simone Colli, Parma.",
-      "keywords": "sviluppo software su misura, sito vetrina, sito portfolio, gestionale produzione, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore Parma, freelance, software manifatturiero"
+      "keywords": "sviluppo software su misura, sito vetrina, sito portfolio, gestionale produzione, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore Parma, freelance, software manifatturiero",
+      "title": "Software su misura per PMI a Parma e Piacenza"
     },
     "graduation": {
       "description": "Servizi fotografici di laurea, anche in trasferta: Proclamazione a partire da 100 €, All Inclusive a partire da 250 € e gruppi a partire da 65 € a persona per almeno 5 laureandi.",
-      "keywords": "fotografo laurea, foto laurea, proclamazione, festa laurea, fotografo in trasferta, Simone Colli"
+      "keywords": "fotografo laurea, foto laurea, proclamazione, festa laurea, fotografo in trasferta, Simone Colli",
+      "title": "Fotografo di laurea a Parma: servizi e prezzi"
     }
   },
   "data": {
@@ -264,7 +270,8 @@
         "title": "MGP - Gestione produzione",
         "description": "Un'azienda manifatturiera preparava ogni commessa passando da un file Excel, sette o otto schede da impaginare a mano e una serie di script, con un limite di 21 righe di prodotto. MGP è la piattaforma che ha preso in carico quel processo: l'operatore compila la commessa, il sistema calcola, genera documenti e file di produzione e restituisce un archivio già organizzato. L'azienda configura da sé le proprie tipologie di prodotto, dai campi alle formule ai file da produrre, senza toccare il codice. In seguito estesa alla pianificazione dei carichi su autocarro per produzione e preventivi, al collegamento con i macchinari via OPC UA e a un modulo di assistenza integrato.",
         "shortDescription": "Da un processo tra Excel, macro e script a una piattaforma che genera i file di produzione e pianifica i carichi, configurabile senza codice.",
-        "keywords": "gestionale produzione, software gestione commesse, automazione processi produttivi, configuratore di prodotto, generazione DXF, piano di carico, nesting, ottimizzazione dei carichi, OPC UA, integrazione macchinari, software su misura azienda manifatturiera"
+        "keywords": "gestionale produzione, software gestione commesse, automazione processi produttivi, configuratore di prodotto, generazione DXF, piano di carico, nesting, ottimizzazione dei carichi, OPC UA, integrazione macchinari, software su misura azienda manifatturiera",
+        "seoTitle": "Software gestione produzione per manifattura"
       },
       "photographyDelivery": {
         "title": "Photo Delivery",
@@ -496,7 +503,16 @@
     "contactTitle": "Hai un progetto in mente?",
     "contactBody": "Raccontami che problema devi risolvere, con che vincoli e per quando. Rispondo con una proposta scritta e una stima, senza impegno.",
     "contactCta": "Parliamo del tuo progetto",
-    "websiteCaseStudy": "Come ho progettato questo sito"
+    "websiteCaseStudy": "Come ho progettato questo sito",
+    "areaTitle": "Dove lavoro e per quali settori",
+    "areaBody": "Lavoro da Salsomaggiore Terme con piccole e medie imprese di Parma, Fidenza, Piacenza e Reggio Emilia. Mi rivolgo soprattutto ad aziende di manifattura, serramenti e logistica, dove lo stesso dato passa da un foglio Excel all'altro prima di arrivare in produzione.",
+    "sectorManufacturingTitle": "Manifattura",
+    "sectorManufacturingBody": "Dalla commessa ai file di produzione: calcoli, distinte e documenti generati dal sistema invece che ricompilati a mano, con il collegamento ai macchinari.",
+    "sectorWindowsTitle": "Serramenti",
+    "sectorWindowsBody": "Configuratori di prodotto che dalle misure e dalle opzioni scelte ricavano preventivo, distinta dei materiali e documenti per la produzione, senza ricopiare i dati tra un file e l'altro.",
+    "sectorLogisticsTitle": "Logistica",
+    "sectorLogisticsBody": "Piani di carico e pianificazione delle spedizioni calcolati dal software a partire dai dati della commessa, invece che disegnati a mano.",
+    "sectorCaseLink": "Il caso MGP: produzione e piani di carico"
   },
   "diagrams": {
     "mgpProcess": {
@@ -684,5 +700,24 @@
     "inactive": "Le statistiche sono attualmente disattivate. Google Analytics non viene caricato e non vengono impostati nuovi cookie statistici. Restano attive solo le preferenze necessarie al funzionamento del sito.",
     "storageError": "Il browser non ha potuto salvare la scelta. Le statistiche restano disattivate in questa pagina. La preferenza potrebbe essere richiesta di nuovo; se avevi già accettato, elimina i dati del sito dal browser per rimuovere anche la vecchia scelta salvata.",
     "googleTerms": "Termini Google per il trattamento dei dati"
+  },
+  "structuredData": {
+    "development": {
+      "name": "Simone Colli – Sviluppo software",
+      "serviceTypes": [
+        "Software gestionale su misura",
+        "Automazione di processi aziendali",
+        "Configuratori di prodotto",
+        "Pianificazione dei carichi"
+      ]
+    },
+    "photography": {
+      "name": "Simone Colli – Fotografia",
+      "serviceTypes": [
+        "Fotografia sportiva",
+        "Fotografia di eventi",
+        "Servizi fotografici di laurea"
+      ]
+    }
   }
 }

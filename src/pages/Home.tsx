@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <div className="app">
       <SEO
+        titleKey="seo.home.title"
         descriptionKey="seo.home.description"
         keywordsKey="seo.home.keywords"
         path="/"

@@ -24,7 +24,7 @@ export default function AboutMePage() {
   return (
     <div className="app">
       <SEO
-        titleKey="about.pageTitle"
+        titleKey="seo.about.title"
         descriptionKey="seo.about.description"
         keywordsKey="seo.about.keywords"
         path="/about"

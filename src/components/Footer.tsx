@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "./utils/LocalizedLink";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaEnvelopeOpen, FaCamera, FaOrcid } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { PREFERENCES_EVENT } from "../lib/analytics";
