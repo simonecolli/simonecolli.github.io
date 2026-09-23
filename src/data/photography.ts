@@ -198,12 +198,6 @@ export const Photos: Photo[] = [
         category: ["Portrait"],
     },
     {
-        id: 31,
-        src: "/assets/photos/IMG_7652.webp",
-        alt: "Fotografia sportiva IMG_7652",
-        category: ["Sport"],
-    },
-    {
         id: 32,
         src: "/assets/photos/IMG_7717.webp",
         alt: "Fotografia sportiva IMG_7717",
