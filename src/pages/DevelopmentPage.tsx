@@ -36,6 +36,7 @@ export default function DevelopmentPage() {
         descriptionKey="seo.development.description"
         keywordsKey="seo.development.keywords"
         path="/development"
+        image="/og/development.png"
       />
       <Header />
       <main className="main-content pt-20">

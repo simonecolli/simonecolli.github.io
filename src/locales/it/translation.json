@@ -221,7 +221,7 @@
       "title": "Casi studio: software su misura per aziende"
     },
     "talks": {
-      "description": "Presentazioni accademiche di Simone Colli tenute all'Università di Parma. Ricerca in IA, cybersecurity, big data e compilatori.",
+      "description": "Presentazioni accademiche di Simone Colli all'Università di Parma: intelligenza artificiale, cybersecurity, big data, compilatori e analisi statica.",
       "keywords": "Simone Colli presentazioni, presentazioni accademiche, Università di Parma, ricerca, intelligenza artificiale, cybersecurity, big data, data mining, compilatori, analisi statica"
     },
     "photography": {
@@ -243,17 +243,17 @@
       "keywords": "Simone Colli, pagina non trovata, 404"
     },
     "privacy": {
-      "description": "Informativa privacy e cookie di simonecolli.com: preferenze tecniche, statistiche facoltative con Google Analytics, consenso e diritti.",
+      "description": "Informativa privacy e cookie di simonecolli.com: titolare, dati raccolti, preferenze tecniche, statistiche facoltative con Google Analytics e diritti.",
       "keywords": "Simone Colli, privacy, informativa, GDPR, cookie",
-      "inactiveDescription": "Informativa privacy e cookie di simonecolli.com: preferenze tecniche, hosting, email e diritti. Google Analytics attualmente disattivato."
+      "inactiveDescription": "Informativa privacy e cookie di simonecolli.com: titolare, dati raccolti, preferenze tecniche, hosting, email e diritti. Google Analytics è disattivato."
     },
     "development": {
-      "description": "Sviluppo software su misura: applicazioni web, ottimizzazione a vincoli, calcolo intensivo, messa in produzione. Simone Colli, Parma.",
+      "description": "Sviluppo software su misura per PMI di Parma, Piacenza e Reggio Emilia: applicazioni web, automazione di processi, ottimizzazione e messa in produzione.",
       "keywords": "sviluppo software su misura, sito vetrina, sito portfolio, gestionale produzione, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore Parma, freelance, software manifatturiero",
       "title": "Software su misura per PMI a Parma e Piacenza"
     },
     "graduation": {
-      "description": "Servizi fotografici di laurea, anche in trasferta: Proclamazione a partire da 100 €, All Inclusive a partire da 250 € e gruppi a partire da 65 € a persona per almeno 5 laureandi.",
+      "description": "Servizi fotografici di laurea a Parma e in trasferta: Proclamazione da 100 €, All Inclusive da 250 €, gruppi da 65 € a persona con almeno 5 laureandi.",
       "keywords": "fotografo laurea, foto laurea, proclamazione, festa laurea, fotografo in trasferta, Simone Colli",
       "title": "Fotografo di laurea a Parma: servizi e prezzi"
     }
@@ -276,12 +276,12 @@
       "photographyDelivery": {
         "title": "Photo Delivery",
         "description": "Prototipo di un servizio didelivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel - il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria - gitleaks, ruff, pytest, typecheck - prima che il codice entri in branch.",
-        "shortDescription": "Servizio di consegna fotografica self-hosted: gallerie con codice d'accesso, ordini cifrati e consegna dopo il pagamento."
+        "shortDescription": "Servizio di consegna fotografica self-hosted: gallerie con codice d'accesso, ordini cifrati, consegna via email dopo il pagamento e backend mai esposto in rete."
       },
       "personalWebsite": {
         "title": "Sito personale: sviluppo e fotografia",
         "description": "Un sito per due attività: sviluppo software e fotografia. Il caso racconta struttura dei contenuti, identità visiva, percorsi di contatto, prerendering su GitHub Pages e statistiche subordinate al consenso.",
-        "shortDescription": "Un sito per sviluppo e fotografia: identità condivisa, percorsi dedicati, React, pagine statiche e gestione del consenso.",
+        "shortDescription": "Come ho progettato questo sito per sviluppo e fotografia: identità condivisa, percorsi dedicati, React, una pagina statica per ogni indirizzo e consenso.",
         "keywords": "case study sito personale, sito vetrina professionista, portfolio React, sviluppo sito web, TypeScript, GitHub Pages, prerendering, Simone Colli"
       },
       "quantumPortfolioOptimization": {
@@ -297,7 +297,7 @@
       "pandelosPlus": {
         "title": "PanDelos-plus",
         "description": "Algoritmo parallelo per il calcolo efficiente dell'omologia di sequenza nell'analisi pangenomica. Il paper è stato pubblicato su PLOS Computational Biology il 17 settembre 2026.",
-        "shortDescription": "PanDelos-plus: algoritmo parallelo per l'analisi pangenomica, pubblicato su PLOS Computational Biology."
+        "shortDescription": "PanDelos-plus, algoritmo parallelo per l'analisi pangenomica pubblicato su PLOS Computational Biology: fino a 14 volte più veloce e 96% di memoria in meno."
       },
       "deepNeuralNetworkLibrary": {
         "title": "Libreria Reti Neurali Profonde",

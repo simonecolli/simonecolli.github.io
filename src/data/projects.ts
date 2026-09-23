@@ -12,6 +12,9 @@ export interface Project {
   // Replaces the title in <title> when the display name is not what people
   // search for, as with MGP.
   seoTitle?: string;
+  // Kept on the site but out of search results and the sitemap: short exam and
+  // side projects that would only thin out what the site ranks for.
+  noindex?: boolean;
   // Link-preview card, 1200x630, built from the case study's own diagram.
   // Projects without one fall back to the portrait used everywhere else.
   image?: string;
@@ -117,6 +120,7 @@ export const projects: Project[] = [
   },
   {
     slug: "quantum-portfolio-optimization",
+    noindex: true,
     title: "data.projects.quantumPortfolioOptimization.title",
     description: "data.projects.quantumPortfolioOptimization.description",
     shortDescription: "data.projects.quantumPortfolioOptimization.shortDescription",
@@ -129,6 +133,7 @@ export const projects: Project[] = [
   },
   {
     slug: "academic-guarantee-optimization",
+    noindex: true,
     title: "data.projects.academicGuaranteeOptimization.title",
     description: "data.projects.academicGuaranteeOptimization.description",
     shortDescription: "data.projects.academicGuaranteeOptimization.shortDescription",
@@ -155,6 +160,7 @@ export const projects: Project[] = [
   },
   {
     slug: "deep-neural-network-library",
+    noindex: true,
     title: "data.projects.deepNeuralNetworkLibrary.title",
     description: "data.projects.deepNeuralNetworkLibrary.description",
     shortDescription: "data.projects.deepNeuralNetworkLibrary.shortDescription",
@@ -167,6 +173,7 @@ export const projects: Project[] = [
   },
   {
     slug: "unipr-org",
+    noindex: true,
     title: "data.projects.uniprOrg.title",
     description: "data.projects.uniprOrg.description",
     shortDescription: "data.projects.uniprOrg.shortDescription",
@@ -180,6 +187,7 @@ export const projects: Project[] = [
   },
   {
     slug: "maze-project",
+    noindex: true,
     title: "data.projects.mazeProject.title",
     description: "data.projects.mazeProject.description",
     shortDescription: "data.projects.mazeProject.shortDescription",

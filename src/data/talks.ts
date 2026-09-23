@@ -8,11 +8,14 @@ export interface Talk {
   demo: string;
   year: string;
   favourite?: boolean;
+  // Out of search results and the sitemap, as for the minor projects.
+  noindex?: boolean;
 }
 
 export const talks: Talk[] = [
   {
     slug: "academic-presentation-SASV-exam",
+    noindex: true,
     title: "data.talks.academicPresentationSASVExam.title",
     description: "data.talks.academicPresentationSASVExam.description",
     tags: ["Presentation", "Static Analysis", "Software Verification",
@@ -24,6 +27,7 @@ export const talks: Talk[] = [
   },
   {
     slug: "academic-presentation-bddm-exam",
+    noindex: true,
     title: "data.talks.academicPresentationBddmExam.title",
     description: "data.talks.academicPresentationBddmExam.description",
     tags: ["Presentation", "Big Data", "Data Mining", "Exam", "Research", "University"],
@@ -34,6 +38,7 @@ export const talks: Talk[] = [
   },
   {
     slug: "academic-presentation-bddm-reverse",
+    noindex: true,
     title: "data.talks.academicPresentationBddmReverse.title",
     description: "data.talks.academicPresentationBddmReverse.description",
     tags: ["Presentation", "Big Data", "Data Mining", "Exam", "Research", "University"],
@@ -45,6 +50,7 @@ export const talks: Talk[] = [
   },
   {
     slug: "academic-presentation-cs-exam",
+    noindex: true,
     title: "data.talks.academicPresentationCsExam.title",
     description: "data.talks.academicPresentationCsExam.description",
     tags: ["Presentation", "Cybersecurity", "Exam", "University"],
@@ -56,6 +62,7 @@ export const talks: Talk[] = [
   },
   {
     slug: "academic-presentation-FAI-exam",
+    noindex: true,
     title: "data.talks.academicPresentationFAIExam.title",
     description: "data.talks.academicPresentationFAIExam.description",
     tags: ["Presentation", "Artificial Intelligence", "Contrastive Learning",
@@ -68,6 +75,7 @@ export const talks: Talk[] = [
   },
   {
     slug: "academic-presentation-LIaC-exam",
+    noindex: true,
     title: "data.talks.academicPresentationLIaCExam.title",
     description: "data.talks.academicPresentationLIaCExam.description",
     tags: ["Presentation", "Languages", "Interpreters", "Compilers",

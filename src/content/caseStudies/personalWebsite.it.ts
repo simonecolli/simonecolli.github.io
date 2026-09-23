@@ -62,7 +62,7 @@ export const personalWebsiteIt: CaseStudy = {
       id: "language-and-consent",
       title: "Lingue, risorse locali e statistiche facoltative",
       blocks: [
-        { kind: "p", text: "L'interfaccia e i case study sono disponibili in italiano e inglese. Le sezioni dei racconti mantengono gli stessi identificatori nelle due lingue. L'HTML generato dalla build è in italiano: il cambio lingua avviene nel browser e non crea due serie separate di indirizzi indicizzabili." },
+        { kind: "p", text: "L'interfaccia e i case study sono disponibili in italiano e inglese. Le sezioni dei racconti mantengono gli stessi identificatori nelle due lingue. Ogni lingua ha i propri indirizzi: l'italiano alla radice, l'inglese sotto /en/. La build genera l'HTML di entrambe e ogni pagina dichiara la versione nell'altra lingua, così i motori di ricerca indicizzano le due separatamente." },
         { kind: "p", text: "I caratteri tipografici sono ospitati insieme al sito. L'integrazione GA4 è predisposta per caricare il tag solo dopo il consenso alle statistiche, con rifiuto e revoca accessibili dalle preferenze cookie. I consensi pubblicitari restano negati. I test automatici verificano anche scadenza della scelta, errori di salvataggio e blocco della raccolta negli ambienti locali." },
         { kind: "p", text: "Gli eventi del sito distinguono visite e clic di contatto tra sviluppo e fotografia, senza includere il contenuto dei messaggi precompilati. Il codice filtra i percorsi e rimuove query e frammenti dagli eventi manuali. Il collaudo del tag Google reale e dei dati ricevuti resta distinto dai test del codice." },
       ],

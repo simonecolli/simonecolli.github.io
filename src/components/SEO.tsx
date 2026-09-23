@@ -21,13 +21,14 @@ interface SEOProps {
 // is the page in the default language; the canonical follows the language of
 // the URL being rendered and the alternates list every language plus
 // x-default, the same set the sitemap declares. noindex replaces the canonical
-// and the alternates, since the 404 page answers for any unknown URL.
+// and the alternates: it marks the 404 page, which answers for any unknown URL,
+// and the minor projects and talks kept out of search results.
 export default function SEO({
   titleKey,
   descriptionKey,
   keywordsKey,
   path = "",
-  image = "/profile.jpg",
+  image = "/og/home.png",
   noindex = false,
 }: SEOProps) {
   const { t } = useTranslation();

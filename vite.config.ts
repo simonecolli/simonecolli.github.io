@@ -91,6 +91,13 @@ const pages = [
   ...talks.map((talk) => `/talks/${talk.slug}`),
 ]
 
+// Rendered like every other page, but marked noindex in their head, so they
+// stay out of the sitemap too.
+const noindexPages = new Set([
+  ...projects.filter((project) => project.noindex).map((project) => `/projects/${project.slug}`),
+  ...talks.filter((talk) => talk.noindex).map((talk) => `/talks/${talk.slug}`),
+])
+
 const prerenderRoutes = [
   ...LANGUAGES.flatMap((lang) =>
     pages.map((page) => localizePath(page, lang)).filter((route) => route !== '/'),
@@ -106,7 +113,7 @@ export default defineConfig({
       renderTarget: '#root',
       additionalPrerenderRoutes: prerenderRoutes,
     }),
-    sitemap(pages),
+    sitemap(pages.filter((page) => !noindexPages.has(page))),
     dropFinderJunk(),
     forceExit(),
   ],

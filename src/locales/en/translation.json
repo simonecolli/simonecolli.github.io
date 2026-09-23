@@ -243,17 +243,17 @@
       "keywords": "Simone Colli, page not found, 404"
     },
     "privacy": {
-      "description": "Privacy and cookie notice for simonecolli.com: technical preferences, optional Google Analytics statistics, consent and your rights.",
+      "description": "Privacy and cookie notice for simonecolli.com: data controller, data collected, technical preferences, optional Google Analytics statistics and your rights.",
       "keywords": "Simone Colli, privacy, policy, GDPR, cookies",
-      "inactiveDescription": "Privacy and cookie notice for simonecolli.com: technical preferences, hosting, email and rights. Google Analytics is currently disabled."
+      "inactiveDescription": "Privacy and cookie notice for simonecolli.com: data controller, data collected, technical preferences, hosting, email and rights. Google Analytics is off."
     },
     "development": {
-      "description": "Custom software development: web applications, constraint optimisation, heavy computation, deployment. Simone Colli, Parma, Italy.",
+      "description": "Custom software for SMEs in Parma, Piacenza and Reggio Emilia: web applications, process automation, constraint optimisation and deployment to production.",
       "keywords": "custom software development, showcase website, portfolio website, production management software, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, developer Parma, freelance, manufacturing software",
       "title": "Custom software for SMEs in Parma & Piacenza"
     },
     "graduation": {
-      "description": "Graduation photography, with travel available: ceremony starting from €100, All Inclusive starting from €250 and groups starting from €65 per person for at least 5 graduates.",
+      "description": "Graduation photos in Parma and on location: ceremony from €100, All Inclusive from €250, groups from €65 per person for at least 5 graduates.",
       "keywords": "graduation photographer, graduation photography, graduation ceremony, travelling photographer, Simone Colli",
       "title": "Graduation photos in Parma: packages & prices"
     }
@@ -276,12 +276,12 @@
       "photographyDelivery": {
         "title": "Photo Delivery",
         "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model - access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel - the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate - gitleaks, ruff, pytest, typecheck - before it lands on the branch.",
-        "shortDescription": "Self-hosted photo delivery service: galleries behind an access code, encrypted orders, delivery after payment."
+        "shortDescription": "Self-hosted photo delivery service: galleries behind an access code, encrypted orders, email delivery after payment and a backend never exposed to the internet."
       },
       "personalWebsite": {
         "title": "Personal website: development and photography",
         "description": "One website for two activities: software development and photography. The case study covers content structure, visual identity, contact journeys, prerendering on GitHub Pages and consent-based statistics.",
-        "shortDescription": "One site for development and photography: a shared identity, dedicated journeys, React, static pages and consent management.",
+        "shortDescription": "How I designed this website for development and photography: a shared identity, dedicated journeys, React, a static page for every address and consent handling.",
         "keywords": "personal website case study, professional website, React portfolio, web development, TypeScript, GitHub Pages, prerendering, Simone Colli"
       },
       "quantumPortfolioOptimization": {
@@ -297,7 +297,7 @@
       "pandelosPlus": {
         "title": "PanDelos-plus",
         "description": "A parallel algorithm for efficiently computing sequence homology in pangenomic analysis. The paper was published in PLOS Computational Biology on September 17, 2026.",
-        "shortDescription": "PanDelos-plus: a parallel algorithm for pangenomic analysis, published in PLOS Computational Biology."
+        "shortDescription": "PanDelos-plus, a parallel algorithm for pangenomic analysis published in PLOS Computational Biology: up to 14 times faster and up to 96% less memory."
       },
       "deepNeuralNetworkLibrary": {
         "title": "Deep Neural Network Library",

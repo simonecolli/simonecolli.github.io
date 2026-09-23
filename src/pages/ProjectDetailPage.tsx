@@ -36,6 +36,7 @@ export default function ProjectDetailPage() {
         descriptionKey={project.shortDescription}
         keywordsKey={project.keywords ?? "seo.projects.keywords"}
         path={`/projects/${project.slug}`}
+        noindex={project.noindex}
         image={project.image}
       />
       <Header />

@@ -42,6 +42,7 @@ export default function PhotographyPage() {
         descriptionKey="seo.photography.description"
         keywordsKey="seo.photography.keywords"
         path="/photography"
+        image="/og/photography.png"
       />
       <Header />
 

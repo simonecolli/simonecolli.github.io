@@ -26,6 +26,7 @@ export default function TalkDetailPage() {
         descriptionKey={talk.description}
         keywordsKey="seo.talks.keywords"
         path={`/talks/${talk.slug}`}
+        noindex={talk.noindex}
       />
       <Header />
       <main className="main-content pt-20">

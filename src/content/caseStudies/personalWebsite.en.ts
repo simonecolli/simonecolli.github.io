@@ -62,7 +62,7 @@ export const personalWebsiteEn: CaseStudy = {
       id: "language-and-consent",
       title: "Languages, local resources and optional statistics",
       blocks: [
-        { kind: "p", text: "The interface and case studies are available in Italian and English. Story sections keep matching identifiers across languages. The build generates Italian HTML: language switching happens in the browser and does not create two separate sets of indexable addresses." },
+        { kind: "p", text: "The interface and case studies are available in Italian and English. Story sections keep matching identifiers across languages. Each language has its own addresses: Italian at the root, English under /en/. The build generates HTML for both, and every page declares its counterpart in the other language, so search engines index the two separately." },
         { kind: "p", text: "Fonts are hosted with the site. The GA4 integration is designed to load its tag only after consent to statistics, with refusal and withdrawal available through cookie preferences. Advertising consents remain denied. Automated tests also cover consent expiry, storage errors and blocking collection in local environments." },
         { kind: "p", text: "Site events distinguish page visits and contact clicks for development and photography, without including prefilled message contents. The code filters paths and removes queries and fragments from manually sent events. Testing the real Google tag and received data remains separate from testing the code." },
       ],

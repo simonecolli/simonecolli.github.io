@@ -5,6 +5,8 @@ import { mgpIt } from "./mgp.it";
 import { mgpEn } from "./mgp.en";
 import { freelanceHubIt } from "./freelanceHub.it";
 import { freelanceHubEn } from "./freelanceHub.en";
+import { pandelosPlusIt } from "./pandelosPlus.it";
+import { pandelosPlusEn } from "./pandelosPlus.en";
 
 // Keyed by the same slug used in `data/projects.ts`, so a project gains its
 // long form by being added here and nowhere else. The two language variants of
@@ -15,6 +17,7 @@ const caseStudies: Record<string, Record<"it" | "en", CaseStudy>> = {
   "mgp-gestione-produzione": { it: mgpIt, en: mgpEn },
   "personal-website": { it: personalWebsiteIt, en: personalWebsiteEn },
   "freelance-hub": { it: freelanceHubIt, en: freelanceHubEn },
+  "pandelos-plus": { it: pandelosPlusIt, en: pandelosPlusEn },
 };
 
 export function hasCaseStudy(slug: string): boolean {

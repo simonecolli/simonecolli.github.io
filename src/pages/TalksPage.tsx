@@ -17,6 +17,7 @@ export default function TalksPage() {
         descriptionKey="seo.talks.description"
         keywordsKey="seo.talks.keywords"
         path="/talks"
+        image="/og/development.png"
       />
       <Header />
       <main className="main-content pt-20">

@@ -1,0 +1,49 @@
+<!doctype html>
+<!--
+  Link-preview card, 1200x630, in the same layout as the project cards in
+  public/og/. scripts/og.sh opens it in headless Chrome with the text in the
+  query string and saves a screenshot.
+-->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face {
+    font-family: "Inter";
+    src: url("../../public/assets/fonts/inter.woff2") format("woff2");
+    font-weight: 400 600;
+  }
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    background: #efefef;
+    color: #222;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 58px;
+    box-sizing: border-box;
+  }
+  .eyebrow { font-size: 14px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; margin: 0; }
+  .eyebrow.dev { color: #005cba; }
+  .eyebrow.photo { color: #bf1920; }
+  .eyebrow.neutral { color: #555; }
+  h1 { font-size: 64px; font-weight: 400; letter-spacing: -0.02em; margin: 18px 0 20px; line-height: 1.05; }
+  p.lead { font-size: 24px; line-height: 1.55; color: #666; margin: 0; max-width: 860px; }
+  p.url { font-size: 16px; color: #666; margin: 44px 0 0; }
+</style>
+</head>
+<body>
+  <p class="eyebrow" id="eyebrow"></p>
+  <h1 id="title"></h1>
+  <p class="lead" id="lead"></p>
+  <p class="url" id="url"></p>
+  <script>
+    const params = new URLSearchParams(location.search);
+    for (const id of ["eyebrow", "title", "lead", "url"]) {
+      document.getElementById(id).textContent = params.get(id) ?? "";
+    }
+    document.getElementById("eyebrow").classList.add(params.get("accent") ?? "neutral");
+  </script>
+</body>
+</html>

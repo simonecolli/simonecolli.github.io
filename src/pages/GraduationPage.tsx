@@ -31,7 +31,7 @@ export default function GraduationPage() {
 
   return (
     <div className="app">
-      <SEO titleKey="seo.graduation.title" descriptionKey="seo.graduation.description" keywordsKey="seo.graduation.keywords" path="/photography/degree" />
+      <SEO titleKey="seo.graduation.title" descriptionKey="seo.graduation.description" keywordsKey="seo.graduation.keywords" path="/photography/degree" image="/og/degree.png" />
       <Header />
       <main className="main-content pt-20 graduation-page">
         <section className="site-section-compact">
