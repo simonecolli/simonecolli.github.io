@@ -265,9 +265,10 @@
     "projects": {
       "freelanceHub": {
         "title": "Freelance hub",
-        "description": "Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
-        "shortDescription": "Dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo. In TDD, 843 test, copertura al 100%.",
-        "keywords": "gestionale per freelance, CRM libero professionista, automazione attività freelance, previsione incassi, pianificazione del carico di lavoro, preventivi e contratti, self-hosted, LLM in locale, Ollama, software su misura"
+        "description": "CRM e gestionale per l'attività da libero professionista. Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
+        "shortDescription": "CRM e gestionale per liberi professionisti: dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo.",
+        "keywords": "gestionale per freelance, CRM libero professionista, automazione attività freelance, previsione incassi, pianificazione del carico di lavoro, preventivi e contratti, self-hosted, LLM in locale, Ollama, software su misura",
+        "seoTitle": "Freelance hub: CRM e gestionale per freelance"
       },
       "mgp": {
         "title": "MGP - Gestione produzione",
@@ -484,8 +485,8 @@
     "pageTitle": "Sviluppo software",
     "intro": "Applicazioni web, automazioni e integrazioni tra sistemi, su misura per piccole e medie imprese. Costruite sul tuo modo di lavorare, per migliorarlo.",
     "servicesTitle": "Cosa faccio",
-    "service1Title": "Applicazioni web su misura",
-    "service1Body": "Applicazioni per governare processi che oggi vivono su fogli di calcolo e scambi di email: configuratori, generazione automatica di documenti, integrazione fra sistemi che non si parlano. Dall'analisi dei requisiti alla messa in produzione.",
+    "service1Title": "Gestionali e applicazioni web su misura",
+    "service1Body": "Gestionali e applicazioni per processi che oggi vivono tra file Excel, macro Visual Basic, script e scambi di email: l'operatore inserisce i dati una volta, il sistema esegue i calcoli e genera documenti e file di lavorazione (PDF, DXF, CSV). Configuratori e integrazione fra sistemi che non si parlano, dall'analisi dei requisiti alla messa in produzione.",
     "service2Title": "Ottimizzazione e problemi a vincoli",
     "service2Body": "Problemi di pianificazione con troppe variabili per essere risolti a mano: piani di carico, assegnazioni, allocazioni. Li ho affrontati nella produzione industriale, nell'organizzazione universitaria e in ambito finanziario, con MiniZinc, OR-Tools e Answer Set Programming.",
     "service3Title": "Calcolo intensivo e algoritmi",
@@ -497,7 +498,7 @@
     "service6Title": "Automazione di processo",
     "service6Body": "Lo stesso dato inserito tre volte, i documenti rifatti a mano a ogni passaggio, fogli di calcolo che nessuno sa più chi aggiorna. Metto insieme le fasi in un sistema solo, dove ognuna passa alla successiva quello che ha già calcolato.",
     "howTitle": "Come lavoro",
-    "howBody": "Si parte da un'analisi dei requisiti fatta insieme, con obiettivi e vincoli messi per iscritto. Da lì definiamo un perimetro e una stima. Sviluppo per incrementi verificabili, con test automatici e decisioni architetturali documentate, così a fine progetto il codice resta leggibile anche da chi non l'ha scritto.",
+    "howBody": "Si parte da un'analisi dei requisiti fatta insieme, con obiettivi e vincoli messi per iscritto. Da lì definiamo un perimetro e ricevi un preventivo scritto. Sviluppo per incrementi verificabili, con test automatici e decisioni architetturali documentate, così a fine progetto il codice resta leggibile anche da chi non l'ha scritto. Dopo il rilascio resto il riferimento per assistenza, manutenzione ed evoluzioni: seguo l'intero ciclo di vita del software.",
     "projectsTitle": "Progetti in evidenza",
     "projectsCta": "Guarda tutti i progetti",
     "talksCta": "Guarda le presentazioni",
@@ -510,12 +511,13 @@
     "areaTitle": "Dove lavoro e per quali settori",
     "areaBody": "Lavoro da Salsomaggiore Terme con piccole e medie imprese di Parma, Fidenza, Piacenza e Reggio Emilia. Mi rivolgo soprattutto ad aziende di manifattura, serramenti e logistica, dove lo stesso dato passa da un foglio Excel all'altro prima di arrivare in produzione.",
     "sectorManufacturingTitle": "Manifattura",
-    "sectorManufacturingBody": "Dalla commessa ai file di produzione: calcoli, distinte e documenti generati dal sistema invece che ricompilati a mano, con il collegamento ai macchinari.",
+    "sectorManufacturingBody": "Dalla commessa ai file di produzione: calcoli, distinte e documenti generati dal sistema invece che ricompilati a mano, con il collegamento ai PLC di reparto via OPC-UA.",
     "sectorWindowsTitle": "Serramenti",
     "sectorWindowsBody": "Configuratori di prodotto che dalle misure e dalle opzioni scelte ricavano preventivo, distinta dei materiali e documenti per la produzione, senza ricopiare i dati tra un file e l'altro.",
     "sectorLogisticsTitle": "Logistica",
     "sectorLogisticsBody": "Piani di carico e pianificazione delle spedizioni calcolati dal software a partire dai dati della commessa, invece che disegnati a mano.",
-    "sectorCaseLink": "Il caso MGP: produzione e piani di carico"
+    "sectorCaseLink": "Il caso MGP: produzione e piani di carico",
+    "howCredentials": "Laurea magistrale in Scienze Informatiche all'Università di Parma con 110 e lode, autore di un articolo su PLOS Computational Biology e tutor universitario di Ingegneria del Software e Sistemi operativi."
   },
   "diagrams": {
     "mgpProcess": {

@@ -72,6 +72,7 @@ export const projects: Project[] = [
   {
     slug: "freelance-hub",
     title: "data.projects.freelanceHub.title",
+    seoTitle: "data.projects.freelanceHub.seoTitle",
     description: "data.projects.freelanceHub.description",
     shortDescription: "data.projects.freelanceHub.shortDescription",
     keywords: "data.projects.freelanceHub.keywords",

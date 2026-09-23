@@ -265,9 +265,10 @@
     "projects": {
       "freelanceHub": {
         "title": "Freelance hub",
-        "description": "I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 843 tests with a 100% coverage threshold enforced by the pipeline, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
-        "shortDescription": "From first lead to payment in one place, with revenue forecasts and time planning. Built in TDD: 843 tests, 100% coverage enforced by the pipeline.",
-        "keywords": "freelance management system, freelance CRM, business automation, revenue forecasting, workload planning, quotations and contracts, self-hosted, local LLM, Ollama, custom software"
+        "description": "A CRM and business tool for freelance work. I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 843 tests with a 100% coverage threshold enforced by the pipeline, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
+        "shortDescription": "A CRM and business tool for freelancers: from first lead to payment in one place, with revenue forecasts and time planning, built with 843 automated tests.",
+        "keywords": "freelance management system, freelance CRM, business automation, revenue forecasting, workload planning, quotations and contracts, self-hosted, local LLM, Ollama, custom software",
+        "seoTitle": "Freelance hub: a CRM for freelancers"
       },
       "mgp": {
         "title": "MGP - Production management",
@@ -484,8 +485,8 @@
     "pageTitle": "Software development",
     "intro": "Web applications, automation and integration between systems, tailored to small and medium-sized businesses. Built around the way you work, to improve it.",
     "servicesTitle": "What I do",
-    "service1Title": "Custom web applications",
-    "service1Body": "Applications to govern processes that today live in spreadsheets and email threads: configurators, automatic document generation, integration between systems that do not talk to each other. From requirements analysis to deployment.",
+    "service1Title": "Custom business software and web applications",
+    "service1Body": "Business software and applications for processes that today live across Excel files, Visual Basic macros, scripts and email threads: operators enter the data once, the system runs the calculations and generates documents and production files (PDF, DXF, CSV). Configurators and integration between systems that do not talk to each other, from requirements analysis to deployment.",
     "service2Title": "Optimisation and constraint problems",
     "service2Body": "Planning problems with too many variables to solve by hand: load plans, assignments, allocations. I have worked on them in industrial production, in university administration and in finance, with MiniZinc, OR-Tools and Answer Set Programming.",
     "service3Title": "Heavy computation and algorithms",
@@ -497,7 +498,7 @@
     "service6Title": "Process automation",
     "service6Body": "The same data typed in three times, documents redone by hand at every stage, spreadsheets nobody is sure who updates any more. I bring the stages together into one system, where each hands the next what it has already worked out.",
     "howTitle": "How I work",
-    "howBody": "We start from a requirements analysis done together, with goals and constraints written down. From there we agree on a scope and an estimate. I develop in verifiable increments, with automated tests and documented architectural decisions, so that by the end the code stays readable to someone who did not write it.",
+    "howBody": "We start from a requirements analysis done together, with goals and constraints written down. From there we agree on a scope and you receive a written quote. I develop in verifiable increments, with automated tests and documented architectural decisions, so that by the end the code stays readable to someone who did not write it. After release I remain your point of contact for support, maintenance and new features: I follow the whole software lifecycle.",
     "projectsTitle": "Selected projects",
     "projectsCta": "See all projects",
     "talksCta": "See the talks",
@@ -510,12 +511,13 @@
     "areaTitle": "Where I work and which sectors",
     "areaBody": "I work from Salsomaggiore Terme with small and medium-sized businesses in Parma, Fidenza, Piacenza and Reggio Emilia. My focus is manufacturing, window and door makers and logistics, where the same figures move from one Excel sheet to the next before they reach production.",
     "sectorManufacturingTitle": "Manufacturing",
-    "sectorManufacturingBody": "From the order to the production files: calculations, bills of materials and documents generated by the system instead of being filled in again by hand, with the link to the machines.",
+    "sectorManufacturingBody": "From the order to the production files: calculations, bills of materials and documents generated by the system instead of being filled in again by hand, with the link to the shop-floor PLCs via OPC-UA.",
     "sectorWindowsTitle": "Windows and doors",
     "sectorWindowsBody": "Product configurators that turn the measurements and chosen options into a quote, a bill of materials and production documents, without copying data from one file to another.",
     "sectorLogisticsTitle": "Logistics",
     "sectorLogisticsBody": "Load plans and shipment planning calculated by the software from the order data, instead of being drawn by hand.",
-    "sectorCaseLink": "The MGP case: production and load plans"
+    "sectorCaseLink": "The MGP case: production and load plans",
+    "howCredentials": "Master's degree in Computer Science from the University of Parma with 110/110 cum laude, author of a paper in PLOS Computational Biology and university tutor for Software Engineering and Operating Systems."
   },
   "diagrams": {
     "mgpProcess": {

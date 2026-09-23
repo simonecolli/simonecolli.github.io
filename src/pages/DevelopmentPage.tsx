@@ -131,6 +131,9 @@ export default function DevelopmentPage() {
             <p className="text-muted leading-relaxed">
               {t("development.howBody")}
             </p>
+            <p className="text-muted leading-relaxed mt-4">
+              {t("development.howCredentials")}
+            </p>
           </div>
         </section>
 
