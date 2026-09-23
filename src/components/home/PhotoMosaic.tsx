@@ -1,5 +1,9 @@
 import { Photos } from "../../data/photography";
 import SectionBackground from "./SectionBackground";
+import { responsivePhoto } from "../../lib/photos";
+
+// One column of columns-3 / sm:columns-4 / lg:columns-6.
+const MOSAIC_SIZES = "(min-width: 1024px) 17vw, (min-width: 640px) 25vw, 34vw";
 
 const ORIENTAMENTI = [
   "3/2", "2/3", "2/3", "3/2", "2/3", "3/2", "3/2", "2/3",
@@ -29,7 +33,7 @@ export default function PhotoMosaic({ fade }: PhotoMosaicProps) {
             >
               {foto && (
                 <img
-                  src={foto.src}
+                  {...responsivePhoto(foto.src, MOSAIC_SIZES)}
                   alt=""
                   loading="lazy"
                   className="w-full h-full object-cover rounded-[3px]"

@@ -1,6 +1,7 @@
 import { useEffect, useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Photo } from "../../data/photography";
+import { responsivePhoto } from "../../lib/photos";
 
 interface LightboxProps {
   photo: Photo;
@@ -171,7 +172,7 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
           )}
 
           <img
-            src={photo.src}
+            {...responsivePhoto(photo.src, "100vw")}
             alt={photo.alt}
             onLoad={() => setIsLoaded(true)}
             className={`max-w-full max-h-[calc(100vh-8rem)] object-contain rounded-lg shadow-2xl transition-opacity duration-300 ${

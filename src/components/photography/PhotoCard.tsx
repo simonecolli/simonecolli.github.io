@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Photo } from "../../data/photography";
+import { responsivePhoto } from "../../lib/photos";
+
+// The gallery and graduation grids: one column, two from sm/md, three from lg.
+const CARD_SIZES = "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw";
 
 interface PhotoCardProps {
   photo: Photo;
@@ -34,7 +38,7 @@ export default function PhotoCard({ photo, onClick }: PhotoCardProps) {
         )}
 
         <img
-          src={photo.src}
+          {...responsivePhoto(photo.src, CARD_SIZES)}
           alt={photo.alt}
           loading="lazy"
           onLoad={() => setIsLoaded(true)}
