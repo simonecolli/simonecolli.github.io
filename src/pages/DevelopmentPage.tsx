@@ -77,7 +77,7 @@ export default function DevelopmentPage() {
                   </p>
                   {n === 5 && (
                     <div className="flex flex-col items-start gap-3 mt-4">
-                      <Link to="/projects/personal-website" className={linkClass}>
+                      <Link to="/projects/personal-website/" className={linkClass}>
                         {t("development.websiteCaseStudy")}
                       </Link>
                       <Link to="/#idee" className={linkClass}>
@@ -113,10 +113,10 @@ export default function DevelopmentPage() {
               ))}
             </div>
             <div className="flex flex-wrap gap-8">
-              <Link to="/projects" className={linkClass}>
+              <Link to="/projects/" className={linkClass}>
                 {t("development.projectsCta")}
               </Link>
-              <Link to="/talks" className={linkClass}>
+              <Link to="/talks/" className={linkClass}>
                 {t("development.talksCta")}
               </Link>
             </div>

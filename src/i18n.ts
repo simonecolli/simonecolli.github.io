@@ -20,12 +20,16 @@ i18n
       en: { translation: en },
       it: { translation: it },
     },
-    fallbackLng: 'en',
+    fallbackLng: PRERENDER_LANGUAGE,
     interpolation: {
       escapeValue: false,
     },
+    // Only an explicit choice from the language switcher overrides Italian.
+    // Reading navigator too made the client re-render the page in English for
+    // any en-US browser, Googlebot's renderer included, so the indexed DOM no
+    // longer matched the Italian HTML.
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage'],
       caches: ['localStorage'],
     },
   });

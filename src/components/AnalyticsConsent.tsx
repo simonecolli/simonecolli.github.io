@@ -85,7 +85,7 @@ export default function AnalyticsConsent() {
           <p className="text-sm text-muted leading-relaxed mt-2">{t(ANALYTICS_ENABLED ? "cookies.body" : "cookies.inactive")}</p>
           {ANALYTICS_ENABLED && <p className="text-sm mt-2">{t(accepted ? "cookies.statusAccepted" : "cookies.statusRejected")}</p>}
           {storageError && <p role="alert" className="text-sm mt-2">{t("cookies.storageError")}</p>}
-          <Link to="/privacy" className="inline-block mt-2 underline underline-offset-4 text-sm">{t("cookies.policy")}</Link>
+          <Link to="/privacy/" className="inline-block mt-2 underline underline-offset-4 text-sm">{t("cookies.policy")}</Link>
         </div>
         <div className="flex flex-wrap gap-3 mt-4">
           {ANALYTICS_ENABLED ? <>

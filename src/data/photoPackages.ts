@@ -23,7 +23,7 @@ export const photoPackages: PhotoPackage[] = [
     includes: "photography.packages.graduation.includes",
     priceLabel: "photography.packages.graduation.price",
     note: "photography.packages.graduation.note",
-    href: "/photography/degree",
+    href: "/photography/degree/",
     cta: "photography.packages.graduation.cta",
   },
   {

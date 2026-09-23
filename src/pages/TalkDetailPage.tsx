@@ -12,7 +12,7 @@ export default function TalkDetailPage() {
   const { t } = useTranslation();
 
   if (!talk) {
-    return <Navigate to="/talks" replace />;
+    return <Navigate to="/talks/" replace />;
   }
 
   return (
@@ -29,7 +29,7 @@ export default function TalkDetailPage() {
           <div className="site-container">
             <div className="max-w-4xl mx-auto fade-in">
               <Link
-                to="/talks"
+                to="/talks/"
                 className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-dev transition-colors mb-8"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

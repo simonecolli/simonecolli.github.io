@@ -30,7 +30,7 @@ export default function AboutSplit() {
           <p className="type-body text-muted">
             {t("home.aboutMe.description")}
           </p>
-          <Link to="/about" className="btn btn-neutral mt-6">
+          <Link to="/about/" className="btn btn-neutral mt-6">
             {t("home.aboutMe.cta")}
           </Link>
         </div>

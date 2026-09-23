@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Logo from "./utils/Logo";
 import ThemeToggle from "./utils/ThemeToggle";
 import { useMailHref } from "../hooks/useMailHref";
+import { withTrailingSlash } from "../siteConfig";
 
 const languages = [
   { code: 'en', label: 'English' },
@@ -15,9 +16,9 @@ const languages = [
 // and one in the prerender routes.
 const NAV_ITEMS = [
   { to: "/", key: "nav.home" },
-  { to: "/development", key: "nav.development" },
-  { to: "/photography", key: "nav.photography" },
-  { to: "/about", key: "nav.about" },
+  { to: "/development/", key: "nav.development" },
+  { to: "/photography/", key: "nav.photography" },
+  { to: "/about/", key: "nav.about" },
 ] as const;
 
 const DEV_PATHS = ["/development", "/projects", "/talks"] as const;
@@ -102,7 +103,7 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => withTrailingSlash(location.pathname) === path;
 
   const linkClass = (path: string) =>
     `text-sm font-medium transition-colors hover:text-fg hover:no-underline ${

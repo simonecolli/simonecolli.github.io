@@ -39,7 +39,7 @@ export default function NotFound() {
                   {t('common.backToHome')}
                 </Link>
                 <Link
-                  to="/projects"
+                  to="/projects/"
                   className="px-8 py-3 border border-line text-fg hover:border-fg hover:text-fg transition-all"
                 >
                   {t('notFound.browseProjects')}

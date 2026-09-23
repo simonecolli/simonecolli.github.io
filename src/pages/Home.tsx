@@ -22,13 +22,13 @@ export default function Home() {
         <TerritorySection
           id="home-dev"
           territory="dev"
-          to="/development"
+          to="/development/"
           background={<NodeGraph fade="left" />}
         />
         <TerritorySection
           id="home-photo"
           territory="photo"
-          to="/photography"
+          to="/photography/"
           background={<PhotoMosaic fade="right" />}
         />
         <AboutSplit />

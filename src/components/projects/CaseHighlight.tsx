@@ -49,7 +49,7 @@ export default function CaseHighlight({ slug }: CaseHighlightProps) {
       </div>
 
       <Link
-        to={`/projects/${slug}`}
+        to={`/projects/${slug}/`}
         className="inline-block mt-6 text-sm font-medium text-accent-dev"
       >
         {t("projects.caseStudy.readFull")}

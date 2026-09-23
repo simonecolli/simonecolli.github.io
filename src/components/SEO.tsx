@@ -1,7 +1,7 @@
 import { createElement } from "react";
 import { useTranslation } from "react-i18next";
 import { collectHead, isCollectingHead, type HeadElement } from "../seoHead";
-import { SITE_URL } from "../siteConfig";
+import { SITE_URL, withTrailingSlash } from "../siteConfig";
 
 interface SEOProps {
   titleKey?: string;
@@ -30,7 +30,7 @@ export default function SEO({
   const title = titleKey ? `${t(titleKey)} | Simone Colli` : "Simone Colli";
   const description = t(descriptionKey);
   const keywords = t(keywordsKey);
-  const url = `${SITE_URL}${path}`;
+  const url = `${SITE_URL}${withTrailingSlash(path)}`;
   const imageUrl = image.startsWith("http") ? image : `${SITE_URL}${image}`;
   const locale = i18n.language.startsWith("it") ? "it_IT" : "en_GB";
 

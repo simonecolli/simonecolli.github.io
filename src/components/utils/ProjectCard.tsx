@@ -63,7 +63,7 @@ export default function ProjectCard({
       </div>
 
       <h3 className="text-xl font-medium mb-3 group-hover:text-accent-dev transition-colors">
-        <Link to={`/${basePath}/${project.slug}`} className="stretched-link">
+        <Link to={`/${basePath}/${project.slug}/`} className="stretched-link">
           {t(project.title)}
         </Link>
       </h3>

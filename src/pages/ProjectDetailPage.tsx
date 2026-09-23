@@ -18,7 +18,7 @@ export default function ProjectDetailPage() {
   const devMail = useMailHref("dev");
 
   if (!project) {
-    return <Navigate to="/projects" replace />;
+    return <Navigate to="/projects/" replace />;
   }
 
   // Projects that carry the positioning have a long form; the others keep the
@@ -40,7 +40,7 @@ export default function ProjectDetailPage() {
           <div className="site-container">
             <div className={`${caseStudy ? "max-w-6xl" : "max-w-4xl"} mx-auto fade-in`}>
               <Link
-                to="/projects"
+                to="/projects/"
                 className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-dev transition-colors mb-8"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

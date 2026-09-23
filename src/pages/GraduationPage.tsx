@@ -36,7 +36,7 @@ export default function GraduationPage() {
       <main className="main-content pt-20 graduation-page">
         <section className="site-section-compact">
           <div className="site-container">
-            <Link to="/photography" className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-photo"><FiArrowLeft aria-hidden="true" />{t("graduation.back")}</Link>
+            <Link to="/photography/" className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-photo"><FiArrowLeft aria-hidden="true" />{t("graduation.back")}</Link>
             <div className="mt-10 md:mt-16">
               <p className="text-sm tracking-widest text-accent-photo font-medium mb-5">{t("graduation.eyebrow")}</p>
               <h1 className="font-display type-hero-title">{t("graduation.title")}</h1>

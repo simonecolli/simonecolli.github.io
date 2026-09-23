@@ -2,6 +2,13 @@
 // cannot drift apart.
 export const SITE_URL = "https://www.simonecolli.com";
 
+// GitHub Pages serves every prerendered route as `<route>/index.html` and
+// answers the bare `/route` with a 301 to `/route/`. Canonicals, sitemap and
+// links use the slashed form so none of them points at a redirect.
+export function withTrailingSlash(path: string): string {
+  return path.endsWith("/") ? path : `${path}/`;
+}
+
 // Two activities, two inboxes. Kept here because more than one page links to
 // them now.
 export const DEV_EMAIL = "info.dev@simonecolli.com";

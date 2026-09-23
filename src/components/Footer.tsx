@@ -62,7 +62,7 @@ export default function Footer() {
             </p>
             <p className="text-sm text-muted-inv">{t('footer.photoCopyright')}</p>
             <div className="flex items-center justify-center gap-6 text-sm">
-              <Link to="/privacy" className="text-fg-inv underline underline-offset-4">
+              <Link to="/privacy/" className="text-fg-inv underline underline-offset-4">
                 {t('footer.privacy')}
               </Link>
               <button type="button" onClick={() => window.dispatchEvent(new Event(PREFERENCES_EVENT))} className="border-0 bg-transparent p-0 text-fg-inv underline underline-offset-4">

@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { vitePrerenderPlugin } from 'vite-prerender-plugin'
 import { projects } from './src/data/projects'
 import { talks } from './src/data/talks'
-import { SITE_URL } from './src/siteConfig'
+import { SITE_URL, withTrailingSlash } from './src/siteConfig'
 
 // Built from the prerender routes, so the sitemap cannot list a page that is
 // not generated or miss one that is. `.html` routes are the 404 fallback.
@@ -17,7 +17,7 @@ function sitemap(routes: string[]): Plugin {
     generateBundle() {
       const entries = ['/', ...routes]
         .filter((route) => !route.endsWith('.html'))
-        .map((route) => `  <url><loc>${SITE_URL}${route}</loc></url>`)
+        .map((route) => `  <url><loc>${SITE_URL}${withTrailingSlash(route)}</loc></url>`)
         .join('\n')
 
       this.emitFile({

@@ -45,7 +45,7 @@ export default function HeroSplit() {
             <a href={devMail} className="btn btn-dev hero-halo-btn">
               {t("hero.devCta")}
             </a>
-            <Link to={`/projects/${FEATURED_CASE_SLUG}`} className={LINK_CLASS}>
+            <Link to={`/projects/${FEATURED_CASE_SLUG}/`} className={LINK_CLASS}>
               {t("hero.devLink")}
             </Link>
           </div>
@@ -60,7 +60,7 @@ export default function HeroSplit() {
             <a href={photoMail} className="btn btn-photo hero-halo-btn">
               {t("hero.photoCta")}
             </a>
-            <Link to="/photography" className={LINK_CLASS}>
+            <Link to="/photography/" className={LINK_CLASS}>
               {t("hero.photoLink")}
             </Link>
           </div>

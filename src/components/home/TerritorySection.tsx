@@ -45,7 +45,7 @@ export default function TerritorySection({
       ) : (
         <Link to={to} className={ctaClass}>{label}</Link>
       )}
-      {!isDev && <Link to="/photography/degree" className="block mt-4 text-accent-photo underline underline-offset-4">{t("home.photo.graduationLink")}</Link>}
+      {!isDev && <Link to="/photography/degree/" className="block mt-4 text-accent-photo underline underline-offset-4">{t("home.photo.graduationLink")}</Link>}
     </div>
   );
 
