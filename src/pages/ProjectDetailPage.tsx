@@ -130,7 +130,7 @@ export default function ProjectDetailPage() {
                 )}
               </div>
 
-              {caseStudy && (
+              {caseStudy && caseStudy.kind !== "publication" && (
                 <aside className="mt-16 border border-line rounded-lg p-8 md:p-10 max-w-3xl">
                   <h2 className="text-2xl font-light tracking-tight mb-3">
                     {caseStudy.contact?.title ?? t('projects.caseStudy.ctaTitle')}

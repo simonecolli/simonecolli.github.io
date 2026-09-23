@@ -66,6 +66,9 @@
       "badge": "Caso studio",
       "realCase": "Caso reale",
       "readFull": "Leggi il caso completo"
+    },
+    "publication": {
+      "badge": "Pubblicazione"
     }
   },
   "talks": {

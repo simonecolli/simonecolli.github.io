@@ -1,8 +1,10 @@
 import type { CaseStudy } from "./types";
 
-// Every figure below comes from the published paper (PLOS Computational
-// Biology, 17 September 2026, doi:10.1371/journal.pcbi.1014724).
+// Every figure below comes from the paper
+// (PLOS Computational Biology, 17 September 2026,
+// doi:10.1371/journal.pcbi.1014724).
 export const pandelosPlusIt: CaseStudy = {
+  kind: "publication",
   facts: [
     "Pubblicato su PLOS Computational Biology",
     "Settembre 2026",
@@ -12,11 +14,6 @@ export const pandelosPlusIt: CaseStudy = {
     "PanDelos-plus è un algoritmo parallelo per calcolare l'omologia di sequenza nell'analisi pangenomica: riconoscere, confrontando molti genomi batterici, quali geni appartengono alla stessa famiglia. È una riprogettazione completa, centrata sui geni, di PanDelos, uno strumento che affronta il problema senza allineamenti e senza parametri da impostare.",
     "Il lavoro è stato pubblicato su PLOS Computational Biology il 17 settembre 2026. Sui dataset sintetici PanDelos-plus è fino a 14 volte più veloce dell'originale e usa fino al 96% di memoria in meno, restando coerente con i risultati dell'algoritmo di partenza.",
   ],
-  contact: {
-    title: "Hai un calcolo che non scala più?",
-    text: "Se un'elaborazione sui tuoi dati richiede ore o esaurisce la memoria, raccontami cosa calcola e su quali volumi. Parallelizzazione e strutture dati più leggere sono spesso il primo passo.",
-    button: "Raccontami il problema",
-  },
   metrics: [
     { value: "14x", label: "esecuzione più veloce dell'originale, nel caso migliore sui dataset sintetici" },
     { value: "-96%", label: "memoria utilizzata, nel caso migliore sui dataset sintetici" },

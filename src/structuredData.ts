@@ -1,5 +1,5 @@
 import type { TFunction } from 'i18next'
-import { projects } from './data/projects'
+import { projects, type Project } from './data/projects'
 import { talks } from './data/talks'
 import { localizePath, type Lang } from './lib/lang'
 import { DEV_EMAIL, PHOTO_EMAIL, SITE_URL, withTrailingSlash } from './siteConfig'
@@ -76,6 +76,25 @@ function service(kind: 'development' | 'photography', lang: Lang, t: TFunction):
   }
 }
 
+function scholarlyArticle(project: Project, lang: Lang): JsonLd | null {
+  const paper = project.publication
+  if (!paper) return null
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ScholarlyArticle',
+    headline: paper.title,
+    author: paper.authors.map((name) =>
+      name === 'Simone Colli' ? { '@id': PERSON_ID } : { '@type': 'Person', name },
+    ),
+    datePublished: paper.datePublished,
+    isPartOf: { '@type': 'Periodical', name: paper.journal },
+    identifier: { '@type': 'PropertyValue', propertyID: 'DOI', value: paper.doi },
+    sameAs: `https://doi.org/${paper.doi}`,
+    url: project.paper,
+    mainEntityOfPage: url(`/projects/${project.slug}`, lang),
+  }
+}
+
 function breadcrumb(items: [name: string, path: string][], lang: Lang): JsonLd {
   return {
     '@context': 'https://schema.org',
@@ -102,7 +121,9 @@ export function structuredDataFor(route: string, lang: Lang, t: TFunction): Json
   if (section === 'projects' && slug) {
     const project = projects.find((entry) => entry.slug === slug)
     if (project) {
-      return [breadcrumb([home, [t('projects.pageTitle'), '/projects'], [t(project.title), page]], lang)]
+      const article = scholarlyArticle(project, lang)
+      const trail = breadcrumb([home, [t('projects.pageTitle'), '/projects'], [t(project.title), page]], lang)
+      return article ? [article, trail] : [trail]
     }
   }
   if (section === 'talks' && slug) {

@@ -1,8 +1,10 @@
 import type { CaseStudy } from "./types";
 
-// Every figure below comes from the published paper (PLOS Computational
-// Biology, 17 September 2026, doi:10.1371/journal.pcbi.1014724).
+// Every figure below comes from the paper
+// (PLOS Computational Biology, 17 September 2026,
+// doi:10.1371/journal.pcbi.1014724).
 export const pandelosPlusEn: CaseStudy = {
+  kind: "publication",
   facts: [
     "Published in PLOS Computational Biology",
     "September 2026",
@@ -12,11 +14,6 @@ export const pandelosPlusEn: CaseStudy = {
     "PanDelos-plus is a parallel algorithm for computing sequence homology in pangenomic analysis: working out, across many bacterial genomes, which genes belong to the same family. It is a full gene-centric redesign of PanDelos, a tool that tackles the problem without alignments and without parameters to tune.",
     "The work was published in PLOS Computational Biology on 17 September 2026. On synthetic datasets PanDelos-plus runs up to 14 times faster than the original and uses up to 96% less memory, while staying consistent with the results of the original algorithm.",
   ],
-  contact: {
-    title: "Is a computation of yours no longer scaling?",
-    text: "If processing your data takes hours or runs out of memory, tell me what it computes and on what volumes. Parallelisation and lighter data structures are often the first step.",
-    button: "Tell me about the problem",
-  },
   metrics: [
     { value: "14x", label: "faster than the original, best case on the synthetic datasets" },
     { value: "-96%", label: "memory used, best case on the synthetic datasets" },

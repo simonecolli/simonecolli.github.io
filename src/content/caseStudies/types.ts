@@ -54,6 +54,10 @@ export interface Highlight {
 }
 
 export interface CaseStudy {
+  // A long form is a case study unless it says otherwise. A publication uses
+  // the same layout for a peer-reviewed paper: it is labelled as such and ends
+  // without the call to action a client case carries.
+  kind?: "publication";
   // Short qualifiers shown as chips under the title.
   facts: string[];
   // Opening paragraphs, before the first section and outside the table of

@@ -23,6 +23,15 @@ export interface Project {
   github: string;
   demo: string;
   paper?: string;
+  // Bibliographic record of a peer-reviewed paper, as published. Not
+  // translated: it feeds the ScholarlyArticle JSON-LD on the project page.
+  publication?: {
+    title: string;
+    authors: string[];
+    journal: string;
+    datePublished: string;
+    doi: string;
+  };
   year: string;
   favourite?: boolean;
 }
@@ -155,6 +164,13 @@ export const projects: Project[] = [
     github: "https://github.com/simonecolli/PanDelos-plus/tree/main",
     demo: "",
     paper: "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1014724",
+    publication: {
+      title: "PanDelos-plus: A parallel algorithm for computing sequence homology in pangenomic analysis",
+      authors: ["Simone Colli", "Emiliano Maresi", "Vincenzo Bonnici"],
+      journal: "PLOS Computational Biology",
+      datePublished: "2026-09-17",
+      doi: "10.1371/journal.pcbi.1014724",
+    },
     year: "2024-2026",
     favourite: true,
   },

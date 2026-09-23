@@ -1,6 +1,6 @@
 import Link from "./LocalizedLink";
 import { useTranslation } from "react-i18next";
-import { hasCaseStudy } from "../../content/caseStudies";
+import { longFormKind } from "../../content/caseStudies";
 
 interface ProjectCardProps {
   project: {
@@ -34,7 +34,7 @@ export default function ProjectCard({
 
   // Only projects carry long-form pages, so a talk reusing this card never
   // claims one.
-  const isCaseStudy = basePath === "projects" && hasCaseStudy(project.slug);
+  const longForm = basePath === "projects" ? longFormKind(project.slug) : null;
 
   const truncateDescription = (text: string, maxLength: number = 150) => {
     if (text.length <= maxLength) return text;
@@ -51,9 +51,9 @@ export default function ProjectCard({
           {showYear && project.year && (
             <span className="text-xs text-muted">{project.year}</span>
           )}
-          {isCaseStudy && (
+          {longForm && (
             <span className="text-xs px-2 py-1 border border-accent-dev text-accent-dev rounded">
-              {t('projects.caseStudy.badge')}
+              {t(longForm === "publication" ? 'projects.publication.badge' : 'projects.caseStudy.badge')}
             </span>
           )}
         </div>
