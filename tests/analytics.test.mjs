@@ -6,7 +6,7 @@ import ts from 'typescript';
 
 function setup({ hostname = 'www.simonecolli.com', activated = true, production = true } = {}) {
   const source = readFileSync(new URL('../src/lib/analytics.ts', import.meta.url), 'utf8')
-    .replace(/import .*siteConfig.*;/, 'const DEV_EMAIL="info.dev@simonecolli.com", PHOTO_EMAIL="info.photo@simonecolli.com", SITE_URL="https://www.simonecolli.com";')
+    .replace(/import .*siteConfig.*;/, 'const DEV_EMAIL="info.dev@simonecolli.com", PHOTO_EMAIL="info.photo@simonecolli.com", SITE_URL="https://www.simonecolli.com", WHATSAPP_NUMBER="393772402283";')
     .replace(/import .*data\/projects.*;/, 'const projects = [{slug: "public-project"}];')
     .replace(/import .*data\/talks.*;/, 'const talks = [{slug: "public-talk"}];')
     .replace('import.meta.env.VITE_ANALYTICS_ENABLED', JSON.stringify(activated ? 'true' : 'false'))
@@ -127,6 +127,30 @@ test('contact events exclude mail contents and only allow known service labels',
   assert.equal(events[0][2].service, 'party'); assert.equal(events[1][2].service, 'software');
   assert.equal(events[1][2].area, 'dev');
   assert.equal(JSON.stringify(events).includes('private'), false);
+});
+
+test('WhatsApp clicks take their area from the link and never send the message', () => {
+  const s = setup(); accept(s);
+  for (const area of ['photo', 'dev', 'forged', undefined]) {
+    const link = new s.context.Element('https://wa.me/393772402283?text=private-message');
+    link.dataset.analyticsArea = area;
+    s.api.trackContact({target: link});
+  }
+  s.api.trackContact({target: new s.context.Element('https://wa.me/390000000000?text=x')});
+  const events = s.commands().filter(x => x[1] === 'contact_click').map(x => x[2]);
+  assert.deepEqual(Array.from(events, e => [e.area, e.service, e.channel]), [
+    ['photo', 'photography', 'whatsapp'],
+    ['dev', 'software', 'whatsapp'],
+    ['shared', 'general', 'whatsapp'],
+    ['shared', 'general', 'whatsapp'],
+  ]);
+  assert.equal(JSON.stringify(events).includes('private'), false);
+});
+
+test('the pre-paint check in index.html reads the consent key', () => {
+  const s = setup();
+  const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+  assert.ok(html.includes(`localStorage.getItem("${s.api.CONSENT_KEY}")`));
 });
 
 test('revocation clears cookies on root and nested paths and stops collection', () => {

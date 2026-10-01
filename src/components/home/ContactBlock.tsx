@@ -2,11 +2,13 @@ import { useTranslation } from "react-i18next";
 import { DEV_EMAIL, PHOTO_EMAIL, mailtoHref } from "../../siteConfig";
 import { useMailHref } from "../../hooks/useMailHref";
 import PlainAddress from "../utils/PlainAddress";
+import WhatsAppButton from "../utils/WhatsAppButton";
 
 const IDEAS = ["opening", "professional", "company"] as const;
 
-// No form: the hosting is static and there is no backend to receive one. Two
-// mailto links add no external processor, so nothing for the privacy notice.
+// No form: the hosting is static and there is no backend to receive one. The
+// mailto links add no external processor; the WhatsApp chat does (Meta), and
+// the privacy notice has to name it.
 // The ideas are the offers that need both activities at once, so they live on
 // the one page that holds both; their messages go to the development inbox
 // with the idea already named in the subject.
@@ -32,6 +34,7 @@ export default function ContactBlock() {
             <a href={photoMail} className="btn btn-photo">
               {t("contact.photoCta")}
             </a>
+            <WhatsAppButton area="shared" />
           </div>
 
           <PlainAddress emails={[DEV_EMAIL, PHOTO_EMAIL]} className="mt-4" />

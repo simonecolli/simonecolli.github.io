@@ -37,6 +37,9 @@ export default function ProjectsPage() {
 
         <section className="site-section">
           <div className="site-container">
+            {/* The cards carry H3 titles, as they do on /development under a
+                visible H2; this keeps the outline from jumping H1 to H3. */}
+            <h2 className="sr-only">{t('projects.listHeading')}</h2>
             <div className="grid lg:grid-cols-2 gap-8">
               {projects.map((project, index) => (
                 <ProjectCard

@@ -56,6 +56,7 @@
   },
   "projects": {
     "pageTitle": "Progetti",
+    "listHeading": "Elenco dei progetti",
     "pageDescription": "Una raccolta di progetti software, esperimenti e idee che diventano realtà. Ogni progetto rappresenta un passo importante nel mio percorso.",
     "backToProjects": "Torna ai progetti",
     "caseStudy": {
@@ -215,26 +216,26 @@
   "seo": {
     "home": {
       "description": "Simone Colli - Sviluppatore software e fotografo freelance a Parma e Salsomaggiore Terme. Software su misura, fotografia di sport, eventi e dettagli.",
-      "keywords": "Simone Colli, sviluppatore software, fotografo, LLM, RAG, deploy on-premise, portfolio, sviluppo web, React, Python, C++, Parma, Salsomaggiore Terme, Italia, sviluppatore freelance, fotografo eventi, fotografo sportivo, Università di Parma",
+      "keywords": "Simone Colli, sviluppatore software, sviluppatore freelance, software su misura, sviluppo software su misura, siti web, siti internet, sito web per attività, sito internet per la tua attività, sito internet SEO, sito internet piccole attività, siti portfolio, portfolio professionale, web design mobile first, siti web mobile first, siti web per cellulare, siti responsive, sito web responsive, sviluppo web, applicazioni web, gestionali su misura, automazioni aziendali, React, Python, C++, LLM, RAG, deploy on-premise, Parma, Salsomaggiore Terme, Fidenza, Piacenza, Reggio Emilia, Italia, fotografo, fotografo eventi, fotografo sportivo, Università di Parma",
       "title": "Sviluppatore software e fotografo a Parma"
     },
     "projects": {
       "description": "Casi studio dei progetti di Simone Colli: gestione della produzione, automazione di processi aziendali, ottimizzazione. Sviluppatore freelance a Parma.",
-      "keywords": "Simone Colli progetti, sviluppo software, open source, React, C++, Python, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Salsomaggiore Terme, Università di Parma",
+      "keywords": "Simone Colli progetti, casi studio software su misura, portfolio sviluppatore software, sviluppo software aziendale, automazione processi aziendali, gestione produzione, software gestione commesse, gestionale produzione, applicazioni web React, Python, C++, bioinformatica, calcolo parallelo, sviluppatore web Parma, sviluppatore Salsomaggiore Terme, software PMI Parma, Università di Parma",
       "title": "Casi studio: software su misura per aziende"
     },
     "talks": {
       "description": "Presentazioni accademiche di Simone Colli all'Università di Parma: intelligenza artificiale, cybersecurity, big data, compilatori e analisi statica.",
-      "keywords": "Simone Colli presentazioni, presentazioni accademiche, Università di Parma, ricerca, intelligenza artificiale, cybersecurity, big data, data mining, compilatori, analisi statica"
+      "keywords": "Simone Colli presentazioni, presentazioni accademiche, seminari informatica, Università di Parma, ricerca informatica, intelligenza artificiale, cybersecurity, big data, data mining, compilatori, analisi statica, bioinformatica, pangenomica computazionale"
     },
     "photography": {
       "description": "Portfolio fotografico di Simone Colli - Sport, cerimonie, natura, macro e dettagli. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.",
-      "keywords": "Simone Colli fotografia, fotografo professionista, fotografo Parma, fotografo Salsomaggiore Terme, fotografia di dettaglio, fotografia sportiva, fotografia naturalistica, fotografia macro, fotografo eventi Emilia-Romagna, fotografo cerimonie",
-      "title": "Fotografo sportivo e di eventi a Parma"
+      "keywords": "Simone Colli fotografia, fotografo professionista, fotografo Parma, fotografo Salsomaggiore Terme, fotografo Fidenza, fotografo Piacenza, fotografo Reggio Emilia, fotografo sportivo Parma, fotografo eventi Parma, fotografia sportiva, fotografia eventi sportivi, foto per società sportive, fotografo cerimonie Parma, fotografia di dettaglio, fotografia naturalistica, fotografia macro, fotografo freelance Emilia-Romagna", 
+      "title": "Fotografo sport ed eventi a Parma e Piacenza"
     },
     "about": {
       "description": "Chi è Simone Colli - Sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Competenze, percorso e CV.",
-      "keywords": "Simone Colli, chi sono, curriculum, competenze, Università di Parma, laurea magistrale, LLM, RAG, deploy on-premise, sviluppatore Parma, fotografo Salsomaggiore Terme, freelance, Italia, Emilia-Romagna",
+      "keywords": "Simone Colli, chi sono, curriculum, competenze, profilo professionale, sviluppatore software Parma, sviluppatore freelance Parma, fotografo Salsomaggiore Terme, laureato informatica Parma, laurea magistrale informatica, Università di Parma, bioinformatica, pangenomica computazionale, PLOS Computational Biology, LLM, RAG, deploy on-premise, freelance, Italia, Emilia-Romagna", 
       "title": "Sviluppatore e fotografo a Salsomaggiore"
     },
     "blog": {
@@ -252,13 +253,13 @@
     },
     "development": {
       "description": "Sviluppo software su misura per PMI di Parma, Piacenza e Reggio Emilia: applicazioni web, automazione di processi, ottimizzazione e messa in produzione.",
-      "keywords": "sviluppo software su misura, sito vetrina, sito portfolio, gestionale produzione, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore Parma, freelance, software manifatturiero",
+      "keywords": "sviluppo software su misura, software gestionale su misura Parma, software per PMI, applicazioni web aziendali, sviluppo applicazioni web, automazione Excel preventivi, automazione processi aziendali, gestionale produzione, software gestione commesse, software produzione manifattura, software preventivi e commesse, software piani di carico, configuratore prodotto, distinte base, integrazione Excel gestionale, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore software Parma, sviluppatore software Piacenza, sviluppatore software Reggio Emilia, sviluppatore freelance, software manifatturiero", 
       "title": "Software su misura per PMI a Parma e Piacenza"
     },
     "graduation": {
       "description": "Servizi fotografici di laurea a Parma e in trasferta: Proclamazione da 100 €, All Inclusive da 250 €, gruppi da 65 € a persona con almeno 5 laureandi.",
-      "keywords": "fotografo laurea, foto laurea, proclamazione, festa laurea, fotografo in trasferta, Simone Colli",
-      "title": "Fotografo di laurea a Parma: servizi e prezzi"
+      "keywords": "fotografo laurea Parma, foto laurea Parma, servizio fotografico laurea, fotografo proclamazione laurea, foto proclamazione, foto festa di laurea, fotografo laurea Università di Parma, servizio foto laurea prezzi, pacchetti foto laurea, fotografo laurea in trasferta, fotografo laurea Emilia-Romagna, Simone Colli", 
+      "title": "Fotografo laurea a Parma e Piacenza: prezzi"
     }
   },
   "data": {
@@ -267,14 +268,15 @@
         "title": "Freelance hub",
         "description": "CRM e gestionale per l'attività da libero professionista. Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
         "shortDescription": "CRM e gestionale per liberi professionisti: dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo.",
-        "keywords": "gestionale per freelance, CRM libero professionista, automazione attività freelance, previsione incassi, pianificazione del carico di lavoro, preventivi e contratti, self-hosted, LLM in locale, Ollama, software su misura",
+        "keywords": "gestionale per freelance, CRM libero professionista, software gestione clienti freelance, automazione attività freelance, gestione preventivi e contratti, previsioni incassi, pianificazione carico di lavoro, self-hosted, LLM in locale, Ollama, software su misura, applicazione web gestionale", 
         "seoTitle": "Freelance hub: CRM e gestionale per freelance"
       },
       "mgp": {
         "title": "MGP - Gestione produzione",
+        "heading": "Gestione della produzione per un'azienda manifatturiera",
         "description": "Un'azienda manifatturiera preparava ogni commessa passando da un file Excel, sette o otto schede da impaginare a mano e una serie di script, con un limite di 21 righe di prodotto. MGP è la piattaforma che ha preso in carico quel processo: l'operatore compila la commessa, il sistema calcola, genera documenti e file di produzione e restituisce un archivio già organizzato. L'azienda configura da sé le proprie tipologie di prodotto, dai campi alle formule ai file da produrre, senza toccare il codice. In seguito estesa alla pianificazione dei carichi su autocarro per produzione e preventivi, al collegamento con i macchinari via OPC UA e a un modulo di assistenza integrato.",
         "shortDescription": "Da un processo tra Excel, macro e script a una piattaforma che genera i file di produzione e pianifica i carichi, configurabile senza codice.",
-        "keywords": "gestionale produzione, software gestione commesse, automazione processi produttivi, configuratore di prodotto, generazione DXF, piano di carico, nesting, ottimizzazione dei carichi, OPC UA, integrazione macchinari, software su misura azienda manifatturiera",
+        "keywords": "gestionale produzione, software gestione produzione, software gestione commesse, software manifattura, automazione processi produttivi, automazione preventivi Excel, configuratore di prodotto, configuratore serramenti, generazione DXF, generazione CSV, generazione PDF, piano di carico automatico, software pianificazione carichi camion, nesting, ottimizzazione dei carichi, distinte base, OPC UA, integrazione macchinari, software su misura azienda manifatturiera", 
         "seoTitle": "Software gestione produzione per manifattura"
       },
       "photographyDelivery": {
@@ -286,7 +288,7 @@
         "title": "Sito personale: sviluppo e fotografia",
         "description": "Un sito per due attività: sviluppo software e fotografia. Il caso racconta struttura dei contenuti, identità visiva, percorsi di contatto, prerendering su GitHub Pages e statistiche subordinate al consenso.",
         "shortDescription": "Come ho progettato questo sito per sviluppo e fotografia: identità condivisa, percorsi dedicati, React, una pagina statica per ogni indirizzo e consenso.",
-        "keywords": "case study sito personale, sito vetrina professionista, portfolio React, sviluppo sito web, TypeScript, GitHub Pages, prerendering, Simone Colli"
+        "keywords": "case study sito personale, sito vetrina professionista, sito portfolio, portfolio React, sviluppo sito web, sito web mobile first, sito responsive, sito internet SEO, prerendering, TypeScript, GitHub Pages, Simone Colli"
       },
       "quantumPortfolioOptimization": {
         "title": "Ottimizzazione Quantistica del Portafoglio",
@@ -418,21 +420,21 @@
   },
   "privacy": {
     "pageTitle": "Informativa privacy e cookie",
-    "updated": "Ultimo aggiornamento: 16 settembre 2026",
+    "updated": "Ultimo aggiornamento: 29 settembre 2026",
     "controllerTitle": "Titolare del trattamento",
     "controllerBody": "Simone Colli, P. IVA 03133540348, professionista di cui alla Legge n. 4/2013. Per qualsiasi richiesta relativa ai tuoi dati puoi scrivere a info.dev@simonecolli.com.",
     "dataTitle": "Quali dati vengono raccolti",
-    "dataBody": "Il sito usa preferenze tecniche per lingua, tema e scelta sui cookie. Con il tuo consenso utilizza Google Analytics 4 per statistiche sulle pagine visitate e sui clic ai contatti, sia per lo sviluppo software sia per la fotografia. Non sono presenti moduli di contatto: i pulsanti email aprono il tuo programma di posta.",
+    "dataBody": "Il sito usa preferenze tecniche per lingua, tema e scelta sui cookie. Con il tuo consenso utilizza Google Analytics 4 per statistiche sulle pagine visitate e sui clic ai contatti, sia per lo sviluppo software sia per la fotografia. Non sono presenti moduli di contatto: i pulsanti email aprono il tuo programma di posta; i pulsanti WhatsApp aprono una chat su WhatsApp, servizio esterno di Meta.",
     "hostingTitle": "Hosting e log tecnici",
     "hostingBody": "Il sito è ospitato su GitHub Pages (GitHub, Inc.). Il fornitore registra automaticamente log tecnici, che possono includere l'indirizzo IP, per garantire il funzionamento e la sicurezza del servizio.",
     "fontsTitle": "Font e risorse esterne",
     "fontsBody": "I caratteri tipografici sono ospitati direttamente su questo sito. Google Analytics viene caricato da Google solo dopo il consenso alle statistiche. I collegamenti esterni si aprono su servizi soggetti alle rispettive informative.",
-    "emailTitle": "Comunicazioni via email",
-    "emailBody": "Se mi scrivi, tratterò il tuo indirizzo e il contenuto del messaggio per rispondere e per gestire l'eventuale rapporto professionale. La base giuridica è l'esecuzione di misure precontrattuali e il legittimo interesse a rispondere.",
+    "emailTitle": "Comunicazioni via email e WhatsApp",
+    "emailBody": "Se mi scrivi via email o WhatsApp, tratterò il tuo indirizzo, numero di telefono o identificativo di contatto e il contenuto del messaggio per rispondere e per gestire l'eventuale rapporto professionale. Aprendo WhatsApp esci da questo sito: la chat, il messaggio precompilato e gli eventuali dati tecnici sono gestiti da WhatsApp Ireland Limited/Meta secondo le rispettive informative. La base giuridica è l'esecuzione di misure precontrattuali e il legittimo interesse a rispondere.",
     "rightsTitle": "I tuoi diritti",
     "rightsBody": "Puoi chiedere accesso, rettifica, cancellazione, limitazione e opposizione al trattamento dei tuoi dati scrivendo all'indirizzo indicato sopra. Hai inoltre diritto di proporre reclamo al Garante per la protezione dei dati personali. Puoi inoltre revocare il consenso e richiedere la portabilità dei dati quando applicabile.",
     "analyticsTitle": "Statistiche facoltative con Google Analytics 4",
-    "analyticsBody": "La finalità è capire quali contenuti e servizi interessano ai visitatori e migliorare il sito. La base giuridica è il tuo consenso (art. 6, par. 1, lett. a GDPR), facoltativo e revocabile. Google riceve identificatori pseudonimi nei cookie, informazioni sul dispositivo e browser, pagine visitate, provenienza e interazioni. I clic di contatto sono distinti per area e servizio: non inviamo il contenuto delle email. Un clic non dimostra l’invio di una richiesta. Il sito non richiede funzionalità pubblicitarie o personalizzazione degli annunci. Senza consenso il tag Analytics non viene caricato.",
+    "analyticsBody": "La finalità è capire quali contenuti e servizi interessano ai visitatori e migliorare il sito. La base giuridica è il tuo consenso (art. 6, par. 1, lett. a GDPR), facoltativo e revocabile. Google riceve identificatori pseudonimi nei cookie, informazioni sul dispositivo e browser, pagine visitate, provenienza e interazioni. I clic di contatto sono distinti per area, servizio e canale email/WhatsApp: non inviamo il contenuto delle email né dei messaggi WhatsApp precompilati. Un clic non dimostra l’invio di una richiesta. Il sito non richiede funzionalità pubblicitarie o personalizzazione degli annunci. Senza consenso il tag Analytics non viene caricato.",
     "storageTitle": "Cookie, preferenze e conservazione",
     "storageBody": "La scelta sulle statistiche è conservata nel browser per sei mesi di calendario, insieme a data, scadenza e versione dell’informativa. Non viene rinnovata dalla semplice navigazione. Le preferenze theme e i18nextLng conservano tema e lingua finché non le cancelli. Dopo il consenso, i cookie _ga e _ga_* distinguono browser e sessioni; il sito imposta una durata di 180 giorni senza rinnovo automatico. I dati utente ed evento in Google Analytics sono conservati per 2 mesi, senza rinnovo del periodo a ogni nuova attività. La cancellazione viene elaborata secondo il ciclo mensile di Google. Questo limite non si applica ai report statistici aggregati, che rimangono disponibili nella proprietà Analytics finché questa viene mantenuta dal titolare.",
     "recipientsTitle": "Destinatari e trasferimenti",
@@ -440,11 +442,11 @@
     "choicesTitle": "Rifiuto e revoca del consenso",
     "choicesBody": "Puoi rifiutare le statistiche senza perdere l’accesso ai contenuti. Il pulsante Preferenze cookie, presente nel footer e in questa pagina, permette di cambiare scelta in qualsiasi momento. Rifiutando dopo aver accettato, il sito blocca le nuove misurazioni, elimina i cookie Analytics accessibili e ricarica la pagina per disattivare il codice già caricato. La revoca non pregiudica la liceità del trattamento precedente e non cancella automaticamente dati già trasmessi. La scelta è condivisa solo tra le schede dello stesso browser e della stessa origine.",
     "analyticsActive": "Le statistiche facoltative vengono attivate esclusivamente dopo il tuo consenso.",
-    "dataInactiveBody": "Il sito conserva nel browser le preferenze tecniche per lingua e tema. Google Analytics è disattivato: non viene eseguita analisi statistica delle visite o dei clic. Non sono presenti moduli di contatto: i pulsanti email aprono il tuo programma di posta.",
+    "dataInactiveBody": "Il sito conserva nel browser le preferenze tecniche per lingua e tema. Google Analytics è disattivato: non viene eseguita analisi statistica delle visite o dei clic. Non sono presenti moduli di contatto: i pulsanti email aprono il tuo programma di posta; i pulsanti WhatsApp aprono una chat su WhatsApp, servizio esterno di Meta.",
     "fontsInactiveBody": "I caratteri tipografici sono ospitati direttamente su questo sito. Non viene caricato il tag Google Analytics. I collegamenti esterni portano a servizi con informative proprie.",
     "analyticsInactiveBody": "Il servizio Google Analytics non è attivo. Non viene chiesto un consenso preventivo per un’eventuale attivazione futura. Se il servizio verrà attivato, l’informativa verrà aggiornata e le statistiche potranno partire solo dopo una scelta esplicita.",
     "storageInactiveBody": "Le preferenze theme e i18nextLng sono salvate nel browser fino alla cancellazione dei dati del sito e servono a ricordare tema e lingua. Eventuali precedenti scelte sui cookie possono restare nel browser per la loro durata residua e possono essere eliminate cancellando i dati del sito. Il sito non imposta nuovi cookie Google Analytics e rimuove quelli Analytics accessibili quando si apre la pagina.",
-    "recipientsInactiveBody": "Durante questa configurazione non vengono inviati dati a Google Analytics. Restano i trattamenti necessari all’hosting su GitHub Pages e alle comunicazioni email, descritti nelle rispettive sezioni. I link alla documentazione Google sono forniti per consultazione e non caricano il servizio Analytics.",
+    "recipientsInactiveBody": "Durante questa configurazione non vengono inviati dati a Google Analytics. Restano i trattamenti necessari all’hosting su GitHub Pages e alle comunicazioni via email o WhatsApp, descritti nelle rispettive sezioni. I link alla documentazione Google sono forniti per consultazione e non caricano il servizio Analytics.",
     "choicesInactiveBody": "Dal comando Preferenze cookie puoi verificare che le statistiche siano disattivate. Puoi cancellare le preferenze tecniche dalle impostazioni del browser. La cancellazione ripristina le impostazioni iniziali del sito."
   },
   "contact": {
@@ -453,6 +455,13 @@
     "devCta": "Scrivi per un progetto software",
     "photoCta": "Scrivi per un servizio fotografico",
     "orWrite": "oppure scrivi direttamente a",
+    "whatsapp": {
+      "cta": "Scrivimi su WhatsApp",
+      "dev": "Ciao Simone, ti scrivo dal sito per un progetto software.",
+      "photo": "Ciao Simone, ti scrivo dal sito per un servizio fotografico.",
+      "shared": "Ciao Simone, ti scrivo dal sito.",
+      "graduation": "Ciao Simone, ti scrivo dal sito per le foto di laurea."
+    },
     "devMail": {
       "subject": "Richiesta dal sito: progetto software",
       "body": "Ciao Simone,\n\ncosa vorrei migliorare o automatizzare:\n\n\ncome lo gestiamo oggi:\n\n\nentro quando mi servirebbe:\n\n"
@@ -482,11 +491,11 @@
     }
   },
   "development": {
-    "pageTitle": "Sviluppo software",
+    "pageTitle": "Sviluppo software su misura",
     "intro": "Applicazioni web, automazioni e integrazioni tra sistemi, su misura per piccole e medie imprese. Costruite sul tuo modo di lavorare, per migliorarlo.",
     "servicesTitle": "Cosa faccio",
-    "service1Title": "Gestionali e applicazioni web su misura",
-    "service1Body": "Gestionali e applicazioni per processi che oggi vivono tra file Excel, macro Visual Basic, script e scambi di email: l'operatore inserisce i dati una volta, il sistema esegue i calcoli e genera documenti e file di lavorazione (PDF, DXF, CSV). Configuratori e integrazione fra sistemi che non si parlano, dall'analisi dei requisiti alla messa in produzione.",
+    "service1Title": "Gestionali e automazione dei processi",
+    "service1Body": "Processi che oggi vivono tra file Excel, macro Visual Basic, script ed email, con lo stesso dato inserito più volte e i documenti rifatti a mano a ogni passaggio. Li porto in un sistema solo: l'operatore inserisce i dati una volta, il sistema esegue i calcoli e genera documenti e file di lavorazione (PDF, DXF, CSV). Configuratori e integrazione fra sistemi che non si parlano, dall'analisi dei requisiti alla messa in produzione.",
     "service2Title": "Ottimizzazione e problemi a vincoli",
     "service2Body": "Problemi di pianificazione con troppe variabili per essere risolti a mano: piani di carico, assegnazioni, allocazioni. Li ho affrontati nella produzione industriale, nell'organizzazione universitaria e in ambito finanziario, con MiniZinc, OR-Tools e Answer Set Programming.",
     "service3Title": "Calcolo intensivo e algoritmi",
@@ -495,8 +504,10 @@
     "service4Body": "Rilascio containerizzato, ambienti riproducibili, osservabilità e manutenzione dopo il rilascio. Il progetto non finisce alla consegna.",
     "service5Title": "Siti vetrina e portfolio",
     "service5Body": "Siti di presentazione per professionisti e piccole attività: poche pagine, contenuti curati, veloci da caricare e trovabili sui motori di ricerca. Questo sito è uno di quelli.",
-    "service6Title": "Automazione di processo",
-    "service6Body": "Lo stesso dato inserito tre volte, i documenti rifatti a mano a ogni passaggio, fogli di calcolo che nessuno sa più chi aggiorna. Metto insieme le fasi in un sistema solo, dove ognuna passa alla successiva quello che ha già calcolato.",
+    "service6Title": "Collegamento con macchinari e PLC",
+    "service6Body": "Il gestionale dialoga con i PLC di reparto tramite OPC-UA: i dati calcolati dalla pianificazione arrivano alle macchine quando l'operatore li invia, senza essere ricopiati a mano. Il software dell'ufficio e le macchine in produzione lavorano sugli stessi dati.",
+    "serviceCaseLink": "Vedi un caso reale",
+    "servicePublicationLink": "Leggi la pubblicazione",
     "howTitle": "Come lavoro",
     "howBody": "Si parte da un'analisi dei requisiti fatta insieme, con obiettivi e vincoli messi per iscritto. Da lì definiamo un perimetro e ricevi un preventivo scritto. Sviluppo per incrementi verificabili, con test automatici e decisioni architetturali documentate, così a fine progetto il codice resta leggibile anche da chi non l'ha scritto. Dopo il rilascio resto il riferimento per assistenza, manutenzione ed evoluzioni: seguo l'intero ciclo di vita del software.",
     "projectsTitle": "Progetti in evidenza",
@@ -509,7 +520,7 @@
     "contactCta": "Parliamo del tuo progetto",
     "websiteCaseStudy": "Come ho progettato questo sito",
     "areaTitle": "Dove lavoro e per quali settori",
-    "areaBody": "Lavoro da Salsomaggiore Terme con piccole e medie imprese di Parma, Fidenza, Piacenza e Reggio Emilia. Mi rivolgo soprattutto ad aziende di manifattura, serramenti e logistica, dove lo stesso dato passa da un foglio Excel all'altro prima di arrivare in produzione.",
+    "areaBody": "Lavoro da Salsomaggiore Terme con piccole e medie imprese di Parma, Fidenza, Piacenza e Reggio Emilia, e da remoto in tutta Italia. Mi rivolgo soprattutto ad aziende di manifattura, serramenti e logistica, dove lo stesso dato passa da un foglio Excel all'altro prima di arrivare in produzione.",
     "sectorManufacturingTitle": "Manifattura",
     "sectorManufacturingBody": "Dalla commessa ai file di produzione: calcoli, distinte e documenti generati dal sistema invece che ricompilati a mano, con il collegamento ai PLC di reparto via OPC-UA.",
     "sectorWindowsTitle": "Serramenti",
@@ -597,6 +608,7 @@
     "pageTitle": "Servizi fotografici di laurea",
     "galleryTitle": "Storie di laurea, in fotografia",
     "eyebrow": "LA TUA LAUREA, OVUNQUE SIA",
+    "heading": "Fotografo di laurea",
     "title": "I tuoi traguardi, catturati per sempre.",
     "intro": "Dall’attesa prima della discussione alla corona d’alloro, fino agli abbracci con chi ami: racconto la tua laurea attraverso le emozioni della giornata.",
     "tagline": "Tu goditi il momento. Alle fotografie penso io.",
@@ -708,7 +720,7 @@
   },
   "structuredData": {
     "development": {
-      "name": "Simone Colli – Sviluppo software",
+      "name": "Simone Colli - Sviluppo software",
       "serviceTypes": [
         "Software gestionale su misura",
         "Automazione di processi aziendali",
@@ -717,7 +729,7 @@
       ]
     },
     "photography": {
-      "name": "Simone Colli – Fotografia",
+      "name": "Simone Colli - Fotografia",
       "serviceTypes": [
         "Fotografia sportiva",
         "Fotografia di eventi",

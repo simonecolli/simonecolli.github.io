@@ -56,6 +56,7 @@
   },
   "projects": {
     "pageTitle": "Projects",
+    "listHeading": "Project list",
     "pageDescription": "A collection of software projects, experiments, and ideas turned into reality. Each project represents a milestone in my journey as a developer.",
     "backToProjects": "Back to projects",
     "caseStudy": {
@@ -215,26 +216,26 @@
   "seo": {
     "home": {
       "description": "Simone Colli - Freelance software developer and photographer in Parma and Salsomaggiore Terme, Italy. Custom software, sport, event and detail photography.",
-      "keywords": "Simone Colli, software developer, photographer, LLM, RAG, on-premise deployment, portfolio, web development, React, Python, C++, Parma, Salsomaggiore Terme, Italy, freelance developer, event photographer, sports photographer, University of Parma",
+      "keywords": "Simone Colli, software developer, freelance software developer, custom software, bespoke software, web development, websites, business website, website for small business, SEO website, portfolio website, professional portfolio, mobile-first web design, mobile-first websites, mobile-friendly websites, responsive websites, responsive web design, web applications, custom management software, business automation, React, Python, C++, LLM, RAG, on-premise deployment, Parma, Salsomaggiore Terme, Fidenza, Piacenza, Reggio Emilia, Italy, photographer, event photographer, sports photographer, University of Parma",
       "title": "Software developer and photographer in Parma"
     },
     "projects": {
       "description": "Case studies of Simone Colli's projects: production management, business process automation, optimisation. Freelance software developer based in Parma, Italy.",
-      "keywords": "Simone Colli projects, software development, open source, React, C++, Python, bioinformatics, parallel computing, web developer Parma, developer Salsomaggiore Terme, University of Parma",
+      "keywords": "Simone Colli projects, custom software case studies, software developer portfolio, business software development, business process automation, production management, work order management software, production management software, React web applications, Python, C++, bioinformatics, parallel computing, web developer Parma, developer Salsomaggiore Terme, SME software Parma, University of Parma",
       "title": "Case studies: custom software for businesses"
     },
     "talks": {
       "description": "Academic presentations and talks by Simone Colli delivered at the University of Parma. Covering research in AI, cybersecurity, big data, and compilers.",
-      "keywords": "Simone Colli talks, academic presentations, University of Parma, research, artificial intelligence, cybersecurity, big data, data mining, compilers, static analysis"
+      "keywords": "Simone Colli talks, academic presentations, computer science seminars, University of Parma, computer science research, artificial intelligence, cybersecurity, big data, data mining, compilers, static analysis, bioinformatics, computational pangenomics"
     },
     "photography": {
       "description": "Photography portfolio by Simone Colli - Sport, ceremony, wildlife, macro, and detail photography. Based in Parma and Salsomaggiore Terme, Emilia-Romagna.",
-      "keywords": "Simone Colli photography, professional photographer, photographer Parma, photographer Salsomaggiore Terme, detail photography, sport photography, wildlife photography, macro photography, event photographer Emilia-Romagna, ceremony photographer",
-      "title": "Sports and event photographer in Parma"
+      "keywords": "Simone Colli photography, professional photographer, photographer Parma, photographer Salsomaggiore Terme, photographer Fidenza, photographer Piacenza, photographer Reggio Emilia, sports photographer Parma, event photographer Parma, sports photography, sports event photography, photos for sports clubs, ceremony photographer Parma, detail photography, wildlife photography, macro photography, freelance photographer Emilia-Romagna",
+      "title": "Sports photographer in Parma and Piacenza"
     },
     "about": {
       "description": "About Simone Colli - Freelance software developer and photographer, M.Sc. in Computer Science from the University of Parma. Skills, journey, and CV.",
-      "keywords": "Simone Colli, about, curriculum, skills, University of Parma, master's degree, LLM, RAG, on-premise deployment, developer Parma, photographer Salsomaggiore Terme, freelance, Italy, Emilia-Romagna",
+      "keywords": "Simone Colli, about, curriculum, skills, professional profile, software developer Parma, freelance developer Parma, photographer Salsomaggiore Terme, computer science graduate Parma, master's degree in computer science, University of Parma, bioinformatics, computational pangenomics, PLOS Computational Biology, LLM, RAG, on-premise deployment, freelance, Italy, Emilia-Romagna",
       "title": "Developer and photographer in Salsomaggiore"
     },
     "blog": {
@@ -252,13 +253,13 @@
     },
     "development": {
       "description": "Custom software for SMEs in Parma, Piacenza and Reggio Emilia: web applications, process automation, constraint optimisation and deployment to production.",
-      "keywords": "custom software development, showcase website, portfolio website, production management software, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, developer Parma, freelance, manufacturing software",
+      "keywords": "custom software development, custom management software Parma, software for SMEs, business web applications, web application development, Excel quote automation, business process automation, production management software, work order management software, manufacturing production software, quote and job management software, truck load planning software, product configurator, bill of materials, Excel to web application, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, software developer Parma, software developer Piacenza, software developer Reggio Emilia, freelance developer, manufacturing software",
       "title": "Custom software for SMEs in Parma & Piacenza"
     },
     "graduation": {
       "description": "Graduation photos in Parma and on location: ceremony from €100, All Inclusive from €250, groups from €65 per person for at least 5 graduates.",
-      "keywords": "graduation photographer, graduation photography, graduation ceremony, travelling photographer, Simone Colli",
-      "title": "Graduation photos in Parma: packages & prices"
+      "keywords": "graduation photographer Parma, graduation photos Parma, graduation photography service, graduation ceremony photographer, graduation ceremony photos, graduation party photos, University of Parma graduation photographer, graduation photo packages, graduation photography prices, travelling graduation photographer, graduation photographer Emilia-Romagna, Simone Colli",
+      "title": "Graduation photographer in Parma and Piacenza"
     }
   },
   "data": {
@@ -267,14 +268,15 @@
         "title": "Freelance hub",
         "description": "A CRM and business tool for freelance work. I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 843 tests with a 100% coverage threshold enforced by the pipeline, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
         "shortDescription": "A CRM and business tool for freelancers: from first lead to payment in one place, with revenue forecasts and time planning, built with 843 automated tests.",
-        "keywords": "freelance management system, freelance CRM, business automation, revenue forecasting, workload planning, quotations and contracts, self-hosted, local LLM, Ollama, custom software",
+        "keywords": "freelance management system, freelance CRM, client management software for freelancers, freelance business automation, quotation and contract management, revenue forecasting, workload planning, self-hosted, local LLM, Ollama, custom software, management web application",
         "seoTitle": "Freelance hub: a CRM for freelancers"
       },
       "mgp": {
         "title": "MGP - Production management",
+        "heading": "Production management for a manufacturing company",
         "description": "A manufacturing company prepared every work order through an Excel file, seven or eight sheets laid out by hand and a chain of scripts, with a hard limit of 21 product rows. MGP is the platform that took that process over: the operator fills in the work order, the system runs the calculations, generates the documents and production files, and returns an archive already organised. The company configures its own product types, from the fields to the formulas to the files produced, without touching the code. Later extended to truck load planning for production and quotations, a link to the machines over OPC UA, and a built-in support module.",
         "shortDescription": "From a process spread across Excel, macros and scripts to a platform that generates production files and plans truck loads, configurable without code.",
-        "keywords": "production management software, work order management, manufacturing process automation, product configurator, DXF generation, truck load planning, nesting, load optimisation, OPC UA, machine integration, custom manufacturing software",
+        "keywords": "production management software, work order management software, manufacturing software, manufacturing process automation, Excel quote automation, product configurator, window and door configurator, DXF generation, CSV generation, PDF generation, automatic truck load planning, truck load planning software, nesting, load optimisation, bill of materials, OPC UA, machine integration, custom manufacturing software",
         "seoTitle": "Manufacturing production management software"
       },
       "photographyDelivery": {
@@ -286,7 +288,7 @@
         "title": "Personal website: development and photography",
         "description": "One website for two activities: software development and photography. The case study covers content structure, visual identity, contact journeys, prerendering on GitHub Pages and consent-based statistics.",
         "shortDescription": "How I designed this website for development and photography: a shared identity, dedicated journeys, React, a static page for every address and consent handling.",
-        "keywords": "personal website case study, professional website, React portfolio, web development, TypeScript, GitHub Pages, prerendering, Simone Colli"
+        "keywords": "personal website case study, professional website, portfolio website, React portfolio, web development, mobile-first website, responsive website, SEO website, prerendering, TypeScript, GitHub Pages, Simone Colli"
       },
       "quantumPortfolioOptimization": {
         "title": "Quantum Portfolio Optimization",
@@ -418,21 +420,21 @@
   },
   "privacy": {
     "pageTitle": "Privacy and cookie notice",
-    "updated": "Last updated: 16 September 2026",
+    "updated": "Last updated: 29 September 2026",
     "controllerTitle": "Data controller",
     "controllerBody": "Simone Colli, VAT 03133540348, professional under Italian Law no. 4/2013. For any request about your data you can write to info.dev@simonecolli.com.",
     "dataTitle": "What data is collected",
-    "dataBody": "The site stores technical preferences for language, theme and cookie choices. With your consent it uses Google Analytics 4 for statistics about page visits and contact clicks, for both software development and photography. There are no contact forms: email buttons open your mail application.",
+    "dataBody": "The site stores technical preferences for language, theme and cookie choices. With your consent it uses Google Analytics 4 for statistics about page visits and contact clicks, for both software development and photography. There are no contact forms: email buttons open your mail application; WhatsApp buttons open a chat on WhatsApp, an external Meta service.",
     "hostingTitle": "Hosting and technical logs",
     "hostingBody": "The site is hosted on GitHub Pages (GitHub, Inc.). The provider automatically records technical logs, which may include the IP address, to keep the service running and secure.",
     "fontsTitle": "Fonts and external resources",
     "fontsBody": "Fonts are hosted on this website. Google Analytics is loaded from Google only after consent to statistics. External links open services covered by their respective privacy notices.",
-    "emailTitle": "Email communication",
-    "emailBody": "If you write to me, I will process your address and the content of your message in order to reply and to manage any resulting professional relationship. The legal basis is the performance of pre-contractual measures and the legitimate interest in replying.",
+    "emailTitle": "Email and WhatsApp communication",
+    "emailBody": "If you write to me by email or WhatsApp, I will process your address, phone number or contact identifier and the content of your message in order to reply and to manage any resulting professional relationship. When you open WhatsApp you leave this website: the chat, the prefilled message and any technical data are handled by WhatsApp Ireland Limited/Meta under their own notices. The legal basis is the performance of pre-contractual measures and the legitimate interest in replying.",
     "rightsTitle": "Your rights",
     "rightsBody": "You can request access, rectification, erasure, restriction and object to the processing of your data by writing to the address above. You also have the right to lodge a complaint with the Italian data protection authority. You can also withdraw consent and request data portability where applicable.",
     "analyticsTitle": "Optional statistics with Google Analytics 4",
-    "analyticsBody": "The purpose is to understand which content and services interest visitors and improve the website. The legal basis is your optional, revocable consent (GDPR Article 6(1)(a)). Google receives pseudonymous cookie identifiers, device and browser information, visited pages, referral information and interactions. Contact clicks are grouped by area and service: we do not send email contents. A click does not prove an enquiry was sent. The site does not request advertising features or ad personalisation. Without consent the Analytics tag is not loaded.",
+    "analyticsBody": "The purpose is to understand which content and services interest visitors and improve the website. The legal basis is your optional, revocable consent (GDPR Article 6(1)(a)). Google receives pseudonymous cookie identifiers, device and browser information, visited pages, referral information and interactions. Contact clicks are grouped by area, service and email/WhatsApp channel: we do not send email contents or prefilled WhatsApp messages. A click does not prove an enquiry was sent. The site does not request advertising features or ad personalisation. Without consent the Analytics tag is not loaded.",
     "storageTitle": "Cookies, preferences and retention",
     "storageBody": "Your statistics choice is stored in your browser for six calendar months, with its date, expiry and notice version. Browsing alone does not renew it. The theme and i18nextLng preferences retain your theme and language until you delete them. After consent, _ga and _ga_* cookies distinguish browsers and sessions; the site sets a 180-day lifetime without automatic renewal. User and event data in Google Analytics are retained for 2 months, without resetting retention on new activity. Deletion follows Google’s monthly processing cycle. This limit does not apply to aggregated statistical reports, which remain available in the Analytics property while the controller maintains it.",
     "recipientsTitle": "Recipients and transfers",
@@ -440,11 +442,11 @@
     "choicesTitle": "Refusing and withdrawing consent",
     "choicesBody": "You can refuse statistics without losing access to content. Cookie preferences in the footer and on this page let you change your choice at any time. Rejecting after acceptance blocks new measurements, removes accessible Analytics cookies and reloads the page to deactivate code already loaded. Withdrawal does not affect the lawfulness of earlier processing or automatically delete previously transmitted data. Your choice is shared only between tabs of the same browser and origin.",
     "analyticsActive": "Optional statistics are activated only after your consent.",
-    "dataInactiveBody": "The site stores technical preferences for language and theme in your browser. Google Analytics is disabled: visits and clicks are not statistically analysed. There are no contact forms: email buttons open your mail application.",
+    "dataInactiveBody": "The site stores technical preferences for language and theme in your browser. Google Analytics is disabled: visits and clicks are not statistically analysed. There are no contact forms: email buttons open your mail application; WhatsApp buttons open a chat on WhatsApp, an external Meta service.",
     "fontsInactiveBody": "Fonts are hosted on this website. The Google Analytics tag is not loaded. External links lead to services with their own notices.",
     "analyticsInactiveBody": "Google Analytics is not active. No advance consent is requested for possible future activation. If activated, this notice will be updated and statistics can start only after an explicit choice.",
     "storageInactiveBody": "The theme and i18nextLng preferences are stored in your browser until website data are cleared, to remember your theme and language. Previous cookie choices may remain for their remaining lifetime and can be removed by clearing website data. The site does not set new Google Analytics cookies and removes accessible Analytics cookies when the page is opened.",
-    "recipientsInactiveBody": "In this configuration no data are sent to Google Analytics. Processing necessary for GitHub Pages hosting and email communications remains as described in the relevant sections. Google documentation links are provided for reference and do not load Analytics.",
+    "recipientsInactiveBody": "In this configuration no data are sent to Google Analytics. Processing necessary for GitHub Pages hosting and email or WhatsApp communications remains as described in the relevant sections. Google documentation links are provided for reference and do not load Analytics.",
     "choicesInactiveBody": "Cookie preferences lets you check that statistics are disabled. You can delete technical preferences in your browser settings. Deleting them restores the website’s initial settings."
   },
   "contact": {
@@ -453,6 +455,13 @@
     "devCta": "Email me about a software project",
     "photoCta": "Email me about a photo shoot",
     "orWrite": "or write directly to",
+    "whatsapp": {
+      "cta": "Message me on WhatsApp",
+      "dev": "Hi Simone, I'm writing from your website about a software project.",
+      "photo": "Hi Simone, I'm writing from your website about a photography service.",
+      "shared": "Hi Simone, I'm writing from your website.",
+      "graduation": "Hi Simone, I'm writing from your website about graduation photos."
+    },
     "devMail": {
       "subject": "Enquiry from the website: software project",
       "body": "Hi Simone,\n\nwhat I would like to improve or automate:\n\n\nhow we handle it today:\n\n\nwhen I would need it by:\n\n"
@@ -482,11 +491,11 @@
     }
   },
   "development": {
-    "pageTitle": "Software development",
+    "pageTitle": "Custom software development",
     "intro": "Web applications, automation and integration between systems, tailored to small and medium-sized businesses. Built around the way you work, to improve it.",
     "servicesTitle": "What I do",
-    "service1Title": "Custom business software and web applications",
-    "service1Body": "Business software and applications for processes that today live across Excel files, Visual Basic macros, scripts and email threads: operators enter the data once, the system runs the calculations and generates documents and production files (PDF, DXF, CSV). Configurators and integration between systems that do not talk to each other, from requirements analysis to deployment.",
+    "service1Title": "Business software and process automation",
+    "service1Body": "Processes that today live across Excel files, Visual Basic macros, scripts and email, with the same data typed in more than once and documents redone by hand at every stage. I bring them into one system: operators enter the data once, the system runs the calculations and generates documents and production files (PDF, DXF, CSV). Configurators and integration between systems that do not talk to each other, from requirements analysis to deployment.",
     "service2Title": "Optimisation and constraint problems",
     "service2Body": "Planning problems with too many variables to solve by hand: load plans, assignments, allocations. I have worked on them in industrial production, in university administration and in finance, with MiniZinc, OR-Tools and Answer Set Programming.",
     "service3Title": "Heavy computation and algorithms",
@@ -495,8 +504,10 @@
     "service4Body": "Containerised releases, reproducible environments, observability and maintenance after release. The project does not end at delivery.",
     "service5Title": "Showcase and portfolio sites",
     "service5Body": "Presentation sites for professionals and small businesses: a few pages, considered content, quick to load and easy to find. This site is one of them.",
-    "service6Title": "Process automation",
-    "service6Body": "The same data typed in three times, documents redone by hand at every stage, spreadsheets nobody is sure who updates any more. I bring the stages together into one system, where each hands the next what it has already worked out.",
+    "service6Title": "Connecting machines and PLCs",
+    "service6Body": "The business software talks to the shop-floor PLCs over OPC-UA: the figures worked out by the planning reach the machines when the operator sends them, without being copied across by hand. The office software and the machines on the floor work from the same data.",
+    "serviceCaseLink": "See a real case",
+    "servicePublicationLink": "Read the publication",
     "howTitle": "How I work",
     "howBody": "We start from a requirements analysis done together, with goals and constraints written down. From there we agree on a scope and you receive a written quote. I develop in verifiable increments, with automated tests and documented architectural decisions, so that by the end the code stays readable to someone who did not write it. After release I remain your point of contact for support, maintenance and new features: I follow the whole software lifecycle.",
     "projectsTitle": "Selected projects",
@@ -509,7 +520,7 @@
     "contactCta": "Let's talk about your project",
     "websiteCaseStudy": "How I designed this website",
     "areaTitle": "Where I work and which sectors",
-    "areaBody": "I work from Salsomaggiore Terme with small and medium-sized businesses in Parma, Fidenza, Piacenza and Reggio Emilia. My focus is manufacturing, window and door makers and logistics, where the same figures move from one Excel sheet to the next before they reach production.",
+    "areaBody": "I work from Salsomaggiore Terme with small and medium-sized businesses in Parma, Fidenza, Piacenza and Reggio Emilia, and remotely anywhere in Italy. My focus is manufacturing, window and door makers and logistics, where the same figures move from one Excel sheet to the next before they reach production.",
     "sectorManufacturingTitle": "Manufacturing",
     "sectorManufacturingBody": "From the order to the production files: calculations, bills of materials and documents generated by the system instead of being filled in again by hand, with the link to the shop-floor PLCs via OPC-UA.",
     "sectorWindowsTitle": "Windows and doors",
@@ -597,6 +608,7 @@
     "pageTitle": "Graduation photography",
     "galleryTitle": "Graduation stories in photographs",
     "eyebrow": "YOUR GRADUATION, WHEREVER IT IS",
+    "heading": "Graduation photographer",
     "title": "Your milestones, captured forever.",
     "intro": "From the anticipation before your presentation to your laurel crown and hugs with loved ones: photographs that tell the story of your graduation day.",
     "tagline": "Enjoy the moment. I’ll take care of the photographs.",
@@ -708,7 +720,7 @@
   },
   "structuredData": {
     "development": {
-      "name": "Simone Colli – Software development",
+      "name": "Simone Colli - Software development",
       "serviceTypes": [
         "Custom business software",
         "Business process automation",
@@ -717,7 +729,7 @@
       ]
     },
     "photography": {
-      "name": "Simone Colli – Photography",
+      "name": "Simone Colli - Photography",
       "serviceTypes": [
         "Sports photography",
         "Event photography",

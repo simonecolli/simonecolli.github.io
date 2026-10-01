@@ -8,20 +8,28 @@ import { ANALYTICS_ENABLED, CONSENT_EVENT, CONSENT_KEY, PREFERENCES_EVENT, readC
 export default function AnalyticsConsent() {
   const { t } = useTranslation();
   const { pathname } = useLocation();
-  const [visible, setVisible] = useState(false);
+  // Visible from the first render so the prerender puts the banner in the
+  // static HTML; index.html hides it before paint when a choice is stored.
+  const [visible, setVisible] = useState(ANALYTICS_ENABLED);
   const [accepted, setAccepted] = useState(false);
   const [storageError, setStorageError] = useState(false);
-  const heading = useRef<HTMLHeadingElement>(null);
+  const heading = useRef<HTMLParagraphElement>(null);
   const opener = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     let timer: ReturnType<typeof setTimeout> | undefined;
+    // index.html only knows that a choice was stored, not whether it is still
+    // valid, so showing the banner lifts its pre-paint hiding.
+    const reveal = () => {
+      document.documentElement.removeAttribute("data-consent-stored");
+      setVisible(true);
+    };
     const sync = () => {
       clearTimeout(timer);
       const consent = readConsent();
       const allowed = ANALYTICS_ENABLED && !!consent?.accepted;
       setAccepted(allowed);
-      if (ANALYTICS_ENABLED && !consent) setVisible(true);
+      if (ANALYTICS_ENABLED && !consent) reveal();
       if (!allowed) stopAnalytics();
       if (consent && ANALYTICS_ENABLED) {
         timer = setTimeout(sync, Math.min(Math.max(0, consent.expiresAt - Date.now()), 2_147_000_000));
@@ -29,11 +37,12 @@ export default function AnalyticsConsent() {
     };
     const open = () => {
       opener.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
-      setVisible(true);
+      reveal();
       requestAnimationFrame(() => heading.current?.focus());
     };
     const storage = (event: StorageEvent) => { if (!event.key || event.key === CONSENT_KEY) sync(); };
     const resume = () => { if (document.visibilityState === "visible") sync(); };
+    if (readConsent()) setVisible(false);
     sync();
     window.addEventListener(PREFERENCES_EVENT, open);
     window.addEventListener(CONSENT_EVENT, sync);
@@ -78,11 +87,14 @@ export default function AnalyticsConsent() {
 
   if (!visible) return null;
   return (
-    <section aria-labelledby="cookie-heading" className="fixed bottom-0 inset-x-0 z-[100] border-t border-line bg-bg text-fg shadow-lg max-h-[80dvh] overflow-y-auto">
+    <section id="cookie-consent" aria-labelledby="cookie-heading" className="fixed bottom-0 inset-x-0 z-[100] border-t border-line bg-bg text-fg shadow-lg max-h-[80dvh] overflow-y-auto">
       <div className="site-container relative py-6">
         <button type="button" onClick={close} aria-label={t(ANALYTICS_ENABLED ? "cookies.closeReject" : "cookies.close")} className="absolute right-4 top-3 p-3 rounded-full border border-line hover:bg-line focus-visible:outline-2 focus-visible:outline-offset-2"><FiX aria-hidden="true" /></button>
         <div className="pr-12">
-          <h2 id="cookie-heading" ref={heading} tabIndex={-1} className="text-lg font-medium">{t(ANALYTICS_ENABLED ? "cookies.title" : "cookies.preferences")}</h2>
+          {/* A paragraph, not a heading: the banner is in every prerendered
+              page ahead of the content, and a heading here would open each
+              page's outline before its H1. aria-labelledby still names it. */}
+          <p id="cookie-heading" ref={heading} tabIndex={-1} className="text-lg font-medium">{t(ANALYTICS_ENABLED ? "cookies.title" : "cookies.preferences")}</p>
           <p className="text-sm text-muted leading-relaxed mt-2">{t(ANALYTICS_ENABLED ? "cookies.body" : "cookies.inactive")}</p>
           {ANALYTICS_ENABLED && <p className="text-sm mt-2">{t(accepted ? "cookies.statusAccepted" : "cookies.statusRejected")}</p>}
           {storageError && <p role="alert" className="text-sm mt-2">{t("cookies.storageError")}</p>}

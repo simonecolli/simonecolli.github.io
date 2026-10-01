@@ -1,6 +1,6 @@
 import { projects } from "../data/projects";
 import { talks } from "../data/talks";
-import { DEV_EMAIL, PHOTO_EMAIL, SITE_URL } from "../siteConfig";
+import { DEV_EMAIL, PHOTO_EMAIL, SITE_URL, WHATSAPP_NUMBER } from "../siteConfig";
 
 export const GA_ID = "G-BVG3YZR5C5";
 // Build-time gate for the banner and all collection; docs/analytics.md records
@@ -191,13 +191,19 @@ export function trackContact(event: MouseEvent) {
   if (!canTrack() || !(event.target instanceof Element)) return;
   const link = event.target.closest("a");
   const address = (link?.getAttribute("href") || "").split("?")[0].toLowerCase();
-  const area = address === `mailto:${DEV_EMAIL}` ? "dev" : address === `mailto:${PHOTO_EMAIL}` ? "photo" : null;
+  // One WhatsApp number serves both activities, so its area comes from the
+  // link rather than from the address.
+  const whatsapp = address === `https://wa.me/${WHATSAPP_NUMBER}`;
+  const requestedArea = link?.dataset.analyticsArea;
+  const area = whatsapp
+    ? (requestedArea && ["dev", "photo", "shared"].includes(requestedArea) ? requestedArea : "shared")
+    : address === `mailto:${DEV_EMAIL}` ? "dev" : address === `mailto:${PHOTO_EMAIL}` ? "photo" : null;
   if (!area) return;
   const requestedService = link?.dataset.analyticsService;
   const service = requestedService && ["proclamation", "party", "graduation_group", "joint_party"].includes(requestedService)
-    ? requestedService : area === "dev" ? "software" : "photography";
+    ? requestedService : area === "dev" ? "software" : area === "photo" ? "photography" : "general";
   window.gtag?.("event", "contact_click", {
-    area, service,
+    area, service, channel: whatsapp ? "whatsapp" : "email",
     placement: link?.closest("header") ? "header" : link?.closest("footer") ? "footer" : "page",
     page_location: `${SITE_URL}${safePath(location.pathname)}`,
   });

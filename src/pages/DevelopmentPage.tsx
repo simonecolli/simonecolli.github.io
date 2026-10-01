@@ -10,8 +10,18 @@ import SEO from "../components/SEO";
 import { FEATURED_CASE_SLUG, projects } from "../data/projects";
 import { DEV_EMAIL } from "../siteConfig";
 import { useMailHref } from "../hooks/useMailHref";
+import WhatsAppButton from "../components/utils/WhatsAppButton";
 
-const SERVICES = [1, 6, 2, 3, 4, 5] as const;
+const SERVICES = [1, 2, 6, 3, 4, 5] as const;
+
+// Where a service card sends the reader: the part of a real project that shows
+// the service at work. The website card has links of its own below.
+const SERVICE_LINKS: Partial<Record<(typeof SERVICES)[number], { to: string; label: string }>> = {
+  1: { to: `/projects/${FEATURED_CASE_SLUG}/#starting-process`, label: "development.serviceCaseLink" },
+  2: { to: `/projects/${FEATURED_CASE_SLUG}/#load-planning`, label: "development.serviceCaseLink" },
+  6: { to: `/projects/${FEATURED_CASE_SLUG}/#machines`, label: "development.serviceCaseLink" },
+  3: { to: "/projects/pandelos-plus/", label: "development.servicePublicationLink" },
+};
 
 // The sectors the area block speaks to, named for the companies around Parma
 // the site is meant to reach. Named on what the software does for them, not
@@ -81,6 +91,11 @@ export default function DevelopmentPage() {
                   <p className="text-muted leading-relaxed">
                     {t(`development.service${n}Body`)}
                   </p>
+                  {SERVICE_LINKS[n] && (
+                    <Link to={SERVICE_LINKS[n].to} className={`${linkClass} inline-block mt-4`}>
+                      {t(SERVICE_LINKS[n].label)}
+                    </Link>
+                  )}
                   {n === 5 && (
                     <div className="flex flex-col items-start gap-3 mt-4">
                       <Link to="/projects/personal-website/" className={linkClass}>
@@ -167,9 +182,12 @@ export default function DevelopmentPage() {
               <p className="text-muted leading-relaxed mb-8">
                 {t("development.contactBody")}
               </p>
-              <a href={devMail} className="btn btn-dev">
-                {t("development.contactCta")}
-              </a>
+              <div className="flex flex-wrap gap-3">
+                <a href={devMail} className="btn btn-dev">
+                  {t("development.contactCta")}
+                </a>
+                <WhatsAppButton area="dev" />
+              </div>
               <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
             </div>
           </div>

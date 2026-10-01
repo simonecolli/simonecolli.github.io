@@ -2,7 +2,7 @@ import type { TFunction } from 'i18next'
 import { projects, type Project } from './data/projects'
 import { talks } from './data/talks'
 import { localizePath, type Lang } from './lib/lang'
-import { DEV_EMAIL, PHOTO_EMAIL, SITE_URL, withTrailingSlash } from './siteConfig'
+import { DEV_EMAIL, PHOTO_EMAIL, SITE_URL, WHATSAPP_DISPLAY, withTrailingSlash } from './siteConfig'
 
 // JSON-LD for the prerendered head, chosen by route. Only the prerender adds
 // it: crawlers read it from the static HTML, and it carries no prerendered-SEO
@@ -38,6 +38,7 @@ function person(): JsonLd {
     image: `${SITE_URL}/profile.jpg`,
     jobTitle: ['Freelance Software Developer', 'Photographer'],
     email: [DEV_EMAIL, PHOTO_EMAIL],
+    telephone: WHATSAPP_DISPLAY,
     knowsAbout: [
       'Retrieval-Augmented Generation',
       'On-premise deployment',
@@ -69,8 +70,11 @@ function service(kind: 'development' | 'photography', lang: Lang, t: TFunction):
     url: url(`/${kind}`, lang),
     image: `${SITE_URL}/profile.jpg`,
     email: kind === 'development' ? DEV_EMAIL : PHOTO_EMAIL,
+    telephone: WHATSAPP_DISPLAY,
     address: ADDRESS,
-    areaServed: AREA_SERVED,
+    // Beyond the home area both activities travel: development works remotely
+    // and photography goes where the client pays the trip.
+    areaServed: [...AREA_SERVED, { '@type': 'Country', name: lang === 'it' ? 'Italia' : 'Italy' }],
     founder: { '@id': PERSON_ID },
     serviceType: t(`structuredData.${kind}.serviceTypes`, { returnObjects: true }),
   }

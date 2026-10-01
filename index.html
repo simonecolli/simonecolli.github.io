@@ -13,12 +13,28 @@
               : window.matchMedia("(prefers-color-scheme: dark)").matches
                 ? "dark"
                 : "light";
-          document.documentElement.setAttribute("data-theme", theme);
+          document.documentElement.dataset.theme = theme;
         } catch (e) {
           document.documentElement.setAttribute("data-theme", "light");
         }
       })();
     </script>
+    <script>
+      (function () {
+        // The banner ships in the prerendered page so it paints with the rest
+        // of it instead of after hydration. A visitor who has already chosen
+        // must not see it flash, so any stored choice hides it before the
+        // first paint; React then checks that the choice is still valid and
+        // shows the banner again if not. The key is CONSENT_KEY in
+        // src/lib/analytics.ts.
+        try {
+          if (localStorage.getItem("analytics-consent-v2") !== null) {
+            document.documentElement.dataset.consentStored = "";
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <style>html[data-consent-stored] #cookie-consent { display: none; }</style>
     <meta name="color-scheme" content="light dark" />
     <style>@layer properties, theme, base, components, utilities;</style>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-light-32.png" />

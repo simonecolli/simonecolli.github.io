@@ -19,3 +19,12 @@ export function mailtoHref(email: string, subject: string, body: string): string
   const encode = (text: string) => encodeURIComponent(text.replace(/\n/g, "\r\n"));
   return `mailto:${email}?subject=${encode(subject)}&body=${encode(body)}`;
 }
+
+// One number for both activities. wa.me wants it with the country code and no
+// plus sign; the prefilled text tells which activity the message is about.
+export const WHATSAPP_NUMBER = "393772402283";
+export const WHATSAPP_DISPLAY = "+39 377 240 2283";
+
+export function whatsappHref(text: string): string {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+}

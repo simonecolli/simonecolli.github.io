@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import SEO from "../components/SEO";
 import PlainAddress from "../components/utils/PlainAddress";
+import WhatsAppButton from "../components/utils/WhatsAppButton";
 import PhotoCard from "../components/photography/PhotoCard";
 import Lightbox from "../components/photography/Lightbox";
 import { Photos, type Photo } from "../data/photography";
@@ -39,7 +40,8 @@ export default function GraduationPage() {
             <Link to="/photography/" className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-photo"><FiArrowLeft aria-hidden="true" />{t("graduation.back")}</Link>
             <div className="mt-10 md:mt-16">
               <p className="text-sm tracking-widest text-accent-photo font-medium mb-5">{t("graduation.eyebrow")}</p>
-              <h1 className="font-display type-hero-title">{t("graduation.title")}</h1>
+              <h1 className="font-display type-hero-title">{t("graduation.heading")}</h1>
+              <p className="font-display type-page-title mt-4">{t("graduation.title")}</p>
               <p className="type-lead text-muted mt-6">{t("graduation.intro")}</p>
               <p className="mt-4 font-medium">{t("graduation.tagline")}</p>
               <a href={contact()} className="btn btn-photo mt-8">{t("graduation.cta")}</a>
@@ -133,7 +135,7 @@ export default function GraduationPage() {
         </section>
 
         <section className="site-section">
-          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-page-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4">{t("graduation.closingBody")}</p><a href={contact()} className="btn btn-photo mt-6">{t("graduation.cta")}</a><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /></div></div>
+          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-page-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4">{t("graduation.closingBody")}</p><div className="flex flex-wrap gap-3 mt-6"><a href={contact()} className="btn btn-photo">{t("graduation.cta")}</a><WhatsAppButton area="photo" message={t("contact.whatsapp.graduation")} /></div><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /></div></div>
         </section>
       </main>
       <Footer />

@@ -14,6 +14,7 @@ import { photoCategories } from "../data/photo_categories";
 import { photoPackages } from "../data/photoPackages";
 import { usePhotoFilter, type FilterValue } from "../hooks/usePhotoFilter";
 import { useMailHref } from "../hooks/useMailHref";
+import WhatsAppButton from "../components/utils/WhatsAppButton";
 import { PHOTO_EMAIL } from "../siteConfig";
 
 const INFO = [1, 2, 3] as const;
@@ -202,9 +203,12 @@ export default function PhotographyPage() {
               <p className="text-muted leading-relaxed mb-8">
                 {t("photography.ctaBody")}
               </p>
-              <a href={photoMail} className="btn btn-photo">
-                {t("photography.ctaButton")}
-              </a>
+              <div className="flex flex-wrap gap-3">
+                <a href={photoMail} className="btn btn-photo">
+                  {t("photography.ctaButton")}
+                </a>
+                <WhatsAppButton area="photo" />
+              </div>
               <PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" />
             </div>
           </div>

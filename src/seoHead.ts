@@ -39,12 +39,11 @@ export function drainHead() {
   return { title, elements: new Set(elements) };
 }
 
-// createRoot renders the app from scratch, so React adds its own head tags next
-// to the prerendered ones and every page would carry two of each. Dropping the
-// static copies before the first render leaves one. The title carries no
-// marker, since the plugin writes it itself, but every page renders the SEO
-// component, so it always comes back. hydrateRoot would reuse the static tags
-// instead; the app still mounts with createRoot.
+// The SEO component renders nothing during prerender, so the browser's first
+// render adds React's own head tags next to the plugin's, and every page would
+// carry two of each. Dropping the static copies before the first render leaves
+// one. The title carries no marker, since the plugin writes it itself, but
+// every page renders the SEO component, so it always comes back.
 export function dropPrerenderedHead() {
   document.head
     .querySelectorAll(`title, [${PRERENDERED_ATTR}]`)

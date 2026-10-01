@@ -12,6 +12,9 @@ export interface Project {
   // Replaces the title in <title> when the display name is not what people
   // search for, as with MGP.
   seoTitle?: string;
+  // The detail page's H1 when the display name says little on its own; the
+  // display name then sits under it, and cards keep using it.
+  heading?: string;
   // Kept on the site but out of search results and the sitemap: short exam and
   // side projects that would only thin out what the site ranks for.
   noindex?: boolean;
@@ -46,6 +49,7 @@ export const projects: Project[] = [
     slug: "mgp-gestione-produzione",
     title: "data.projects.mgp.title",
     seoTitle: "data.projects.mgp.seoTitle",
+    heading: "data.projects.mgp.heading",
     description: "data.projects.mgp.description",
     shortDescription: "data.projects.mgp.shortDescription",
     keywords: "data.projects.mgp.keywords",

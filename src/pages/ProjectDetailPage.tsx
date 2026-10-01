@@ -9,6 +9,7 @@ import Back2Home from "../components/utils/Back2Home";
 import SEO from "../components/SEO";
 import CaseStudy from "../components/projects/CaseStudy";
 import PlainAddress from "../components/utils/PlainAddress";
+import WhatsAppButton from "../components/utils/WhatsAppButton";
 import { projects } from "../data/projects";
 import { getCaseStudy } from "../content/caseStudies";
 import { DEV_EMAIL } from "../siteConfig";
@@ -62,8 +63,11 @@ export default function ProjectDetailPage() {
                   <span className="text-xs text-muted">{project.year}</span>
                 </div>
                 <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-4">
-                  {t(project.title)}
+                  {t(project.heading ?? project.title)}
                 </h1>
+                {project.heading && (
+                  <p className="text-lg text-muted mb-4">{t(project.title)}</p>
+                )}
                 <div className="h-px bg-line w-24 mb-6"></div>
               </div>
 
@@ -138,9 +142,12 @@ export default function ProjectDetailPage() {
                   <p className="type-body text-muted mb-6">
                     {caseStudy.contact?.text ?? t('projects.caseStudy.ctaText')}
                   </p>
-                  <a href={devMail} className="btn btn-dev">
-                    {caseStudy.contact?.button ?? t('projects.caseStudy.ctaButton')}
-                  </a>
+                  <div className="flex flex-wrap gap-3">
+                    <a href={devMail} className="btn btn-dev">
+                      {caseStudy.contact?.button ?? t('projects.caseStudy.ctaButton')}
+                    </a>
+                    <WhatsAppButton area="dev" />
+                  </div>
                   <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
                 </aside>
               )}
