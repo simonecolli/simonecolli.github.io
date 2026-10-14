@@ -284,6 +284,12 @@
         "description": "Prototipo di un servizio didelivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel - il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria - gitleaks, ruff, pytest, typecheck - prima che il codice entri in branch.",
         "shortDescription": "Servizio di consegna fotografica self-hosted: gallerie con codice d'accesso, ordini cifrati, consegna via email dopo il pagamento e backend mai esposto in rete."
       },
+      "salsoRunningClub": {
+        "title": "Salso Running Club",
+        "description": "Il sito del running club di Salsomaggiore Terme: home, storia del club, come funzionano uscite ed eventi e un registro delle corse. Design, sviluppo e mantenimento sono miei; l'identità visiva - logo, colori, mascotte e social - è di Margherita Corinti. React e TypeScript con Tailwind CSS, una pagina prerenderizzata per ogni indirizzo, ospitato su Cloudflare, senza cookie né tracciamento.",
+        "shortDescription": "Il sito del Salso Running Club di Salsomaggiore Terme: design e sviluppo in React, pagine statiche su Cloudflare, nessun cookie né tracciamento.",
+        "keywords": "sito running club, sito associazione sportiva, sito web Salsomaggiore Terme, sito web Parma, sviluppo sito web, React, TypeScript, Tailwind CSS, Cloudflare, Simone Colli"
+      },
       "personalWebsite": {
         "title": "Sito personale: sviluppo e fotografia",
         "description": "Un sito per due attività: sviluppo software e fotografia. Il caso racconta struttura dei contenuti, identità visiva, percorsi di contatto, prerendering su GitHub Pages e statistiche subordinate al consenso.",

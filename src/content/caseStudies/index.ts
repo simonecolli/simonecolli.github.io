@@ -7,6 +7,8 @@ import { freelanceHubIt } from "./freelanceHub.it";
 import { freelanceHubEn } from "./freelanceHub.en";
 import { pandelosPlusIt } from "./pandelosPlus.it";
 import { pandelosPlusEn } from "./pandelosPlus.en";
+import { salsoRunningClubIt } from "./salsoRunningClub.it";
+import { salsoRunningClubEn } from "./salsoRunningClub.en";
 
 // Keyed by the same slug used in `data/projects.ts`, so a project gains its
 // long form by being added here and nowhere else. The two language variants of
@@ -18,6 +20,7 @@ const caseStudies: Record<string, Record<"it" | "en", CaseStudy>> = {
   "personal-website": { it: personalWebsiteIt, en: personalWebsiteEn },
   "freelance-hub": { it: freelanceHubIt, en: freelanceHubEn },
   "pandelos-plus": { it: pandelosPlusIt, en: pandelosPlusEn },
+  "salso-running-club": { it: salsoRunningClubIt, en: salsoRunningClubEn },
 };
 
 // What a project's long form is, for the badge on its card: null when it has

@@ -284,6 +284,12 @@
         "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model - access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel - the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate - gitleaks, ruff, pytest, typecheck - before it lands on the branch.",
         "shortDescription": "Self-hosted photo delivery service: galleries behind an access code, encrypted orders, email delivery after payment and a backend never exposed to the internet."
       },
+      "salsoRunningClub": {
+        "title": "Salso Running Club",
+        "description": "The website of the running club in Salsomaggiore Terme: home, the club's story, how runs and events work, and a log of past runs. Design, development and upkeep are mine; the visual identity - logo, colours, mascots and social media - is by Margherita Corinti. React and TypeScript with Tailwind CSS, one prerendered page per address, hosted on Cloudflare, with no cookies and no tracking.",
+        "shortDescription": "The website of Salso Running Club in Salsomaggiore Terme: designed and built in React, static pages on Cloudflare, no cookies and no tracking.",
+        "keywords": "running club website, sports club website, website Salsomaggiore Terme, web development, React, TypeScript, Tailwind CSS, Cloudflare, Simone Colli"
+      },
       "personalWebsite": {
         "title": "Personal website: development and photography",
         "description": "One website for two activities: software development and photography. The case study covers content structure, visual identity, contact journeys, prerendering on GitHub Pages and consent-based statistics.",
