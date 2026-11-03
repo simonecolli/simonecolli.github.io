@@ -11,22 +11,7 @@ import { FEATURED_CASE_SLUG, projects } from "../data/projects";
 import { DEV_EMAIL } from "../siteConfig";
 import { useMailHref } from "../hooks/useMailHref";
 import WhatsAppButton from "../components/utils/WhatsAppButton";
-
-const SERVICES = [1, 2, 6, 3, 4, 5] as const;
-
-// Where a service card sends the reader: the part of a real project that shows
-// the service at work. The website card has links of its own below.
-const SERVICE_LINKS: Partial<Record<(typeof SERVICES)[number], { to: string; label: string }>> = {
-  1: { to: `/projects/${FEATURED_CASE_SLUG}/#starting-process`, label: "development.serviceCaseLink" },
-  2: { to: `/projects/${FEATURED_CASE_SLUG}/#load-planning`, label: "development.serviceCaseLink" },
-  6: { to: `/projects/${FEATURED_CASE_SLUG}/#machines`, label: "development.serviceCaseLink" },
-  3: { to: "/projects/pandelos-plus/", label: "development.servicePublicationLink" },
-};
-
-// The sectors the area block speaks to, named for the companies around Parma
-// the site is meant to reach. Named on what the software does for them, not
-// as past clients.
-const SECTORS = ["Manufacturing", "Windows", "Logistics"] as const;
+import { DEV_SERVICES } from "../data/devServices";
 
 // Built to the same shape as /photography, differing in title face, accent and
 // what stands beside the opening text: here the before and after of a real
@@ -82,59 +67,27 @@ export default function DevelopmentPage() {
             <h2 className="type-page-title mb-12">
               {t("development.servicesTitle")}
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {SERVICES.map((n) => (
-                <div key={n} className="site-card">
-                  <h3 className="text-lg font-medium mb-3">
-                    {t(`development.service${n}Title`)}
-                  </h3>
-                  <p className="text-muted leading-relaxed">
-                    {t(`development.service${n}Body`)}
-                  </p>
-                  {SERVICE_LINKS[n] && (
-                    <Link to={SERVICE_LINKS[n].to} className={`${linkClass} inline-block mt-4`}>
-                      {t(SERVICE_LINKS[n].label)}
-                    </Link>
-                  )}
-                  {n === 5 && (
-                    <div className="flex flex-col items-start gap-3 mt-4">
-                      <Link to="/projects/personal-website/" className={linkClass}>
-                        {t("development.websiteCaseStudy")}
-                      </Link>
-                      <Link to="/#idee" className={linkClass}>
-                        {t("contact.ideas.linkLabel")}
-                      </Link>
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="zona" className="site-section scroll-mt-16">
-          <div className="site-container">
-            <h2 className="type-page-title mb-6">
-              {t("development.areaTitle")}
-            </h2>
-            <p className="text-muted leading-relaxed mb-12">
-              {t("development.areaBody")}
-            </p>
+            {/* One card per category page. The whole card is the link; the
+                visible label says what the reader finds there. */}
             <div className="grid md:grid-cols-3 gap-6">
-              {SECTORS.map((sector) => (
-                <div key={sector} className="site-card">
+              {DEV_SERVICES.map(({ slug, id }) => (
+                <div key={slug} className="site-card relative flex flex-col">
                   <h3 className="text-lg font-medium mb-3">
-                    {t(`development.sector${sector}Title`)}
+                    {t(`development.categories.${id}.title`)}
                   </h3>
-                  <p className="text-muted leading-relaxed">
-                    {t(`development.sector${sector}Body`)}
+                  <p className="text-muted leading-relaxed flex-grow">
+                    {t(`development.categories.${id}.body`)}
                   </p>
+                  <Link to={`/development/${slug}/`} className={`${linkClass} stretched-link inline-block mt-4`}>
+                    {t("development.categoryLink")} →
+                  </Link>
                 </div>
               ))}
             </div>
-            <Link to={`/projects/${FEATURED_CASE_SLUG}/`} className={`${linkClass} inline-block mt-8`}>
-              {t("development.sectorCaseLink")}
-            </Link>
+            <p className="leading-relaxed mt-8 max-w-3xl">
+              <strong className="font-medium">{t("services.clearPrices.title")}</strong>{" "}
+              <span className="text-muted">{t("services.clearPrices.body")}</span>
+            </p>
           </div>
         </section>
 
@@ -145,9 +98,6 @@ export default function DevelopmentPage() {
             </h2>
             <p className="text-muted leading-relaxed">
               {t("development.howBody")}
-            </p>
-            <p className="text-muted leading-relaxed mt-4">
-              {t("development.howCredentials")}
             </p>
           </div>
         </section>

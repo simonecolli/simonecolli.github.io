@@ -58,7 +58,7 @@ export default function Footer() {
               © {new Date().getFullYear()} Simone Colli. {t('footer.copyright')}
             </p>
             <p className="text-sm text-muted-inv">
-              {t('footer.vat')} · {t('footer.legalStatus')}
+              {t('footer.vat')} - {t('footer.legalStatus')}
             </p>
             <p className="text-sm text-muted-inv">{t('footer.photoCopyright')}</p>
             <div className="flex items-center justify-center gap-6 text-sm">

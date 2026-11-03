@@ -1,6 +1,8 @@
 import type { TFunction } from 'i18next'
 import { projects, type Project } from './data/projects'
 import { talks } from './data/talks'
+import { devServiceBySlug, type DevService } from './data/devServices'
+import { getServicePage, packagesOf } from './content/services'
 import { localizePath, type Lang } from './lib/lang'
 import { DEV_EMAIL, PHOTO_EMAIL, SITE_URL, WHATSAPP_DISPLAY, withTrailingSlash } from './siteConfig'
 
@@ -80,6 +82,35 @@ function service(kind: 'development' | 'photography', lang: Lang, t: TFunction):
   }
 }
 
+// One category of the development offer. Packages with a published starting
+// price become offers with that price as the minimum; the others are left out
+// rather than given a price they do not have.
+function devService(entry: DevService, lang: Lang, t: TFunction): JsonLd {
+  const page = getServicePage(entry.id, lang)
+  const offers = packagesOf(page)
+    .filter((pkg) => pkg.fromPrice !== undefined)
+    .map((pkg) => ({
+      '@type': 'Offer',
+      name: pkg.title,
+      priceCurrency: 'EUR',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        minPrice: pkg.fromPrice,
+        priceCurrency: 'EUR',
+      },
+    }))
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: page.heading,
+    description: t(`seo.services.${entry.id}.description`),
+    url: url(`/development/${entry.slug}`, lang),
+    provider: { '@id': PERSON_ID },
+    areaServed: [...AREA_SERVED, { '@type': 'Country', name: lang === 'it' ? 'Italia' : 'Italy' }],
+    ...(offers.length > 0 ? { offers } : {}),
+  }
+}
+
 function scholarlyArticle(project: Project, lang: Lang): JsonLd | null {
   const paper = project.publication
   if (!paper) return null
@@ -122,6 +153,15 @@ export function structuredDataFor(route: string, lang: Lang, t: TFunction): Json
   if (page === '/photography' || page === '/photography/degree') return [service('photography', lang, t)]
 
   const [, section, slug] = page.split('/')
+  if (section === 'development' && slug) {
+    const entry = devServiceBySlug(slug)
+    if (entry) {
+      return [
+        devService(entry, lang, t),
+        breadcrumb([home, [t('nav.development'), '/development'], [getServicePage(entry.id, lang).heading, page]], lang),
+      ]
+    }
+  }
   if (section === 'projects' && slug) {
     const project = projects.find((entry) => entry.slug === slug)
     if (project) {

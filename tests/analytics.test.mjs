@@ -9,6 +9,7 @@ function setup({ hostname = 'www.simonecolli.com', activated = true, production 
     .replace(/import .*siteConfig.*;/, 'const DEV_EMAIL="info.dev@simonecolli.com", PHOTO_EMAIL="info.photo@simonecolli.com", SITE_URL="https://www.simonecolli.com", WHATSAPP_NUMBER="393772402283";')
     .replace(/import .*data\/projects.*;/, 'const projects = [{slug: "public-project"}];')
     .replace(/import .*data\/talks.*;/, 'const talks = [{slug: "public-talk"}];')
+    .replace(/import .*data\/devServices.*;/, 'const DEV_SERVICES = [{slug: "public-service", id: "websites"}];')
     .replace('import.meta.env.VITE_ANALYTICS_ENABLED', JSON.stringify(activated ? 'true' : 'false'))
     .replace('import.meta.env.PROD', String(production));
   const code = ts.transpileModule(source, { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
@@ -116,6 +117,30 @@ test('english routes keep their /en prefix and unknown ones are still redacted',
     'https://www.simonecolli.com/404',
   ]);
   assert.equal(events[1][2].area, 'photo'); assert.equal(events[2][2].area, 'dev');
+});
+
+test('development service pages are measured as dev pages, unknown ones are redacted', () => {
+  const s = setup(); accept(s);
+  for (const path of ['/development/public-service/', '/en/development/public-service', '/development/private@example.org']) s.api.trackPage(path);
+  const events = s.commands().filter(x => x[0] === 'event');
+  assert.deepEqual(Array.from(events, x => [x[2].page_location, x[2].area]), [
+    ['https://www.simonecolli.com/development/public-service', 'dev'],
+    ['https://www.simonecolli.com/en/development/public-service', 'dev'],
+    ['https://www.simonecolli.com/404', 'shared'],
+  ]);
+});
+
+test('development service labels are kept on dev contacts', () => {
+  const s = setup(); accept(s);
+  s.api.trackContact({target: new s.context.Element('mailto:info.dev@simonecolli.com?subject=x', 'websites')});
+  const link = new s.context.Element('https://wa.me/393772402283?text=x', 'websites');
+  link.dataset.analyticsArea = 'dev';
+  s.api.trackContact({target: link});
+  const events = s.commands().filter(x => x[1] === 'contact_click').map(x => x[2]);
+  assert.deepEqual(Array.from(events, e => [e.area, e.service, e.channel]), [
+    ['dev', 'websites', 'email'],
+    ['dev', 'websites', 'whatsapp'],
+  ]);
 });
 
 test('contact events exclude mail contents and only allow known service labels', () => {

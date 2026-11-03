@@ -1,5 +1,6 @@
 import { projects } from "../data/projects";
 import { talks } from "../data/talks";
+import { DEV_SERVICES } from "../data/devServices";
 import { DEV_EMAIL, PHOTO_EMAIL, SITE_URL, WHATSAPP_NUMBER } from "../siteConfig";
 
 export const GA_ID = "G-BVG3YZR5C5";
@@ -164,7 +165,8 @@ function safePath(path: string) {
   const localized = prefix + (route === "/" && prefix ? "" : route);
   if (["/", "/development", "/photography", "/photography/degree", "/projects", "/talks", "/about", "/privacy", "/blog"].includes(route)) return localized;
   if (projects.some(project => route === `/projects/${project.slug}`) ||
-      talks.some(talk => route === `/talks/${talk.slug}`)) return localized;
+      talks.some(talk => route === `/talks/${talk.slug}`) ||
+      DEV_SERVICES.some(service => route === `/development/${service.slug}`)) return localized;
   return "/404";
 }
 
@@ -200,7 +202,8 @@ export function trackContact(event: MouseEvent) {
     : address === `mailto:${DEV_EMAIL}` ? "dev" : address === `mailto:${PHOTO_EMAIL}` ? "photo" : null;
   if (!area) return;
   const requestedService = link?.dataset.analyticsService;
-  const service = requestedService && ["proclamation", "party", "graduation_group", "joint_party"].includes(requestedService)
+  const knownServices = ["proclamation", "party", "graduation_group", "joint_party", ...DEV_SERVICES.map(entry => entry.id)];
+  const service = requestedService && knownServices.includes(requestedService)
     ? requestedService : area === "dev" ? "software" : area === "photo" ? "photography" : "general";
   window.gtag?.("event", "contact_click", {
     area, service, channel: whatsapp ? "whatsapp" : "email",

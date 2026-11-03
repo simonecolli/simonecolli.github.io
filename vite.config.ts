@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { vitePrerenderPlugin } from 'vite-prerender-plugin'
 import { projects } from './src/data/projects'
 import { talks } from './src/data/talks'
+import { DEV_SERVICES } from './src/data/devServices'
 import { SITE_URL, withTrailingSlash } from './src/siteConfig'
 import { DEFAULT_LANG, LANGUAGES, localizePath } from './src/lib/lang'
 
@@ -81,6 +82,7 @@ function forceExit(): Plugin {
 const pages = [
   '/',
   '/development',
+  ...DEV_SERVICES.map((service) => `/development/${service.slug}`),
   '/projects',
   '/talks',
   '/photography',

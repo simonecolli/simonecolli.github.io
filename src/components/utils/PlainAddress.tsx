@@ -16,7 +16,7 @@ export default function PlainAddress({ emails, className = "" }: PlainAddressPro
       {t("contact.orWrite")}{" "}
       {emails.map((email, index) => (
         <Fragment key={email}>
-          {index > 0 && " · "}
+          {index > 0 && " - "}
           <span className="text-fg select-all">{email}</span>
         </Fragment>
       ))}

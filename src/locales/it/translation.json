@@ -230,12 +230,12 @@
     },
     "photography": {
       "description": "Portfolio fotografico di Simone Colli - Sport, cerimonie, natura, macro e dettagli. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.",
-      "keywords": "Simone Colli fotografia, fotografo professionista, fotografo Parma, fotografo Salsomaggiore Terme, fotografo Fidenza, fotografo Piacenza, fotografo Reggio Emilia, fotografo sportivo Parma, fotografo eventi Parma, fotografia sportiva, fotografia eventi sportivi, foto per società sportive, fotografo cerimonie Parma, fotografia di dettaglio, fotografia naturalistica, fotografia macro, fotografo freelance Emilia-Romagna", 
+      "keywords": "Simone Colli fotografia, fotografo professionista, fotografo Parma, fotografo Salsomaggiore Terme, fotografo Fidenza, fotografo Piacenza, fotografo Reggio Emilia, fotografo sportivo Parma, fotografo eventi Parma, fotografia sportiva, fotografia eventi sportivi, foto per società sportive, fotografo cerimonie Parma, fotografia di dettaglio, fotografia naturalistica, fotografia macro, fotografo freelance Emilia-Romagna",
       "title": "Fotografo sport ed eventi a Parma e Piacenza"
     },
     "about": {
       "description": "Chi è Simone Colli - Sviluppatore software e fotografo freelance, laureato in Scienze Informatiche all'Università di Parma. Competenze, percorso e CV.",
-      "keywords": "Simone Colli, chi sono, curriculum, competenze, profilo professionale, sviluppatore software Parma, sviluppatore freelance Parma, fotografo Salsomaggiore Terme, laureato informatica Parma, laurea magistrale informatica, Università di Parma, bioinformatica, pangenomica computazionale, PLOS Computational Biology, LLM, RAG, deploy on-premise, freelance, Italia, Emilia-Romagna", 
+      "keywords": "Simone Colli, chi sono, curriculum, competenze, profilo professionale, sviluppatore software Parma, sviluppatore freelance Parma, fotografo Salsomaggiore Terme, laureato informatica Parma, laurea magistrale informatica, Università di Parma, bioinformatica, pangenomica computazionale, PLOS Computational Biology, LLM, RAG, deploy on-premise, freelance, Italia, Emilia-Romagna",
       "title": "Sviluppatore e fotografo a Salsomaggiore"
     },
     "blog": {
@@ -253,13 +253,30 @@
     },
     "development": {
       "description": "Sviluppo software su misura per PMI di Parma, Piacenza e Reggio Emilia: applicazioni web, automazione di processi, ottimizzazione e messa in produzione.",
-      "keywords": "sviluppo software su misura, software gestionale su misura Parma, software per PMI, applicazioni web aziendali, sviluppo applicazioni web, automazione Excel preventivi, automazione processi aziendali, gestionale produzione, software gestione commesse, software produzione manifattura, software preventivi e commesse, software piani di carico, configuratore prodotto, distinte base, integrazione Excel gestionale, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore software Parma, sviluppatore software Piacenza, sviluppatore software Reggio Emilia, sviluppatore freelance, software manifatturiero", 
+      "keywords": "sviluppo software su misura, software gestionale su misura Parma, software per PMI, applicazioni web aziendali, sviluppo applicazioni web, automazione Excel preventivi, automazione processi aziendali, gestionale produzione, software gestione commesse, software produzione manifattura, software preventivi e commesse, software piani di carico, configuratore prodotto, distinte base, integrazione Excel gestionale, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore software Parma, sviluppatore software Piacenza, sviluppatore software Reggio Emilia, sviluppatore freelance, software manifatturiero",
       "title": "Software su misura per PMI a Parma e Piacenza"
     },
     "graduation": {
       "description": "Servizi fotografici di laurea a Parma e in trasferta: Proclamazione da 100 €, All Inclusive da 250 €, gruppi da 65 € a persona con almeno 5 laureandi.",
-      "keywords": "fotografo laurea Parma, foto laurea Parma, servizio fotografico laurea, fotografo proclamazione laurea, foto proclamazione, foto festa di laurea, fotografo laurea Università di Parma, servizio foto laurea prezzi, pacchetti foto laurea, fotografo laurea in trasferta, fotografo laurea Emilia-Romagna, Simone Colli", 
+      "keywords": "fotografo laurea Parma, foto laurea Parma, servizio fotografico laurea, fotografo proclamazione laurea, foto proclamazione, foto festa di laurea, fotografo laurea Università di Parma, servizio foto laurea prezzi, pacchetti foto laurea, fotografo laurea in trasferta, fotografo laurea Emilia-Romagna, Simone Colli",
       "title": "Fotografo laurea a Parma e Piacenza: prezzi"
+    },
+    "services": {
+      "websites": {
+        "title": "Siti web per professionisti e PMI: prezzi",
+        "description": "Siti web per professionisti e piccole attività: landing page, siti vetrina e portfolio veloci e trovabili su Google. Tipologie a confronto e prezzi.",
+        "keywords": "siti web per professionisti, sito vetrina prezzi, landing page prezzi, sito portfolio, quanto costa un sito web, sito web per piccole attività, messa a punto sito web, rifacimento sito web, sito web Salsomaggiore Terme, sito web Fidenza, sito web Parma"
+      },
+      "business": {
+        "title": "Gestionali e CRM su misura per PMI",
+        "description": "Gestionali e CRM su misura per PMI e professionisti: clienti, preventivi, commesse e documenti in un sistema solo, al posto di Excel ed email. Esempi e costi.",
+        "keywords": "gestionale su misura, CRM su misura, software gestionale per PMI, gestionale ordini, gestionale commesse, da Excel a gestionale, area clienti, web app aziendale, gestionale su misura Parma, gestionale su misura Piacenza"
+      },
+      "automation": {
+        "title": "Automazione dei processi aziendali per PMI",
+        "description": "Automazione dei processi per PMI: documenti generati in automatico, programmi che si parlano, piani di carico e collegamento ai macchinari. Esempi e costi.",
+        "keywords": "automazione processi aziendali, automazione documenti, integrazione tra software, collegamento macchinari OPC-UA, piano di carico camion, ottimizzazione dei carichi, automazione Excel, integrazione Google Calendar"
+      }
     }
   },
   "data": {
@@ -268,7 +285,7 @@
         "title": "Freelance hub",
         "description": "CRM e gestionale per l'attività da libero professionista. Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
         "shortDescription": "CRM e gestionale per liberi professionisti: dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo.",
-        "keywords": "gestionale per freelance, CRM libero professionista, software gestione clienti freelance, automazione attività freelance, gestione preventivi e contratti, previsioni incassi, pianificazione carico di lavoro, self-hosted, LLM in locale, Ollama, software su misura, applicazione web gestionale", 
+        "keywords": "gestionale per freelance, CRM libero professionista, software gestione clienti freelance, automazione attività freelance, gestione preventivi e contratti, previsioni incassi, pianificazione carico di lavoro, self-hosted, LLM in locale, Ollama, software su misura, applicazione web gestionale",
         "seoTitle": "Freelance hub: CRM e gestionale per freelance"
       },
       "mgp": {
@@ -276,7 +293,7 @@
         "heading": "Gestione della produzione per un'azienda manifatturiera",
         "description": "Un'azienda manifatturiera preparava ogni commessa passando da un file Excel, sette o otto schede da impaginare a mano e una serie di script, con un limite di 21 righe di prodotto. MGP è la piattaforma che ha preso in carico quel processo: l'operatore compila la commessa, il sistema calcola, genera documenti e file di produzione e restituisce un archivio già organizzato. L'azienda configura da sé le proprie tipologie di prodotto, dai campi alle formule ai file da produrre, senza toccare il codice. In seguito estesa alla pianificazione dei carichi su autocarro per produzione e preventivi, al collegamento con i macchinari via OPC UA e a un modulo di assistenza integrato.",
         "shortDescription": "Da un processo tra Excel, macro e script a una piattaforma che genera i file di produzione e pianifica i carichi, configurabile senza codice.",
-        "keywords": "gestionale produzione, software gestione produzione, software gestione commesse, software manifattura, automazione processi produttivi, automazione preventivi Excel, configuratore di prodotto, configuratore serramenti, generazione DXF, generazione CSV, generazione PDF, piano di carico automatico, software pianificazione carichi camion, nesting, ottimizzazione dei carichi, distinte base, OPC UA, integrazione macchinari, software su misura azienda manifatturiera", 
+        "keywords": "gestionale produzione, software gestione produzione, software gestione commesse, software manifattura, automazione processi produttivi, automazione preventivi Excel, configuratore di prodotto, configuratore serramenti, generazione DXF, generazione CSV, generazione PDF, piano di carico automatico, software pianificazione carichi camion, nesting, ottimizzazione dei carichi, distinte base, OPC UA, integrazione macchinari, software su misura azienda manifatturiera",
         "seoTitle": "Software gestione produzione per manifattura"
       },
       "photographyDelivery": {
@@ -479,7 +496,6 @@
     "ideas": {
       "title": "Qualche idea da cui partire",
       "cta": "Parliamone",
-      "linkLabel": "Sito e foto insieme: qualche idea",
       "subject": "Richiesta dal sito: {{idea}}",
       "body": "Ciao Simone,\n\nche attività ho:\n\n\ncosa mi servirebbe (sito, foto o entrambi):\n\n\nentro quando:\n\n",
       "opening": {
@@ -493,27 +509,14 @@
       "company": {
         "title": "Immagine aziendale",
         "text": "Per aziende: sito e foto di prodotti, reparto e team, per mostrare davvero cosa fate."
-      }
+      },
+      "websitesLink": "Che sito ti serve? Tipi e prezzi"
     }
   },
   "development": {
     "pageTitle": "Sviluppo software su misura",
     "intro": "Applicazioni web, automazioni e integrazioni tra sistemi, su misura per piccole e medie imprese. Costruite sul tuo modo di lavorare, per migliorarlo.",
     "servicesTitle": "Cosa faccio",
-    "service1Title": "Gestionali e automazione dei processi",
-    "service1Body": "Processi che oggi vivono tra file Excel, macro Visual Basic, script ed email, con lo stesso dato inserito più volte e i documenti rifatti a mano a ogni passaggio. Li porto in un sistema solo: l'operatore inserisce i dati una volta, il sistema esegue i calcoli e genera documenti e file di lavorazione (PDF, DXF, CSV). Configuratori e integrazione fra sistemi che non si parlano, dall'analisi dei requisiti alla messa in produzione.",
-    "service2Title": "Ottimizzazione e problemi a vincoli",
-    "service2Body": "Problemi di pianificazione con troppe variabili per essere risolti a mano: piani di carico, assegnazioni, allocazioni. Li ho affrontati nella produzione industriale, nell'organizzazione universitaria e in ambito finanziario, con MiniZinc, OR-Tools e Answer Set Programming.",
-    "service3Title": "Calcolo intensivo e algoritmi",
-    "service3Body": "Quando il problema non sta in un ciclo semplice: parallelizzazione, algoritmi su misura, C++ dove la prestazione conta.",
-    "service4Title": "Messa in produzione e manutenzione",
-    "service4Body": "Rilascio containerizzato, ambienti riproducibili, osservabilità e manutenzione dopo il rilascio. Il progetto non finisce alla consegna.",
-    "service5Title": "Siti vetrina e portfolio",
-    "service5Body": "Siti di presentazione per professionisti e piccole attività: poche pagine, contenuti curati, veloci da caricare e trovabili sui motori di ricerca. Questo sito è uno di quelli.",
-    "service6Title": "Collegamento con macchinari e PLC",
-    "service6Body": "Il gestionale dialoga con i PLC di reparto tramite OPC-UA: i dati calcolati dalla pianificazione arrivano alle macchine quando l'operatore li invia, senza essere ricopiati a mano. Il software dell'ufficio e le macchine in produzione lavorano sugli stessi dati.",
-    "serviceCaseLink": "Vedi un caso reale",
-    "servicePublicationLink": "Leggi la pubblicazione",
     "howTitle": "Come lavoro",
     "howBody": "Si parte da un'analisi dei requisiti fatta insieme, con obiettivi e vincoli messi per iscritto. Da lì definiamo un perimetro e ricevi un preventivo scritto. Sviluppo per incrementi verificabili, con test automatici e decisioni architetturali documentate, così a fine progetto il codice resta leggibile anche da chi non l'ha scritto. Dopo il rilascio resto il riferimento per assistenza, manutenzione ed evoluzioni: seguo l'intero ciclo di vita del software.",
     "projectsTitle": "Progetti in evidenza",
@@ -524,17 +527,21 @@
     "contactTitle": "Hai un progetto in mente?",
     "contactBody": "Raccontami che problema devi risolvere, con che vincoli e per quando. Rispondo con una proposta scritta e una stima, senza impegno.",
     "contactCta": "Parliamo del tuo progetto",
-    "websiteCaseStudy": "Come ho progettato questo sito",
-    "areaTitle": "Dove lavoro e per quali settori",
-    "areaBody": "Lavoro da Salsomaggiore Terme con piccole e medie imprese di Parma, Fidenza, Piacenza e Reggio Emilia, e da remoto in tutta Italia. Mi rivolgo soprattutto ad aziende di manifattura, serramenti e logistica, dove lo stesso dato passa da un foglio Excel all'altro prima di arrivare in produzione.",
-    "sectorManufacturingTitle": "Manifattura",
-    "sectorManufacturingBody": "Dalla commessa ai file di produzione: calcoli, distinte e documenti generati dal sistema invece che ricompilati a mano, con il collegamento ai PLC di reparto via OPC-UA.",
-    "sectorWindowsTitle": "Serramenti",
-    "sectorWindowsBody": "Configuratori di prodotto che dalle misure e dalle opzioni scelte ricavano preventivo, distinta dei materiali e documenti per la produzione, senza ricopiare i dati tra un file e l'altro.",
-    "sectorLogisticsTitle": "Logistica",
-    "sectorLogisticsBody": "Piani di carico e pianificazione delle spedizioni calcolati dal software a partire dai dati della commessa, invece che disegnati a mano.",
-    "sectorCaseLink": "Il caso MGP: produzione e piani di carico",
-    "howCredentials": "Laurea magistrale in Scienze Informatiche all'Università di Parma con 110 e lode, autore di un articolo su PLOS Computational Biology e tutor universitario di Ingegneria del Software e Sistemi operativi."
+    "categories": {
+      "websites": {
+        "title": "Siti web",
+        "body": "Siti nuovi e messa a punto di quelli esistenti, per professionisti e piccole attività. Veloci, curati, trovabili su Google."
+      },
+      "business": {
+        "title": "Gestionali e CRM",
+        "body": "Clienti, ordini, preventivi e commesse in un sistema solo, costruito sul vostro modo di lavorare."
+      },
+      "automation": {
+        "title": "Automazioni e integrazioni",
+        "body": "Documenti generati in automatico, programmi che si parlano, piani di carico e collegamento ai macchinari."
+      }
+    },
+    "categoryLink": "Prezzi ed esempi"
   },
   "diagrams": {
     "mgpProcess": {
@@ -555,8 +562,8 @@
     },
     "mgpRuleGraph": {
       "alt": "Schema del motore di regole: le righe dei dati di ingresso alimentano le formule di un'altra tabella, un checkpoint trattiene le righe non ancora valutabili e i risultati arrivano ai file PDF, DXF, TLF e CSV.",
-      "inputs": "Tabella a — dati di ingresso",
-      "formulas": "Tabella b — formule e condizioni",
+      "inputs": "Tabella a - dati di ingresso",
+      "formulas": "Tabella b - formule e condizioni",
       "outputs": "Output",
       "quantity": "quantità",
       "height": "altezza",
@@ -742,5 +749,26 @@
         "Servizi fotografici di laurea"
       ]
     }
+  },
+  "services": {
+    "back": "Sviluppo software",
+    "contents": "In questa pagina",
+    "from": "da {{price}}",
+    "fromApprox": "da circa {{price}}",
+    "startingFrom": "A partire da",
+    "startingFromApprox": "Da circa",
+    "onRequest": "Prezzo su richiesta",
+    "time": "Tempi",
+    "fit": "Adatto se",
+    "limits": "Limiti",
+    "packageCta": "Chiedi un preventivo",
+    "realExample": "Esempio reale",
+    "caseLink": "Leggi il caso studio",
+    "faqTitle": "Domande frequenti",
+    "clearPrices": {
+      "title": "Prezzi chiari.",
+      "body": "Ogni proposta descrive il lavoro e ha un prezzo definito, senza costi nascosti. Il lavoro è diviso in fasi, ciascuna verificabile."
+    },
+    "relatedLink": "Prezzi ed esempi: {{name}}"
   }
 }

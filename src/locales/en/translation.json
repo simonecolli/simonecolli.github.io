@@ -260,6 +260,23 @@
       "description": "Graduation photos in Parma and on location: ceremony from €100, All Inclusive from €250, groups from €65 per person for at least 5 graduates.",
       "keywords": "graduation photographer Parma, graduation photos Parma, graduation photography service, graduation ceremony photographer, graduation ceremony photos, graduation party photos, University of Parma graduation photographer, graduation photo packages, graduation photography prices, travelling graduation photographer, graduation photographer Emilia-Romagna, Simone Colli",
       "title": "Graduation photographer in Parma and Piacenza"
+    },
+    "services": {
+      "websites": {
+        "title": "Websites for professionals and SMEs: prices",
+        "description": "Websites for professionals and small businesses: landing pages, showcase sites and portfolios that are fast and easy to find on Google. Types and prices.",
+        "keywords": "website for professionals, small business website, showcase website price, landing page price, portfolio website, how much does a website cost, website tune-up, website redesign, web developer Parma"
+      },
+      "business": {
+        "title": "Custom business software and CRM for SMEs",
+        "description": "Custom business software and CRMs for SMEs and professionals: clients, quotes, orders and documents in one system, not Excel and email. Examples and costs.",
+        "keywords": "custom business software, custom CRM, management software for SMEs, order management software, job management software, from Excel to business software, client portal, business web app"
+      },
+      "automation": {
+        "title": "Business process automation for SMEs",
+        "description": "Process automation for SMEs: documents generated automatically, programs that talk to each other, load planning and machine connectivity. Examples and costs.",
+        "keywords": "business process automation, document automation, software integration, OPC-UA machine connectivity, truck load planning, load optimisation, Excel automation, Google Calendar integration"
+      }
     }
   },
   "data": {
@@ -479,7 +496,6 @@
     "ideas": {
       "title": "A few ideas to start from",
       "cta": "Let's talk",
-      "linkLabel": "Website and photos together: a few ideas",
       "subject": "Enquiry from the website: {{idea}}",
       "body": "Hi Simone,\n\nwhat my business does:\n\n\nwhat I would need (website, photos or both):\n\n\nwhen by:\n\n",
       "opening": {
@@ -493,27 +509,14 @@
       "company": {
         "title": "Company image",
         "text": "For companies: a website with photos of products, shop floor and team, to show what you really do."
-      }
+      },
+      "websitesLink": "Which website do you need? Types and prices"
     }
   },
   "development": {
     "pageTitle": "Custom software development",
     "intro": "Web applications, automation and integration between systems, tailored to small and medium-sized businesses. Built around the way you work, to improve it.",
     "servicesTitle": "What I do",
-    "service1Title": "Business software and process automation",
-    "service1Body": "Processes that today live across Excel files, Visual Basic macros, scripts and email, with the same data typed in more than once and documents redone by hand at every stage. I bring them into one system: operators enter the data once, the system runs the calculations and generates documents and production files (PDF, DXF, CSV). Configurators and integration between systems that do not talk to each other, from requirements analysis to deployment.",
-    "service2Title": "Optimisation and constraint problems",
-    "service2Body": "Planning problems with too many variables to solve by hand: load plans, assignments, allocations. I have worked on them in industrial production, in university administration and in finance, with MiniZinc, OR-Tools and Answer Set Programming.",
-    "service3Title": "Heavy computation and algorithms",
-    "service3Body": "When the problem does not fit a simple loop: parallelisation, purpose-built algorithms, C++ where performance matters.",
-    "service4Title": "Deployment and maintenance",
-    "service4Body": "Containerised releases, reproducible environments, observability and maintenance after release. The project does not end at delivery.",
-    "service5Title": "Showcase and portfolio sites",
-    "service5Body": "Presentation sites for professionals and small businesses: a few pages, considered content, quick to load and easy to find. This site is one of them.",
-    "service6Title": "Connecting machines and PLCs",
-    "service6Body": "The business software talks to the shop-floor PLCs over OPC-UA: the figures worked out by the planning reach the machines when the operator sends them, without being copied across by hand. The office software and the machines on the floor work from the same data.",
-    "serviceCaseLink": "See a real case",
-    "servicePublicationLink": "Read the publication",
     "howTitle": "How I work",
     "howBody": "We start from a requirements analysis done together, with goals and constraints written down. From there we agree on a scope and you receive a written quote. I develop in verifiable increments, with automated tests and documented architectural decisions, so that by the end the code stays readable to someone who did not write it. After release I remain your point of contact for support, maintenance and new features: I follow the whole software lifecycle.",
     "projectsTitle": "Selected projects",
@@ -524,17 +527,21 @@
     "contactTitle": "Got a project in mind?",
     "contactBody": "Tell me what problem you need to solve, under what constraints and by when. I reply with a written proposal and an estimate, with no obligation.",
     "contactCta": "Let's talk about your project",
-    "websiteCaseStudy": "How I designed this website",
-    "areaTitle": "Where I work and which sectors",
-    "areaBody": "I work from Salsomaggiore Terme with small and medium-sized businesses in Parma, Fidenza, Piacenza and Reggio Emilia, and remotely anywhere in Italy. My focus is manufacturing, window and door makers and logistics, where the same figures move from one Excel sheet to the next before they reach production.",
-    "sectorManufacturingTitle": "Manufacturing",
-    "sectorManufacturingBody": "From the order to the production files: calculations, bills of materials and documents generated by the system instead of being filled in again by hand, with the link to the shop-floor PLCs via OPC-UA.",
-    "sectorWindowsTitle": "Windows and doors",
-    "sectorWindowsBody": "Product configurators that turn the measurements and chosen options into a quote, a bill of materials and production documents, without copying data from one file to another.",
-    "sectorLogisticsTitle": "Logistics",
-    "sectorLogisticsBody": "Load plans and shipment planning calculated by the software from the order data, instead of being drawn by hand.",
-    "sectorCaseLink": "The MGP case: production and load plans",
-    "howCredentials": "Master's degree in Computer Science from the University of Parma with 110/110 cum laude, author of a paper in PLOS Computational Biology and university tutor for Software Engineering and Operating Systems."
+    "categories": {
+      "websites": {
+        "title": "Websites",
+        "body": "New websites and tune-ups of existing ones, for professionals and small businesses. Fast, well made, easy to find on Google."
+      },
+      "business": {
+        "title": "Business software and CRM",
+        "body": "Clients, orders, quotes and jobs in one system, built around the way you work."
+      },
+      "automation": {
+        "title": "Automation and integrations",
+        "body": "Documents generated automatically, programs that talk to each other, load planning and connection to the machines."
+      }
+    },
+    "categoryLink": "Prices and examples"
   },
   "diagrams": {
     "mgpProcess": {
@@ -555,8 +562,8 @@
     },
     "mgpRuleGraph": {
       "alt": "The rule engine: input rows feed formulas held in another table, a checkpoint holds back the rows that cannot be evaluated yet, and the results reach the PDF, DXF, TLF and CSV files.",
-      "inputs": "Table a — input data",
-      "formulas": "Table b — formulas and conditions",
+      "inputs": "Table a - input data",
+      "formulas": "Table b - formulas and conditions",
       "outputs": "Outputs",
       "quantity": "quantity",
       "height": "height",
@@ -742,5 +749,26 @@
         "Graduation photography"
       ]
     }
+  },
+  "services": {
+    "back": "Software development",
+    "contents": "On this page",
+    "from": "from {{price}}",
+    "fromApprox": "from about {{price}}",
+    "startingFrom": "Starting from",
+    "startingFromApprox": "From about",
+    "onRequest": "Price on request",
+    "time": "Timeframe",
+    "fit": "A good fit if",
+    "limits": "Limits",
+    "packageCta": "Ask for a quote",
+    "realExample": "Real example",
+    "caseLink": "Read the case study",
+    "faqTitle": "Frequently asked questions",
+    "clearPrices": {
+      "title": "Clear prices.",
+      "body": "Every proposal describes the work and has a set price, with no hidden costs. The work is split into stages, each of which you can check."
+    },
+    "relatedLink": "Prices and examples: {{name}}"
   }
 }

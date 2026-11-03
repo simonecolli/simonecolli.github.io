@@ -12,6 +12,7 @@ import PlainAddress from "../components/utils/PlainAddress";
 import WhatsAppButton from "../components/utils/WhatsAppButton";
 import { projects } from "../data/projects";
 import { getCaseStudy } from "../content/caseStudies";
+import { devServiceBySlug } from "../data/devServices";
 import { DEV_EMAIL } from "../siteConfig";
 import { useMailHref } from "../hooks/useMailHref";
 
@@ -29,6 +30,7 @@ export default function ProjectDetailPage() {
   // Projects that carry the positioning have a long form; the others keep the
   // single paragraph, so both shapes render from the same page.
   const caseStudy = getCaseStudy(project.slug, i18n.language);
+  const relatedService = devServiceBySlug(project.service);
 
   return (
     <div className="app">
@@ -149,6 +151,14 @@ export default function ProjectDetailPage() {
                     <WhatsAppButton area="dev" />
                   </div>
                   <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
+                  {relatedService && (
+                    <Link
+                      to={`/development/${relatedService.slug}/`}
+                      className="inline-block mt-6 text-sm font-medium text-accent-dev"
+                    >
+                      {t("services.relatedLink", { name: t(`development.categories.${relatedService.id}.title`) })} →
+                    </Link>
+                  )}
                 </aside>
               )}
             </div>

@@ -15,6 +15,7 @@ import PhotographyPage from "./pages/PhotographyPage.tsx"
 import AboutMePage from "./pages/AboutMePage.tsx"
 import Blog from "./pages/Blog.tsx"
 import DevelopmentPage from "./pages/DevelopmentPage.tsx"
+import DevServicePage from "./pages/DevServicePage.tsx"
 import PrivacyPage from "./pages/PrivacyPage.tsx"
 import NotFound from "./pages/NotFound.tsx"
 
@@ -90,6 +91,7 @@ export function AppRoutes() {
               <Route path={`${base}/photography/degree`} element={<GraduationPage />} />
               <Route path={`${base}/about`} element={<AboutMePage />} />
               <Route path={`${base}/development`} element={<DevelopmentPage />} />
+              <Route path={`${base}/development/:service`} element={<DevServicePage />} />
               <Route path={`${base}/privacy`} element={<PrivacyPage />} />
             </Fragment>
           );

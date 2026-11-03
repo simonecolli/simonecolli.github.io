@@ -3,6 +3,7 @@ import { DEV_EMAIL, PHOTO_EMAIL, mailtoHref } from "../../siteConfig";
 import { useMailHref } from "../../hooks/useMailHref";
 import PlainAddress from "../utils/PlainAddress";
 import WhatsAppButton from "../utils/WhatsAppButton";
+import Link from "../utils/LocalizedLink";
 
 const IDEAS = ["opening", "professional", "company"] as const;
 
@@ -66,6 +67,12 @@ export default function ContactBlock() {
                 );
               })}
             </div>
+            <Link
+              to="/development/siti-web/"
+              className="inline-block mt-6 text-sm font-medium text-accent-dev"
+            >
+              {t("contact.ideas.websitesLink")} →
+            </Link>
           </div>
         </div>
       </div>

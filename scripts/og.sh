@@ -35,8 +35,8 @@ while IFS='|' read -r file accent eyebrow title lead url; do
   [ -s "$OUT/$file" ] || { echo "no screenshot for $file" >&2; exit 1; }
   echo "$OUT/$file"
 done <<'CARDS'
-home.png|neutral|Simone Colli — Salsomaggiore Terme, Parma|Sviluppo software e fotografia|Software su misura per piccole e medie imprese e fotografia di sport, eventi e lauree a Parma e Salsomaggiore Terme.|simonecolli.com
-development.png|dev|Simone Colli — Sviluppatore software freelance|Software su misura per PMI|Applicazioni web, automazione di processi e ottimizzazione per aziende di Parma, Piacenza e Reggio Emilia.|simonecolli.com/development
-photography.png|photo|Simone Colli — Fotografo|Fotografia di sport ed eventi|Sport, cerimonie, natura e dettagli. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.|simonecolli.com/photography
-degree.png|photo|Simone Colli — Fotografo|Servizi fotografici di laurea|Proclamazione, All Inclusive e formula gruppi, anche in trasferta, con prezzi di partenza indicati.|simonecolli.com/photography/degree
+home.png|neutral|Simone Colli - Salsomaggiore Terme, Parma|Sviluppo software e fotografia|Software su misura per piccole e medie imprese e fotografia di sport, eventi e lauree a Parma e Salsomaggiore Terme.|simonecolli.com
+development.png|dev|Simone Colli - Sviluppatore software freelance|Software su misura per PMI|Applicazioni web, automazione di processi e ottimizzazione per aziende di Parma, Piacenza e Reggio Emilia.|simonecolli.com/development
+photography.png|photo|Simone Colli - Fotografo|Fotografia di sport ed eventi|Sport, cerimonie, natura e dettagli. Fotografo a Parma e Salsomaggiore Terme, Emilia-Romagna.|simonecolli.com/photography
+degree.png|photo|Simone Colli - Fotografo|Servizi fotografici di laurea|Proclamazione, All Inclusive e formula gruppi, anche in trasferta, con prezzi di partenza indicati.|simonecolli.com/photography/degree
 CARDS

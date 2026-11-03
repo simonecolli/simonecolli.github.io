@@ -1,3 +1,5 @@
+import type { DevServiceSlug } from "./devServices";
+
 // Every field but `tags` is a translation key. `shortDescription` is the ~150
 // character version, used as the meta description. `keywords` is optional: a
 // project that does not set its own falls back to the shared list for the
@@ -37,6 +39,9 @@ export interface Project {
   };
   year: string;
   favourite?: boolean;
+  // The development category the project is an example of: its page links
+  // there, so a reader convinced by the case finds the prices next.
+  service?: DevServiceSlug;
 }
 
 // The case a company recognises itself in, pointed to from the home hero and
@@ -47,6 +52,7 @@ export const FEATURED_CASE_SLUG = "mgp-gestione-produzione";
 export const projects: Project[] = [
   {
     slug: "mgp-gestione-produzione",
+    service: "gestionali-crm",
     title: "data.projects.mgp.title",
     seoTitle: "data.projects.mgp.seoTitle",
     heading: "data.projects.mgp.heading",
@@ -75,6 +81,7 @@ export const projects: Project[] = [
   },
   {
     slug: "freelance-hub",
+    service: "gestionali-crm",
     title: "data.projects.freelanceHub.title",
     seoTitle: "data.projects.freelanceHub.seoTitle",
     description: "data.projects.freelanceHub.description",
@@ -121,6 +128,7 @@ export const projects: Project[] = [
   },
   {
     slug: "salso-running-club",
+    service: "siti-web",
     title: "data.projects.salsoRunningClub.title",
     description: "data.projects.salsoRunningClub.description",
     shortDescription: "data.projects.salsoRunningClub.shortDescription",
@@ -134,6 +142,7 @@ export const projects: Project[] = [
   },
   {
     slug: "personal-website",
+    service: "siti-web",
     title: "data.projects.personalWebsite.title",
     description: "data.projects.personalWebsite.description",
     shortDescription: "data.projects.personalWebsite.shortDescription",
