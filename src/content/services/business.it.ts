@@ -2,12 +2,12 @@ import type { ServicePageContent } from "./types";
 
 export const businessIt: ServicePageContent = {
   heading: "Gestionali e CRM su misura",
-  subtitle: "Un sistema costruito sul vostro modo di lavorare, non il contrario.",
+  subtitle: "Un sistema costruito sul tuo modo di lavorare, non il contrario.",
   intro: [
-    "Clienti in un file, ordini al telefono, preventivi in un altro file, e lo stesso dato ricopiato tre volte prima di arrivare a destinazione. Costruisco gestionali e CRM che mettono queste informazioni in un posto solo, con le regole della vostra azienda dentro il software e non nella testa di chi sa usare il file Excel.",
+    "Clienti in un file, ordini al telefono, preventivi in un altro file, e lo stesso dato ricopiato tre volte prima di arrivare a destinazione. Costruisco gestionali e CRM che mettono queste informazioni in un posto solo, con le regole della tua attività dentro il software e non nella testa di chi sa usare il file Excel.",
     "Si usano dal computer e dallo smartphone.",
   ],
-  cta: "Raccontami come lavorate oggi",
+  cta: "Raccontami come lavori oggi",
   mail: {
     subject: "Richiesta dal sito: gestionale o CRM",
     body: "Ciao Simone,\n\ncosa gestiamo oggi e con quali strumenti (Excel, email, telefono, programmi…):\n\n\nquante persone lo userebbero:\n\n\ncosa vorremmo ottenere:\n\n\nentro quando:\n\n",
@@ -26,7 +26,7 @@ export const businessIt: ServicePageContent = {
             { text: "Preventivi e documenti si rifanno a mano a ogni commessa." },
             { text: "Clienti e richieste sono sparsi tra email, WhatsApp, cartelle e appunti." },
             { text: "C'è un file Excel che funziona solo se lo usa una certa persona." },
-            { text: "Avete provato un software pronto, ma vi obbligava a cambiare il modo di lavorare." },
+            { text: "Hai provato un software pronto, ma ti obbligava a cambiare il modo di lavorare." },
           ],
         },
       ],
@@ -41,7 +41,7 @@ export const businessIt: ServicePageContent = {
             {
               title: "CRM",
               text: "Contatti, trattative, clienti e progetti collegati: dal primo contatto al preventivo accettato.",
-              cases: [{ slug: "freelance-hub", label: "Freelance hub" }],
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
             {
               title: "Gestionale di commesse e produzione",
@@ -50,15 +50,12 @@ export const businessIt: ServicePageContent = {
             },
             {
               title: "Ordini e capacità produttiva",
-              text: "Il sistema tiene il conto di quanto potete ancora produrre e propone il primo giorno libero.",
+              text: "Il sistema tiene il conto di quanto puoi ancora produrre e propone il primo giorno libero.",
             },
             {
               title: "Preventivi, contratti e documenti",
               text: "PDF generati dai dati già inseriti, senza ricopiarli in un modello.",
-              cases: [
-                { slug: "mgp-gestione-produzione", label: "MGP" },
-                { slug: "freelance-hub", label: "Freelance hub" },
-              ],
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
             {
               title: "Prodotti configurabili",
@@ -68,11 +65,11 @@ export const businessIt: ServicePageContent = {
             {
               title: "Report e previsioni",
               text: "Incassi, margini, ore stimate e lavorate, previsioni sui mesi successivi.",
-              cases: [{ slug: "freelance-hub", label: "Freelance hub" }],
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
             {
               title: "Area clienti",
-              text: "I vostri clienti accedono, vedono i loro ordini, prenotano o scaricano.",
+              text: "I tuoi clienti accedono, vedono i loro ordini, prenotano o scaricano.",
               cases: [{ slug: "photography-delivery", label: "Photo Delivery (prototipo)" }],
             },
           ],
@@ -87,11 +84,11 @@ export const businessIt: ServicePageContent = {
         {
           kind: "list",
           items: [
-            { term: "Software pronto", text: "basta se il vostro processo è simile a quello di tante altre aziende, siete in pochi a usarlo e vi va bene adattarvi al programma." },
-            { term: "Su misura", text: "conviene se il processo è il vostro punto di forza e non volete stravolgerlo, se oggi vive in molti file Excel collegati tra loro, o se il gestionale deve parlare con altri programmi o con le macchine." },
+            { term: "Software pronto", text: "basta se il tuo processo è simile a quello di tante altre attività, se lo usano poche persone e ti va bene adattarti al programma." },
+            { term: "Su misura", text: "conviene se il processo è il tuo punto di forza e non vuoi stravolgerlo, se oggi vive in molti file Excel collegati tra loro, o se il gestionale deve parlare con altri programmi o con le macchine." },
           ],
         },
-        { kind: "p", text: "Se dopo l'analisi la risposta è \"vi basta un software pronto\", ve lo dico." },
+        { kind: "p", text: "Se dopo l'analisi la risposta è \"ti basta un software pronto\", te lo dico." },
       ],
     },
     {
@@ -100,7 +97,7 @@ export const businessIt: ServicePageContent = {
       blocks: [
         {
           kind: "p",
-          text: "Un gestionale non ha un prezzo di listino: dipende da quanti processi copre e da quanto sono complessi. Per darvi un'idea, questi sono gli ordini di grandezza.",
+          text: "Un gestionale non ha un prezzo di listino: dipende da quanti processi copre e da quanto sono complessi. Per darti un'idea, questi sono gli ordini di grandezza.",
         },
         {
           kind: "packages",
@@ -127,7 +124,7 @@ export const businessIt: ServicePageContent = {
               fromPrice: 5000,
               approx: true,
               weeks: "8-10 settimane",
-              body: "In più, i vostri clienti accedono e prenotano da soli, con regole che evitano le sovraprenotazioni.",
+              body: "In più, i tuoi clienti accedono e prenotano da soli, con regole che evitano le sovraprenotazioni.",
             },
             {
               id: "platform",
@@ -145,9 +142,9 @@ export const businessIt: ServicePageContent = {
           kind: "list",
           items: [
             { text: "Numero di processi e di tipi di utente." },
-            { text: "Un'area per i vostri clienti, con accessi e regole." },
+            { text: "Un'area per i tuoi clienti, con accessi e regole." },
             { text: "Documenti e file da generare." },
-            { text: "Collegamenti con altri programmi: calendario, email, contabilità, macchinari." },
+            { text: "Collegamenti con altri software o sistemi: calendario, email, contabilità, macchinari." },
             { text: "Dati da recuperare dai file Excel di oggi." },
           ],
         },
@@ -159,7 +156,7 @@ export const businessIt: ServicePageContent = {
             { text: "Notifiche push: gli avvisi arrivano via email." },
             { text: "Pagamenti online, fatturazione e collegamento alla contabilità." },
             { text: "Funzionamento senza connessione." },
-            { text: "Testi legali per i vostri clienti, come l'informativa privacy." },
+            { text: "Testi legali per i tuoi clienti, come l'informativa privacy." },
           ],
         },
       ],
@@ -171,9 +168,9 @@ export const businessIt: ServicePageContent = {
         {
           kind: "list",
           items: [
-            { term: "Il server è intestato a voi", text: "lo pagate direttamente voi, e io ho l'accesso da amministratore per l'assistenza. Anche posta e account Google restano vostri." },
-            { term: "I dati sono vostri", text: "clienti, ordini, prezzi e statistiche si possono esportare in qualsiasi momento." },
-            { term: "La proprietà intellettuale del software resta mia", text: "il codice, la struttura del database, la documentazione e la base tecnica che riutilizzo nei miei progetti. Al saldo ricevete una licenza d'uso perpetua per la vostra attività; il codice sorgente non viene consegnato." },
+            { term: "Il server è intestato a te", text: "lo paghi direttamente tu, e io ho l'accesso da amministratore per l'assistenza. Anche posta e account Google restano tuoi." },
+            { term: "I dati sono tuoi", text: "clienti, ordini, prezzi e statistiche si possono esportare in qualsiasi momento." },
+            { term: "La proprietà intellettuale del software resta mia", text: "il codice, la struttura del database, la documentazione e la base tecnica che riutilizzo nei miei progetti. Al saldo ricevi una licenza d'uso perpetua per la tua attività; il codice sorgente non viene consegnato." },
           ],
         },
       ],
@@ -188,14 +185,14 @@ export const businessIt: ServicePageContent = {
             { term: "Sicuro fin dal progetto", text: "dati personali cifrati anche nei backup, connessioni HTTPS, password mai salvate in chiaro, ogni utente vede solo quello che gli serve." },
             { term: "Solo i dati necessari", text: "si raccoglie quello che serve al lavoro, niente di più." },
             { term: "Responsabile del trattamento", text: "per lo sviluppo e l'assistenza firmo un accordo di nomina a responsabile del trattamento (art. 28 GDPR)." },
-            { term: "Il resto del GDPR", text: "le misure tecniche aiutano ma non bastano da sole: informativa e registro dei trattamenti restano a cura vostra, come titolari." },
+            { term: "Il resto del GDPR", text: "le misure tecniche aiutano ma non bastano da sole: informativa e registro dei trattamenti restano a cura tua, come titolare." },
           ],
         },
       ],
     },
     {
       id: "come-lavoro",
-      title: "Come lavoro",
+      title: "Il mio metodo di lavoro",
       blocks: [
         {
           kind: "steps",
@@ -203,11 +200,11 @@ export const businessIt: ServicePageContent = {
             { term: "Colloquio", text: "sul processo di oggi, con obiettivi e vincoli." },
             { term: "Proposte scritte", text: "di solito tre versioni (base, intermedia, completa), ognuna con cosa comprende, a chi è adatta, i suoi limiti e i tempi." },
             { term: "Sviluppo", text: "schermate e regole di calcolo da approvare lungo la strada, con un giro di revisione compreso." },
-            { term: "Collaudo", text: "alla consegna avete 7 giorni per provare il sistema; i malfunzionamenti li correggo senza costi." },
-            { term: "Messa in uso", text: "l'assistenza si aggiunge se serve; quando i primi mesi sono compresi, lo trovate scritto nel preventivo." },
+            { term: "Collaudo", text: "alla consegna hai un numero concordato di giorni per provare il sistema; i malfunzionamenti li correggo senza costi." },
+            { term: "Messa in uso", text: "l'assistenza si aggiunge se serve." },
           ],
         },
-        { kind: "p", text: "Si paga a fasi: acconto alla firma, una parte alla consegna in prova, il saldo a fine collaudo." },
+        { kind: "p", text: "Il pagamento è diviso in milestone concordate in fase di preventivo." },
       ],
     },
     {
@@ -218,7 +215,7 @@ export const businessIt: ServicePageContent = {
           kind: "list",
           items: [
             { term: "Assistenza mensile, da 150 €/mese", text: "controllo automatico del sistema, presa in carico entro 1 giorno lavorativo, verifica dei backup e degli aggiornamenti di sicurezza, report mensile con le statistiche di utilizzo." },
-            { term: "Modifiche e nuove funzioni", text: "50 €/ora, anche con pacchetti di ore prepagate." },
+            { term: "Modifiche e nuove funzioni", text: "si pagano a ore o con pacchetti di ore prepagati." },
             { term: "Attività stagionali", text: "l'assistenza può fermarsi fuori stagione." },
             { term: "Senza assistenza attiva", text: "gli aggiornamenti di sicurezza non sono garantiti." },
           ],
@@ -227,7 +224,7 @@ export const businessIt: ServicePageContent = {
     },
     {
       id: "lavori",
-      title: "Lavori reali",
+      title: "Alcuni lavori reali",
       blocks: [
         {
           kind: "cases",
@@ -239,7 +236,7 @@ export const businessIt: ServicePageContent = {
             },
             {
               slug: "freelance-hub",
-              label: "Freelance hub, CRM e gestionale per la mia attività",
+              label: "Freelance Hub, CRM e gestionale per la mia attività",
               text: "Dal contatto al progetto, dal lavoro svolto all'incasso, con previsioni sui mesi successivi.",
             },
           ],
@@ -249,12 +246,12 @@ export const businessIt: ServicePageContent = {
   ],
   faqs: [
     {
-      question: "Possiamo continuare a usare Excel?",
+      question: "Posso continuare a usare Excel?",
       answer: "Sì, il passaggio non deve essere tutto in una volta, e i dati si possono sempre esportare in Excel.",
     },
     {
-      question: "Potremo modificare qualcosa da soli?",
-      answer: "Dipende da cosa cambia più spesso. In MGP l'azienda modifica prodotti, formule e documenti da tabelle, senza toccare il codice. In un gestionale degli ordini si impostano da soli capacità, prezzi, festività e chiusure.",
+      question: "Potrò modificare qualcosa da solo?",
+      answer: "Dipende da cosa cambia più spesso. In MGP l'azienda modifica prodotti, formule e documenti da tabelle, senza toccare il codice.",
     },
     {
       question: "Serve un'app da scaricare?",
@@ -262,15 +259,15 @@ export const businessIt: ServicePageContent = {
     },
     {
       question: "Quanto ci vuole?",
-      answer: "Da circa 4 settimane per un gestionale su un processo, a 8-10 per uno con area clienti. Progetti come MGP richiedono più tempo e si sviluppano per passi.",
+      answer: "Indicativamente da 4 settimane per un gestionale su un processo a 8-10 per uno con area clienti, mentre progetti come MGP richiedono più tempo e si sviluppano per passi. Considera però che i tempi dipendono molto anche da te: da quanto velocemente rispondi alle domande, provi le schermate e mi dai un riscontro.",
     },
     {
       question: "E se poi servono modifiche?",
-      answer: "Le facciamo, a ore o con un pacchetto di ore prepagate. Il codice è scritto e documentato perché resti comprensibile anche a chi non l'ha scritto.",
+      answer: "Le facciamo, a ore o con un pacchetto di ore prepagate.",
     },
   ],
   closing: {
-    title: "Come lavorate oggi?",
-    text: "Raccontami cosa gestite, con quali strumenti e cosa vorreste ottenere. Ti rispondo con una proposta scritta e un ordine di grandezza dei costi, senza impegno.",
+    title: "Come lavori oggi?",
+    text: "Raccontami cosa gestisci, con quali strumenti e cosa vorresti ottenere. Ti rispondo con una proposta scritta e una stima dei costi, senza impegno.",
   },
 };

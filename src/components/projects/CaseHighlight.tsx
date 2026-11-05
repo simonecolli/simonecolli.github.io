@@ -27,7 +27,7 @@ export default function CaseHighlight({ slug }: CaseHighlightProps) {
       <p className="text-xs uppercase tracking-[0.12em] text-accent-dev">
         {t("projects.caseStudy.realCase")}
       </p>
-      <h2 className="text-xl font-medium mt-2">{t(project.title)}</h2>
+      <h2 className="type-subsection-title mt-2">{t(project.title)}</h2>
       <p className="text-sm text-muted mt-1">{highlight.context}</p>
 
       <div className="grid sm:grid-cols-2 gap-6 mt-6">

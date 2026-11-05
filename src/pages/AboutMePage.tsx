@@ -33,10 +33,10 @@ export default function AboutMePage() {
       <main className="main-content pt-20">
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-4xl mx-auto fade-in">
-              <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] gap-12 lg:gap-16 items-center">
                 <div>
-                  <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
+                  <h1 className="type-hero-title mb-6">
                     {t('about.pageTitle')}
                   </h1>
                   <div className="h-px bg-line w-24 mb-8"></div>
@@ -58,7 +58,7 @@ export default function AboutMePage() {
                 </div>
 
                 <div className="lg:order-first">
-                  <div className="aspect-[3/4] bg-fg/5 relative overflow-hidden rounded-md">
+                  <div className="aspect-[3/4] bg-fg/5 relative overflow-hidden rounded-lg">
                     <img
                       src="/profile.jpg"
                       alt="Simone Colli"
@@ -73,10 +73,10 @@ export default function AboutMePage() {
 
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="type-page-title mb-4">{t('about.journey')}</h2>
-                <div className="h-px bg-line w-16 mx-auto"></div>
+            <div>
+              <div className="mb-12">
+                <h2 className="type-section-title mb-4">{t('about.journey')}</h2>
+                <div className="h-px bg-line w-16"></div>
               </div>
 
               <JourneyPath />
@@ -86,10 +86,10 @@ export default function AboutMePage() {
 
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="type-page-title mb-4">{t('about.skillsTitle')}</h2>
-                <div className="h-px bg-line w-16 mx-auto"></div>
+            <div>
+              <div className="mb-12">
+                <h2 className="type-section-title mb-4">{t('about.skillsTitle')}</h2>
+                <div className="h-px bg-line w-16"></div>
               </div>
 
               <div className="space-y-8">

@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import HeroCover from "../components/home/HeroCover";
 import HeroSplit from "../components/home/HeroSplit";
 import AboutSplit from "../components/home/AboutSplit";
 import TerritorySection from "../components/home/TerritorySection";
@@ -19,6 +20,7 @@ export default function Home() {
       />
       <Header />
       <main className="main-content">
+        <HeroCover />
         <HeroSplit />
         <TerritorySection
           id="home-dev"

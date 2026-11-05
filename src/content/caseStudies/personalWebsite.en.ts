@@ -9,7 +9,7 @@ export const personalWebsiteEn: CaseStudy = {
   contact: {
     title: "Does your website need to explain more than one service?",
     text: "Tell me about your business, the people you want to reach and what someone should be able to do after visiting your site. We start with content and journeys, then define the technical solution.",
-    button: "Let’s discuss your website",
+    button: "Let's discuss your website",
   },
   sections: [
     {

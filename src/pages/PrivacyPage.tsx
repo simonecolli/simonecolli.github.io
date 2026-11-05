@@ -35,8 +35,8 @@ export default function PrivacyPage() {
       <main className="main-content pt-20">
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-3xl mx-auto fade-in">
-              <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
+            <div>
+              <h1 className="type-hero-title mb-6">
                 {t("privacy.pageTitle")}
               </h1>
               <div className="h-px bg-line w-24 mb-6"></div>
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
               <div className="space-y-10">
                 {SECTIONS.map((section) => (
                   <div key={section}>
-                    <h2 className="text-xl font-medium mb-3">
+                    <h2 className="type-subsection-title mb-3">
                       {t(`privacy.${section}Title`)}
                     </h2>
                     <p className="text-muted leading-relaxed">

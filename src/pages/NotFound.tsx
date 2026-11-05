@@ -19,11 +19,11 @@ export default function NotFound() {
       <main className="main-content pt-20">
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-2xl mx-auto text-center fade-in">
+            <div className="text-center">
               <p className="text-7xl md:text-8xl font-light tracking-tight text-muted mb-4">
                 404
               </p>
-              <h1 className="text-3xl md:text-4xl font-light tracking-tight mb-6">
+              <h1 className="type-hero-title mb-6">
                 {t('notFound.pageTitle')}
               </h1>
               <div className="h-px bg-line w-24 mx-auto mb-6"></div>

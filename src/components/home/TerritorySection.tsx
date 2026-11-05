@@ -24,18 +24,23 @@ export default function TerritorySection({
 
   const isDev = territory === "dev";
   const titleFont = isDev ? "font-mono" : "font-display";
+  const sectorColor = isDev ? "text-accent-dev" : "text-accent-photo";
   const ctaClass = `btn ${isDev ? "btn-dev" : "btn-photo"} mt-6`;
   const label = t(`home.${territory}.cta`);
 
+  // Both halves set their text in the same box, so it reads over either
+  // background (node graph or photo mosaic).
   const text = (
     <div
-      className={isDev
-        ? "order-2 lg:order-1"
-        : "order-2 rounded-lg border border-line bg-bg p-6 sm:p-8 lg:p-10 shadow-sm"}
+      className={`${isDev ? "order-2 lg:order-1" : "order-2"} rounded-lg border border-line bg-bg p-6 sm:p-8 lg:p-10 shadow-sm`}
     >
       <h2 className={`${titleFont} type-section-title`}>
         {t(`home.${territory}.title`)}
       </h2>
+      {/* Names the field the section belongs to, in its own face and accent. */}
+      <p className={`${titleFont} ${sectorColor} text-lg mt-3`}>
+        {t(`home.${territory}.sector`)}
+      </p>
       <div className="h-px bg-line w-32 mt-3 mb-4" />
       <p className="type-body text-muted">
         {t(`home.${territory}.text`)}

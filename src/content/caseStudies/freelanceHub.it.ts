@@ -190,7 +190,7 @@ export const freelanceHubIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "Completano il gestionale la gestione dei collaboratori, il registro delle attività e una sezione per preparare ed esportare case study destinati al portfolio.",
+          text: "Completano il gestionale la gestione dei collaboratori, il registro delle attività e una sezione per preparare ed esportare casi studio destinati al portfolio.",
         },
       ],
     },

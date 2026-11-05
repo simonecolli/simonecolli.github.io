@@ -117,7 +117,7 @@
 
   button {
     border: 1px solid var(--c-line);
-    border-radius: 6px;
+    border-radius: 8px;
     padding: 12px 24px;
     font-size: 14px;
     font-weight: 500;
@@ -146,6 +146,13 @@
     padding: 0 clamp(1.5rem, 4vw, 4rem);
   }
 
+  /* The heading scale, one class per level, used on every page:
+       H1 of a page           .type-hero-title
+       H2 of a section        .type-section-title
+       H3 opening a group     .type-subsection-title (packages, sub-parts)
+       title of a card/item   .type-item-title
+     Only the face changes with the activity (font-mono for development,
+     font-display for photography); size and weight stay the same. */
   .type-hero-title {
     font-size: clamp(2rem, min(7vh, 10vw), 3.5rem);
     font-weight: 500;
@@ -154,16 +161,23 @@
   }
 
   .type-section-title {
-    font-size: clamp(1.75rem, min(5vh, 8vw), 2.5rem);
+    font-size: clamp(1.75rem, min(5vh, 7vw), 2.25rem);
     font-weight: 500;
     letter-spacing: -0.025em;
-    line-height: 1.05;
+    line-height: 1.1;
   }
 
-  .type-page-title {
-    font-size: 1.75rem;
-    font-weight: 300;
-    letter-spacing: -0.025em;
+  .type-subsection-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+  }
+
+  .type-item-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.35;
   }
 
   .type-lead {
@@ -218,6 +232,12 @@
     padding-block: 4rem;
   }
 
+  /* As a flex item the container would shrink to its text and centre itself,
+     moving the page opening away from the left edge of the sections below. */
+  .site-section-compact > .site-container {
+    width: 100%;
+  }
+
   @media (max-height: 820px) {
     .site-section-compact {
       padding-block: 2.5rem;
@@ -265,7 +285,7 @@
     align-items: center;
     justify-content: center;
     border: 1px solid;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: 500;
     line-height: 1.2;
     padding: clamp(0.75rem, 1.7vh, 1.125rem) clamp(1.5rem, 3vw, 2.5rem);
@@ -308,6 +328,29 @@
   .btn-photo:hover {
     background-color: var(--c-accent-photo);
     color: var(--c-bg);
+  }
+
+  /* Filled: the one contact action of a section. Outline stays for navigation
+     and for actions repeated across cards. On hover the fill moves towards
+     the text colour, which raises the contrast in both themes. */
+  .btn-solid.btn-dev {
+    background-color: var(--c-accent-dev);
+    color: var(--c-bg);
+  }
+
+  .btn-solid.btn-dev:hover {
+    background-color: color-mix(in srgb, var(--c-accent-dev) 82%, var(--c-fg));
+    border-color: color-mix(in srgb, var(--c-accent-dev) 82%, var(--c-fg));
+  }
+
+  .btn-solid.btn-photo {
+    background-color: var(--c-accent-photo);
+    color: var(--c-bg);
+  }
+
+  .btn-solid.btn-photo:hover {
+    background-color: color-mix(in srgb, var(--c-accent-photo) 82%, var(--c-fg));
+    border-color: color-mix(in srgb, var(--c-accent-photo) 82%, var(--c-fg));
   }
 
   /* Compact size for the header bar. Declared after .btn so it wins over the
@@ -368,107 +411,129 @@
     mask-image: linear-gradient(to right, #000 0%, #000 30%, transparent 82%);
   }
 
-  .hero-bg,
-  .hero-veil {
-    display: none;
+  /* Opening screen: the photograph full-bleed at every width, blurred under a
+     veil that thickens towards the middle, where the name sits. The veil mixes
+     the page background, so the same rule holds in both themes. */
+  .hero-cover {
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 1.5rem 7rem;
+    overflow: hidden;
   }
 
-  @media (min-width: 1024px) {
-    .hero-bg {
-      display: block;
-      position: absolute;
-      inset: 0;
-      overflow: hidden;
-      pointer-events: none;
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-veil {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    background: radial-gradient(
+      ellipse 60% 50% at 50% 50%,
+      color-mix(in srgb, var(--c-bg) 78%, transparent) 0%,
+      color-mix(in srgb, var(--c-bg) 50%, transparent) 100%
+    );
+  }
+
+  .type-cover-title {
+    font-size: clamp(3rem, min(13vw, 13vh), 7.5rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1;
+  }
+
+  /* 48px round target. Only the arrow moves, and only while motion is
+     allowed: it is the one animated thing on the page. */
+  .hero-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    z-index: 10;
+    width: 3rem;
+    height: 3rem;
+    margin-left: -1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid color-mix(in srgb, var(--c-fg) 45%, transparent);
+    border-radius: 9999px;
+    background: color-mix(in srgb, var(--c-bg) 60%, transparent);
+    color: var(--c-fg);
+    transition: border-color var(--transition-fast);
+  }
+
+  .hero-scroll:hover {
+    border-color: var(--c-fg);
+    text-decoration: none;
+  }
+
+  .hero-scroll:focus-visible {
+    outline: 2px solid var(--c-fg);
+    outline-offset: 3px;
+  }
+
+  .hero-scroll svg {
+    animation: hero-scroll-nudge 2.4s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-scroll svg {
+      animation: none;
     }
+  }
 
-    .hero-bg img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .hero-veil {
-      display: block;
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      -webkit-backdrop-filter: blur(3px);
-      backdrop-filter: blur(3px);
-      background: linear-gradient(
-        to right,
-        color-mix(in srgb, var(--c-bg) 24%, transparent) 0%,
-        color-mix(in srgb, var(--c-bg) 20%, transparent) 40%,
-        color-mix(in srgb, var(--c-bg) 4%, transparent) 50%,
-        color-mix(in srgb, var(--c-bg) 20%, transparent) 60%,
-        color-mix(in srgb, var(--c-bg) 24%, transparent) 100%
-      );
-    }
-
-    .hero-halo {
-      position: relative;
-    }
-
-    .hero-halo > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-halo::before {
-      content: "";
-      position: absolute;
-      inset: -2.5rem -2.5rem;
-      z-index: 0;
-      pointer-events: none;
-      background: color-mix(in srgb, var(--c-bg) 52%, transparent);
-      border-radius: 40%;
-      filter: blur(26px);
-    }
-
-    .hero-half-dev .hero-halo::before {
-      border-radius: 1rem 7rem 7rem 1rem;
-    }
-
-    .hero-half-photo .hero-halo::before {
-      border-radius: 7rem 1rem 1rem 7rem;
-    }
-
-    .hero-halo-btn {
-      background-color: color-mix(in srgb, var(--c-bg) 84%, transparent);
-
-      box-shadow: color-mix(in srgb, var(--c-bg) 30%, transparent);
-
-    }
-
-    /* The same plate as the button: small text over the photograph needs it. */
-    .hero-link {
-      padding: 0.25rem 0.5rem;
-      border-radius: 4px;
-      background-color: color-mix(in srgb, var(--c-bg) 84%, transparent);
-    }
-
-    .hero-divider {
-      -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 5%, #000 44%, transparent 62%);
-      mask-image: linear-gradient(to bottom, transparent 0%, #000 5%, #000 44%, transparent 62%);
-    }
-
-    .hero-mark::before {
-      background: color-mix(in srgb, var(--c-bg) 70%, transparent);
-
-      inset: 1.25rem 1.75rem 0.25rem;
-    }
+  /* The hairline between the two halves of the services split, faded at both
+     ends so it does not cut into the sections around it. */
+  .hero-divider {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
   }
 
   .about-portrait {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    display: block;
+    width: min(15rem, 60%);
+    height: auto;
+    margin-bottom: 1.5rem;
+    -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+  }
 
-    height: 80%;
-    width: auto;
-    object-fit: contain;
-    object-position: bottom right;
+  /* From 1024px the portrait is confined to the right half of the section and
+     the text to the left half, so the two cannot overlap at any width. */
+  @media (min-width: 1024px) {
+    .about-portrait {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 80%;
+      margin: 0;
+      object-fit: contain;
+      object-position: bottom right;
+      -webkit-mask-image: linear-gradient(to left, #000 70%, transparent 100%);
+      mask-image: linear-gradient(to left, #000 70%, transparent 100%);
+    }
+
+    .about-text {
+      max-width: calc(50% - 2rem);
+    }
   }
 
   .journey {
@@ -862,9 +927,11 @@
 
 }
 
-/* A soft photographic accent that follows both existing colour themes. */
+/* A soft photographic accent that follows both existing colour themes. The
+   tint stays at 3%: any stronger and the grey text and the amber prices on it
+   drop below 4.5:1 contrast. */
 .graduation-groups {
-  background: color-mix(in srgb, var(--c-accent-photo) 8%, var(--c-bg));
+  background: color-mix(in srgb, var(--c-accent-photo) 3%, var(--c-bg));
   border: 1px solid color-mix(in srgb, var(--c-accent-photo) 25%, var(--c-line));
 }
 
@@ -966,4 +1033,9 @@
     color: var(--c-muted);
     margin-bottom: 0.125rem;
   }
+}
+
+@keyframes hero-scroll-nudge {
+  0%, 100% { transform: translateY(-2px); }
+  50% { transform: translateY(3px); }
 }

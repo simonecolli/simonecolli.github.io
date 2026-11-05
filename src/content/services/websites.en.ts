@@ -4,7 +4,7 @@ export const websitesEn: ServicePageContent = {
   heading: "Websites for professionals and small businesses",
   subtitle: "Working out which website you need, before what it costs.",
   intro: [
-    "\"I'd like a website, but I don't understand the difference between the types.\" I hear this often, and it's a fair question: a landing page, a showcase site, a portfolio and an online shop are different things, with different costs and timeframes. Here you'll find the differences in plain words and an indicative price for each.",
+    "\"I'd like a website, but I don't understand the difference between the types.\" I hear this often, and it's a fair question: a landing page, a showcase site, a portfolio and an online shop are different things, with different costs and timeframes. Here you'll find the differences in plain words. You'll find prices too, but they are not just a number: you are not paying only for the code, you are paying for the whole process, from the written proposals to going live, and you can check every step.",
     "And if you already have a website, it doesn't necessarily need rebuilding: a tune-up is often enough.",
   ],
   cta: "Write to me about a website",
@@ -14,6 +14,48 @@ export const websitesEn: ServicePageContent = {
   },
   whatsapp: "Hi Simone, I'm writing from your website about a website.",
   sections: [
+    {
+      id: "come-lavoro",
+      title: "How I work, and how you can check it",
+      blocks: [
+        {
+          kind: "steps",
+          items: [
+            {
+              term: "Analysis and written proposals",
+              text: "I look at your current website, if you have one, we talk about goals and clients, and you usually receive two or three alternatives, each with its price, what it includes and its limits.",
+              check: "you compare them item by item, and you can remove or add single parts.",
+            },
+            {
+              term: "Design built on your brand",
+              text: "a proposal made for your business, not a theme picked from a catalogue, with one round of revisions.",
+              check: "you see the proposal and correct it before development starts.",
+            },
+            {
+              term: "Development in a private preview",
+              text: "the website takes shape at a protected address that Google cannot see, with one round of checks.",
+              check: "you open it on your phone and your computer while I build it, and nothing goes live without your approval.",
+            },
+            {
+              term: "Going live",
+              text: "a light, fast website with the technical groundwork for Google. The old page addresses stay linked to the new ones (where possible), so you don't lose the visits from Google.",
+              check: "the old links keep leading to the right pages.",
+            },
+            {
+              term: "Payment in stages",
+              text: "a deposit on signing, then at each approved delivery.",
+              check: "you only pay for what you have already seen and approved.",
+            },
+            {
+              term: "Everything in your name",
+              text: "domain, hosting and Google accounts are in your name from the start, and once paid in full the website, its code and its content are yours.",
+              check: "you hold the access, you don't depend on me.",
+            },
+          ],
+        },
+        { kind: "callout", text: "I take on a few projects at a time to guarantee the highest quality." },
+      ],
+    },
     {
       id: "tipi",
       title: "Which website do you need?",
@@ -82,7 +124,7 @@ export const websitesEn: ServicePageContent = {
         },
         {
           kind: "p",
-          text: "Prices are starting prices: each package below says what the starting price includes. They do not include recurring fees and third-party services: hosting, domain, graphic design (logo and visual identity), privacy advice and policy texts, stock photos. Timeframes start once I have the deposit, the texts and the photos.",
+          text: "The prices and timeframes of the packages below are indicative, not final. Prices are starting prices, and each package says what the starting price includes. The cost and timeframe of your project are set case by case and written in the quote. Prices do not include recurring fees and third-party services: hosting, domain, graphic design (logo and visual identity), privacy advice and policy texts, stock photos. Timeframes start once I have the deposit, the texts and the photos.",
         },
       ],
     },
@@ -152,12 +194,12 @@ export const websitesEn: ServicePageContent = {
         { kind: "h3", text: "Extras" },
         {
           kind: "table",
-          columns: ["Item", "Price"],
+          columns: ["Item", "Indicative price"],
           rows: [
             ["An extra page", "from €100"],
             ["A page in another language, with the translation provided by you", "from €40 per page"],
             ["Admin panel to update events or news yourself", "from €500"],
-            ["Texts written by me, changes, extra rounds of revisions", "€50/hour"],
+            ["Texts written by me, changes, extra rounds of revisions", "by the hour or with prepaid hour packages"],
             ["Photos for the website", "half day from €400, full day from €650"],
           ],
         },
@@ -175,7 +217,6 @@ export const websitesEn: ServicePageContent = {
             { term: "Fast to load", text: "optimised images and lightweight pages." },
             { term: "Technical optimisation for Google", text: "titles and descriptions for every page, sitemap, the official address of every page (canonical), structured data, and languages linked to each other if the site has more than one." },
             { term: "Easy enquiries", text: "a clearly visible button, phone and email you can tap on a smartphone." },
-            { term: "Private preview", text: "you see the website online, at a protected address hidden from Google, before it goes live." },
             { term: "No tracking cookies unless they're needed", text: "if the site doesn't need them I don't add them, and there's no banner to manage, as with the Salso Running Club." },
             { term: "Other languages", text: "charged separately, among the extras." },
           ],
@@ -184,7 +225,7 @@ export const websitesEn: ServicePageContent = {
     },
     {
       id: "costi",
-      title: "What raises the price, and what's not included",
+      title: "What increases the price, and what is excluded from it",
       blocks: [
         { kind: "h3", text: "What raises the price" },
         {
@@ -196,7 +237,8 @@ export const websitesEn: ServicePageContent = {
             { text: "A section you update yourself." },
             { text: "Extra features: bookings, forms, newsletters, a private area." },
             { text: "Content to move from an old website, or from several." },
-            { text: "More rounds of revisions." },
+            { text: "A larger number of revisions." },
+            { text: "Tight delivery times (little time available)." },
           ],
         },
         { kind: "h3", text: "What's not included" },
@@ -214,11 +256,11 @@ export const websitesEn: ServicePageContent = {
         { kind: "h3", text: "After delivery" },
         {
           kind: "table",
-          columns: ["Item", "Cost", "What it includes"],
+          columns: ["Item", "Indicative cost", "What it includes"],
           rows: [
             ["Domain and hosting", "the provider's price", "In your name. If you already have hosting, the website stays there."],
             ["Monthly support", "from €150/month", "Automatic monitoring of the site, statistics (Google Analytics, Search Console, Google Business Profile) with a monthly report, backups, checks that the contact forms work, response within 1 working day. No automatic renewal."],
-            ["Content updates", "€50/hour", "New pages, products, news, texts. Prepaid hour packages are available too."],
+            ["Content updates", "by the hour or with prepaid hour packages", "New pages, products, news, texts."],
           ],
         },
       ],
@@ -241,12 +283,12 @@ export const websitesEn: ServicePageContent = {
             { term: "Company image", text: "a website and photos of products, workshop and team." },
           ],
         },
-        { kind: "links", items: [{ to: "/photography/", label: "See the photography" }] },
+        { kind: "links", items: [{ to: "/photography/", label: "See the photography", accent: "photo" }] },
       ],
     },
     {
       id: "lavori",
-      title: "Real work",
+      title: "Some real work",
       blocks: [
         {
           kind: "cases",
@@ -265,25 +307,6 @@ export const websitesEn: ServicePageContent = {
         },
       ],
     },
-    {
-      id: "come-lavoro",
-      title: "How I work",
-      blocks: [
-        {
-          kind: "steps",
-          items: [
-            { term: "Analysis and a meeting", text: "I look at your current website, if you have one, and we talk about goals and clients." },
-            { term: "Written proposals", text: "usually two or three alternatives, each with its price, what it includes and its limits. Single items can be removed or added." },
-            { term: "Design", text: "a design proposal, with one round of revisions." },
-            { term: "Development in preview", text: "you see the site at a protected address, with one round of checks before it goes live." },
-            { term: "Going live", text: "the old page addresses stay linked to the new ones, so you don't lose the visits from Google." },
-            { term: "Afterwards", text: "support continues if you need it. When the first months are included, the quote says so." },
-          ],
-        },
-        { kind: "p", text: "Payment is in stages: a deposit on signing, then at each approved delivery. Once paid in full, the website, its code and its content are yours." },
-        { kind: "callout", text: "I take on a few projects at a time to guarantee the highest quality." },
-      ],
-    },
   ],
   faqs: [
     {
@@ -296,7 +319,7 @@ export const websitesEn: ServicePageContent = {
     },
     {
       question: "Can I update it myself?",
-      answer: "It depends on the type. A showcase site rarely changes, and I can make the updates at €50 an hour or with a package of hours. If you often publish events or news, an admin panel to do it yourself can be added, from €500.",
+      answer: "It depends on the type. A showcase site rarely changes, and I can make the updates whenever you ask. If you often publish events or news, an admin panel to do it yourself can be added.",
     },
     {
       question: "Do you build online shops?",
@@ -317,6 +340,6 @@ export const websitesEn: ServicePageContent = {
   ],
   closing: {
     title: "Still not sure which website you need?",
-    text: "Tell me what you do and where your clients come from. I'll reply with the kind of website I'd recommend and a price, with no obligation.",
+    text: "Tell me what you do and where your clients come from. I'll reply with a written proposal on the kind of website I'd recommend and a price, with no obligation.",
   },
 };

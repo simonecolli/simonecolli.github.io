@@ -47,7 +47,7 @@ export const automationEn: ServicePageContent = {
               text: "Automatic confirmations, summaries, appointments that appear in the calendar by themselves, CSV files to pass data to other software, follow-up rules.",
               cases: [
                 { slug: "mgp-gestione-produzione", label: "MGP" },
-                { slug: "freelance-hub", label: "Freelance hub" },
+                { slug: "freelance-hub", label: "Freelance Hub" },
               ],
             },
             {
@@ -60,13 +60,13 @@ export const automationEn: ServicePageContent = {
               text: "Problems with too many variables to solve by hand: load plans, assignments, work scheduling. I've tackled them in production, in academia and in finance.",
               cases: [
                 { slug: "mgp-gestione-produzione", label: "MGP" },
-                { slug: "freelance-hub", label: "Freelance hub" },
+                { slug: "freelance-hub", label: "Freelance Hub" },
               ],
             },
             {
               title: "AI assistants, running locally",
               text: "Classifying requests, summarising, drafting replies, with models running on your server rather than on an external service.",
-              cases: [{ slug: "freelance-hub", label: "Freelance hub" }],
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
           ],
         },
@@ -117,13 +117,13 @@ export const automationEn: ServicePageContent = {
       blocks: [
         {
           kind: "p",
-          text: "An automation works on data and programs that change: I remain your point of contact if something changes or stops working. Monthly support from €150/month, changes at €50/hour.",
+          text: "An automation works on data and programs that change: I remain your point of contact if something changes or stops working. Monthly support from €150/month; changes are paid by the hour or with prepaid hour packages.",
         },
       ],
     },
     {
       id: "lavori",
-      title: "Real work",
+      title: "Some real work",
       blocks: [
         {
           kind: "cases",
@@ -135,7 +135,7 @@ export const automationEn: ServicePageContent = {
             },
             {
               slug: "freelance-hub",
-              label: "Freelance hub",
+              label: "Freelance Hub",
               text: "Follow-ups, notifications, calendar and email integrations, work scheduling with an optimisation service.",
             },
           ],
@@ -159,6 +159,6 @@ export const automationEn: ServicePageContent = {
   ],
   closing: {
     title: "What do you redo by hand every week?",
-    text: "Tell me about the task, how much time it takes and which programs or machines you work with. I'll reply with a proposal and an order of magnitude, with no obligation.",
+    text: "Tell me about the task, how much time it takes and which programs or machines you work with. I'll reply with a written proposal and a cost estimate, with no obligation.",
   },
 };

@@ -30,6 +30,9 @@ export interface CaseRef {
 export interface ListItem {
   term?: string;
   text: string;
+  // In a list of steps: what the client can see or test for themselves at
+  // that step, so the quality of the work is something they can check.
+  check?: string;
 }
 
 // One row of the comparison of site types. Price and timeframe come from the
@@ -60,7 +63,9 @@ export type Block =
   | { kind: "packages"; items: ServicePackage[] }
   | { kind: "cards"; items: { title: string; text: string; cases?: CaseRef[] }[] }
   | { kind: "cases"; items: (CaseRef & { text: string })[] }
-  | { kind: "links"; items: { to: string; label: string }[] };
+  // Links take the development accent; accent "photo" marks one that leads to
+  // the photography side, which reads in amber like the rest of that side.
+  | { kind: "links"; items: { to: string; label: string; accent?: "photo" }[] };
 
 export interface ServiceSection {
   id: string;

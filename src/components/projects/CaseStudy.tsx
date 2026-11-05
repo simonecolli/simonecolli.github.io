@@ -33,7 +33,7 @@ function Blocks({ blocks }: { blocks: Block[] }) {
 
           case "h3":
             return (
-              <h3 key={index} className="text-lg font-medium mt-10 mb-4">
+              <h3 key={index} className="type-subsection-title mt-10 mb-4">
                 {block.text}
               </h3>
             );
@@ -71,10 +71,10 @@ export default function CaseStudy({ content }: { content: CaseStudyContent }) {
   const contentsLabel = t("projects.caseStudy.contents");
 
   return (
-    <div className="fade-in">
+    <div>
       <p className="text-sm text-muted mb-8">{content.facts.join(" \u00b7 ")}</p>
 
-      <div className="max-w-3xl">
+      <div>
         {content.lead.map((paragraph, index) => (
           <p key={index} className="type-lead text-muted mb-5">{paragraph}</p>
         ))}
@@ -109,10 +109,10 @@ export default function CaseStudy({ content }: { content: CaseStudyContent }) {
       </details>
 
       <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_15rem] lg:gap-16 lg:items-start">
-        <div className="max-w-3xl">
+        <div>
           {content.sections.map((section) => (
             <section key={section.id} id={section.id} className="scroll-mt-28 mb-16 last:mb-0">
-              <h2 className="text-2xl md:text-3xl font-light tracking-tight mb-4">
+              <h2 className="type-section-title mb-4">
                 {section.title}
               </h2>
               <div className="h-px bg-line w-12 mb-6" />

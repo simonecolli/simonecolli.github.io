@@ -4,7 +4,7 @@ export const websitesIt: ServicePageContent = {
   heading: "Siti web per professionisti e piccole attività",
   subtitle: "Capire che sito ti serve, prima ancora di quanto costa.",
   intro: [
-    "\"Vorrei un sito, ma non capisco la differenza tra i vari tipi.\" È una domanda che sento spesso, ed è giusta: landing page, sito vetrina, portfolio ed e-commerce sono cose diverse, con costi e tempi diversi. Qui trovi le differenze spiegate in modo semplice e un prezzo indicativo per ciascuna.",
+    "\"Vorrei un sito, ma non capisco la differenza tra i vari tipi.\" È una domanda che sento spesso, ed è giusta: landing page, sito vetrina, portfolio ed e-commerce sono cose diverse, con costi e tempi diversi. Qui trovi le differenze spiegate in modo semplice. Trovi anche i prezzi, ma non sono solo un numero: non paghi solo il codice, paghi tutto il percorso, dalle proposte scritte alla pubblicazione, e ogni passaggio lo puoi verificare.",
     "E se un sito ce l'hai già, non è detto che vada rifatto: spesso basta una messa a punto.",
   ],
   cta: "Scrivimi per un sito",
@@ -14,6 +14,48 @@ export const websitesIt: ServicePageContent = {
   },
   whatsapp: "Ciao Simone, ti scrivo dal sito per un sito web.",
   sections: [
+    {
+      id: "come-lavoro",
+      title: "Il mio metodo di lavoro, e come puoi verificarlo",
+      blocks: [
+        {
+          kind: "steps",
+          items: [
+            {
+              term: "Analisi e proposte scritte",
+              text: "guardo il sito che hai, se ce l'hai, parliamo di obiettivi e clienti, e ricevi di solito due o tre alternative, ognuna con il suo prezzo, cosa comprende e i suoi limiti.",
+              check: "le confronti voce per voce, e puoi togliere o aggiungere singole parti.",
+            },
+            {
+              term: "Grafica sul tuo marchio",
+              text: "una proposta pensata per la tua attività, non un tema preso da un catalogo, con un giro di revisione.",
+              check: "vedi la proposta e la correggi prima che inizi lo sviluppo.",
+            },
+            {
+              term: "Sviluppo in anteprima privata",
+              text: "il sito prende forma su un indirizzo protetto e invisibile a Google, con un giro di verifica.",
+              check: "lo apri dal tuo telefono e dal computer mentre lo costruisco, e niente va online senza il tuo ok.",
+            },
+            {
+              term: "Pubblicazione",
+              text: "un sito leggero e veloce, con le basi tecniche per Google. Gli indirizzi delle pagine vecchie restano collegati ai nuovi (quando possibile), così non perdi le visite da Google.",
+              check: "i vecchi link continuano a portare alle pagine giuste.",
+            },
+            {
+              term: "Pagamento a fasi",
+              text: "acconto alla firma, poi a ogni consegna approvata.",
+              check: "paghi solo quello che hai già visto e approvato.",
+            },
+            {
+              term: "Tutto intestato a te",
+              text: "dominio, hosting e account Google sono a tuo nome fin dall'inizio, e al saldo sito, codice e contenuti sono tuoi.",
+              check: "gli accessi li hai tu, non dipendi da me.",
+            },
+          ],
+        },
+        { kind: "callout", text: "Seguo pochi progetti alla volta per garantire la massima qualità." },
+      ],
+    },
     {
       id: "tipi",
       title: "Che tipo di sito ti serve?",
@@ -76,13 +118,13 @@ export const websitesIt: ServicePageContent = {
               what: "Non è un sito ma uno strumento di lavoro: utenti, dati, calcoli, documenti.",
               fit: "Devi gestire clienti, ordini o processi, non solo presentarti.",
               pages: "-",
-              other: { text: "Vedi", to: "/development/gestionali-crm/", label: "Gestionali e CRM" },
+              other: { text: "Guarda", to: "/development/gestionali-crm/", label: "Gestionali e CRM" },
             },
           ],
         },
         {
           kind: "p",
-          text: "I prezzi sono a partire da: ogni pacchetto qui sotto dice cosa comprende il prezzo minimo. Non comprendono canoni e servizi di terzi: hosting, dominio, grafica (logo e identità visiva), consulenza e testi per la privacy, foto d'archivio. I tempi partono da quando ho acconto, testi e foto.",
+          text: "Prezzi e tempi dei pacchetti qui sotto sono indicativi, non definitivi. I prezzi sono \"a partire da\" e ogni pacchetto dice cosa comprende il prezzo minimo. Costo e tempi del tuo progetto li definiamo caso per caso e li trovi scritti nel preventivo. I prezzi non comprendono canoni e servizi di terzi: hosting, dominio, grafica (logo e identità visiva), consulenza e testi per la privacy, foto d'archivio. I tempi partono da quando ho acconto, testi e foto.",
         },
       ],
     },
@@ -152,12 +194,12 @@ export const websitesIt: ServicePageContent = {
         { kind: "h3", text: "Extra" },
         {
           kind: "table",
-          columns: ["Voce", "Prezzo"],
+          columns: ["Voce", "Prezzo indicativo"],
           rows: [
             ["Pagina in più", "da 100 €"],
             ["Pagina in un'altra lingua, con traduzione fornita da te", "da 40 € a pagina"],
             ["Pannello per aggiornare da solo eventi o novità", "da 500 €"],
-            ["Testi scritti da me, modifiche, giri di revisione in più", "50 €/ora"],
+            ["Testi scritti da me, modifiche, giri di revisione in più", "a ore o con pacchetti di ore prepagati"],
             ["Foto per il sito", "mezza giornata da 400 €, giornata da 650 €"],
           ],
         },
@@ -175,7 +217,6 @@ export const websitesIt: ServicePageContent = {
             { term: "Veloce da caricare", text: "immagini ottimizzate e pagine leggere." },
             { term: "Ottimizzazione tecnica per Google", text: "titoli e descrizioni per ogni pagina, sitemap, indirizzo ufficiale di ogni pagina (canonical), dati strutturati, e lingue collegate tra loro se il sito ne ha più di una." },
             { term: "Richieste di contatto facili", text: "pulsante ben visibile, telefono ed email cliccabili da smartphone." },
-            { term: "Anteprima privata", text: "il sito lo vedi online, su un indirizzo protetto e invisibile a Google, prima della pubblicazione." },
             { term: "Niente cookie di tracciamento se non servono", text: "se il sito non ne ha bisogno non li metto, e non c'è nessun banner da gestire, come per il Salso Running Club." },
             { term: "Altre lingue", text: "a parte, tra gli extra." },
           ],
@@ -184,7 +225,7 @@ export const websitesIt: ServicePageContent = {
     },
     {
       id: "costi",
-      title: "Cosa fa salire il prezzo, e cosa resta fuori",
+      title: "Cosa aumenta il prezzo, e cosa viene escluso dal prezzo",
       blocks: [
         { kind: "h3", text: "Cosa fa salire il prezzo" },
         {
@@ -196,7 +237,8 @@ export const websitesIt: ServicePageContent = {
             { text: "Un'area che aggiorni da solo." },
             { text: "Funzioni in più: prenotazioni, moduli, newsletter, area riservata." },
             { text: "Contenuti da trasferire da un sito vecchio o da più siti." },
-            { text: "Più giri di revisione." },
+            { text: "Maggior numero di revisioni." },
+            { text: "Tempi di consegna stretti (poco tempo a disposizione)." },
           ],
         },
         { kind: "h3", text: "Cosa non è compreso" },
@@ -214,11 +256,11 @@ export const websitesIt: ServicePageContent = {
         { kind: "h3", text: "Dopo la consegna" },
         {
           kind: "table",
-          columns: ["Voce", "Costo", "Cosa comprende"],
+          columns: ["Voce", "Costo indicativo", "Cosa comprende"],
           rows: [
             ["Dominio e hosting", "costo del fornitore", "Intestati a te. Se hai già un hosting, il sito resta lì."],
             ["Assistenza mensile", "da 150 €/mese", "Controllo automatico del sito, statistiche (Google Analytics, Search Console, scheda Google Business) con un report mensile, copia di sicurezza, verifica dei moduli di contatto, presa in carico entro 1 giorno lavorativo. Nessun rinnovo automatico."],
-            ["Aggiornamenti dei contenuti", "50 €/ora", "Nuove pagine, prodotti, novità, testi. Anche con pacchetti di ore prepagate."],
+            ["Aggiornamenti dei contenuti", "a ore o con pacchetti di ore prepagati", "Nuove pagine, prodotti, novità, testi."],
           ],
         },
       ],
@@ -241,12 +283,12 @@ export const websitesIt: ServicePageContent = {
             { term: "Immagine aziendale", text: "sito e foto di prodotti, reparto e team." },
           ],
         },
-        { kind: "links", items: [{ to: "/photography/", label: "Guarda le fotografie" }] },
+        { kind: "links", items: [{ to: "/photography/", label: "Guarda le fotografie", accent: "photo" }] },
       ],
     },
     {
       id: "lavori",
-      title: "Lavori reali",
+      title: "Alcuni lavori reali",
       blocks: [
         {
           kind: "cases",
@@ -265,25 +307,6 @@ export const websitesIt: ServicePageContent = {
         },
       ],
     },
-    {
-      id: "come-lavoro",
-      title: "Come lavoro",
-      blocks: [
-        {
-          kind: "steps",
-          items: [
-            { term: "Analisi e incontro", text: "guardo il sito che hai, se ce l'hai, e parliamo di obiettivi e clienti." },
-            { term: "Proposte scritte", text: "di solito due o tre alternative, ognuna con il suo prezzo, cosa comprende e i suoi limiti. Si possono togliere o aggiungere singole voci." },
-            { term: "Grafica", text: "una proposta grafica, con un giro di revisione." },
-            { term: "Sviluppo in anteprima", text: "vedi il sito su un indirizzo protetto, con un giro di verifica prima della pubblicazione." },
-            { term: "Pubblicazione", text: "gli indirizzi delle pagine vecchie restano collegati ai nuovi, così non perdi le visite da Google." },
-            { term: "Dopo", text: "se ti serve, l'assistenza continua. Quando i primi mesi sono compresi, lo trovi scritto nel preventivo." },
-          ],
-        },
-        { kind: "p", text: "Si paga a fasi: acconto alla firma, poi a ogni consegna approvata. Al saldo sito, codice e contenuti sono tuoi." },
-        { kind: "callout", text: "Seguo pochi progetti alla volta per garantire la massima qualità." },
-      ],
-    },
   ],
   faqs: [
     {
@@ -296,7 +319,7 @@ export const websitesIt: ServicePageContent = {
     },
     {
       question: "Posso aggiornarlo da solo?",
-      answer: "Dipende dal tipo. Un sito vetrina cambia di rado e gli aggiornamenti posso farli io, a 50 € l'ora o con un pacchetto di ore. Se pubblichi spesso eventi o novità, si può aggiungere un pannello per farlo da solo, da 500 €.",
+      answer: "Dipende dal tipo. Un sito vetrina cambia di rado e gli aggiornamenti posso farli io, quando me li chiedi. Se pubblichi spesso eventi o novità, si può aggiungere un pannello per farlo da solo.",
     },
     {
       question: "Fai anche negozi online?",
@@ -317,6 +340,6 @@ export const websitesIt: ServicePageContent = {
   ],
   closing: {
     title: "Non sai ancora che sito ti serve?",
-    text: "Scrivimi cosa fai e da dove arrivano i tuoi clienti. Ti rispondo con il tipo di sito che consiglierei e un prezzo, senza impegno.",
+    text: "Scrivimi cosa fai e da dove arrivano i tuoi clienti. Ti rispondo con una proposta scritta sul tipo di sito che consiglierei e un prezzo, senza impegno.",
   },
 };

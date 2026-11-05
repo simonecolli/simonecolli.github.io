@@ -46,7 +46,7 @@ export default function ProjectDetailPage() {
       <main className="main-content pt-20">
         <section className="site-section">
           <div className="site-container">
-            <div className={`${caseStudy ? "max-w-6xl" : "max-w-4xl"} mx-auto fade-in`}>
+            <div>
               <Link
                 to="/projects/"
                 className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-dev transition-colors mb-8"
@@ -64,7 +64,7 @@ export default function ProjectDetailPage() {
                   </span>
                   <span className="text-xs text-muted">{project.year}</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-4">
+                <h1 className="type-hero-title mb-4">
                   {t(project.heading ?? project.title)}
                 </h1>
                 {project.heading && (
@@ -137,15 +137,15 @@ export default function ProjectDetailPage() {
               </div>
 
               {caseStudy && caseStudy.kind !== "publication" && (
-                <aside className="mt-16 border border-line rounded-lg p-8 md:p-10 max-w-3xl">
-                  <h2 className="text-2xl font-light tracking-tight mb-3">
+                <aside className="mt-16 border border-line rounded-lg p-8 md:p-10">
+                  <h2 className="type-section-title mb-3">
                     {caseStudy.contact?.title ?? t('projects.caseStudy.ctaTitle')}
                   </h2>
                   <p className="type-body text-muted mb-6">
                     {caseStudy.contact?.text ?? t('projects.caseStudy.ctaText')}
                   </p>
                   <div className="flex flex-wrap gap-3">
-                    <a href={devMail} className="btn btn-dev">
+                    <a href={devMail} className="btn btn-dev btn-solid">
                       {caseStudy.contact?.button ?? t('projects.caseStudy.ctaButton')}
                     </a>
                     <WhatsAppButton area="dev" />

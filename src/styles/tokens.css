@@ -4,7 +4,7 @@
   --c-fg: #242424;
   --c-muted: #696969;
   --c-accent-dev: #005CBA;
-  --c-accent-photo: #BF1920;
+  --c-accent-photo: #9E5600;
   --c-line: #D4D4D4;
 
   --c-bg-inv: #242424;
@@ -12,7 +12,7 @@
   --c-muted-inv: #8F8F8F;
   --c-accent-dev-inv: #4DB8FF;
 
-  --c-accent-photo-inv: #F05A60;
+  --c-accent-photo-inv: #F0A04B;
   --c-line-inv: #3D3D3D;
 
   --logo-mix: url("/assets/logo/logo-mix-light.svg");
@@ -33,14 +33,14 @@
   --c-muted: #8F8F8F;
   --c-accent-dev: #4DB8FF;
 
-  --c-accent-photo: #F05A60;
+  --c-accent-photo: #F0A04B;
   --c-line: #3D3D3D;
 
   --c-bg-inv: #EFEFEF;
   --c-fg-inv: #242424;
   --c-muted-inv: #696969;
   --c-accent-dev-inv: #005CBA;
-  --c-accent-photo-inv: #BF1920;
+  --c-accent-photo-inv: #9E5600;
   --c-line-inv: #D4D4D4;
 
   --logo-mix: url("/assets/logo/logo-mix-dark.svg");

@@ -57,7 +57,7 @@ export default function PhotographyPage() {
                   className="w-[clamp(8rem,min(26vh,34vw),18rem)] h-[clamp(8rem,min(26vh,34vw),18rem)]"
                 />
               </div>
-              <div className="order-2 fade-in">
+              <div className="order-2">
                 <h1 className="font-display type-hero-title">
                   {t("photography.pageTitle")}
                 </h1>
@@ -75,13 +75,13 @@ export default function PhotographyPage() {
 
         <section className="site-section">
           <div className="site-container">
-            <h2 className="type-page-title mb-12">
+            <h2 className="type-section-title mb-12">
               {t("photography.infoTitle")}
             </h2>
             <div className="grid md:grid-cols-3 gap-6">
               {INFO.map((n) => (
                 <div key={n} className="site-card">
-                  <h3 className="text-lg font-medium mb-3">
+                  <h3 className="type-item-title mb-3">
                     {t(`photography.info${n}Title`)}
                   </h3>
                   <p className="text-muted leading-relaxed">
@@ -96,7 +96,7 @@ export default function PhotographyPage() {
         {Photos.length > 0 && (
           <section id="galleria" className="site-section scroll-mt-16">
             <div className="site-container">
-              <h2 className="type-page-title mb-6">
+              <h2 className="type-section-title mb-6">
                 {t("photography.galleryTitle")}
               </h2>
 
@@ -144,7 +144,7 @@ export default function PhotographyPage() {
 
         <section id="pacchetti" className="site-section scroll-mt-16">
           <div className="site-container">
-            <h2 className="type-page-title mb-6">
+            <h2 className="type-section-title mb-6">
               {t("photography.packagesTitle")}
             </h2>
             <p className="text-muted leading-relaxed mb-12">
@@ -158,7 +158,7 @@ export default function PhotographyPage() {
 
                 return (
                   <div key={pkg.id} className="site-card flex flex-col">
-                    <h3 className="text-xl font-medium">{t(pkg.title)}</h3>
+                    <h3 className="type-subsection-title">{t(pkg.title)}</h3>
                     <p className="text-sm text-muted mt-1">{t(pkg.subtitle)}</p>
                     <div className="h-px bg-line w-16 my-4" />
                     <ul className="space-y-2 flex-grow">
@@ -197,14 +197,14 @@ export default function PhotographyPage() {
         <section className="site-section">
           <div className="site-container">
             <div>
-              <h2 className="type-page-title mb-6">
+              <h2 className="type-section-title mb-6">
                 {t("photography.ctaTitle")}
               </h2>
               <p className="text-muted leading-relaxed mb-8">
                 {t("photography.ctaBody")}
               </p>
               <div className="flex flex-wrap gap-3">
-                <a href={photoMail} className="btn btn-photo">
+                <a href={photoMail} className="btn btn-photo btn-solid">
                   {t("photography.ctaButton")}
                 </a>
                 <WhatsAppButton area="photo" />

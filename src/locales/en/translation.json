@@ -18,36 +18,46 @@
     "name": "Simone Colli",
     "role": "M.Sc. in Computer Science",
     "devTitle": "Software development",
-    "devText": "Custom software for small and medium-sized businesses. I start from the way you work and make it faster and more reliable.",
+    "devText": "Custom software for professionals and small and medium-sized businesses. I start from the way you work and make it faster and more reliable.",
     "devCta": "Tell me about your problem",
     "devLink": "See a real case: MGP",
     "photoTitle": "Professional photographer",
-    "photoText": "A moment, forever. Sport, events and details: the moments that matter should last over time.",
-    "photoCta": "Ask for a quote",
-    "photoLink": "Services and packages"
+    "photoText": "A memory captured forever. Sport, events and details: the moments that matter should last over time.",
+    "photoCta": "Email me for a quote",
+    "photoLink": "Services and packages",
+    "scroll": "Scroll to the services"
   },
   "home": {
     "aboutMe": {
       "title": "About Me",
-      "description": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as a competitive athlete and a student. Today, those lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
+      "description": [
+        "Nice to meet you, I'm Simone: software developer and professional photographer. I work with professionals and small and medium-sized businesses: I build the software that makes their work simpler and the photos that tell their story.",
+        "Software development and photography seem like separate worlds; to me they complement each other. Code taught me precision and rigour, photography taught me to look at things the way a potential customer sees them.",
+        "A concrete example? If you need a website, you can have it with photos taken by the same person who guides you through the whole build. One point of contact, one consistent style from start to finish."
+      ],
       "cta": "My background",
       "imageAlt": "Portrait of Simone Colli"
     },
     "dev": {
-      "title": "Software development",
-      "text": "I design and build custom software for your business. Web applications, automation of repetitive procedures, automatic document generation, integration between systems. I cover the full cycle: requirements analysis, development, deployment and maintenance.",
+      "title": "A software solution for your business",
+      "sector": "Software development",
+      "text": "I build websites, business software and automations tailored to your business. I start from the way you work today, from the tasks you redo by hand and the data scattered across files and emails, and turn them into tools that save you time. After delivery, I remain your point of contact.",
       "cta": "Development services"
     },
     "photo": {
-      "title": "Professional photographer",
+      "title": "A memory captured forever",
+      "sector": "Photography",
       "text": "I shoot sport, events and details. Sixteen years of competitive artistic roller skating taught me to read a movement a moment before it happens, and that is where the shot comes from.",
       "cta": "Photography services",
-      "graduationLink": "Graduating? Explore the packages"
+      "graduationLink": "Graduating? See the packages"
     }
   },
   "footer": {
-    "description": "Freelance software developer and photographer. Custom software, and sport, event and detail photography.",
+    "description": "Software developer and professional photographer. Custom software, and sport, event and detail photography.",
     "socialLabel": "Social and contact",
+    "sitemap": "Site map",
+    "aboutColumn": "About",
+    "contact": "Contact",
     "vat": "VAT 03133540348",
     "legalStatus": "Professionista di cui alla Legge n. 4/2013",
     "photoCopyright": "All photographs are protected by copyright.",
@@ -160,11 +170,11 @@
         ],
         "price": "Individual ceremony coverage: starting from €100",
         "note": "Groups starting from €65 per person, for at least 5 graduates.",
-        "cta": "Explore graduation packages"
+        "cta": "See the graduation packages"
       }
     },
     "ctaTitle": "Let's talk",
-    "ctaBody": "Tell me what you need photographed, when and where. I reply with a written proposal and a price, with no obligation.",
+    "ctaBody": "Tell me what you need photographed, when and where. I'll reply with a written proposal and a price, with no obligation.",
     "ctaButton": "Email me for a quote"
   },
   "blog": {
@@ -174,17 +184,17 @@
   "notFound": {
     "pageTitle": "Page not found",
     "description": "This page doesn't exist, or it has moved. The link may be outdated.",
-    "browseProjects": "Browse projects"
+    "browseProjects": "See the projects"
   },
   "about": {
     "pageTitle": "About Me",
-    "bio1": "Hi, I'm Simone! I'm a freelance software developer and photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as a competitive athlete and a student. Today, those lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
+    "bio1": "Hi, I'm Simone! I'm a software developer and professional photographer, with a Master's degree in Computer Science from the University of Parma. My journey, both personal and academic, began as a child with artistic roller skating-a sport that taught me the values of resilience, discipline, and patience. Over the years, I learned the organizational skills needed to balance life as a competitive athlete and a student. Today, those lessons let me handle the rigor of technical work and the attention to detail I apply to my projects.",
     "bio2": "Throughout my academic and professional career, I have explored complex and diverse fields: from bioinformatics and parallel computing to artificial intelligence and cybersecurity. My experience spans from web development to operating system management and server environment configuration-areas that have given me a broad understanding of software infrastructure. I believe in the value of technical knowledge sharing, which is why I actively participate in open-source projects and community collaborations. My work today centers on LLM- and RAG-based systems and on-premise deployment.",
     "bio3": "The passion I dedicated to sport for many years led me back to where I grew up, but with a new perspective. My goal today is to immortalize athletic gestures and the emotion of competition through sports photography. Along the way, I also love capturing the most significant moments in people's lives, such as graduations and events, as well as the small details of nature.",
     "downloadCvEn": "Download CV (EN)",
     "downloadCvIt": "Download CV (IT)",
     "journey": "My Journey",
-    "skillsTitle": "Skills & Expertise",
+    "skillsTitle": "Skills and expertise",
     "skillsSecondary": "These too, when needed"
   },
   "common": {
@@ -215,7 +225,7 @@
   },
   "seo": {
     "home": {
-      "description": "Simone Colli - Freelance software developer and photographer in Parma and Salsomaggiore Terme, Italy. Custom software, sport, event and detail photography.",
+      "description": "Simone Colli - Software developer and professional photographer in Parma and Salsomaggiore Terme, Italy. Custom software, sport, event and detail photography.",
       "keywords": "Simone Colli, software developer, freelance software developer, custom software, bespoke software, web development, websites, business website, website for small business, SEO website, portfolio website, professional portfolio, mobile-first web design, mobile-first websites, mobile-friendly websites, responsive websites, responsive web design, web applications, custom management software, business automation, React, Python, C++, LLM, RAG, on-premise deployment, Parma, Salsomaggiore Terme, Fidenza, Piacenza, Reggio Emilia, Italy, photographer, event photographer, sports photographer, University of Parma",
       "title": "Software developer and photographer in Parma"
     },
@@ -234,7 +244,7 @@
       "title": "Sports photographer in Parma and Piacenza"
     },
     "about": {
-      "description": "About Simone Colli - Freelance software developer and photographer, M.Sc. in Computer Science from the University of Parma. Skills, journey, and CV.",
+      "description": "About Simone Colli - Software developer and professional photographer, M.Sc. in Computer Science from the University of Parma. Skills, journey, and CV.",
       "keywords": "Simone Colli, about, curriculum, skills, professional profile, software developer Parma, freelance developer Parma, photographer Salsomaggiore Terme, computer science graduate Parma, master's degree in computer science, University of Parma, bioinformatics, computational pangenomics, PLOS Computational Biology, LLM, RAG, on-premise deployment, freelance, Italy, Emilia-Romagna",
       "title": "Developer and photographer in Salsomaggiore"
     },
@@ -252,9 +262,9 @@
       "inactiveDescription": "Privacy and cookie notice for simonecolli.com: data controller, data collected, technical preferences, hosting, email and rights. Google Analytics is off."
     },
     "development": {
-      "description": "Custom software for SMEs in Parma, Piacenza and Reggio Emilia: web applications, process automation, constraint optimisation and deployment to production.",
+      "description": "Custom software for professionals and SMEs in Parma, Piacenza and Reggio Emilia: web applications, process automation and constraint optimisation.",
       "keywords": "custom software development, custom management software Parma, software for SMEs, business web applications, web application development, Excel quote automation, business process automation, production management software, work order management software, manufacturing production software, quote and job management software, truck load planning software, product configurator, bill of materials, Excel to web application, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, software developer Parma, software developer Piacenza, software developer Reggio Emilia, freelance developer, manufacturing software",
-      "title": "Custom software for SMEs in Parma & Piacenza"
+      "title": "Custom software for professionals and SMEs in Parma & Piacenza"
     },
     "graduation": {
       "description": "Graduation photos in Parma and on location: ceremony from €100, All Inclusive from €250, groups from €65 per person for at least 5 graduates.",
@@ -268,13 +278,13 @@
         "keywords": "website for professionals, small business website, showcase website price, landing page price, portfolio website, how much does a website cost, website tune-up, website redesign, web developer Parma"
       },
       "business": {
-        "title": "Custom business software and CRM for SMEs",
-        "description": "Custom business software and CRMs for SMEs and professionals: clients, quotes, orders and documents in one system, not Excel and email. Examples and costs.",
+        "title": "Custom business software and CRM for professionals and SMEs",
+        "description": "Custom business software and CRMs for professionals and SMEs: clients, quotes, orders and documents in one system, not Excel and email. Examples and costs.",
         "keywords": "custom business software, custom CRM, management software for SMEs, order management software, job management software, from Excel to business software, client portal, business web app"
       },
       "automation": {
-        "title": "Business process automation for SMEs",
-        "description": "Process automation for SMEs: documents generated automatically, programs that talk to each other, load planning and machine connectivity. Examples and costs.",
+        "title": "Process automation for professionals and SMEs",
+        "description": "Process automation for professionals and SMEs: automatic documents, programs that talk to each other, load planning and machine connectivity. Examples and costs.",
         "keywords": "business process automation, document automation, software integration, OPC-UA machine connectivity, truck load planning, load optimisation, Excel automation, Google Calendar integration"
       }
     }
@@ -282,11 +292,11 @@
   "data": {
     "projects": {
       "freelanceHub": {
-        "title": "Freelance hub",
+        "title": "Freelance Hub",
         "description": "A CRM and business tool for freelance work. I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 843 tests with a 100% coverage threshold enforced by the pipeline, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
         "shortDescription": "A CRM and business tool for freelancers: from first lead to payment in one place, with revenue forecasts and time planning, built with 843 automated tests.",
         "keywords": "freelance management system, freelance CRM, client management software for freelancers, freelance business automation, quotation and contract management, revenue forecasting, workload planning, self-hosted, local LLM, Ollama, custom software, management web application",
-        "seoTitle": "Freelance hub: a CRM for freelancers"
+        "seoTitle": "Freelance Hub: a CRM for freelancers"
       },
       "mgp": {
         "title": "MGP - Production management",
@@ -459,9 +469,9 @@
     "analyticsTitle": "Optional statistics with Google Analytics 4",
     "analyticsBody": "The purpose is to understand which content and services interest visitors and improve the website. The legal basis is your optional, revocable consent (GDPR Article 6(1)(a)). Google receives pseudonymous cookie identifiers, device and browser information, visited pages, referral information and interactions. Contact clicks are grouped by area, service and email/WhatsApp channel: we do not send email contents or prefilled WhatsApp messages. A click does not prove an enquiry was sent. The site does not request advertising features or ad personalisation. Without consent the Analytics tag is not loaded.",
     "storageTitle": "Cookies, preferences and retention",
-    "storageBody": "Your statistics choice is stored in your browser for six calendar months, with its date, expiry and notice version. Browsing alone does not renew it. The theme and i18nextLng preferences retain your theme and language until you delete them. After consent, _ga and _ga_* cookies distinguish browsers and sessions; the site sets a 180-day lifetime without automatic renewal. User and event data in Google Analytics are retained for 2 months, without resetting retention on new activity. Deletion follows Google’s monthly processing cycle. This limit does not apply to aggregated statistical reports, which remain available in the Analytics property while the controller maintains it.",
+    "storageBody": "Your statistics choice is stored in your browser for six calendar months, with its date, expiry and notice version. Browsing alone does not renew it. The theme and i18nextLng preferences retain your theme and language until you delete them. After consent, _ga and _ga_* cookies distinguish browsers and sessions; the site sets a 180-day lifetime without automatic renewal. User and event data in Google Analytics are retained for 2 months, without resetting retention on new activity. Deletion follows Google's monthly processing cycle. This limit does not apply to aggregated statistical reports, which remain available in the Analytics property while the controller maintains it.",
     "recipientsTitle": "Recipients and transfers",
-    "recipientsBody": "The controller accesses the statistics. The contractual provider of the standard service for Italy is Google Ireland Limited, processing data on the controller’s behalf under the linked data processing terms. Google LLC and other subprocessors listed by Google may be involved. The service may involve transfers outside the European Economic Area: covered transfers to certified US recipients rely on the EU-US Data Privacy Framework adequacy decision; other transfers rely on the safeguards in Google’s terms, including standard contractual clauses where applicable. You can consult the safeguards below or ask the controller for information.",
+    "recipientsBody": "The controller accesses the statistics. The contractual provider of the standard service for Italy is Google Ireland Limited, processing data on the controller's behalf under the linked data processing terms. Google LLC and other subprocessors listed by Google may be involved. The service may involve transfers outside the European Economic Area: covered transfers to certified US recipients rely on the EU-US Data Privacy Framework adequacy decision; other transfers rely on the safeguards in Google's terms, including standard contractual clauses where applicable. You can consult the safeguards below or ask the controller for information.",
     "choicesTitle": "Refusing and withdrawing consent",
     "choicesBody": "You can refuse statistics without losing access to content. Cookie preferences in the footer and on this page let you change your choice at any time. Rejecting after acceptance blocks new measurements, removes accessible Analytics cookies and reloads the page to deactivate code already loaded. Withdrawal does not affect the lawfulness of earlier processing or automatically delete previously transmitted data. Your choice is shared only between tabs of the same browser and origin.",
     "analyticsActive": "Optional statistics are activated only after your consent.",
@@ -470,10 +480,9 @@
     "analyticsInactiveBody": "Google Analytics is not active. No advance consent is requested for possible future activation. If activated, this notice will be updated and statistics can start only after an explicit choice.",
     "storageInactiveBody": "The theme and i18nextLng preferences are stored in your browser until website data are cleared, to remember your theme and language. Previous cookie choices may remain for their remaining lifetime and can be removed by clearing website data. The site does not set new Google Analytics cookies and removes accessible Analytics cookies when the page is opened.",
     "recipientsInactiveBody": "In this configuration no data are sent to Google Analytics. Processing necessary for GitHub Pages hosting and email or WhatsApp communications remains as described in the relevant sections. Google documentation links are provided for reference and do not load Analytics.",
-    "choicesInactiveBody": "Cookie preferences lets you check that statistics are disabled. You can delete technical preferences in your browser settings. Deleting them restores the website’s initial settings."
+    "choicesInactiveBody": "Cookie preferences lets you check that statistics are disabled. You can delete technical preferences in your browser settings. Deleting them restores the website's initial settings."
   },
   "contact": {
-    "title": "Let's talk",
     "text": "Two activities, two addresses. Write to the right one and I will get back to you.",
     "devCta": "Email me about a software project",
     "photoCta": "Email me about a photo shoot",
@@ -510,22 +519,35 @@
         "title": "Company image",
         "text": "For companies: a website with photos of products, shop floor and team, to show what you really do."
       },
-      "websitesLink": "Which website do you need? Types and prices"
+      "sport": {
+        "title": "Race or tournament",
+        "text": "For sports clubs and athletes: action, technique and team photos, with quick delivery if you need to post straight away."
+      },
+      "events": {
+        "title": "Company event",
+        "text": "Conferences, presentations and company parties: the key moments, the speakers and the details of the set-up, ready for print and social media."
+      },
+      "celebrations": {
+        "title": "Party or anniversary",
+        "text": "Birthdays and anniversaries: details, portraits and group photos, in a gallery to share with family and guests."
+      },
+      "websitesLink": "Which website do you need? Types and prices",
+      "photoLink": "All photography services and packages"
     }
   },
   "development": {
     "pageTitle": "Custom software development",
-    "intro": "Web applications, automation and integration between systems, tailored to small and medium-sized businesses. Built around the way you work, to improve it.",
-    "servicesTitle": "What I do",
+    "intro": "Web applications, automation and integration between systems, tailored to professionals and to small and medium-sized businesses. Built around the way you work, to improve it.",
+    "servicesTitle": "What I work on",
     "howTitle": "How I work",
-    "howBody": "We start from a requirements analysis done together, with goals and constraints written down. From there we agree on a scope and you receive a written quote. I develop in verifiable increments, with automated tests and documented architectural decisions, so that by the end the code stays readable to someone who did not write it. After release I remain your point of contact for support, maintenance and new features: I follow the whole software lifecycle.",
+    "howBody": "It all starts with a conversation: you tell me how you work today, what wastes your time and where you would like to get to. From there I write down goals and constraints and usually propose a few alternatives, each with what it includes, its limits and its timeframe, so you choose knowing what you get. Then I build the project one piece at a time and show it to you along the way: you approve screens and rules before we move on, and automated tests check that what already works keeps working. After delivery I don't disappear: I remain your point of contact for support, fixes and new features.",
     "projectsTitle": "Selected projects",
     "projectsCta": "See all projects",
     "talksCta": "See the talks",
     "heroCta": "Tell me about your problem",
     "heroServices": "See the services",
     "contactTitle": "Got a project in mind?",
-    "contactBody": "Tell me what problem you need to solve, under what constraints and by when. I reply with a written proposal and an estimate, with no obligation.",
+    "contactBody": "Tell me what problem you need to solve, under what constraints and by when. I'll reply with a written proposal and a cost estimate, with no obligation.",
     "contactCta": "Let's talk about your project",
     "categories": {
       "websites": {
@@ -624,7 +646,7 @@
     "heading": "Graduation photographer",
     "title": "Your milestones, captured forever.",
     "intro": "From the anticipation before your presentation to your laurel crown and hugs with loved ones: photographs that tell the story of your graduation day.",
-    "tagline": "Enjoy the moment. I’ll take care of the photographs.",
+    "tagline": "Enjoy the moment. I'll take care of the photographs.",
     "cta": "Check availability for your date",
     "back": "All photography services",
     "packagesTitle": "Your day, your package.",
@@ -658,7 +680,7 @@
     "groups": {
       "title": "Graduating together",
       "intro": "Same graduation session? Share your photographer.",
-      "body": "Coordinated coverage for your group, with time for everyone’s moments and portraits.",
+      "body": "Coordinated coverage for your group, with time for everyone's moments and portraits.",
       "people": "Graduates",
       "price": "Per person, starting from",
       "total": "Total, starting from",
@@ -670,7 +692,7 @@
     "includedTitle": "Included in every package",
     "benefits": [
       {
-        "title": "Let’s plan together",
+        "title": "Let's plan together",
         "body": "We discuss timings, locations and the moments you want to remember."
       },
       {
@@ -692,11 +714,11 @@
     "faqs": [
       {
         "question": "Do you travel to other cities and universities?",
-        "answer": "Yes! I can photograph your graduation in Parma, Padua or at another university. Tell me your venue and I’ll prepare a quote including any travel expenses, to be agreed before confirmation."
+        "answer": "Yes! I can photograph your graduation in Parma, Padua or at another university. Tell me your venue and I'll prepare a quote including any travel expenses, to be agreed before confirmation."
       },
       {
         "question": "How does group coverage work?",
-        "answer": "Tell me your group size, venue and scheduled times. We check the programme together to cover the presentations and each graduate’s photographs with family and friends."
+        "answer": "Tell me your group size, venue and scheduled times. We check the programme together to cover the presentations and each graduate's photographs with family and friends."
       },
       {
         "question": "Can you photograph the presentation?",
@@ -707,8 +729,8 @@
         "answer": "No. All successful, selected photographs and their editing are included in the price."
       }
     ],
-    "closingTitle": "You have the date. Let’s plan the photographs.",
-    "closingBody": "Tell me when and where you graduate, which package interests you and whether you’re booking alone or with other graduates.",
+    "closingTitle": "You have the date. Let's plan the photographs.",
+    "closingBody": "Tell me when and where you graduate, which package interests you and whether you're booking alone or with other graduates.",
     "mailSubject": "Graduation enquiry: {{package}}",
     "mailBody": "Hi Simone,\n\nGraduation date:\nUniversity and venue:\nScheduled times:\nNumber of graduates:\nPackage: {{package}}\nCelebration venue and time (if applicable):\n\n",
     "generic": "To be decided",
@@ -728,7 +750,7 @@
     "statusAccepted": "Current choice: statistics allowed. Closing with X withdraws consent.",
     "statusRejected": "Current choice: statistics not allowed.",
     "inactive": "Statistics are currently disabled. Google Analytics is not loaded and no new statistical cookies are set. Only preferences needed for the website to function remain active.",
-    "storageError": "Your browser could not save this choice. Statistics remain disabled on this page. You may be asked again; if you previously accepted, clear this website’s browser data to remove the old saved choice too.",
+    "storageError": "Your browser could not save this choice. Statistics remain disabled on this page. You may be asked again; if you previously accepted, clear this website's browser data to remove the old saved choice too.",
     "googleTerms": "Google data processing terms"
   },
   "structuredData": {
@@ -752,6 +774,7 @@
   },
   "services": {
     "back": "Software development",
+    "checkLabel": "How you can check:",
     "contents": "On this page",
     "from": "from {{price}}",
     "fromApprox": "from about {{price}}",
@@ -761,7 +784,7 @@
     "time": "Timeframe",
     "fit": "A good fit if",
     "limits": "Limits",
-    "packageCta": "Ask for a quote",
+    "packageCta": "Email me for a quote",
     "realExample": "Real example",
     "caseLink": "Read the case study",
     "faqTitle": "Frequently asked questions",

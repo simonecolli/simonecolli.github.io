@@ -38,7 +38,7 @@ export const personalWebsiteIt: CaseStudy = {
       id: "service-journeys",
       title: "Dal servizio alla richiesta di contatto",
       blocks: [
-        { kind: "p", text: "I progetti software possono avere una scheda sintetica oppure un case study con contesto, scelte e funzionamento. La pagina lunga include un indice laterale su desktop e un indice espandibile sui dispositivi piccoli, per rendere consultabili anche racconti tecnici articolati." },
+        { kind: "p", text: "I progetti software possono avere una scheda sintetica oppure un caso studio con contesto, scelte e funzionamento. La pagina lunga include un indice laterale su desktop e un indice espandibile sui dispositivi piccoli, per rendere consultabili anche racconti tecnici articolati." },
         { kind: "p", text: "Per la fotografia, la pagina lauree approfondisce una singola esigenza: confronta Proclamazione e All Inclusive, mette in evidenza la formula gruppi e riunisce servizi inclusi e domande frequenti. I prezzi sono presentati come importi di partenza, con le condizioni del servizio e delle trasferte." },
         { kind: "p", text: "I pulsanti aprono email precompilate con le informazioni utili per una prima risposta. Una richiesta software propone domande sul processo da migliorare; una richiesta laurea chiede data, sede, orari, gruppo e pacchetto. Due indirizzi separano le attività, mentre il pulsante nell'intestazione segue la sezione visitata." },
         { kind: "p", text: "La scelta delle email mantiene il sito senza un backend per i contatti. Comporta un limite esplicito: il visitatore deve usare un'applicazione di posta e il sito non può confermare che il messaggio sia stato inviato." },
@@ -48,7 +48,7 @@ export const personalWebsiteIt: CaseStudy = {
       id: "architecture",
       title: "React per l'interfaccia, HTML per ogni indirizzo",
       blocks: [
-        { kind: "p", text: "L'interfaccia è sviluppata con React e TypeScript, con Tailwind CSS per gli stili e Vite per la build. I componenti condivisi gestiscono intestazione, footer, schede e pagine di dettaglio. I dati dei progetti e i testi dei case study sono separati dalla presentazione." },
+        { kind: "p", text: "L'interfaccia è sviluppata con React e TypeScript, con Tailwind CSS per gli stili e Vite per la build. I componenti condivisi gestiscono intestazione, footer, schede e pagine di dettaglio. I dati dei progetti e i testi dei casi studio sono separati dalla presentazione." },
         { kind: "p", text: "Il sito è ospitato su GitHub Pages, che serve file statici. Per poter aprire direttamente un progetto da un link, la build genera un documento HTML per ogni rotta pubblicata. React prende poi in carico la navigazione nel browser. Questo passaggio è il prerendering: il contenuto iniziale esiste già nel file consegnato al visitatore." },
         { kind: "list", items: [
           { term: "Metadati per pagina", text: "titolo, descrizione, indirizzo canonico e dati per la condivisione sono associati al contenuto specifico e inseriti anche nell'HTML generato." },
@@ -62,7 +62,7 @@ export const personalWebsiteIt: CaseStudy = {
       id: "language-and-consent",
       title: "Lingue, risorse locali e statistiche facoltative",
       blocks: [
-        { kind: "p", text: "L'interfaccia e i case study sono disponibili in italiano e inglese. Le sezioni dei racconti mantengono gli stessi identificatori nelle due lingue. Ogni lingua ha i propri indirizzi: l'italiano alla radice, l'inglese sotto /en/. La build genera l'HTML di entrambe e ogni pagina dichiara la versione nell'altra lingua, così i motori di ricerca indicizzano le due separatamente." },
+        { kind: "p", text: "L'interfaccia e i casi studio sono disponibili in italiano e inglese. Le sezioni dei racconti mantengono gli stessi identificatori nelle due lingue. Ogni lingua ha i propri indirizzi: l'italiano alla radice, l'inglese sotto /en/. La build genera l'HTML di entrambe e ogni pagina dichiara la versione nell'altra lingua, così i motori di ricerca indicizzano le due separatamente." },
         { kind: "p", text: "I caratteri tipografici sono ospitati insieme al sito. L'integrazione GA4 è predisposta per caricare il tag solo dopo il consenso alle statistiche, con rifiuto e revoca accessibili dalle preferenze cookie. I consensi pubblicitari restano negati. I test automatici verificano anche scadenza della scelta, errori di salvataggio e blocco della raccolta negli ambienti locali." },
         { kind: "p", text: "Gli eventi del sito distinguono visite e clic di contatto tra sviluppo e fotografia, senza includere il contenuto dei messaggi precompilati. Il codice filtra i percorsi e rimuove query e frammenti dagli eventi manuali. Il collaudo del tag Google reale e dei dati ricevuti resta distinto dai test del codice." },
       ],
@@ -71,7 +71,7 @@ export const personalWebsiteIt: CaseStudy = {
       id: "outcome",
       title: "Cosa dimostra il progetto e come continua",
       blocks: [
-        { kind: "p", text: "Il risultato progettuale è un sito in cui servizi, esempi e contatti seguono percorsi coerenti, mantenendo una sola base tecnica e visiva. La pagina che stai leggendo usa lo stesso sistema di contenuti e componenti degli altri case study." },
+        { kind: "p", text: "Il risultato progettuale è un sito in cui servizi, esempi e contatti seguono percorsi coerenti, mantenendo una sola base tecnica e visiva. La pagina che stai leggendo usa lo stesso sistema di contenuti e componenti degli altri casi studio." },
         { kind: "p", text: "Il progetto mostra il lavoro necessario per passare da una presentazione professionale a un sito mantenibile: organizzare le informazioni, definire un linguaggio visivo, costruire le pagine e gestire la pubblicazione. Le verifiche di build e dei tipi controllano l'integrazione; i test mirati coprono i comportamenti più delicati della raccolta statistica." },
         { kind: "p", text: "L'evoluzione continua con contenuti fotografici e verifiche dell'esperienza reale. Non presento aumenti di traffico, contatti o prenotazioni come risultati acquisiti: per valutarli servono osservazioni nel tempo, e un clic su un indirizzo email rimane diverso da una richiesta ricevuta." },
       ],

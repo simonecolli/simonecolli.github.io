@@ -38,7 +38,7 @@ export default function DevelopmentPage() {
         <section className="site-section-compact relative">
           <div className="site-container">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div className="order-1 fade-in">
+              <div className="order-1">
                 <h1 className="font-mono type-hero-title">
                   {t("development.pageTitle")}
                 </h1>
@@ -47,7 +47,7 @@ export default function DevelopmentPage() {
                   {t("development.intro")}
                 </p>
                 <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mt-6">
-                  <a href={devMail} className="btn btn-dev">
+                  <a href={devMail} className="btn btn-dev btn-solid">
                     {t("development.heroCta")}
                   </a>
                   <a href="#servizi" className={linkClass}>
@@ -64,7 +64,7 @@ export default function DevelopmentPage() {
 
         <section id="servizi" className="site-section scroll-mt-16">
           <div className="site-container">
-            <h2 className="type-page-title mb-12">
+            <h2 className="type-section-title mb-12">
               {t("development.servicesTitle")}
             </h2>
             {/* One card per category page. The whole card is the link; the
@@ -72,7 +72,7 @@ export default function DevelopmentPage() {
             <div className="grid md:grid-cols-3 gap-6">
               {DEV_SERVICES.map(({ slug, id }) => (
                 <div key={slug} className="site-card relative flex flex-col">
-                  <h3 className="text-lg font-medium mb-3">
+                  <h3 className="type-item-title mb-3">
                     {t(`development.categories.${id}.title`)}
                   </h3>
                   <p className="text-muted leading-relaxed flex-grow">
@@ -84,7 +84,7 @@ export default function DevelopmentPage() {
                 </div>
               ))}
             </div>
-            <p className="leading-relaxed mt-8 max-w-3xl">
+            <p className="leading-relaxed mt-8">
               <strong className="font-medium">{t("services.clearPrices.title")}</strong>{" "}
               <span className="text-muted">{t("services.clearPrices.body")}</span>
             </p>
@@ -93,7 +93,7 @@ export default function DevelopmentPage() {
 
         <section className="site-section">
           <div className="site-container">
-            <h2 className="type-page-title mb-6">
+            <h2 className="type-section-title mb-6">
               {t("development.howTitle")}
             </h2>
             <p className="text-muted leading-relaxed">
@@ -104,7 +104,7 @@ export default function DevelopmentPage() {
 
         <section className="site-section">
           <div className="site-container">
-            <h2 className="type-page-title mb-12">
+            <h2 className="type-section-title mb-12">
               {t("development.projectsTitle")}
             </h2>
             <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -126,14 +126,14 @@ export default function DevelopmentPage() {
         <section className="site-section">
           <div className="site-container">
             <div>
-              <h2 className="type-page-title mb-6">
+              <h2 className="type-section-title mb-6">
                 {t("development.contactTitle")}
               </h2>
               <p className="text-muted leading-relaxed mb-8">
                 {t("development.contactBody")}
               </p>
               <div className="flex flex-wrap gap-3">
-                <a href={devMail} className="btn btn-dev">
+                <a href={devMail} className="btn btn-dev btn-solid">
                   {t("development.contactCta")}
                 </a>
                 <WhatsAppButton area="dev" />

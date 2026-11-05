@@ -8,8 +8,8 @@ export const salsoRunningClubIt: CaseStudy = {
   ],
   contact: {
     title: "Hai un club, un'associazione o una community da raccontare?",
-    text: "Raccontami come funziona il vostro gruppo, da dove arrivano le persone e cosa dovrebbero fare dopo aver visitato il sito. Se avete già un'identità visiva partiamo da quella; se lavorate con un designer, il sito lo costruiamo insieme.",
-    button: "Parliamo del vostro sito",
+    text: "Raccontami come funziona il tuo gruppo, da dove arrivano le persone e cosa dovrebbero fare dopo aver visitato il sito. Se hai già un'identità visiva partiamo da quella; se lavori con un designer, il sito lo costruiamo insieme.",
+    button: "Parliamo del tuo sito",
   },
   sections: [
     {

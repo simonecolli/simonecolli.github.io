@@ -32,7 +32,7 @@ export default function TalkDetailPage() {
       <main className="main-content pt-20">
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-4xl mx-auto fade-in">
+            <div>
               <Link
                 to="/talks/"
                 className="inline-flex items-center gap-2 text-sm text-muted hover:text-accent-dev transition-colors mb-8"
@@ -50,7 +50,7 @@ export default function TalkDetailPage() {
                   </span>
                   <span className="text-xs text-muted">{talk.year}</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-4">
+                <h1 className="type-hero-title mb-4">
                   {t(talk.title)}
                 </h1>
                 <div className="h-px bg-line w-24 mb-6"></div>

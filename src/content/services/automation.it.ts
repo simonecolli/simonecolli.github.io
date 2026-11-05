@@ -4,9 +4,9 @@ export const automationIt: ServicePageContent = {
   heading: "Automazione dei processi aziendali",
   subtitle: "Le operazioni ripetitive le fa il software. Le persone controllano il risultato.",
   intro: [
-    "Ci sono lavori che si ripetono uguali ogni giorno: copiare dati da un programma all'altro, rifare gli stessi documenti, mandare le stesse email, smistare file nelle cartelle, disegnare a mano un piano di carico. Li automatizzo, partendo dai dati che avete già e dagli strumenti che usate.",
+    "Ci sono lavori che si ripetono uguali ogni giorno: copiare dati da un programma all'altro, rifare gli stessi documenti, mandare le stesse email, smistare file nelle cartelle, disegnare a mano un piano di carico. Li automatizzo, partendo dai dati che hai già e dagli strumenti che usi.",
   ],
-  cta: "Raccontami cosa rifate a mano",
+  cta: "Raccontami cosa rifai a mano",
   mail: {
     subject: "Richiesta dal sito: automazione",
     body: "Ciao Simone,\n\nquale operazione ripetiamo a mano:\n\n\nquanto tempo ci porta via (al giorno o alla settimana):\n\n\ncon quali programmi o macchine:\n\n\nentro quando:\n\n",
@@ -47,7 +47,7 @@ export const automationIt: ServicePageContent = {
               text: "Conferme automatiche, riepiloghi, appuntamenti che compaiono da soli nel calendario, file CSV per passare i dati ad altri software, regole di follow-up.",
               cases: [
                 { slug: "mgp-gestione-produzione", label: "MGP" },
-                { slug: "freelance-hub", label: "Freelance hub" },
+                { slug: "freelance-hub", label: "Freelance Hub" },
               ],
             },
             {
@@ -60,13 +60,13 @@ export const automationIt: ServicePageContent = {
               text: "Problemi con troppe variabili per risolverli a mano: piani di carico, assegnazioni, pianificazione del lavoro. Li ho affrontati in produzione, in ambito universitario e finanziario.",
               cases: [
                 { slug: "mgp-gestione-produzione", label: "MGP" },
-                { slug: "freelance-hub", label: "Freelance hub" },
+                { slug: "freelance-hub", label: "Freelance Hub" },
               ],
             },
             {
               title: "Assistenti con l'AI, in locale",
-              text: "Classificare le richieste, riassumere, preparare bozze di risposta, con modelli eseguiti sul vostro server e non su un servizio esterno.",
-              cases: [{ slug: "freelance-hub", label: "Freelance hub" }],
+              text: "Classificare le richieste, riassumere, preparare bozze di risposta, con modelli eseguiti sul tuo server e non su un servizio esterno.",
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
           ],
         },
@@ -76,19 +76,19 @@ export const automationIt: ServicePageContent = {
       id: "costi",
       title: "Quanto costa",
       blocks: [
-        { kind: "p", text: "Dentro un gestionale, un'automazione è una voce del preventivo. Per darvi un'idea:" },
+        { kind: "p", text: "Dentro un gestionale, un'automazione è una voce del preventivo. Per darti un'idea:" },
         {
           kind: "table",
           columns: ["Automazione", "Prezzo indicativo"],
           rows: [
-            ["Email di conferma automatica, al cliente e a voi", "da 200 €"],
+            ["Email di conferma automatica, al cliente e a te", "da 200 €"],
             ["Riepilogo ogni mattina via email: chi passa, a che ora, cosa ritira", "da 250 €"],
             ["Sincronizzazione con Google Calendar", "da 350 €"],
           ],
         },
         {
           kind: "p",
-          text: "Da sola, su programmi o file che avete già (un report, un passaggio di dati tra due programmi, la generazione di documenti, l'ottimizzazione dei carichi, il collegamento ai macchinari), un'automazione ha un prezzo su preventivo: lo definisco dopo aver visto il processo.",
+          text: "Da sola, su programmi o file che hai già (un report, un passaggio di dati tra due programmi, la generazione di documenti, l'ottimizzazione dei carichi, il collegamento ai macchinari), un'automazione ha un prezzo su preventivo: lo definisco dopo aver visto il processo.",
         },
         { kind: "h3", text: "Cosa fa salire il prezzo" },
         {
@@ -107,7 +107,7 @@ export const automationIt: ServicePageContent = {
       blocks: [
         {
           kind: "p",
-          text: "Dipende dal processo, e preferisco non promettere numeri in astratto. Un esempio reale: in MGP il piano di carico passa da ore di disegno in AutoCAD a una proposta in 10-15 secondi, più l'inserimento dei dati e la revisione. Prima di iniziare stimiamo insieme quanto tempo vi porta via oggi l'operazione, così sapete cosa aspettarvi.",
+          text: "Dipende dal processo, e preferisco non promettere numeri in astratto. Un esempio reale: in MGP il piano di carico passa da ore di disegno in AutoCAD a una proposta in 10-15 secondi, più l'inserimento dei dati e la revisione. Prima di iniziare stimiamo insieme quanto tempo ti porta via oggi l'operazione, così sai cosa aspettarti.",
         },
       ],
     },
@@ -117,13 +117,13 @@ export const automationIt: ServicePageContent = {
       blocks: [
         {
           kind: "p",
-          text: "Un'automazione lavora su dati e programmi che cambiano: resto il riferimento se qualcosa cambia o smette di funzionare. Assistenza mensile da 150 €/mese, modifiche a 50 €/ora.",
+          text: "Un'automazione lavora su dati e programmi che cambiano: resto il riferimento se qualcosa cambia o smette di funzionare. Assistenza mensile da 150 €/mese; le modifiche si pagano a ore o con pacchetti di ore prepagati.",
         },
       ],
     },
     {
       id: "lavori",
-      title: "Lavori reali",
+      title: "Alcuni lavori reali",
       blocks: [
         {
           kind: "cases",
@@ -135,7 +135,7 @@ export const automationIt: ServicePageContent = {
             },
             {
               slug: "freelance-hub",
-              label: "Freelance hub",
+              label: "Freelance Hub",
               text: "Follow-up, notifiche, integrazioni con calendario ed email, pianificazione del lavoro con un servizio di ottimizzazione.",
             },
           ],
@@ -145,12 +145,12 @@ export const automationIt: ServicePageContent = {
   ],
   faqs: [
     {
-      question: "Dobbiamo cambiare i programmi che usiamo?",
-      answer: "Di solito no: si parte da quelli che avete e si collegano. Se un programma non permette di leggere o scrivere i dati, lo vediamo nell'analisi.",
+      question: "Devo cambiare i programmi che uso?",
+      answer: "Di solito no: si parte da quelli che hai e si collegano. Se un programma non permette di leggere o scrivere i dati, lo vediamo nell'analisi.",
     },
     {
-      question: "Le nostre macchine si possono collegare?",
-      answer: "Dipende dal macchinario: deve supportare un protocollo come OPC-UA. È la prima cosa da chiedere al costruttore, e posso aiutarvi a capire cosa chiedere.",
+      question: "Le mie macchine si possono collegare?",
+      answer: "Dipende dal macchinario: deve supportare un protocollo come OPC-UA. È la prima cosa da chiedere al costruttore, e posso aiutarti a capire cosa chiedere.",
     },
     {
       question: "Cosa succede se l'automazione si blocca?",
@@ -158,7 +158,7 @@ export const automationIt: ServicePageContent = {
     },
   ],
   closing: {
-    title: "Cosa rifate a mano ogni settimana?",
-    text: "Raccontami l'operazione, quanto tempo vi porta via e con quali programmi o macchine lavorate. Ti rispondo con una proposta e un ordine di grandezza, senza impegno.",
+    title: "Cosa rifai a mano ogni settimana?",
+    text: "Raccontami l'operazione, quanto tempo ti porta via e con quali programmi o macchine lavori. Ti rispondo con una proposta scritta e una stima dei costi, senza impegno.",
   },
 };

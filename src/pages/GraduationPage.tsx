@@ -41,10 +41,10 @@ export default function GraduationPage() {
             <div className="mt-10 md:mt-16">
               <p className="text-sm tracking-widest text-accent-photo font-medium mb-5">{t("graduation.eyebrow")}</p>
               <h1 className="font-display type-hero-title">{t("graduation.heading")}</h1>
-              <p className="font-display type-page-title mt-4">{t("graduation.title")}</p>
+              <p className="font-display type-section-title mt-4">{t("graduation.title")}</p>
               <p className="type-lead text-muted mt-6">{t("graduation.intro")}</p>
               <p className="mt-4 font-medium">{t("graduation.tagline")}</p>
-              <a href={contact()} className="btn btn-photo mt-8">{t("graduation.cta")}</a>
+              <a href={contact()} className="btn btn-photo btn-solid mt-8">{t("graduation.cta")}</a>
             </div>
           </div>
         </section>
@@ -52,7 +52,7 @@ export default function GraduationPage() {
         {graduationPhotos.length > 0 && (
           <section className="site-section" aria-labelledby="graduation-gallery">
             <div className="site-container">
-              <h2 id="graduation-gallery" className="type-page-title mb-8">{t("graduation.galleryTitle")}</h2>
+              <h2 id="graduation-gallery" className="type-section-title mb-8">{t("graduation.galleryTitle")}</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {(showAllPhotos ? graduationPhotos : graduationPhotos.slice(0, 6)).map((photo) => (
                   <PhotoCard key={photo.id} photo={photo} onClick={() => setLightboxPhoto(photo)} />
@@ -69,7 +69,7 @@ export default function GraduationPage() {
 
         <section className="site-section" aria-labelledby="graduation-packages">
           <div className="site-container">
-            <h2 id="graduation-packages" className="type-page-title mb-8">{t("graduation.packagesTitle")}</h2>
+            <h2 id="graduation-packages" className="type-section-title mb-8">{t("graduation.packagesTitle")}</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {(["proclamation", "party"] as const).map((id) => {
                 const Icon = id === "proclamation" ? LuGraduationCap : LuPartyPopper;
@@ -77,7 +77,7 @@ export default function GraduationPage() {
                 return (
                   <article key={id} className="site-card flex flex-col">
                     <Icon className="text-accent-photo text-3xl mb-5" aria-hidden="true" />
-                    <h3 className="font-display text-3xl">{t(`graduation.${id}.title`)}</h3>
+                    <h3 className="font-display type-subsection-title">{t(`graduation.${id}.title`)}</h3>
                     <p className="mt-5"><span className="block text-sm text-muted mb-2">{t("graduation.startingFrom")}</span><span className="text-4xl md:text-5xl font-medium">{money(id === "proclamation" ? 100 : 250)}</span></p>
                     <p className="text-sm text-muted mt-2">{t("graduation.individual")}</p>
                     <p className="font-medium mt-6">{t(`graduation.${id}.duration`)}</p>
@@ -94,7 +94,7 @@ export default function GraduationPage() {
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
                 <div>
                   <FiUsers className="text-3xl text-accent-photo mb-4" aria-hidden="true" />
-                  <h3 id="graduation-groups" className="font-display text-3xl md:text-4xl">{t("graduation.groups.title")}</h3>
+                  <h3 id="graduation-groups" className="font-display type-subsection-title">{t("graduation.groups.title")}</h3>
                   <p className="text-xl font-medium mt-4">{t("graduation.groups.intro")}</p>
                   <p className="text-muted leading-relaxed mt-3">{t("graduation.groups.body")}</p>
                 </div>
@@ -108,7 +108,7 @@ export default function GraduationPage() {
               <a data-analytics-service="graduation_group" href={contact(t("graduation.groups.title"))} className="btn btn-photo mt-6">{t("graduation.groups.cta")}</a>
             </article>
             <div className="border-l-2 border-accent-photo pl-6 mt-8">
-              <h3 className="text-xl font-medium">{t("graduation.party.jointTitle")}</h3>
+              <h3 className="type-item-title">{t("graduation.party.jointTitle")}</h3>
               <p className="text-muted leading-relaxed mt-2">{t("graduation.party.jointBody")}</p>
               <a data-analytics-service="joint_party" href={contact(`${t("graduation.party.title")}, ${t("graduation.groups.title")}`)} className="inline-block text-accent-photo underline underline-offset-4 mt-3">{t("graduation.party.cta")}</a>
             </div>
@@ -117,25 +117,25 @@ export default function GraduationPage() {
 
         <section className="site-section">
           <div className="site-container">
-            <h2 className="type-page-title mb-10">{t("graduation.includedTitle")}</h2>
+            <h2 className="type-section-title mb-10">{t("graduation.includedTitle")}</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">{benefits.map(({title, body}, index) => {
               const Icon = BENEFIT_ICONS[index];
-              return <div key={title}><Icon className="text-3xl text-accent-photo mb-4" aria-hidden="true" /><h3 className="text-xl font-medium">{title}</h3><p className="text-muted leading-relaxed mt-3">{body}</p></div>;
+              return <div key={title}><Icon className="text-3xl text-accent-photo mb-4" aria-hidden="true" /><h3 className="type-item-title">{title}</h3><p className="text-muted leading-relaxed mt-3">{body}</p></div>;
             })}</div>
-            <div className="mt-12 pt-8 border-t border-line"><h3 className="text-xl font-medium">{t("graduation.pricesTitle")}</h3><p className="text-muted leading-relaxed mt-3">{t("graduation.pricesBody")}</p></div>
+            <div className="mt-12 pt-8 border-t border-line"><h3 className="type-subsection-title">{t("graduation.pricesTitle")}</h3><p className="text-muted leading-relaxed mt-3">{t("graduation.pricesBody")}</p></div>
           </div>
         </section>
 
         <section className="site-section">
           <div className="site-container">
-            <div><h2 className="type-page-title mb-8">{t("graduation.faqTitle")}</h2>
+            <div><h2 className="type-section-title mb-8">{t("graduation.faqTitle")}</h2>
               {faqs.map(({question, answer}) => <details key={question} className="border-b border-line py-5"><summary className="cursor-pointer text-lg font-medium">{question}</summary><p className="mt-4 text-muted leading-relaxed">{answer}</p></details>)}
             </div>
           </div>
         </section>
 
         <section className="site-section">
-          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-page-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4">{t("graduation.closingBody")}</p><div className="flex flex-wrap gap-3 mt-6"><a href={contact()} className="btn btn-photo">{t("graduation.cta")}</a><WhatsAppButton area="photo" message={t("contact.whatsapp.graduation")} /></div><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /></div></div>
+          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-section-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4">{t("graduation.closingBody")}</p><div className="flex flex-wrap gap-3 mt-6"><a href={contact()} className="btn btn-photo btn-solid">{t("graduation.cta")}</a><WhatsAppButton area="photo" message={t("contact.whatsapp.graduation")} /></div><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /></div></div>
         </section>
       </main>
       <Footer />

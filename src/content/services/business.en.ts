@@ -41,7 +41,7 @@ export const businessEn: ServicePageContent = {
             {
               title: "CRM",
               text: "Contacts, deals, clients and projects linked together: from the first contact to the accepted quote.",
-              cases: [{ slug: "freelance-hub", label: "Freelance hub" }],
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
             {
               title: "Job and production management",
@@ -55,10 +55,7 @@ export const businessEn: ServicePageContent = {
             {
               title: "Quotes, contracts and documents",
               text: "PDFs generated from the data already entered, without copying it into a template.",
-              cases: [
-                { slug: "mgp-gestione-produzione", label: "MGP" },
-                { slug: "freelance-hub", label: "Freelance hub" },
-              ],
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
             {
               title: "Configurable products",
@@ -68,7 +65,7 @@ export const businessEn: ServicePageContent = {
             {
               title: "Reports and forecasts",
               text: "Revenue, margins, estimated and worked hours, forecasts for the coming months.",
-              cases: [{ slug: "freelance-hub", label: "Freelance hub" }],
+              cases: [{ slug: "freelance-hub", label: "Freelance Hub" }],
             },
             {
               title: "Client area",
@@ -147,7 +144,7 @@ export const businessEn: ServicePageContent = {
             { text: "The number of processes and of user types." },
             { text: "An area for your clients, with logins and rules." },
             { text: "Documents and files to generate." },
-            { text: "Connections to other programs: calendar, email, accounting, machines." },
+            { text: "Connections to other software or systems: calendar, email, accounting, machines." },
             { text: "Data to recover from today's Excel files." },
           ],
         },
@@ -203,11 +200,11 @@ export const businessEn: ServicePageContent = {
             { term: "A conversation", text: "about today's process, its goals and constraints." },
             { term: "Written proposals", text: "usually three versions (base, intermediate, complete), each with what it includes, who it suits, its limits and timeframe." },
             { term: "Development", text: "screens and calculation rules to approve along the way, with one round of revisions included." },
-            { term: "Acceptance testing", text: "on delivery you have 7 days to try the system; I fix any malfunction at no cost." },
-            { term: "Going live", text: "support is added if you need it; when the first months are included, the quote says so." },
+            { term: "Acceptance testing", text: "on delivery you have an agreed number of days to try the system; I fix any malfunction at no cost." },
+            { term: "Going live", text: "support is added if you need it." },
           ],
         },
-        { kind: "p", text: "Payment is in stages: a deposit on signing, a part on delivery for testing, the balance at the end of acceptance testing." },
+        { kind: "p", text: "Payment is split into milestones agreed when we draw up the quote." },
       ],
     },
     {
@@ -218,7 +215,7 @@ export const businessEn: ServicePageContent = {
           kind: "list",
           items: [
             { term: "Monthly support, from €150/month", text: "automatic monitoring of the system, response within 1 working day, checks on backups and security updates, a monthly report with usage statistics." },
-            { term: "Changes and new features", text: "€50/hour, prepaid hour packages available too." },
+            { term: "Changes and new features", text: "paid by the hour or with prepaid hour packages." },
             { term: "Seasonal businesses", text: "support can pause out of season." },
             { term: "Without active support", text: "security updates are not guaranteed." },
           ],
@@ -227,7 +224,7 @@ export const businessEn: ServicePageContent = {
     },
     {
       id: "lavori",
-      title: "Real work",
+      title: "Some real work",
       blocks: [
         {
           kind: "cases",
@@ -239,7 +236,7 @@ export const businessEn: ServicePageContent = {
             },
             {
               slug: "freelance-hub",
-              label: "Freelance hub, CRM and management system for my own business",
+              label: "Freelance Hub, CRM and management system for my own business",
               text: "From the first contact to the project, from the work done to the payment, with forecasts for the coming months.",
             },
           ],
@@ -254,7 +251,7 @@ export const businessEn: ServicePageContent = {
     },
     {
       question: "Will we be able to change things ourselves?",
-      answer: "It depends on what changes most often. In MGP the company edits products, formulas and documents from tables, without touching the code. In an order management system you set capacity, prices, holidays and closures yourselves.",
+      answer: "It depends on what changes most often. In MGP the company edits products, formulas and documents from tables, without touching the code.",
     },
     {
       question: "Do we need to download an app?",
@@ -262,15 +259,15 @@ export const businessEn: ServicePageContent = {
     },
     {
       question: "How long does it take?",
-      answer: "From about 4 weeks for software covering one process, to 8-10 for one with a client area. Projects like MGP take longer and are built step by step.",
+      answer: "As a rough guide, from 4 weeks for software covering one process to 8-10 for one with a client area, while projects like MGP take longer and are built step by step. Bear in mind, though, that the timeline depends a lot on you too: how quickly you answer questions, try the screens and give me feedback.",
     },
     {
       question: "What if we need changes later?",
-      answer: "We make them, by the hour or with a package of prepaid hours. The code is written and documented so that it stays understandable even to someone who didn't write it.",
+      answer: "We make them, by the hour or with a package of prepaid hours.",
     },
   ],
   closing: {
     title: "How do you work today?",
-    text: "Tell me what you manage, with which tools and what you'd like to achieve. I'll reply with a written proposal and an order of magnitude of the costs, with no obligation.",
+    text: "Tell me what you manage, with which tools and what you'd like to achieve. I'll reply with a written proposal and a cost estimate, with no obligation.",
   },
 };

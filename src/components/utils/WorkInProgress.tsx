@@ -6,7 +6,7 @@ export default function WorkInProgress() {
   return (
     <section className="site-section">
       <div className="site-container">
-        <div className="max-w-2xl mx-auto">
+        <div>
           <div className="site-card text-center py-16">
             <div className="mb-6">
               <div className="w-16 h-16 mx-auto border-2 border-line rounded-full flex items-center justify-center">
@@ -25,7 +25,7 @@ export default function WorkInProgress() {
                 </svg>
               </div>
             </div>
-            <h2 className="text-2xl font-medium mb-4">
+            <h2 className="type-section-title mb-4">
               {t('common.workInProgress')}
             </h2>
             <p className="text-muted leading-relaxed mb-6">
