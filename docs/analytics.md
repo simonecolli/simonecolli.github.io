@@ -1,6 +1,6 @@
-# Google Analytics 4 — status and verification record
+# Google Analytics 4 - status and verification record
 
-**Record date:** 16 September 2026 · **Notice version:** `2026-09-16.2`
+**Record date:** 16 September 2026 - **Notice version:** `2026-09-16.2`
 
 ## 1. Release status
 

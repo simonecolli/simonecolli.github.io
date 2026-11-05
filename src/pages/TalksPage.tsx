@@ -23,11 +23,11 @@ export default function TalksPage() {
       <main className="main-content pt-20">
         <section className="site-section">
           <div className="site-container">
-            <div className="max-w-3xl mx-auto text-center fade-in">
-              <h1 className="text-4xl md:text-5xl font-light tracking-tight mb-6">
+            <div>
+              <h1 className="type-hero-title mb-6">
                 {t('talks.pageTitle')}
               </h1>
-              <div className="h-px bg-line w-24 mx-auto mb-6"></div>
+              <div className="h-px bg-line w-24 mb-6"></div>
               <p className="text-lg text-muted leading-relaxed">
                 {t('talks.pageDescription')}
               </p>
