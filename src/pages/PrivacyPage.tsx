@@ -11,6 +11,7 @@ const SECTIONS = [
   "controller",
   "data",
   "hosting",
+  "cloudflareAnalytics",
   "fonts",
   "email",
   "analytics",

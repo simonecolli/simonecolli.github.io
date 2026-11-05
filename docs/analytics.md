@@ -1,6 +1,52 @@
 # Google Analytics 4 - status and verification record
 
-**Record date:** 16 September 2026 - **Notice version:** `2026-09-16.2`
+**Record date:** 16 September 2026, revised 5 November 2026 - **Notice version:** `2026-11-05.1` (previously `2026-09-16.2`)
+
+## Revision history
+
+- **16 September 2026** - Notice version `2026-09-16.2`. Record created; the
+  verification in section 4 dates from this revision.
+- **29 September 2026** - WhatsApp contact buttons added. The notice was
+  extended (chat handled by WhatsApp Ireland Limited/Meta; contact clicks now
+  also carry the email/WhatsApp channel) but the version was not changed, so
+  consents recorded under `2026-09-16.2` covered a description without
+  WhatsApp.
+- **5 November 2026** - Notice version `2026-11-05.1`. The notice no longer
+  states that the language is stored in the browser: since the move to
+  `/en` routes the language comes from the URL only and `i18nextLng` is not
+  written; the browser keeps only `theme` and the consent record. The version
+  change also brings the 29 September additions under a version of their own.
+  Records from `2026-09-16.2` no longer authorise collection, so every visitor
+  is asked once again. Copies of the presented texts are in
+  `docs/privacy/2026-11-05.1.*.json`.
+  The same revision names Cloudflare: the domain's DNS is on Cloudflare with the
+  proxy active (`server: cloudflare`, `cf-ray`, Network Error Logging headers),
+  so every request passes through Cloudflare before GitHub Pages. On 5 November
+  2026 Cloudflare set no cookies and injected no scripts on the pages checked
+  from Italy (no Web Analytics beacon, email obfuscation or Rocket Loader). The
+  dashboard, read the same day, shows Bot Fight Mode, Email Address
+  Obfuscation, Rocket Loader and Zaraz off and Network Error Logging on, and
+  Web Analytics set to "Enable, excluding visitor data in the EU": according
+  to Cloudflare's documentation the beacon (`static.cloudflareinsights.com`,
+  reporting to `/cdn-cgi/rum`) is not injected for EU visitors, so only
+  visitors outside the EU receive it. The controller chose to keep it for the
+  statistics; it is not covered by the consent banner (Cloudflare injects it at
+  the edge, outside the site's code), so the notice describes it in its own
+  section ("Cloudflare statistics for visitors outside the European Union"):
+  collected fields, no client-side state for tracking according to Cloudflare,
+  aggregated reports, legitimate interest (Art. 6(1)(f)), 7 days of full data
+  then a reduced sample, six months of reports, and how to object. The
+  banner now says that rejecting continues "without Google Analytics" rather
+  than "without statistics". Not verified: the beacon source (the file could
+  not be fetched from the test environment) and whether Cloudflare's "EU"
+  also covers Norway, Iceland and Liechtenstein; both are for the legal
+  review. Enabling any further Cloudflare feature for visitors covered by the
+  notice requires a new notice version. The hosting section now
+  also lists the browsing data and its legal basis (Art. 6(1)(f)), and the
+  rights section states the one-month reply term and the complaint options.
+  The email section names the mail path: the domain's MX records point to
+  Cloudflare Email Routing, which forwards info.dev@ and dev@ to the development
+  Gmail inbox and info.photo@ and photo@ to the photography Gmail inbox.
 
 ## 1. Release status
 
@@ -35,9 +81,14 @@ not treated as a substitute for it.
 - Consent expires after six **calendar** months and is not renewed by an
   ordinary visit. Separately, GA cookies are set with a 180-day lifetime and no
   automatic refresh.
-- The choice is versioned (`2026-09-16.2`) and stored with its date and expiry;
+- The choice is versioned (`2026-11-05.1`) and stored with its date and expiry;
   records from earlier versions do not authorise new collection. No additional
   identifier is created for the consent record.
+- The banner is part of the prerendered HTML, so it paints with the page
+  instead of after hydration. An inline script in `index.html` hides it before
+  the first paint when any choice is stored; the client then checks the record
+  and shows the banner again if it is expired or from an earlier notice
+  version.
 - The choice is re-evaluated on storage events, window focus, `pageshow`, tab
   visibility changes, and on a timer.
 - Withdrawal sets the tag disable flag, removes the accessible GA cookies
@@ -68,13 +119,16 @@ application code can neither verify nor alter these administrative settings.
 
 | Item | Expected configuration | Status |
 | --- | --- | --- |
-| Property and data stream | G-BVG3YZR5C5 | ID confirmed by the controller |
-| User and event retention | 2 months; reset on new activity OFF | Confirmed by the controller |
-| Enhanced Measurement | OFF: page and contact events are handled by the site | Confirmed by the controller |
-| Google Ads and other advertising links | None | Confirmed by the controller |
-| Google Signals, user-provided data | OFF | To be verified |
-| Data sharing settings and account access | To be reviewed and minimised | To be verified |
-| Article 28 processing terms | Accepted on 22 November 2025 | Account text reported by the controller |
+| Property and data stream | G-BVG3YZR5C5 | Read in the admin UI on 5 November 2026 |
+| User and event retention | 2 months; reset on new activity OFF | Read in the admin UI on 5 November 2026 |
+| Enhanced Measurement | OFF: page and contact events are handled by the site | Read in the admin UI on 5 November 2026; email redaction ON |
+| Google Ads and other advertising links | None | Google Ads links: none (5 November 2026) |
+| Google Signals, user-provided data, User-ID | OFF | Read in the admin UI on 5 November 2026 |
+| Granular location and device data | ON | Kept by the controller; the notice now states approximate location (5 November 2026) |
+| Ad personalisation (property level) | Allowed in 307 of 307 regions | Left unchanged; no effect while ad signals are denied and no Ads link exists |
+| Data sharing settings | All OFF | Google products and services was already OFF; modelling contributions, technical support and business recommendations switched OFF at the controller's request on 5 November 2026 |
+| Account and property access | Controller only, as administrator | Read in the admin UI on 5 November 2026 |
+| Article 28 processing terms | Accepted on 22 November 2025 | Shown in Account details on 5 November 2026 |
 | Transfers | Recipients, DPF coverage or other applicable safeguards | To be verified |
 
 The two-month retention is a minimisation choice made by the controller, **not**
@@ -111,7 +165,7 @@ other code was altered, and the patched copy was discarded afterwards.
 | Scenario | Result |
 | --- | --- |
 | Before any choice | No request to Google, no `gtag`, no GA cookie; the tag disable flag is already set |
-| Prerendered HTML | The consent banner is absent from the static output |
+| Prerendered HTML | The consent banner was absent from the static output (since changed: it is now prerendered and hidden before paint when a choice is stored, see section 2) |
 | On acceptance | `consent default` (all denied) → `consent update` (only `analytics_storage` granted) → `js` → `config`, in that order; `gtag/js` requested exactly once |
 | Client-side navigation | One `page_view` per route; a repeated route is deduplicated; an unknown path is reduced to `/404`; area and referrer chain correct |
 | Contact clicks | Area, placement and service correct; the service allowlist is enforced; no message body or query string is transmitted |
@@ -167,9 +221,11 @@ before the live behaviour of the Google tag is considered verified.
 ## 6. Evidence and limitations
 
 The local record is a technical preference, not a consent database. The copies
-of the notice texts in `docs/privacy/2026-09-16.2.*.json` preserve the presented
-content alongside its version; the version and the copies should be updated
-whenever the processing changes materially. The administrative attestations and
+of the notice texts in `docs/privacy/<version>.*.json` (currently
+`2026-09-16.2` and `2026-11-05.1`) preserve the presented content alongside its
+version; the version and the copies should be updated whenever the processing
+or its description changes materially, and `POLICY_VERSION` in
+`src/lib/analytics.ts` must match the newest copy. The administrative attestations and
 the testing results should be retained with them. This document is not a legal
 certification of compliance.
 

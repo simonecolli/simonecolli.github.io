@@ -10,7 +10,7 @@ export const ANALYTICS_ENABLED = import.meta.env.VITE_ANALYTICS_ENABLED === "tru
 export const CONSENT_KEY = "analytics-consent-v2";
 export const PREFERENCES_EVENT = "open-cookie-preferences";
 export const CONSENT_EVENT = "analytics-consent-changed";
-export const POLICY_VERSION = "2026-09-16.2";
+export const POLICY_VERSION = "2026-11-05.1";
 const COOKIE_SECONDS = 180 * 24 * 60 * 60;
 export type Consent = {
   version: 2;
