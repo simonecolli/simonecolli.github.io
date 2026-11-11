@@ -1,4 +1,3 @@
-import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 import i18n from './i18n'
 import { AppRoutes } from './App.tsx'
@@ -14,6 +13,10 @@ export async function prerender(data: { url: string }) {
 
   startHeadCollection()
 
+  // Imported here, not at the top: Vite also bundles this file for the browser
+  // and every page preloads it, so a static import would ship the server
+  // renderer to every visitor.
+  const { renderToString } = await import('react-dom/server')
   const html = renderToString(
     <StaticRouter location={data.url}>
       <AppRoutes />

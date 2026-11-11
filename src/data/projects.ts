@@ -139,6 +139,7 @@ export const projects: Project[] = [
     github: "",
     demo: "https://salsorunningclub.simonecolli.com",
     year: "2026",
+    favourite: true,
   },
   {
     slug: "personal-website",
@@ -153,6 +154,7 @@ export const projects: Project[] = [
     github: "https://github.com/simonecolli/simonecolli.github.io",
     demo: "https://www.simonecolli.com",
     year: "2025-2026",
+    favourite: true,
   },
   {
     slug: "quantum-portfolio-optimization",
@@ -226,7 +228,6 @@ export const projects: Project[] = [
     github: "https://github.com/unipr-org",
     demo: "https://unipr-org.github.io/",
     year: "2023",
-    favourite: true,
   },
   {
     slug: "maze-project",
@@ -240,6 +241,5 @@ export const projects: Project[] = [
     github: "https://github.com/simonecolli/MazeProject",
     demo: "https://simonecolli.github.io/MazeProject/",
     year: "2022",
-    favourite: true,
   },
 ];

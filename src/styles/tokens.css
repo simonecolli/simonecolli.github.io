@@ -2,14 +2,15 @@
 [data-theme="light"] {
   --c-bg: #EFEFEF;
   --c-fg: #242424;
-  --c-muted: #696969;
+  /* Muted text must keep 4.5:1 on the bg-fg/5 tint of tags and cards, not only on the page background. */
+  --c-muted: #636363;
   --c-accent-dev: #005CBA;
   --c-accent-photo: #9E5600;
   --c-line: #D4D4D4;
 
   --c-bg-inv: #242424;
   --c-fg-inv: #EFEFEF;
-  --c-muted-inv: #8F8F8F;
+  --c-muted-inv: #999999;
   --c-accent-dev-inv: #4DB8FF;
 
   --c-accent-photo-inv: #F0A04B;
@@ -30,7 +31,7 @@
 [data-theme="dark"] {
   --c-bg: #242424;
   --c-fg: #EFEFEF;
-  --c-muted: #8F8F8F;
+  --c-muted: #999999;
   --c-accent-dev: #4DB8FF;
 
   --c-accent-photo: #F0A04B;
@@ -38,7 +39,7 @@
 
   --c-bg-inv: #EFEFEF;
   --c-fg-inv: #242424;
-  --c-muted-inv: #696969;
+  --c-muted-inv: #636363;
   --c-accent-dev-inv: #005CBA;
   --c-accent-photo-inv: #9E5600;
   --c-line-inv: #D4D4D4;
