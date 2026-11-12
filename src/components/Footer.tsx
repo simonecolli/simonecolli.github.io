@@ -67,6 +67,9 @@ export default function Footer() {
               <p className="text-sm text-muted-inv leading-relaxed max-w-md">
                 {t('footer.description')}
               </p>
+              <p className="text-sm text-muted-inv leading-relaxed max-w-md mt-3">
+                {t('footer.area')}
+              </p>
               <div role="group" aria-label={t('footer.socialLabel')} className="flex flex-wrap gap-4 mt-6">
                 {socialLinks.map((link, index) => (
                   <a

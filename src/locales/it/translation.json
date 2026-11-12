@@ -16,7 +16,7 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "role": "M.Sc. in Scienze Informatiche",
+    "role": "Software su misura e fotografia per professionisti e PMI",
     "devTitle": "Sviluppo software",
     "devText": "Software su misura per professionisti, piccole e medie imprese. Parto dal tuo metodo di lavoro e lo rendo più veloce e affidabile.",
     "devCta": "Raccontami il tuo problema",
@@ -54,6 +54,7 @@
   },
   "footer": {
     "description": "Sviluppatore software e fotografo professionista. Software su misura, e fotografia di sport, eventi e dettagli.",
+    "area": "Lavoro da Salsomaggiore Terme (PR): in presenza tra Parma e Piacenza, da remoto in tutta Italia. Trasferte anche di 2-3 giorni, con le spese a carico del cliente.",
     "socialLabel": "Social e contatti",
     "sitemap": "Mappa del sito",
     "aboutColumn": "Chi sono",
@@ -264,7 +265,7 @@
     "development": {
       "description": "Sviluppo software su misura per professionisti e PMI di Parma, Piacenza e Reggio Emilia: applicazioni web, automazione di processi e ottimizzazione.",
       "keywords": "sviluppo software su misura, software gestionale su misura Parma, software per PMI, applicazioni web aziendali, sviluppo applicazioni web, automazione Excel preventivi, automazione processi aziendali, gestionale produzione, software gestione commesse, software produzione manifattura, software preventivi e commesse, software piani di carico, configuratore prodotto, distinte base, integrazione Excel gestionale, integrazione OT IT, OPC-UA, ottimizzazione, MiniZinc, OR-Tools, sviluppatore software Parma, sviluppatore software Piacenza, sviluppatore software Reggio Emilia, sviluppatore freelance, software manifatturiero",
-      "title": "Software su misura per professionisti e PMI a Parma e Piacenza"
+      "title": "Software su misura per professionisti e PMI"
     },
     "graduation": {
       "description": "Servizi fotografici di laurea a Parma e in trasferta: Proclamazione da 100 €, All Inclusive da 250 €, gruppi da 65 € a persona con almeno 5 laureandi.",
@@ -315,7 +316,8 @@
         "title": "Salso Running Club",
         "description": "Il sito del running club di Salsomaggiore Terme: home, storia del club, come funzionano uscite ed eventi e un registro delle corse. Design, sviluppo e mantenimento sono miei; l'identità visiva - logo, colori, mascotte e social - è di Margherita Corinti. React e TypeScript con Tailwind CSS, una pagina prerenderizzata per ogni indirizzo, ospitato su Cloudflare, senza cookie né tracciamento.",
         "shortDescription": "Il sito del Salso Running Club di Salsomaggiore Terme: design e sviluppo in React, pagine statiche su Cloudflare, nessun cookie né tracciamento.",
-        "keywords": "sito running club, sito associazione sportiva, sito web Salsomaggiore Terme, sito web Parma, sviluppo sito web, React, TypeScript, Tailwind CSS, Cloudflare, Simone Colli"
+        "keywords": "sito running club, sito associazione sportiva, sito web Salsomaggiore Terme, sito web Parma, sviluppo sito web, React, TypeScript, Tailwind CSS, Cloudflare, Simone Colli",
+        "seoTitle": "Sito per un running club: Salso Running Club"
       },
       "personalWebsite": {
         "title": "Sito personale: sviluppo e fotografia",

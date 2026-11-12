@@ -6,6 +6,7 @@ import Back2Home from "../components/utils/Back2Home";
 import ProjectCard from "../components/utils/ProjectCard";
 import PlainAddress from "../components/utils/PlainAddress";
 import CaseHighlight from "../components/projects/CaseHighlight";
+import NodeGraph from "../components/home/NodeGraph";
 import SEO from "../components/SEO";
 import { FEATURED_CASE_SLUG, projects } from "../data/projects";
 import { DEV_EMAIL } from "../siteConfig";
@@ -35,8 +36,13 @@ export default function DevelopmentPage() {
       />
       <Header />
       <main className="main-content pt-20">
-        <section className="site-section-compact relative">
-          <div className="site-container">
+        {/* Same node graph as the home dev section, behind the opening. Desktop
+            only: once stacked, the nodes land on the text, which has no box. */}
+        <section className="site-section-compact relative overflow-hidden">
+          <div className="hidden lg:block">
+            <NodeGraph fade="left" />
+          </div>
+          <div className="site-container relative z-10">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               <div className="order-1">
                 <h1 className="font-mono type-hero-title">

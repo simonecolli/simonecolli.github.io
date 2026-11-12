@@ -16,7 +16,7 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "role": "M.Sc. in Computer Science",
+    "role": "Custom software and photography for professionals and SMEs",
     "devTitle": "Software development",
     "devText": "Custom software for professionals and small and medium-sized businesses. I start from the way you work and make it faster and more reliable.",
     "devCta": "Tell me about your problem",
@@ -54,6 +54,7 @@
   },
   "footer": {
     "description": "Software developer and professional photographer. Custom software, and sport, event and detail photography.",
+    "area": "Based in Salsomaggiore Terme (Parma, Italy): on site between Parma and Piacenza, remotely anywhere in Italy. Trips of 2-3 days are possible, with expenses paid by the client.",
     "socialLabel": "Social and contact",
     "sitemap": "Site map",
     "aboutColumn": "About",
@@ -264,7 +265,7 @@
     "development": {
       "description": "Custom software for professionals and SMEs in Parma, Piacenza and Reggio Emilia: web applications, process automation and constraint optimisation.",
       "keywords": "custom software development, custom management software Parma, software for SMEs, business web applications, web application development, Excel quote automation, business process automation, production management software, work order management software, manufacturing production software, quote and job management software, truck load planning software, product configurator, bill of materials, Excel to web application, OT IT integration, OPC-UA, optimization, MiniZinc, OR-Tools, software developer Parma, software developer Piacenza, software developer Reggio Emilia, freelance developer, manufacturing software",
-      "title": "Custom software for professionals and SMEs in Parma & Piacenza"
+      "title": "Custom software for professionals and SMEs"
     },
     "graduation": {
       "description": "Graduation photos in Parma and on location: ceremony from €100, All Inclusive from €250, groups from €65 per person for at least 5 graduates.",
@@ -278,7 +279,7 @@
         "keywords": "website for professionals, small business website, showcase website price, landing page price, portfolio website, how much does a website cost, website tune-up, website redesign, web developer Parma"
       },
       "business": {
-        "title": "Custom business software and CRM for professionals and SMEs",
+        "title": "Custom CRM and software for professionals and SMEs",
         "description": "Custom business software and CRMs for professionals and SMEs: clients, quotes, orders and documents in one system, not Excel and email. Examples and costs.",
         "keywords": "custom business software, custom CRM, management software for SMEs, order management software, job management software, from Excel to business software, client portal, business web app"
       },
@@ -315,7 +316,8 @@
         "title": "Salso Running Club",
         "description": "The website of the running club in Salsomaggiore Terme: home, the club's story, how runs and events work, and a log of past runs. Design, development and upkeep are mine; the visual identity - logo, colours, mascots and social media - is by Margherita Corinti. React and TypeScript with Tailwind CSS, one prerendered page per address, hosted on Cloudflare, with no cookies and no tracking.",
         "shortDescription": "The website of Salso Running Club in Salsomaggiore Terme: designed and built in React, static pages on Cloudflare, no cookies and no tracking.",
-        "keywords": "running club website, sports club website, website Salsomaggiore Terme, web development, React, TypeScript, Tailwind CSS, Cloudflare, Simone Colli"
+        "keywords": "running club website, sports club website, website Salsomaggiore Terme, web development, React, TypeScript, Tailwind CSS, Cloudflare, Simone Colli",
+        "seoTitle": "Running club website: Salso Running Club"
       },
       "personalWebsite": {
         "title": "Personal website: development and photography",

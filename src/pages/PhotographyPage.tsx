@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import SEO from "../components/SEO";
-import Logo from "../components/utils/Logo";
+import PhotoMosaic from "../components/home/PhotoMosaic";
 import PhotoCard from "../components/photography/PhotoCard";
 import Lightbox from "../components/photography/Lightbox";
 import PlainAddress from "../components/utils/PlainAddress";
@@ -48,16 +48,13 @@ export default function PhotographyPage() {
       <Header />
 
       <main className="main-content pt-20">
-        <section className="site-section-compact relative">
-          <div className="site-container">
+        {/* Same mosaic as the home photo section: the page opens on the photos. */}
+        <section className="site-section-compact relative overflow-hidden">
+          <PhotoMosaic fade="right" />
+          <div className="site-container relative z-10">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div className="flex justify-center order-1">
-                <Logo
-                  variant="photo"
-                  className="w-[clamp(8rem,min(26vh,34vw),18rem)] h-[clamp(8rem,min(26vh,34vw),18rem)]"
-                />
-              </div>
-              <div className="order-2">
+              <div className="hidden lg:block" />
+              <div className="rounded-lg border border-line bg-bg p-6 sm:p-8 lg:p-10 shadow-sm">
                 <h1 className="font-display type-hero-title">
                   {t("photography.pageTitle")}
                 </h1>

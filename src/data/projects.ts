@@ -130,6 +130,7 @@ export const projects: Project[] = [
     slug: "salso-running-club",
     service: "siti-web",
     title: "data.projects.salsoRunningClub.title",
+    seoTitle: "data.projects.salsoRunningClub.seoTitle",
     description: "data.projects.salsoRunningClub.description",
     shortDescription: "data.projects.salsoRunningClub.shortDescription",
     keywords: "data.projects.salsoRunningClub.keywords",
