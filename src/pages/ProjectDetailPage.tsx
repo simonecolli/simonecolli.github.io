@@ -151,6 +151,7 @@ export default function ProjectDetailPage() {
                     <WhatsAppButton area="dev" />
                   </div>
                   <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
+                  <p className="text-sm text-muted mt-2">{t("contact.reply.dev")}</p>
                   {relatedService && (
                     <Link
                       to={`/development/${relatedService.slug}/`}

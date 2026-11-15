@@ -360,6 +360,7 @@ export default function DevServicePage() {
                 <WhatsAppButton area="dev" message={content.whatsapp} service={service.id} />
               </div>
               <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
+              <p className="text-sm text-muted mt-2">{t("contact.reply.dev")}</p>
             </div>
           </div>
         </section>

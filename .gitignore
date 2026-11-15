@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Wrangler state and local secrets for the contact Worker
+.wrangler
+.dev.vars*

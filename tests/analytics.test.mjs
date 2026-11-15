@@ -143,6 +143,19 @@ test('development service labels are kept on dev contacts', () => {
   ]);
 });
 
+test('a sent form is a contact on the form channel, only with consent and known labels', () => {
+  const s = setup();
+  s.api.trackFormSent('dev', 'websites');
+  assert.equal(s.commands().filter(x => x[1] === 'contact_click').length, 0);
+  accept(s);
+  s.api.trackFormSent('dev', 'websites'); s.api.trackFormSent('photo'); s.api.trackFormSent('dev', 'mario@example.com');
+  const events = s.commands().filter(x => x[1] === 'contact_click').map(x => x[2]);
+  assert.deepEqual(Array.from(events, e => [e.area, e.service, e.channel, e.placement]), [
+    ['dev', 'websites', 'form', 'page'], ['photo', 'photography', 'form', 'page'], ['dev', 'software', 'form', 'page'],
+  ]);
+  assert.equal(JSON.stringify(events).includes('mario'), false);
+});
+
 test('contact events exclude mail contents and only allow known service labels', () => {
   const s = setup(); accept(s);
   for (const [email, service] of [['photo', 'party'], ['dev', 'private@example.org']]) {

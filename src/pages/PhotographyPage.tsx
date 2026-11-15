@@ -207,6 +207,7 @@ export default function PhotographyPage() {
                 <WhatsAppButton area="photo" />
               </div>
               <PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" />
+              <p className="text-sm text-muted mt-2">{t("contact.reply.photo")}</p>
             </div>
           </div>
         </section>

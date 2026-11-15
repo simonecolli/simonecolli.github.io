@@ -2,6 +2,7 @@ import { useEffect, useCallback, useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Photo } from "../../data/photography";
 import { responsivePhoto } from "../../lib/photos";
+import Spinner from "../utils/Spinner";
 
 interface LightboxProps {
   photo: Photo;
@@ -165,11 +166,7 @@ export default function Lightbox({ photo, photos, onClose, onNavigate }: Lightbo
         )}
 
         <div className="relative max-w-full max-h-[calc(100vh-8rem)] flex items-center justify-center">
-          {!isLoaded && (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-            </div>
-          )}
+          {!isLoaded && <Spinner className="w-8 h-8 border-white/20 border-t-white" />}
 
           <img
             {...responsivePhoto(photo.src, "100vw")}

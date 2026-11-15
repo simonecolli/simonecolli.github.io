@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { Photo } from "../../data/photography";
 import { responsivePhoto } from "../../lib/photos";
+import Spinner from "../utils/Spinner";
 
 // The gallery and graduation grids: one column, two from sm/md, three from lg.
 const CARD_SIZES = "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw";
@@ -33,12 +34,13 @@ export default function PhotoCard({ photo, onClick }: PhotoCardProps) {
       aria-label={`View photo: ${photo.alt}`}
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        {!isLoaded && !hasError && (
-          <div className="absolute inset-0 bg-fg/10 animate-pulse" />
-        )}
+        {!isLoaded && !hasError && <Spinner />}
 
         <img
           {...responsivePhoto(photo.src, CARD_SIZES)}
+          // A prerendered image can finish loading before React attaches
+          // onLoad; without this check its spinner would never go away.
+          ref={(img) => { if (img?.complete && img.naturalWidth) setIsLoaded(true); }}
           alt={photo.alt}
           loading="lazy"
           onLoad={() => setIsLoaded(true)}

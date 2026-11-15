@@ -1,0 +1,14 @@
+// Deployed apart from the site: `npx wrangler deploy` from this folder.
+// The two inboxes are secrets, never written here (the repository is public):
+//   npx wrangler secret put DEV_TO
+//   npx wrangler secret put PHOTO_TO
+// They must be destination addresses verified in Email Routing.
+{
+  "name": "simonecolli-contatto",
+  "main": "index.ts",
+  "compatibility_date": "2026-10-01",
+  "routes": [{ "pattern": "www.simonecolli.com/api/*", "zone_name": "simonecolli.com" }],
+  // Reachable only through the site's route, not on a workers.dev address.
+  "workers_dev": false,
+  "send_email": [{ "name": "EMAIL" }]
+}

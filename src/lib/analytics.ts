@@ -10,7 +10,7 @@ export const ANALYTICS_ENABLED = import.meta.env.VITE_ANALYTICS_ENABLED === "tru
 export const CONSENT_KEY = "analytics-consent-v2";
 export const PREFERENCES_EVENT = "open-cookie-preferences";
 export const CONSENT_EVENT = "analytics-consent-changed";
-export const POLICY_VERSION = "2026-11-05.1";
+export const POLICY_VERSION = "2026-11-15.1";
 const COOKIE_SECONDS = 180 * 24 * 60 * 60;
 export type Consent = {
   version: 2;
@@ -189,6 +189,24 @@ export function trackPage(path: string) {
   lastPath = clean;
 }
 
+// Only these labels reach Google; anything else falls back to the area's.
+function contactService(area: string, requested?: string) {
+  const known = ["proclamation", "party", "graduation_group", "joint_party", ...DEV_SERVICES.map(entry => entry.id)];
+  return requested && known.includes(requested)
+    ? requested : area === "dev" ? "software" : area === "photo" ? "photography" : "general";
+}
+
+// A form counts once the Worker has accepted it, not when the button is
+// pressed, so a failed send is not reported as a contact. Nothing typed into
+// the form is sent.
+export function trackFormSent(area: "dev" | "photo", service?: string) {
+  if (!canTrack()) return;
+  window.gtag?.("event", "contact_click", {
+    area, service: contactService(area, service), channel: "form", placement: "page",
+    page_location: `${SITE_URL}${safePath(location.pathname)}`,
+  });
+}
+
 export function trackContact(event: MouseEvent) {
   if (!canTrack() || !(event.target instanceof Element)) return;
   const link = event.target.closest("a");
@@ -201,10 +219,7 @@ export function trackContact(event: MouseEvent) {
     ? (requestedArea && ["dev", "photo", "shared"].includes(requestedArea) ? requestedArea : "shared")
     : address === `mailto:${DEV_EMAIL}` ? "dev" : address === `mailto:${PHOTO_EMAIL}` ? "photo" : null;
   if (!area) return;
-  const requestedService = link?.dataset.analyticsService;
-  const knownServices = ["proclamation", "party", "graduation_group", "joint_party", ...DEV_SERVICES.map(entry => entry.id)];
-  const service = requestedService && knownServices.includes(requestedService)
-    ? requestedService : area === "dev" ? "software" : area === "photo" ? "photography" : "general";
+  const service = contactService(area, link?.dataset.analyticsService);
   window.gtag?.("event", "contact_click", {
     area, service, channel: whatsapp ? "whatsapp" : "email",
     placement: link?.closest("header") ? "header" : link?.closest("footer") ? "footer" : "page",

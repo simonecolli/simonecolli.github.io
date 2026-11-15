@@ -14,6 +14,7 @@ const SECTIONS = [
   "cloudflareAnalytics",
   "fonts",
   "email",
+  "searchConsole",
   "analytics",
   "storage",
   "recipients",

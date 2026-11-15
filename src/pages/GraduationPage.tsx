@@ -135,7 +135,7 @@ export default function GraduationPage() {
         </section>
 
         <section className="site-section">
-          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-section-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4">{t("graduation.closingBody")}</p><div className="flex flex-wrap gap-3 mt-6"><a href={contact()} className="btn btn-photo btn-solid">{t("graduation.cta")}</a><WhatsAppButton area="photo" message={t("contact.whatsapp.graduation")} /></div><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /></div></div>
+          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-section-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4">{t("graduation.closingBody")}</p><div className="flex flex-wrap gap-3 mt-6"><a href={contact()} className="btn btn-photo btn-solid">{t("graduation.cta")}</a><WhatsAppButton area="photo" message={t("contact.whatsapp.graduation")} /></div><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /><p className="text-sm text-muted mt-2">{t("contact.reply.time")}</p></div></div>
         </section>
       </main>
       <Footer />

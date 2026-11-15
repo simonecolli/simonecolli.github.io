@@ -455,23 +455,25 @@
   },
   "privacy": {
     "pageTitle": "Informativa privacy e cookie",
-    "updated": "Ultimo aggiornamento: 5 novembre 2026",
+    "updated": "Ultimo aggiornamento: 15 novembre 2026",
     "controllerTitle": "Titolare del trattamento",
     "controllerBody": "Simone Colli, P. IVA 03133540348, professionista di cui alla Legge n. 4/2013. Per qualsiasi richiesta relativa ai tuoi dati puoi scrivere a info.dev@simonecolli.com.",
     "dataTitle": "Quali dati vengono raccolti",
-    "dataBody": "Il sito usa preferenze tecniche per il tema e per la scelta sui cookie; la lingua dipende solo dall'indirizzo della pagina e non viene salvata. Con il tuo consenso utilizza Google Analytics 4 per statistiche sulle pagine visitate e sui clic ai contatti, sia per lo sviluppo software sia per la fotografia. Per chi visita il sito da un Paese fuori dall'Unione europea, Cloudflare raccoglie anche statistiche aggregate senza cookie, descritte più sotto. Non sono presenti moduli di contatto: i pulsanti email aprono il tuo programma di posta; i pulsanti WhatsApp aprono una chat su WhatsApp, servizio esterno di Meta.",
+    "dataBody": "Il sito usa preferenze tecniche per il tema e per la scelta sui cookie; la lingua dipende solo dall'indirizzo della pagina e non viene salvata. Con il tuo consenso utilizza Google Analytics 4 per statistiche sulle pagine visitate e sui contatti tramite pulsanti e moduli, sia per lo sviluppo software sia per la fotografia. Per chi visita il sito da un Paese fuori dall'Unione europea, Cloudflare raccoglie anche statistiche aggregate senza cookie, descritte più sotto. I moduli di contatto inviano la richiesta come email, come descritto più sotto; i pulsanti email aprono il tuo programma di posta; i pulsanti WhatsApp aprono una chat su WhatsApp, servizio esterno di Meta.",
     "hostingTitle": "Hosting, rete e log tecnici",
     "hostingBody": "Il sito è ospitato su GitHub Pages (GitHub, Inc.) e le pagine arrivano al tuo browser passando dalla rete di Cloudflare (Cloudflare, Inc.), che fa da intermediario per velocità e protezione. Per consegnarti le pagine, questi fornitori trattano automaticamente i dati di navigazione: indirizzo IP, pagina richiesta, data e ora, esito della richiesta e informazioni su browser e sistema operativo. Se una pagina non si carica, il browser può inviare a Cloudflare una segnalazione tecnica dell'errore. Questi dati servono a far funzionare il sito e a proteggerlo da abusi; la base giuridica è il legittimo interesse a garantirne il funzionamento e la sicurezza (art. 6, par. 1, lett. f GDPR).",
     "cloudflareAnalyticsTitle": "Statistiche di Cloudflare per i visitatori fuori dall'Unione europea",
     "cloudflareAnalyticsBody": "Se visiti il sito da un Paese fuori dall'Unione europea, Cloudflare aggiunge alla pagina il proprio script di statistiche (Cloudflare Web Analytics, caricato da static.cloudflareinsights.com). A ogni pagina vista lo script misura i tempi di caricamento e invia a Cloudflare l'indirizzo della pagina senza parametri, il sito di provenienza, il Paese, il tipo di dispositivo, il browser e il sistema operativo. Secondo Cloudflare, non usa cookie né altri dati salvati nel browser per tracciare i visitatori, e nel pannello vedo solo dati aggregati. A chi visita il sito dall'Unione europea lo script non viene inviato. La finalità è capire come viene usato il sito e quanto velocemente si carica; la base giuridica è il legittimo interesse a misurarne l'uso e le prestazioni in forma aggregata (art. 6, par. 1, lett. f GDPR). Cloudflare conserva i dati completi per 7 giorni e poi ne tiene solo un campione ridotto; i report sono consultabili per gli ultimi sei mesi. Puoi opporti scrivendo all'indirizzo indicato sopra, oppure bloccare lo script con le impostazioni o le estensioni del browser.",
     "fontsTitle": "Font e risorse esterne",
     "fontsBody": "I caratteri tipografici sono ospitati direttamente su questo sito. Google Analytics viene caricato da Google solo dopo il consenso alle statistiche. Per chi visita il sito da un Paese fuori dall'Unione europea, Cloudflare aggiunge il proprio script di statistiche, descritto sopra. I collegamenti esterni si aprono su servizi soggetti alle rispettive informative.",
-    "emailTitle": "Comunicazioni via email e WhatsApp",
-    "emailBody": "Se mi scrivi via email o WhatsApp, tratterò il tuo indirizzo, numero di telefono o identificativo di contatto e il contenuto del messaggio per rispondere e per gestire l'eventuale rapporto professionale. Le email inviate agli indirizzi @simonecolli.com passano dal servizio di inoltro di Cloudflare e arrivano nelle mie caselle Gmail (Google), una per lo sviluppo e una per la fotografia, dove le conservo per il tempo necessario a gestire la richiesta e l'eventuale rapporto professionale. Aprendo WhatsApp esci da questo sito: la chat, il messaggio precompilato e gli eventuali dati tecnici sono gestiti da WhatsApp Ireland Limited/Meta secondo le rispettive informative. La base giuridica è l'esecuzione di misure precontrattuali e il legittimo interesse a rispondere.",
+    "emailTitle": "Comunicazioni via modulo, email e WhatsApp",
+    "emailBody": "Se mi scrivi con un modulo del sito, via email o WhatsApp, tratterò il tuo nome, il tuo indirizzo, numero di telefono o identificativo di contatto e il contenuto del messaggio per rispondere e per gestire l'eventuale rapporto professionale. Le email inviate agli indirizzi @simonecolli.com passano dal servizio di inoltro di Cloudflare e arrivano nelle mie caselle Gmail (Google), una per lo sviluppo e una per la fotografia, dove le conservo per il tempo necessario a gestire la richiesta e l'eventuale rapporto professionale. I messaggi inviati con i moduli passano da Cloudflare (Cloudflare Workers ed Email Service), che li recapita come email nelle stesse caselle. Aprendo WhatsApp esci da questo sito: la chat, il messaggio precompilato e gli eventuali dati tecnici sono gestiti da WhatsApp Ireland Limited/Meta secondo le rispettive informative. La base giuridica è l'esecuzione di misure precontrattuali e il legittimo interesse a rispondere.",
+    "searchConsoleTitle": "Analisi SEO con Google Search Console",
+    "searchConsoleBody": "Per l'analisi SEO dei siti che seguo uso Google Search Console in sola lettura, con l'accesso autorizzato dal titolare del sito. Leggo i dati sul rendimento nella ricerca e sull'indicizzazione, per esempio query, pagine, clic e impressioni, solo per preparare l'analisi e il report per quel sito. Non modifico nulla in Search Console e non cedo questi dati a nessuno: non li vendo e non li condivido con terzi.",
     "rightsTitle": "I tuoi diritti",
     "rightsBody": "Puoi chiedere accesso, rettifica, cancellazione, limitazione e opposizione al trattamento dei tuoi dati, e la loro portabilità quando applicabile, scrivendo all'indirizzo indicato sopra. Puoi revocare il consenso in qualsiasi momento, senza effetti sul trattamento svolto prima della revoca. La richiesta è gratuita, salvo richieste manifestamente infondate o eccessive, e rispondo entro un mese. Se ritieni che il trattamento non sia conforme al GDPR, puoi proporre reclamo al Garante per la protezione dei dati personali o all'autorità di controllo del Paese UE in cui vivi o lavori.",
     "analyticsTitle": "Statistiche facoltative con Google Analytics 4",
-    "analyticsBody": "La finalità è capire quali contenuti e servizi interessano ai visitatori e migliorare il sito. La base giuridica è il tuo consenso (art. 6, par. 1, lett. a GDPR), facoltativo e revocabile. Google riceve identificatori pseudonimi nei cookie, informazioni sul dispositivo e browser, la posizione approssimativa (fino al livello di città, ricavata dall'indirizzo IP, che Google Analytics non conserva), pagine visitate, provenienza e interazioni. I clic di contatto sono distinti per area, servizio e canale email/WhatsApp: il contenuto delle email e dei messaggi WhatsApp precompilati non viene inviato. Un clic non dimostra l'invio di una richiesta. Il sito non richiede funzionalità pubblicitarie o personalizzazione degli annunci. Senza consenso il tag Analytics non viene caricato.",
+    "analyticsBody": "La finalità è capire quali contenuti e servizi interessano ai visitatori e migliorare il sito. La base giuridica è il tuo consenso (art. 6, par. 1, lett. a GDPR), facoltativo e revocabile. Google riceve identificatori pseudonimi nei cookie, informazioni sul dispositivo e browser, la posizione approssimativa (fino al livello di città, ricavata dall'indirizzo IP, che Google Analytics non conserva), pagine visitate, provenienza e interazioni. I contatti sono distinti per area, servizio e canale (email, WhatsApp o modulo). Per email e WhatsApp viene registrato il clic, che non dimostra l'invio di una richiesta; per i moduli viene registrato solo l'invio riuscito. Il contenuto delle email, dei messaggi WhatsApp precompilati e dei moduli, compresi nome, email e telefono, non viene inviato a Google. Il sito non richiede funzionalità pubblicitarie o personalizzazione degli annunci. Senza consenso il tag Analytics non viene caricato.",
     "storageTitle": "Cookie, preferenze e conservazione",
     "storageBody": "La scelta sulle statistiche è conservata nel browser per sei mesi di calendario, insieme a data, scadenza e versione dell'informativa. Non viene rinnovata dalla semplice navigazione. La preferenza theme conserva il tema finché non la cancelli; la lingua non viene salvata, perché dipende dall'indirizzo della pagina. Dopo il consenso, i cookie _ga e _ga_* distinguono browser e sessioni; il sito imposta una durata di 180 giorni senza rinnovo automatico. I dati utente ed evento in Google Analytics sono conservati per 2 mesi, senza rinnovo del periodo a ogni nuova attività. La cancellazione viene elaborata secondo il ciclo mensile di Google. Questo limite non si applica ai report statistici aggregati, che rimangono disponibili nella proprietà Analytics finché questa viene mantenuta dal titolare.",
     "recipientsTitle": "Destinatari e trasferimenti",
@@ -479,7 +481,7 @@
     "choicesTitle": "Rifiuto e revoca del consenso",
     "choicesBody": "Puoi rifiutare le statistiche senza perdere l'accesso ai contenuti. Il pulsante Preferenze cookie, presente nel footer e in questa pagina, permette di cambiare scelta in qualsiasi momento. Rifiutando dopo aver accettato, il sito blocca le nuove misurazioni, elimina i cookie Analytics accessibili e ricarica la pagina per disattivare il codice già caricato. La revoca non pregiudica la liceità del trattamento precedente e non cancella automaticamente dati già trasmessi. La scelta è condivisa solo tra le schede dello stesso browser e della stessa origine.",
     "analyticsActive": "Le statistiche facoltative vengono attivate esclusivamente dopo il tuo consenso.",
-    "dataInactiveBody": "Il sito conserva nel browser la preferenza tecnica per il tema; la lingua dipende solo dall'indirizzo della pagina e non viene salvata. Google Analytics è disattivato. Per chi visita il sito da un Paese fuori dall'Unione europea, Cloudflare raccoglie statistiche aggregate senza cookie, descritte più sotto. Non sono presenti moduli di contatto: i pulsanti email aprono il tuo programma di posta; i pulsanti WhatsApp aprono una chat su WhatsApp, servizio esterno di Meta.",
+    "dataInactiveBody": "Il sito conserva nel browser la preferenza tecnica per il tema; la lingua dipende solo dall'indirizzo della pagina e non viene salvata. Google Analytics è disattivato. Per chi visita il sito da un Paese fuori dall'Unione europea, Cloudflare raccoglie statistiche aggregate senza cookie, descritte più sotto. I moduli di contatto inviano la richiesta come email, come descritto più sotto; i pulsanti email aprono il tuo programma di posta; i pulsanti WhatsApp aprono una chat su WhatsApp, servizio esterno di Meta.",
     "fontsInactiveBody": "I caratteri tipografici sono ospitati direttamente su questo sito. Non viene caricato il tag Google Analytics. Per chi visita il sito da un Paese fuori dall'Unione europea, Cloudflare aggiunge il proprio script di statistiche, descritto sopra. I collegamenti esterni portano a servizi con informative proprie.",
     "analyticsInactiveBody": "Il servizio Google Analytics non è attivo. Non viene chiesto un consenso preventivo per un'eventuale attivazione futura. Se il servizio verrà attivato, l'informativa verrà aggiornata e le statistiche potranno partire solo dopo una scelta esplicita.",
     "storageInactiveBody": "La preferenza theme è salvata nel browser fino alla cancellazione dei dati del sito e serve a ricordare il tema; la lingua non viene salvata, perché dipende dall'indirizzo della pagina. Eventuali precedenti scelte sui cookie possono restare nel browser per la loro durata residua e possono essere eliminate cancellando i dati del sito. Il sito non imposta nuovi cookie Google Analytics e rimuove quelli Analytics accessibili quando si apre la pagina.",
@@ -487,10 +489,15 @@
     "choicesInactiveBody": "Dal comando Preferenze cookie puoi verificare che le statistiche siano disattivate. Puoi cancellare le preferenze tecniche dalle impostazioni del browser. La cancellazione ripristina le impostazioni iniziali del sito."
   },
   "contact": {
-    "text": "Due attività, due indirizzi. Scrivi a quello giusto e ti rispondo.",
+    "text": "Scegli l'attività e scrivimi da qui.",
     "devCta": "Scrivimi per un progetto software",
     "photoCta": "Scrivimi per un servizio fotografico",
     "orWrite": "oppure scrivi direttamente a",
+    "reply": {
+      "time": "Rispondo entro 7 giorni lavorativi.",
+      "dev": "Rispondo entro 7 giorni lavorativi. La prima chiacchierata è gratuita perché mi serve per capire se e come posso aiutarti. Dura tra i 10 e i 30 minuti, al telefono o in videochiamata.",
+      "photo": "Rispondo entro 7 giorni lavorativi. Per eventi e servizi più impegnativi la prima chiacchierata è gratuita perché mi serve per capire se e come posso aiutarti. Dura tra i 10 e i 30 minuti, al telefono o in videochiamata."
+    },
     "whatsapp": {
       "cta": "Scrivimi su WhatsApp",
       "dev": "Ciao Simone, ti scrivo dal sito per un progetto software.",
@@ -510,7 +517,6 @@
       "title": "Qualche idea da cui partire",
       "cta": "Parliamone",
       "subject": "Richiesta dal sito: {{idea}}",
-      "body": "Ciao Simone,\n\nche attività ho:\n\n\ncosa mi servirebbe (sito, foto o entrambi):\n\n\nentro quando:\n\n",
       "opening": {
         "title": "Nuova apertura",
         "text": "Apri o rinnovi un'attività? Sito vetrina e foto del locale, dei prodotti e dell'inaugurazione, pronte anche per i social."
@@ -544,7 +550,7 @@
     "intro": "Applicazioni web, automazioni e integrazioni tra sistemi, su misura per professionisti, piccole e medie imprese. Costruite sul tuo modo di lavorare, per migliorarlo.",
     "servicesTitle": "Di cosa mi occupo",
     "howTitle": "Il mio metodo di lavoro",
-    "howBody": "Tutto parte da una chiacchierata: mi racconti come lavori oggi, cosa ti fa perdere tempo e dove vorresti arrivare. Da lì metto per iscritto obiettivi e vincoli e ti propongo di solito più alternative, ognuna con cosa comprende, i suoi limiti e i tempi, così scegli sapendo cosa ottieni. Poi costruisco il progetto un pezzo alla volta e te lo mostro lungo la strada: schermate e regole le approvi tu prima di andare avanti, e i test automatici controllano che quello che già funziona continui a funzionare. Dopo la consegna non sparisco: resto il tuo riferimento per assistenza, correzioni e nuove funzioni.",
+    "howBody": "Tutto parte da una chiacchierata gratuita, al telefono o in videochiamata: mi racconti come lavori oggi, cosa ti fa perdere tempo e dove vorresti arrivare. Da lì metto per iscritto obiettivi e vincoli e ti propongo di solito più alternative, ognuna con cosa comprende, i suoi limiti e i tempi, così scegli sapendo cosa ottieni. Poi costruisco il progetto un pezzo alla volta e te lo mostro lungo la strada: schermate e regole le approvi tu prima di andare avanti, e i test automatici controllano che quello che già funziona continui a funzionare. Dopo la consegna non sparisco: resto il tuo riferimento per assistenza, correzioni e nuove funzioni.",
     "projectsTitle": "Progetti in evidenza",
     "projectsCta": "Guarda tutti i progetti",
     "talksCta": "Guarda le presentazioni",
@@ -742,7 +748,7 @@
   },
   "cookies": {
     "title": "Statistiche del sito, solo se vuoi",
-    "body": "Uso Google Analytics per capire come vengono consultati i servizi di sviluppo e fotografia e quali pulsanti di contatto vengono usati. Google Analytics e i cookie statistici vengono caricati solo se accetti. Rifiutando o chiudendo con la X puoi continuare senza Google Analytics. Puoi cambiare scelta dalle preferenze cookie nel footer.",
+    "body": "Uso Google Analytics per capire come vengono consultati i servizi di sviluppo e fotografia e quali pulsanti e moduli di contatto vengono usati. Google Analytics e i cookie statistici vengono caricati solo se accetti. Rifiutando o chiudendo con la X puoi continuare senza Google Analytics. Puoi cambiare scelta dalle preferenze cookie nel footer.",
     "accept": "Accetta statistiche",
     "reject": "Rifiuta statistiche",
     "preferences": "Preferenze cookie",
@@ -797,5 +803,66 @@
       "body": "Ogni proposta descrive il lavoro e ha un prezzo definito, senza costi nascosti. Il lavoro è diviso in fasi, ciascuna verificabile."
     },
     "relatedLink": "Prezzi ed esempi: {{name}}"
+  },
+  "form": {
+    "name": "Nome e cognome",
+    "namePlaceholder": "Simone Colli",
+    "email": "Email",
+    "emailPlaceholder": "simone.colli@example.com",
+    "phone": "Telefono",
+    "phonePlaceholder": "+39 333 123 4567",
+    "optional": "facoltativo",
+    "sending": "Invio in corso…",
+    "sent": "Grazie, ho ricevuto la tua richiesta.",
+    "error": "Non sono riuscito a inviare il messaggio. Riprova, oppure scrivimi a {{email}}: quello che hai scritto è ancora qui.",
+    "privacy": "Uso questi dati solo per risponderti.",
+    "privacyLink": "Informativa privacy",
+    "homeSource": "Home",
+    "chooseArea": "Scegli l'attività",
+    "homeDevQuestion": {
+      "label": "Di cosa vorresti parlare insieme?",
+      "kind": "textarea",
+      "required": true,
+      "placeholder": "Es. sto aprendo un negozio e mi servono un sito e le foto del locale"
+    },
+    "dev": {
+      "source": "Sviluppo",
+      "questions": [
+        {
+          "label": "Cosa vorresti migliorare o automatizzare?",
+          "kind": "textarea",
+          "required": true,
+          "placeholder": "Es. preparo i preventivi a mano in Excel e ci perdo due ore al giorno"
+        },
+        {
+          "label": "Come lo gestite oggi?",
+          "kind": "textarea",
+          "placeholder": "Es. un file Excel condiviso, email e telefonate"
+        },
+        {
+          "label": "Entro quando ti servirebbe?",
+          "placeholder": "Es. entro marzo, oppure nessuna fretta"
+        }
+      ]
+    },
+    "photo": {
+      "source": "Fotografia",
+      "questions": [
+        {
+          "label": "Cosa vorresti fotografare?",
+          "kind": "textarea",
+          "required": true,
+          "placeholder": "Es. il torneo di pallavolo della mia società: foto d'azione e di squadra"
+        },
+        {
+          "label": "Data e luogo",
+          "placeholder": "Es. 12 aprile, palazzetto dello sport di Parma"
+        },
+        {
+          "label": "Durata indicativa",
+          "placeholder": "Es. mezza giornata, circa 4 ore"
+        }
+      ]
+    }
   }
 }

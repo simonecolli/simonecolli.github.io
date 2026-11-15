@@ -1,6 +1,6 @@
 # Google Analytics 4 - status and verification record
 
-**Record date:** 16 September 2026, revised 5 November 2026 - **Notice version:** `2026-11-05.1` (previously `2026-09-16.2`)
+**Record date:** 16 September 2026, revised 15 November 2026 - **Notice version:** `2026-11-15.1` (previously `2026-11-05.1`)
 
 ## Revision history
 
@@ -47,6 +47,28 @@
   The email section names the mail path: the domain's MX records point to
   Cloudflare Email Routing, which forwards info.dev@ and dev@ to the development
   Gmail inbox and info.photo@ and photo@ to the photography Gmail inbox.
+- **15 November 2026** - Notice version `2026-11-15.1`. Contact forms were
+  added on the home and development pages. A form posts to a Cloudflare Worker
+  (`worker/`, route `www.simonecolli.com/api/*`), which checks the fields and
+  sends them through Cloudflare Email Service to the Gmail inbox of the area,
+  development or photography, with the visitor's address as reply-to. The two
+  inboxes are Worker secrets, not written in the repository. The Worker stores
+  nothing itself and logs only the reason of a failed send; Cloudflare's own
+  sending logs and metrics were not reviewed. On a successful send the site
+  records a `contact_click` event with channel `form`, carrying area, an
+  allowlisted service label, placement and page; nothing typed into the form
+  is sent to Google. Email and WhatsApp clicks are unchanged. The notice now
+  names the forms and Cloudflare Workers and Email Service in the
+  communication section, describes the form channel in the Analytics section,
+  and adds a section on read-only Google Search Console access for SEO
+  analysis; the banner mentions forms next to buttons. The version change
+  brings the new event under a version of its own: records from `2026-11-05.1`
+  no longer authorise collection, so every visitor is asked once again.
+  Copies of the presented texts are in `docs/privacy/2026-11-15.1.*.json`.
+  Verified: `node --test tests/` (22 tests, including the form event with and
+  without consent and the service allowlist), lint, type check and build; test
+  requests through the deployed Worker reached both inboxes. Not verified: the
+  form event as received by Google (DebugView).
 
 ## 1. Release status
 
@@ -81,7 +103,7 @@ not treated as a substitute for it.
 - Consent expires after six **calendar** months and is not renewed by an
   ordinary visit. Separately, GA cookies are set with a 180-day lifetime and no
   automatic refresh.
-- The choice is versioned (`2026-11-05.1`) and stored with its date and expiry;
+- The choice is versioned (`2026-11-15.1`) and stored with its date and expiry;
   records from earlier versions do not authorise new collection. No additional
   identifier is created for the consent record.
 - The banner is part of the prerendered HTML, so it paints with the page
@@ -105,7 +127,9 @@ not treated as a substitute for it.
   `default` and the `update` command; Google Signals and ad personalisation are
   additionally disabled in the tag configuration.
 - Page and contact events distinguish the development and photography areas.
-  Mailto message bodies are never transmitted. Query strings, fragments and
+  Contact events carry the channel: email or WhatsApp for a click, form for a
+  submission the contact Worker has accepted. Mailto message bodies and
+  anything typed into a form are never transmitted. Query strings, fragments and
   paths outside the public catalogue are excluded from the manual events, and
   an external referrer is reduced to its origin.
 - The Italian and English notices distinguish the active and inactive states.
@@ -222,7 +246,7 @@ before the live behaviour of the Google tag is considered verified.
 
 The local record is a technical preference, not a consent database. The copies
 of the notice texts in `docs/privacy/<version>.*.json` (currently
-`2026-09-16.2` and `2026-11-05.1`) preserve the presented content alongside its
+`2026-09-16.2`, `2026-11-05.1` and `2026-11-15.1`) preserve the presented content alongside its
 version; the version and the copies should be updated whenever the processing
 or its description changes materially, and `POLICY_VERSION` in
 `src/lib/analytics.ts` must match the newest copy. The administrative attestations and

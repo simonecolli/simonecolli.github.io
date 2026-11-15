@@ -10,8 +10,8 @@ import NodeGraph from "../components/home/NodeGraph";
 import SEO from "../components/SEO";
 import { FEATURED_CASE_SLUG, projects } from "../data/projects";
 import { DEV_EMAIL } from "../siteConfig";
-import { useMailHref } from "../hooks/useMailHref";
 import WhatsAppButton from "../components/utils/WhatsAppButton";
+import ContactForm, { type FormQuestion } from "../components/utils/ContactForm";
 import { DEV_SERVICES } from "../data/devServices";
 
 // Built to the same shape as /photography, differing in title face, accent and
@@ -21,7 +21,6 @@ import { DEV_SERVICES } from "../data/devServices";
 // marks hover on the links.
 export default function DevelopmentPage() {
   const { t } = useTranslation();
-  const devMail = useMailHref("dev");
   const featured = projects.filter((project) => project.favourite);
   const linkClass = "text-sm font-medium text-accent-dev transition-colors";
 
@@ -53,7 +52,7 @@ export default function DevelopmentPage() {
                   {t("development.intro")}
                 </p>
                 <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mt-6">
-                  <a href={devMail} className="btn btn-dev btn-solid">
+                  <a href="#modulo" className="btn btn-dev btn-solid">
                     {t("development.heroCta")}
                   </a>
                   <a href="#servizi" className={linkClass}>
@@ -138,13 +137,17 @@ export default function DevelopmentPage() {
               <p className="text-muted leading-relaxed mb-8">
                 {t("development.contactBody")}
               </p>
-              <div className="flex flex-wrap gap-3">
-                <a href={devMail} className="btn btn-dev btn-solid">
-                  {t("development.contactCta")}
-                </a>
+              <ContactForm
+                area="dev"
+                source={t("form.dev.source")}
+                questions={t("form.dev.questions", { returnObjects: true }) as FormQuestion[]}
+                submitLabel={t("development.contactCta")}
+              />
+              <div className="flex flex-wrap gap-3 mt-8">
                 <WhatsAppButton area="dev" />
               </div>
               <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
+              <p className="text-sm text-muted mt-2">{t("contact.reply.dev")}</p>
             </div>
           </div>
         </section>

@@ -108,6 +108,9 @@ const prerenderRoutes = [
 ]
 
 export default defineConfig({
+  // In production the Worker answers /api on the same domain; locally it runs
+  // with `npx wrangler dev` from worker/.
+  server: { proxy: { '/api': 'http://localhost:8787' } },
   plugins: [
     react(),
     tailwindcss(),
