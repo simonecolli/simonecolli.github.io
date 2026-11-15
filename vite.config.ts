@@ -44,6 +44,30 @@ function sitemap(pages: string[]): Plugin {
   }
 }
 
+// RFC 9116: tells whoever finds a vulnerability where to report it. The RFC
+// wants Expires less than a year ahead; setting it 11 months from each build
+// renews it on every deploy and lets it lapse if the site is abandoned.
+function securityTxt(): Plugin {
+  return {
+    name: 'security-txt',
+    apply: 'build',
+    applyToEnvironment: (environment) => environment.name === 'client',
+    generateBundle() {
+      const expires = new Date()
+      expires.setUTCMonth(expires.getUTCMonth() + 11)
+      this.emitFile({
+        type: 'asset',
+        fileName: '.well-known/security.txt',
+        source:
+          'Contact: mailto:security@simonecolli.com\n' +
+          `Expires: ${expires.toISOString()}\n` +
+          'Preferred-Languages: it, en\n' +
+          `Canonical: ${SITE_URL}/.well-known/security.txt\n`,
+      })
+    },
+  }
+}
+
 // Vite copies `public/` into `dist` verbatim and macOS keeps recreating
 // .DS_Store in any folder opened in Finder, so deleting it once is not enough.
 function dropFinderJunk(): Plugin {
@@ -119,6 +143,7 @@ export default defineConfig({
       additionalPrerenderRoutes: prerenderRoutes,
     }),
     sitemap(pages.filter((page) => !noindexPages.has(page))),
+    securityTxt(),
     dropFinderJunk(),
     forceExit(),
   ],
