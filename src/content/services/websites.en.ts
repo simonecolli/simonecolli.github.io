@@ -8,9 +8,14 @@ export const websitesEn: ServicePageContent = {
     "And if you already have a website, it doesn't necessarily need rebuilding: a tune-up is often enough.",
   ],
   cta: "Write to me about a website",
-  mail: {
-    subject: "Enquiry from the website: website",
-    body: "Hi Simone,\n\nwhat my business does:\n\n\ndo I already have a website? (if so, its address):\n\n\nwhat kind of website I think I need (\"I don't know\" is fine):\n\n\nby when:\n\n",
+  form: {
+    source: "Website",
+    questions: [
+      { label: "When would you need it?", placeholder: "E.g. by March", half: true },
+      { label: "What does your business do?", kind: "textarea", required: true, placeholder: "E.g. a physiotherapy practice in Parma with two therapists" },
+      { label: "Do you already have a website?", placeholder: "E.g. yes, www.example.com, or no" },
+      { label: "What kind of website do you think you need?", placeholder: "E.g. a showcase with services and contacts; \"I don't know\" is fine too" },
+    ],
   },
   whatsapp: "Hi Simone, I'm writing from your website about a website.",
   sections: [

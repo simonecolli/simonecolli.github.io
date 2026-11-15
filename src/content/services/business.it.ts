@@ -8,9 +8,14 @@ export const businessIt: ServicePageContent = {
     "Si usano dal computer e dallo smartphone.",
   ],
   cta: "Raccontami come lavori oggi",
-  mail: {
-    subject: "Richiesta dal sito: gestionale o CRM",
-    body: "Ciao Simone,\n\ncosa gestiamo oggi e con quali strumenti (Excel, email, telefono, programmi…):\n\n\nquante persone lo userebbero:\n\n\ncosa vorremmo ottenere:\n\n\nentro quando:\n\n",
+  form: {
+    source: "Gestionale o CRM",
+    questions: [
+      { label: "Entro quando vi servirebbe?", placeholder: "Es. entro l'estate", half: true },
+      { label: "Cosa gestite oggi, e con quali strumenti?", kind: "textarea", required: true, placeholder: "Es. ordini e clienti su Excel, conferme via email e telefono" },
+      { label: "Quante persone lo userebbero?", placeholder: "Es. 5 in ufficio e 2 in magazzino" },
+      { label: "Cosa vorreste ottenere?", placeholder: "Es. sapere in ogni momento a che punto è ogni ordine" },
+    ],
   },
   whatsapp: "Ciao Simone, ti scrivo dal sito per un gestionale o un CRM.",
   sections: [

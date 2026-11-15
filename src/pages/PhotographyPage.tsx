@@ -1,40 +1,23 @@
 import Link from "../components/utils/LocalizedLink";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Back2Home from "../components/utils/Back2Home";
 import SEO from "../components/SEO";
 import PhotoMosaic from "../components/home/PhotoMosaic";
-import PhotoCard from "../components/photography/PhotoCard";
-import Lightbox from "../components/photography/Lightbox";
 import PlainAddress from "../components/utils/PlainAddress";
-import { Photos, type Photo } from "../data/photography";
-import { photoCategories } from "../data/photo_categories";
+import ContactForm, { type FormQuestion } from "../components/utils/ContactForm";
 import { photoPackages } from "../data/photoPackages";
-import { usePhotoFilter, type FilterValue } from "../hooks/usePhotoFilter";
-import { useMailHref } from "../hooks/useMailHref";
 import WhatsAppButton from "../components/utils/WhatsAppButton";
 import { PHOTO_EMAIL } from "../siteConfig";
 
 const INFO = [1, 2, 3] as const;
 
-// The gallery renders only while Photos has something in it, since an empty
-// array would leave a heading over an empty state; it comes back on its own
-// once the array is filled. The includes list is guarded because i18next
-// returns the key itself, not an array, when a key is missing.
+// The gallery has a page of its own, so this one stays short. The includes
+// list is guarded because i18next returns the key itself, not an array, when
+// a key is missing.
 export default function PhotographyPage() {
-  const { activeFilter, setActiveFilter, filteredPhotos } = usePhotoFilter(Photos);
-  const [lightboxPhoto, setLightboxPhoto] = useState<Photo | null>(null);
   const { t } = useTranslation();
-  const photoMail = useMailHref("photo");
-
-  const filterOptions: FilterValue[] = [
-    "All",
-    ...photoCategories.filter((category) =>
-      Photos.some((photo) => photo.category.includes(category)),
-    ),
-  ];
 
   return (
     <div className="app">
@@ -62,9 +45,14 @@ export default function PhotographyPage() {
                 <p className="type-lead text-muted">
                   {t("photography.intro")}
                 </p>
-                <a href="#pacchetti" className="btn btn-photo mt-6">
-                  {t("photography.heroCta")}
-                </a>
+                <div className="flex flex-wrap gap-3 mt-6">
+                  <a href="#pacchetti" className="btn btn-photo">
+                    {t("photography.heroCta")}
+                  </a>
+                  <Link to="/photography/gallery/" className="btn btn-neutral">
+                    {t("photography.galleryCta")}
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -89,55 +77,6 @@ export default function PhotographyPage() {
             </div>
           </div>
         </section>
-
-        {Photos.length > 0 && (
-          <section id="galleria" className="site-section scroll-mt-16">
-            <div className="site-container">
-              <h2 className="type-section-title mb-6">
-                {t("photography.galleryTitle")}
-              </h2>
-
-              <div className="flex flex-wrap gap-2 mb-12">
-                {filterOptions.map((filter) => (
-                  <button
-                    key={filter}
-                    onClick={() => setActiveFilter(filter)}
-                    className={`px-4 py-2 text-sm border rounded-full transition-all ${
-                      activeFilter === filter
-                        ? "bg-accent-photo text-bg border-accent-photo"
-                        : "border-line hover:border-accent-photo hover:text-accent-photo"
-                    }`}
-                    aria-pressed={activeFilter === filter}
-                  >
-                    {filter === "All" ? t("photography.filterAll") : t("photoCategories." + filter)}
-                  </button>
-                ))}
-              </div>
-
-              {filteredPhotos.length > 0 ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredPhotos.map((photo) => (
-                    <PhotoCard
-                      key={photo.id}
-                      photo={photo}
-                      onClick={() => setLightboxPhoto(photo)}
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-16">
-                  <p className="text-muted text-lg">{t("photography.noPhotos")}</p>
-                  <button
-                    onClick={() => setActiveFilter("All")}
-                    className="mt-4 px-6 py-2 text-sm border border-line rounded-full hover:border-fg hover:text-fg transition-all"
-                  >
-                    {t("photography.showAll")}
-                  </button>
-                </div>
-              )}
-            </div>
-          </section>
-        )}
 
         <section id="pacchetti" className="site-section scroll-mt-16">
           <div className="site-container">
@@ -200,10 +139,13 @@ export default function PhotographyPage() {
               <p className="text-muted leading-relaxed mb-8">
                 {t("photography.ctaBody")}
               </p>
-              <div className="flex flex-wrap gap-3">
-                <a href={photoMail} className="btn btn-photo btn-solid">
-                  {t("photography.ctaButton")}
-                </a>
+              <ContactForm
+                area="photo"
+                source={t("form.photo.source")}
+                questions={t("form.photo.questions", { returnObjects: true }) as FormQuestion[]}
+                submitLabel={t("photography.ctaButton")}
+              />
+              <div className="flex flex-wrap gap-3 mt-8">
                 <WhatsAppButton area="photo" />
               </div>
               <PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" />
@@ -216,15 +158,6 @@ export default function PhotographyPage() {
       </main>
 
       <Footer />
-
-      {lightboxPhoto && (
-        <Lightbox
-          photo={lightboxPhoto}
-          photos={filteredPhotos}
-          onClose={() => setLightboxPhoto(null)}
-          onNavigate={(photo) => setLightboxPhoto(photo)}
-        />
-      )}
     </div>
   );
 }

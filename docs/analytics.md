@@ -70,6 +70,22 @@
   without consent and the service allowlist), lint, type check and build; test
   requests through the deployed Worker reached both inboxes. Not verified: the
   form event as received by Google (DebugView).
+  After that version was published, forms also replaced the email buttons on
+  the photography and graduation pages. The graduation form's package choice
+  is sent as the service label of the form event, from the existing allowlist
+  (`proclamation`, `party`, `graduation_group`, `joint_party`); "to be decided"
+  falls back to `photography`. The gallery moved to its own page,
+  `/photography/gallery`, which was added to the measured routes as a photo
+  page. The notice describes forms and visited pages in general terms, so its
+  text and version did not change. Verified with a local Worker: both forms
+  sent, the package and date reached the email, past dates are refused.
+  Forms then replaced the email buttons on the development service pages,
+  each with its own questions and, where the page lists packages, a package
+  choice (the service label stays the page's), and on the project pages,
+  which use the general development form. The header contact button now
+  leads to a form instead of opening the mail client, so contact events with
+  placement `header` are no longer produced; the footer email icons and the
+  home hero buttons still open the mail client.
 
 ## 1. Release status
 

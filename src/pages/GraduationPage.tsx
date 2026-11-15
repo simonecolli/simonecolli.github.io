@@ -10,8 +10,9 @@ import PlainAddress from "../components/utils/PlainAddress";
 import WhatsAppButton from "../components/utils/WhatsAppButton";
 import PhotoCard from "../components/photography/PhotoCard";
 import Lightbox from "../components/photography/Lightbox";
+import ContactForm, { type FormQuestion } from "../components/utils/ContactForm";
 import { Photos, type Photo } from "../data/photography";
-import { PHOTO_EMAIL, mailtoHref } from "../siteConfig";
+import { PHOTO_EMAIL } from "../siteConfig";
 
 const GROUPS = [{ people: 2, price: 80 }, { people: 3, price: 75 }, { people: 4, price: 70 }, { people: 5, price: 65 }];
 const BENEFIT_ICONS = [FiMessageCircle, FiCamera, FiSliders, FiLink];
@@ -22,11 +23,20 @@ export default function GraduationPage() {
   const [lightboxPhoto, setLightboxPhoto] = useState<Photo | null>(null);
   const [showAllPhotos, setShowAllPhotos] = useState(false);
   const money = (value: number) => new Intl.NumberFormat(i18n.language, { style: "currency", currency: "EUR", maximumFractionDigits: 0 }).format(value);
-  const contact = (packageName = t("graduation.generic")) => mailtoHref(
-    PHOTO_EMAIL,
-    t("graduation.mailSubject", { package: packageName, interpolation: { escapeValue: false } }),
-    t("graduation.mailBody", { package: packageName, interpolation: { escapeValue: false } }),
-  );
+  // Each package button preselects its package in the form; the value doubles
+  // as the service label of the contact event.
+  const [selected, setSelected] = useState("undecided");
+  const packages = [
+    { value: "undecided", label: t("form.undecided") },
+    { value: "proclamation", label: t("graduation.proclamation.title") },
+    { value: "party", label: t("graduation.party.title") },
+    { value: "graduation_group", label: t("graduation.groups.title") },
+    { value: "joint_party", label: `${t("graduation.party.title")}, ${t("graduation.groups.title")}` },
+  ];
+  const questions: FormQuestion[] = [
+    { label: t("form.package"), kind: "select", required: true, half: true, options: packages, value: selected, onChange: setSelected },
+    ...(t("form.graduation.questions", { returnObjects: true }) as FormQuestion[]),
+  ];
   const benefits = t("graduation.benefits", { returnObjects: true }) as { title: string; body: string }[];
   const faqs = t("graduation.faqs", { returnObjects: true }) as { question: string; answer: string }[];
 
@@ -44,7 +54,7 @@ export default function GraduationPage() {
               <p className="font-display type-section-title mt-4">{t("graduation.title")}</p>
               <p className="type-lead text-muted mt-6">{t("graduation.intro")}</p>
               <p className="mt-4 font-medium">{t("graduation.tagline")}</p>
-              <a href={contact()} className="btn btn-photo btn-solid mt-8">{t("graduation.cta")}</a>
+              <a href="#modulo" className="btn btn-photo btn-solid mt-8">{t("graduation.cta")}</a>
             </div>
           </div>
         </section>
@@ -84,7 +94,7 @@ export default function GraduationPage() {
                     <p className="text-muted leading-relaxed mt-3">{t(`graduation.${id}.body`)}</p>
                     <ul className="space-y-3 my-6 flex-grow">{includes.map(item => <li key={item} className="flex gap-3"><FiCheck className="shrink-0 text-accent-photo mt-1" aria-hidden="true" /><span>{item}</span></li>)}</ul>
                     {id === "party" && <p className="text-sm text-muted mb-6">{t("graduation.party.note")}</p>}
-                    <a data-analytics-service={id} href={contact(t(`graduation.${id}.title`))} className="btn btn-photo self-start">{t(`graduation.${id}.cta`)}</a>
+                    <a href="#modulo" onClick={() => setSelected(id)} className="btn btn-photo self-start">{t(`graduation.${id}.cta`)}</a>
                   </article>
                 );
               })}
@@ -105,12 +115,12 @@ export default function GraduationPage() {
                 </table>
               </div>
               <p className="text-sm text-muted leading-relaxed mt-6">{t("graduation.groups.note")}</p>
-              <a data-analytics-service="graduation_group" href={contact(t("graduation.groups.title"))} className="btn btn-photo mt-6">{t("graduation.groups.cta")}</a>
+              <a href="#modulo" onClick={() => setSelected("graduation_group")} className="btn btn-photo mt-6">{t("graduation.groups.cta")}</a>
             </article>
             <div className="border-l-2 border-accent-photo pl-6 mt-8">
               <h3 className="type-item-title">{t("graduation.party.jointTitle")}</h3>
               <p className="text-muted leading-relaxed mt-2">{t("graduation.party.jointBody")}</p>
-              <a data-analytics-service="joint_party" href={contact(`${t("graduation.party.title")}, ${t("graduation.groups.title")}`)} className="inline-block text-accent-photo underline underline-offset-4 mt-3">{t("graduation.party.cta")}</a>
+              <a href="#modulo" onClick={() => setSelected("joint_party")} className="inline-block text-accent-photo underline underline-offset-4 mt-3">{t("graduation.party.jointCta")}</a>
             </div>
           </div>
         </section>
@@ -135,7 +145,15 @@ export default function GraduationPage() {
         </section>
 
         <section className="site-section">
-          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-section-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4">{t("graduation.closingBody")}</p><div className="flex flex-wrap gap-3 mt-6"><a href={contact()} className="btn btn-photo btn-solid">{t("graduation.cta")}</a><WhatsAppButton area="photo" message={t("contact.whatsapp.graduation")} /></div><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /><p className="text-sm text-muted mt-2">{t("contact.reply.time")}</p></div></div>
+          <div className="site-container"><div className="graduation-groups rounded-lg p-6 md:p-12"><h2 className="font-display type-section-title">{t("graduation.closingTitle")}</h2><p className="text-muted leading-relaxed mt-4 mb-8">{t("graduation.closingBody")}</p>
+            <ContactForm
+              area="photo"
+              source={t("form.graduation.source")}
+              questions={questions}
+              submitLabel={t("graduation.cta")}
+              service={selected === "undecided" ? undefined : selected}
+            />
+            <div className="flex flex-wrap gap-3 mt-8"><WhatsAppButton area="photo" message={t("contact.whatsapp.graduation")} /></div><PlainAddress emails={[PHOTO_EMAIL]} className="mt-4" /><p className="text-sm text-muted mt-2">{t("contact.reply.time")}</p></div></div>
         </section>
       </main>
       <Footer />

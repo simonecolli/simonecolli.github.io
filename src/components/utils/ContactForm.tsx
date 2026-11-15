@@ -1,4 +1,4 @@
-import { useId, useState, type FormEvent } from "react";
+import { useEffect, useId, useState, type FormEvent } from "react";
 import { useTranslation } from "react-i18next";
 import Link from "./LocalizedLink";
 import { DEV_EMAIL, PHOTO_EMAIL } from "../../siteConfig";
@@ -6,10 +6,18 @@ import { trackFormSent } from "../../lib/analytics";
 
 export interface FormQuestion {
   label: string;
-  kind?: "text" | "textarea";
+  kind?: "text" | "textarea" | "select" | "date";
+  // Half a row on wide screens, so two short questions sit side by side.
+  half?: boolean;
   // An example answer, shown until the visitor types.
   placeholder?: string;
   required?: boolean;
+  // For a select; the email carries the option's label, not its value.
+  options?: { value: string; label: string }[];
+  // A select the page drives, so a button elsewhere can preselect it without
+  // resetting what the visitor has already typed.
+  value?: string;
+  onChange?: (value: string) => void;
 }
 
 interface ContactFormProps {
@@ -34,6 +42,10 @@ const fieldClass = "w-full rounded border border-line bg-bg px-3 py-2 text-fg fo
 // answer, so these stay below it.
 const LIMITS = { name: 100, email: 254, phone: 30, line: 150, text: 1000 } as const;
 
+// The picker gives an ISO date; the inbox gets it spelled out with the weekday.
+const longDate = (iso: string) =>
+  new Date(`${iso}T00:00`).toLocaleDateString("it-IT", { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+
 // Posts to the Worker on /api/contatto, which mails the inbox of the area. On
 // failure the fields keep what the visitor wrote and the address is offered,
 // so the message is never lost.
@@ -43,6 +55,10 @@ export default function ContactForm({ area, source, questions, submitLabel, serv
   // Characters typed in each long answer, for the counter under the box.
   const [counts, setCounts] = useState<Record<string, number>>({});
   const formId = useId();
+  // Dates in the past are refused. Set after hydration, so the prerendered
+  // page does not carry the build day.
+  const [today, setToday] = useState<string>();
+  useEffect(() => setToday(new Date().toLocaleDateString("sv-SE")), []);
   const accent = ACCENT[area];
   const field = `${fieldClass} ${accent.field}`;
 
@@ -62,10 +78,17 @@ export default function ContactForm({ area, source, questions, submitLabel, serv
           email: value("email"),
           phone: value("phone"),
           website: value("website"),
-          answers: questions.map((question, index) => ({ label: question.label, value: value(`q${index}`) })),
+          answers: questions.map((question, index) => {
+            const answer = value(`q${index}`);
+            const option = question.options?.find((entry) => entry.value === answer);
+            const shown = option ? option.label : question.kind === "date" && answer ? longDate(answer) : answer;
+            return { label: question.label, value: shown };
+          }),
         }),
       });
-      if (!response.ok) throw new Error(String(response.status));
+      // The Worker answers 204 and nothing else on success; a static host that
+      // answers 200 with a page must not tell the visitor the message went out.
+      if (response.status !== 204) throw new Error(String(response.status));
       setStatus("sent");
       trackFormSent(area, service);
     } catch {
@@ -100,18 +123,33 @@ export default function ContactForm({ area, source, questions, submitLabel, serv
         </label>
       </div>
 
+      <div className="grid md:grid-cols-2 gap-5">
       {questions.map((question, index) => {
         const name = `q${index}`;
         const countId = `${formId}-${name}-count`;
 
         return (
-          <div key={question.label}>
+          <div key={question.label} className={question.half ? undefined : "md:col-span-2"}>
             <label className="block">
               <span className="block text-sm font-medium mb-1">
                 {question.label}
                 {!question.required && <span className="text-muted font-normal"> ({t("form.optional")})</span>}
               </span>
-              {question.kind === "textarea" ? (
+              {question.kind === "select" ? (
+                <select
+                  name={name}
+                  required={question.required}
+                  value={question.value}
+                  onChange={(event) => question.onChange?.(event.target.value)}
+                  className={field}
+                >
+                  {question.options?.map((option) => (
+                    <option key={option.value} value={option.value}>{option.label}</option>
+                  ))}
+                </select>
+              ) : question.kind === "date" ? (
+                <input type="date" name={name} required={question.required} min={today} className={field} />
+              ) : question.kind === "textarea" ? (
                 <textarea
                   name={name}
                   required={question.required}
@@ -138,6 +176,7 @@ export default function ContactForm({ area, source, questions, submitLabel, serv
           </div>
         );
       })}
+      </div>
 
       {/* Hidden from people and from screen readers; bots fill it in. */}
       <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />

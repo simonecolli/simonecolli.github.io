@@ -176,7 +176,9 @@
     },
     "ctaTitle": "Parliamone",
     "ctaBody": "Raccontami che cosa devi fotografare, quando e dove. Ti rispondo con una proposta scritta e un prezzo, senza impegno.",
-    "ctaButton": "Scrivimi per un preventivo"
+    "ctaButton": "Scrivimi per un preventivo",
+    "galleryCta": "Guarda la galleria",
+    "galleryIntro": "Una selezione dei miei scatti: sport, cerimonie, natura e dettagli. Apri una foto per vederla a tutto schermo."
   },
   "blog": {
     "pageTitle": "Blog",
@@ -288,6 +290,11 @@
         "description": "Automazione dei processi per professionisti e PMI: documenti automatici, programmi che si parlano, piani di carico e collegamento ai macchinari. Esempi e costi.",
         "keywords": "automazione processi aziendali, automazione documenti, integrazione tra software, collegamento macchinari OPC-UA, piano di carico camion, ottimizzazione dei carichi, automazione Excel, integrazione Google Calendar"
       }
+    },
+    "gallery": {
+      "title": "Galleria fotografica: sport, eventi e lauree",
+      "description": "Galleria di Simone Colli, fotografo a Parma: sport, cerimonie e lauree, natura e dettagli.",
+      "keywords": "galleria fotografica Parma, foto sport Parma, foto eventi Parma, foto laurea Parma, portfolio fotografo Parma, Simone Colli fotografia"
     }
   },
   "data": {
@@ -516,7 +523,6 @@
     "ideas": {
       "title": "Qualche idea da cui partire",
       "cta": "Parliamone",
-      "subject": "Richiesta dal sito: {{idea}}",
       "opening": {
         "title": "Nuova apertura",
         "text": "Apri o rinnovi un'attività? Sito vetrina e foto del locale, dei prodotti e dell'inaugurazione, pronte anche per i social."
@@ -685,7 +691,8 @@
       "cta": "Richiedi disponibilità per All Inclusive",
       "jointTitle": "Fate festa insieme?",
       "jointBody": "Per le feste congiunte preparo un preventivo personalizzato, con risparmi fino al 40% a persona in base all'organizzazione del servizio.",
-      "note": "Gli orari e la durata della copertura vengono concordati prima della conferma."
+      "note": "Gli orari e la durata della copertura vengono concordati prima della conferma.",
+      "jointCta": "Chiedi un preventivo per la festa insieme"
     },
     "groups": {
       "title": "Colleghi di corso",
@@ -741,9 +748,6 @@
     ],
     "closingTitle": "La data c'è. Pensiamo alle fotografie.",
     "closingBody": "Scrivimi quando e dove ti laurei, il pacchetto che ti interessa e se sarai da solo o con altri laureandi.",
-    "mailSubject": "Richiesta laurea: {{package}}",
-    "mailBody": "Ciao Simone,\n\nData della laurea:\nAteneo e sede:\nOrari di convocazione:\nNumero di laureandi:\nPacchetto: {{package}}\nLuogo e orario della festa (se prevista):\n\n",
-    "generic": "Da scegliere",
     "startingFrom": "A partire da"
   },
   "cookies": {
@@ -863,6 +867,40 @@
           "placeholder": "Es. mezza giornata, circa 4 ore"
         }
       ]
-    }
+    },
+    "graduation": {
+      "source": "Laurea",
+      "questions": [
+        {
+          "label": "Data della laurea",
+          "kind": "date",
+          "required": true,
+          "half": true
+        },
+        {
+          "label": "Ateneo e sede",
+          "placeholder": "Es. Università di Parma, Aula Magna"
+        },
+        {
+          "label": "Orario di convocazione",
+          "placeholder": "Es. convocazione alle 9:30"
+        },
+        {
+          "label": "Numero di laureandi",
+          "placeholder": "Es. solo io, oppure 3 con due compagni di corso"
+        },
+        {
+          "label": "Luogo e orario della festa",
+          "placeholder": "Es. ristorante a Salsomaggiore dalle 13, oppure nessuna festa"
+        },
+        {
+          "label": "Altro che vuoi dirmi",
+          "kind": "textarea",
+          "placeholder": "Es. vorrei anche qualche foto con la famiglia davanti al Palazzo Centrale"
+        }
+      ]
+    },
+    "package": "Pacchetto",
+    "undecided": "Da scegliere"
   }
 }

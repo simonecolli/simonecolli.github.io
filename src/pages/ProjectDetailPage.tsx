@@ -13,14 +13,13 @@ import WhatsAppButton from "../components/utils/WhatsAppButton";
 import { projects } from "../data/projects";
 import { getCaseStudy } from "../content/caseStudies";
 import { devServiceBySlug } from "../data/devServices";
+import ContactForm, { type FormQuestion } from "../components/utils/ContactForm";
 import { DEV_EMAIL } from "../siteConfig";
-import { useMailHref } from "../hooks/useMailHref";
 
 export default function ProjectDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const project = projects.find((p) => p.slug === slug);
   const { t, i18n } = useTranslation();
-  const devMail = useMailHref("dev");
   const lang = useLang();
 
   if (!project) {
@@ -144,10 +143,17 @@ export default function ProjectDetailPage() {
                   <p className="type-body text-muted mb-6">
                     {caseStudy.contact?.text ?? t('projects.caseStudy.ctaText')}
                   </p>
-                  <div className="flex flex-wrap gap-3">
-                    <a href={devMail} className="btn btn-dev btn-solid">
-                      {caseStudy.contact?.button ?? t('projects.caseStudy.ctaButton')}
-                    </a>
+                  {/* The general development form; the project's name goes in
+                      the subject, so the request says what prompted it. Keyed by
+                      project, so another case study starts a clean form. */}
+                  <ContactForm
+                    key={project.slug}
+                    area="dev"
+                    source={`${t("form.dev.source")}: ${t(project.title)}`}
+                    questions={t("form.dev.questions", { returnObjects: true }) as FormQuestion[]}
+                    submitLabel={caseStudy.contact?.button ?? t('projects.caseStudy.ctaButton')}
+                  />
+                  <div className="flex flex-wrap gap-3 mt-8">
                     <WhatsAppButton area="dev" />
                   </div>
                   <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />

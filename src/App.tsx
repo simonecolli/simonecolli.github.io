@@ -12,6 +12,7 @@ import TalksPage from "./pages/TalksPage.tsx"
 import TalkDetailPage from "./pages/TalkDetailPage.tsx"
 import GraduationPage from "./pages/GraduationPage.tsx"
 import PhotographyPage from "./pages/PhotographyPage.tsx"
+import GalleryPage from "./pages/GalleryPage.tsx"
 import AboutMePage from "./pages/AboutMePage.tsx"
 import Blog from "./pages/Blog.tsx"
 import DevelopmentPage from "./pages/DevelopmentPage.tsx"
@@ -89,6 +90,7 @@ export function AppRoutes() {
               <Route path={`${base}/blog`} element={<Blog />} />
               <Route path={`${base}/photography`} element={<PhotographyPage />} />
               <Route path={`${base}/photography/degree`} element={<GraduationPage />} />
+              <Route path={`${base}/photography/gallery`} element={<GalleryPage />} />
               <Route path={`${base}/about`} element={<AboutMePage />} />
               <Route path={`${base}/development`} element={<DevelopmentPage />} />
               <Route path={`${base}/development/:service`} element={<DevServicePage />} />

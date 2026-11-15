@@ -7,9 +7,14 @@ export const automationIt: ServicePageContent = {
     "Ci sono lavori che si ripetono uguali ogni giorno: copiare dati da un programma all'altro, rifare gli stessi documenti, mandare le stesse email, smistare file nelle cartelle, disegnare a mano un piano di carico. Li automatizzo, partendo dai dati che hai già e dagli strumenti che usi.",
   ],
   cta: "Raccontami cosa rifai a mano",
-  mail: {
-    subject: "Richiesta dal sito: automazione",
-    body: "Ciao Simone,\n\nquale operazione ripetiamo a mano:\n\n\nquanto tempo ci porta via (al giorno o alla settimana):\n\n\ncon quali programmi o macchine:\n\n\nentro quando:\n\n",
+  form: {
+    source: "Automazione",
+    questions: [
+      { label: "Quale operazione ripetete a mano?", kind: "textarea", required: true, placeholder: "Es. ogni giorno copiamo gli ordini dalle email al gestionale" },
+      { label: "Quanto tempo vi porta via?", placeholder: "Es. circa un'ora al giorno" },
+      { label: "Con quali programmi o macchine?", placeholder: "Es. Outlook, Excel e il gestionale di magazzino" },
+      { label: "Entro quando vi servirebbe?", placeholder: "Es. entro fine anno" },
+    ],
   },
   whatsapp: "Ciao Simone, ti scrivo dal sito per un'automazione.",
   sections: [

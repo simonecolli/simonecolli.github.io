@@ -163,7 +163,7 @@ function safePath(path: string) {
   const prefix = /^\/en(?=\/|$)/.test(clean) ? "/en" : "";
   const route = clean.slice(prefix.length) || "/";
   const localized = prefix + (route === "/" && prefix ? "" : route);
-  if (["/", "/development", "/photography", "/photography/degree", "/projects", "/talks", "/about", "/privacy", "/blog"].includes(route)) return localized;
+  if (["/", "/development", "/photography", "/photography/degree", "/photography/gallery", "/projects", "/talks", "/about", "/privacy", "/blog"].includes(route)) return localized;
   if (projects.some(project => route === `/projects/${project.slug}`) ||
       talks.some(talk => route === `/talks/${talk.slug}`) ||
       DEV_SERVICES.some(service => route === `/development/${service.slug}`)) return localized;

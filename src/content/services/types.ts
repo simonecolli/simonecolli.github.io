@@ -78,7 +78,12 @@ export interface ServicePageContent {
   subtitle: string;
   intro: string[];
   cta: string;
-  mail: { subject: string; body: string };
+  // The page's contact form: `source` names it in the email subject. A page
+  // with packages adds a package choice in front of these questions.
+  form: {
+    source: string;
+    questions: { label: string; kind?: "text" | "textarea"; placeholder?: string; required?: boolean; half?: boolean }[];
+  };
   whatsapp: string;
   sections: ServiceSection[];
   faqs: { question: string; answer: string }[];

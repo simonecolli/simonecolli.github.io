@@ -119,6 +119,16 @@ test('english routes keep their /en prefix and unknown ones are still redacted',
   assert.equal(events[1][2].area, 'photo'); assert.equal(events[2][2].area, 'dev');
 });
 
+test('the photo gallery is measured as a photo page in both languages', () => {
+  const s = setup(); accept(s);
+  for (const path of ['/photography/gallery/', '/en/photography/gallery']) s.api.trackPage(path);
+  const events = s.commands().filter(x => x[0] === 'event');
+  assert.deepEqual(Array.from(events, x => [x[2].page_location, x[2].area]), [
+    ['https://www.simonecolli.com/photography/gallery', 'photo'],
+    ['https://www.simonecolli.com/en/photography/gallery', 'photo'],
+  ]);
+});
+
 test('development service pages are measured as dev pages, unknown ones are redacted', () => {
   const s = setup(); accept(s);
   for (const path of ['/development/public-service/', '/en/development/public-service', '/development/private@example.org']) s.api.trackPage(path);

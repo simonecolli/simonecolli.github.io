@@ -176,7 +176,9 @@
     },
     "ctaTitle": "Let's talk",
     "ctaBody": "Tell me what you need photographed, when and where. I'll reply with a written proposal and a price, with no obligation.",
-    "ctaButton": "Email me for a quote"
+    "ctaButton": "Email me for a quote",
+    "galleryCta": "View the gallery",
+    "galleryIntro": "A selection of my shots: sport, ceremonies, nature and details. Open a photo to see it full screen."
   },
   "blog": {
     "pageTitle": "Blog",
@@ -288,6 +290,11 @@
         "description": "Process automation for professionals and SMEs: automatic documents, programs that talk to each other, load planning and machine connectivity. Examples and costs.",
         "keywords": "business process automation, document automation, software integration, OPC-UA machine connectivity, truck load planning, load optimisation, Excel automation, Google Calendar integration"
       }
+    },
+    "gallery": {
+      "title": "Photo gallery: sport, events and graduations",
+      "description": "Gallery by Simone Colli, photographer in Parma: sport, ceremonies and graduations, nature and details.",
+      "keywords": "photo gallery Parma, sports photography Parma, event photography Parma, graduation photos Parma, Parma photographer portfolio, Simone Colli photography"
     }
   },
   "data": {
@@ -516,7 +523,6 @@
     "ideas": {
       "title": "A few ideas to start from",
       "cta": "Let's talk",
-      "subject": "Enquiry from the website: {{idea}}",
       "opening": {
         "title": "New opening",
         "text": "Opening or refreshing a business? A showcase website and photos of the premises, the products and the opening day, ready for social media too."
@@ -685,7 +691,8 @@
       "cta": "Enquire about All Inclusive",
       "jointTitle": "Celebrating together?",
       "jointBody": "For joint celebrations, I prepare a tailored quote, with savings of up to 40% per person depending on the arrangements.",
-      "note": "Coverage times and duration are agreed before confirmation."
+      "note": "Coverage times and duration are agreed before confirmation.",
+      "jointCta": "Ask for a quote for a joint party"
     },
     "groups": {
       "title": "Graduating together",
@@ -741,9 +748,6 @@
     ],
     "closingTitle": "You have the date. Let's plan the photographs.",
     "closingBody": "Tell me when and where you graduate, which package interests you and whether you're booking alone or with other graduates.",
-    "mailSubject": "Graduation enquiry: {{package}}",
-    "mailBody": "Hi Simone,\n\nGraduation date:\nUniversity and venue:\nScheduled times:\nNumber of graduates:\nPackage: {{package}}\nCelebration venue and time (if applicable):\n\n",
-    "generic": "To be decided",
     "startingFrom": "Starting from"
   },
   "cookies": {
@@ -863,6 +867,40 @@
           "placeholder": "E.g. half a day, about 4 hours"
         }
       ]
-    }
+    },
+    "graduation": {
+      "source": "Graduation",
+      "questions": [
+        {
+          "label": "Graduation date",
+          "kind": "date",
+          "required": true,
+          "half": true
+        },
+        {
+          "label": "University and venue",
+          "placeholder": "E.g. University of Parma, Aula Magna"
+        },
+        {
+          "label": "Call time",
+          "placeholder": "E.g. called in at 9:30"
+        },
+        {
+          "label": "Number of graduates",
+          "placeholder": "E.g. just me, or 3 with two classmates"
+        },
+        {
+          "label": "Party location and time",
+          "placeholder": "E.g. restaurant in Salsomaggiore from 1 pm, or no party"
+        },
+        {
+          "label": "Anything else",
+          "kind": "textarea",
+          "placeholder": "E.g. I would also like a few photos with my family in front of the main building"
+        }
+      ]
+    },
+    "package": "Package",
+    "undecided": "To be decided"
   }
 }

@@ -150,7 +150,7 @@ export function structuredDataFor(route: string, lang: Lang, t: TFunction): Json
 
   if (page === '/' || page === '/about') return [person()]
   if (page === '/development') return [service('development', lang, t)]
-  if (page === '/photography' || page === '/photography/degree') return [service('photography', lang, t)]
+  if (page === '/photography' || page === '/photography/degree' || page === '/photography/gallery') return [service('photography', lang, t)]
 
   const [, section, slug] = page.split('/')
   if (section === 'development' && slug) {

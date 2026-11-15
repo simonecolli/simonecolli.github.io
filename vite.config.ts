@@ -111,6 +111,7 @@ const pages = [
   '/talks',
   '/photography',
   '/photography/degree',
+  '/photography/gallery',
   '/about',
   '/privacy',
   ...projects.map((project) => `/projects/${project.slug}`),

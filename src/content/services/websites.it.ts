@@ -8,9 +8,14 @@ export const websitesIt: ServicePageContent = {
     "E se un sito ce l'hai già, non è detto che vada rifatto: spesso basta una messa a punto.",
   ],
   cta: "Scrivimi per un sito",
-  mail: {
-    subject: "Richiesta dal sito: sito web",
-    body: "Ciao Simone,\n\nche attività ho:\n\n\nho già un sito? (se sì, l'indirizzo):\n\n\nche tipo di sito penso mi serva (va bene anche \"non lo so\"):\n\n\nentro quando:\n\n",
+  form: {
+    source: "Sito web",
+    questions: [
+      { label: "Entro quando ti servirebbe?", placeholder: "Es. entro marzo", half: true },
+      { label: "Che attività hai?", kind: "textarea", required: true, placeholder: "Es. studio di fisioterapia a Parma, con due professionisti" },
+      { label: "Hai già un sito?", placeholder: "Es. sì, www.esempio.it, oppure no" },
+      { label: "Che tipo di sito pensi ti serva?", placeholder: "Es. una vetrina con servizi e contatti; va bene anche \"non lo so\"" },
+    ],
   },
   whatsapp: "Ciao Simone, ti scrivo dal sito per un sito web.",
   sections: [

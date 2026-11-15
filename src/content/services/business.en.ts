@@ -8,9 +8,14 @@ export const businessEn: ServicePageContent = {
     "They work on computers and smartphones.",
   ],
   cta: "Tell me how you work today",
-  mail: {
-    subject: "Enquiry from the website: business software or CRM",
-    body: "Hi Simone,\n\nwhat we manage today and with which tools (Excel, email, phone, software…):\n\n\nhow many people would use it:\n\n\nwhat we would like to achieve:\n\n\nby when:\n\n",
+  form: {
+    source: "Business software or CRM",
+    questions: [
+      { label: "When would you need it?", placeholder: "E.g. by the summer", half: true },
+      { label: "What do you manage today, and with which tools?", kind: "textarea", required: true, placeholder: "E.g. orders and customers in Excel, confirmations by email and phone" },
+      { label: "How many people would use it?", placeholder: "E.g. 5 in the office and 2 in the warehouse" },
+      { label: "What would you like to achieve?", placeholder: "E.g. knowing at any time where each order stands" },
+    ],
   },
   whatsapp: "Hi Simone, I'm writing from your website about business software or a CRM.",
   sections: [

@@ -39,6 +39,7 @@ export default function Footer() {
       links: [
         { to: "/photography/", label: t("home.photo.cta") },
         { to: "/photography/degree/", label: t("graduation.heading") },
+        { to: "/photography/gallery/", label: t("photography.galleryTitle") },
       ],
     },
     {

@@ -7,9 +7,14 @@ export const automationEn: ServicePageContent = {
     "Some tasks repeat the same way every day: copying data from one program to another, redoing the same documents, sending the same emails, sorting files into folders, drawing a load plan by hand. I automate them, starting from the data you already have and the tools you use.",
   ],
   cta: "Tell me what you redo by hand",
-  mail: {
-    subject: "Enquiry from the website: automation",
-    body: "Hi Simone,\n\nwhich task we repeat by hand:\n\n\nhow much time it takes (per day or per week):\n\n\nwith which programs or machines:\n\n\nby when:\n\n",
+  form: {
+    source: "Automation",
+    questions: [
+      { label: "Which task do you repeat by hand?", kind: "textarea", required: true, placeholder: "E.g. every day we copy orders from emails into the management software" },
+      { label: "How much time does it take?", placeholder: "E.g. about an hour a day" },
+      { label: "With which programs or machines?", placeholder: "E.g. Outlook, Excel and the warehouse software" },
+      { label: "When would you need it?", placeholder: "E.g. by the end of the year" },
+    ],
   },
   whatsapp: "Hi Simone, I'm writing from your website about an automation.",
   sections: [

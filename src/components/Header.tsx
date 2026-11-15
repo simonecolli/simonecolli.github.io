@@ -1,10 +1,9 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import Link from "./utils/LocalizedLink";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, type MouseEvent as ReactMouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 import Logo from "./utils/Logo";
 import ThemeToggle from "./utils/ThemeToggle";
-import { useMailHref } from "../hooks/useMailHref";
 import { withTrailingSlash } from "../siteConfig";
 import { langFromPath, localizePath, stripLang } from "../lib/lang";
 
@@ -84,24 +83,26 @@ function LanguageDropdown() {
 }
 
 // Stays in the bar on phones too, outside the menu. A page that belongs to one
-// activity opens that inbox; the neutral pages lead to the contact block, which
-// offers both.
+// activity leads to a form: its own when it has one, otherwise the main page
+// of that activity. The neutral pages lead to the contact block, which offers
+// both.
 function ContactButton() {
   const pathname = stripLang(useLocation().pathname);
   const { t } = useTranslation();
-  const devHref = useMailHref("dev");
-  const photoHref = useMailHref("photo");
-  const label = t("nav.contact");
+  const area = DEV_PATHS.some((path) => pathname.startsWith(path)) ? "dev"
+    : pathname.startsWith("/photography") ? "photo" : null;
+  const target = area === "dev" ? "/development/#modulo" : area === "photo" ? "/photography/#modulo" : "/#contact";
+  const style = area === "dev" ? "btn-dev" : area === "photo" ? "btn-photo" : "btn-neutral";
 
-  if (DEV_PATHS.some((path) => pathname.startsWith(path))) {
-    return <a href={devHref} className="btn btn-sm btn-dev">{label}</a>;
-  }
+  const stayOnPage = (event: ReactMouseEvent<HTMLAnchorElement>) => {
+    const form = area && document.getElementById("modulo");
+    if (form) {
+      event.preventDefault();
+      form.scrollIntoView();
+    }
+  };
 
-  if (pathname.startsWith("/photography")) {
-    return <a href={photoHref} className="btn btn-sm btn-photo">{label}</a>;
-  }
-
-  return <Link to="/#contact" className="btn btn-sm btn-neutral">{label}</Link>;
+  return <Link to={target} onClick={stayOnPage} className={`btn btn-sm ${style}`}>{t("nav.contact")}</Link>;
 }
 
 export default function Header() {

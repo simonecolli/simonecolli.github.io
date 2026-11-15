@@ -1,4 +1,4 @@
-import { Fragment, type ReactNode } from "react";
+import { Fragment, useState, type ReactNode } from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
@@ -9,13 +9,14 @@ import SEO from "../components/SEO";
 import Back2Home from "../components/utils/Back2Home";
 import PlainAddress from "../components/utils/PlainAddress";
 import WhatsAppButton from "../components/utils/WhatsAppButton";
+import ContactForm, { type FormQuestion } from "../components/utils/ContactForm";
 import { devServiceBySlug } from "../data/devServices";
 import { getServicePage, packagesOf } from "../content/services";
 import type { Block, ListItem, ServicePackage } from "../content/services/types";
 import { useLang } from "../hooks/useLang";
 import { localizePath } from "../lib/lang";
 import { euro } from "../lib/money";
-import { DEV_EMAIL, mailtoHref } from "../siteConfig";
+import { DEV_EMAIL } from "../siteConfig";
 
 const linkClass = "text-sm font-medium text-accent-dev transition-colors";
 const photoLinkClass = "text-sm font-medium text-accent-photo transition-colors";
@@ -38,6 +39,9 @@ export default function DevServicePage() {
   const { t } = useTranslation();
   const lang = useLang();
   const service = devServiceBySlug(slug);
+  // A package card preselects its package in the form. The choice belongs to
+  // the page it was made on: another service starts from "to be decided".
+  const [choice, setChoice] = useState({ slug, pkg: "undecided" });
 
   if (!service) {
     return <Navigate to={localizePath("/development/", lang)} replace />;
@@ -46,17 +50,25 @@ export default function DevServicePage() {
   const content = getServicePage(service.id, lang);
   const packages = packagesOf(content);
   const packageById = new Map(packages.map((pkg) => [pkg.id, pkg]));
-
-  // The package's name goes in the subject, so a request from a card says
-  // which offer it is about; the guiding questions stay the page's.
-  const mailHref = (packageTitle?: string) =>
-    mailtoHref(
-      DEV_EMAIL,
-      packageTitle
-        ? t("contact.ideas.subject", { idea: packageTitle, interpolation: { escapeValue: false } })
-        : content.mail.subject,
-      content.mail.body,
-    );
+  const selected = choice.slug === slug ? choice.pkg : "undecided";
+  const choose = (pkg: string) => setChoice({ slug, pkg });
+  const questions: FormQuestion[] = [
+    ...(packages.length > 0
+      ? [{
+          label: t("form.package"),
+          kind: "select" as const,
+          required: true,
+          half: true,
+          options: [
+            { value: "undecided", label: t("form.undecided") },
+            ...packages.map((pkg) => ({ value: pkg.id, label: pkg.title })),
+          ],
+          value: selected,
+          onChange: choose,
+        }]
+      : []),
+    ...content.form.questions,
+  ];
 
   const inlinePrice = (pkg: ServicePackage) =>
     pkg.fromPrice === undefined
@@ -203,8 +215,8 @@ export default function DevServicePage() {
                 {pkg.note && <p className="text-sm text-muted leading-relaxed mt-4">{pkg.note}</p>}
                 <div className="flex-grow" />
                 <a
-                  href={mailHref(pkg.title)}
-                  data-analytics-service={service.id}
+                  href="#modulo"
+                  onClick={() => choose(pkg.id)}
                   className="btn btn-dev self-start mt-6"
                 >
                   {t("services.packageCta")}
@@ -294,7 +306,7 @@ export default function DevServicePage() {
                 <p key={paragraph} className="type-lead text-muted mt-5">{paragraph}</p>
               ))}
               <div className="flex flex-wrap gap-3 mt-8">
-                <a href={mailHref()} data-analytics-service={service.id} className="btn btn-dev btn-solid">
+                <a href="#modulo" className="btn btn-dev btn-solid">
                   {content.cta}
                 </a>
                 <WhatsAppButton area="dev" message={content.whatsapp} service={service.id} />
@@ -353,10 +365,19 @@ export default function DevServicePage() {
                 <strong className="font-medium">{t("services.clearPrices.title")}</strong>{" "}
                 <span className="text-muted">{t("services.clearPrices.body")}</span>
               </p>
+              {/* Keyed by service: moving to another service page starts a
+                  clean form instead of showing the previous "sent" note. */}
+              <div className="mt-8">
+                <ContactForm
+                  key={service.id}
+                  area="dev"
+                  source={content.form.source}
+                  questions={questions}
+                  submitLabel={content.cta}
+                  service={service.id}
+                />
+              </div>
               <div className="flex flex-wrap gap-3 mt-8">
-                <a href={mailHref()} data-analytics-service={service.id} className="btn btn-dev btn-solid">
-                  {content.cta}
-                </a>
                 <WhatsAppButton area="dev" message={content.whatsapp} service={service.id} />
               </div>
               <PlainAddress emails={[DEV_EMAIL]} className="mt-4" />
