@@ -59,7 +59,8 @@
   allowlisted service label, placement and page; nothing typed into the form
   is sent to Google. Email and WhatsApp clicks are unchanged. The notice now
   names the forms and Cloudflare Workers and Email Service in the
-  communication section, describes the form channel in the Analytics section,
+  communication section, describes the form channel and the placement of the
+  contact button in the Analytics section,
   and adds a section on read-only Google Search Console access for SEO
   analysis; the banner mentions forms next to buttons. The version change
   brings the new event under a version of its own: records from `2026-11-05.1`
@@ -138,16 +139,19 @@ not treated as a substitute for it.
 
 ## 3. Google account settings (controller attestations)
 
-No credentials were obtained and no Google Analytics session was opened. The
-application code can neither verify nor alter these administrative settings.
+The settings were read in the controller's signed-in browser; no credentials
+were handled by the assistant. The application code can neither verify nor alter
+these administrative settings.
 
 | Item | Expected configuration | Status |
 | --- | --- | --- |
 | Property and data stream | G-BVG3YZR5C5 | Read in the admin UI on 5 November 2026 |
 | User and event retention | 2 months; reset on new activity OFF | Read in the admin UI on 5 November 2026 |
-| Enhanced Measurement | OFF: page and contact events are handled by the site | Read in the admin UI on 5 November 2026; email redaction ON |
+| Enhanced Measurement | OFF: page and contact events are handled by the site | Read in the admin UI on 5 November 2026; email redaction ON. On 15 November 2026 the Google tag's automatic event detection (history page views, scrolls, outbound clicks, form interactions, video, downloads) was found ON behind the OFF master switch; switched OFF at the controller's request and published as tag container version 2 |
 | Google Ads and other advertising links | None | Google Ads links: none (5 November 2026) |
-| Google Signals, user-provided data, User-ID | OFF | Read in the admin UI on 5 November 2026 |
+| Google Signals, user-provided data, User-ID | OFF | Read in the admin UI on 5 November 2026. On 15 November 2026 the Google tag setting "Allow user-provided data capabilities" was found ON, with automatic detection of email, phone, name and address; it sent nothing in the tests, since collection is OFF at property level and no Ads link exists. Switched OFF at the controller's request and published as tag container version 2 |
+| Custom dimensions | `area`, `service`, `channel`, `placement`, event scope | Registered on 15 November 2026 at the controller's request; reports show them only for data collected from that date |
+| Key events | `contact_click`, counted once per event, no monetary value | Marked on 15 November 2026 at the controller's request ("create with code": no derived event, nothing changes on the site) |
 | Granular location and device data | ON | Kept by the controller; the notice now states approximate location (5 November 2026) |
 | Ad personalisation (property level) | Allowed in 307 of 307 regions | Left unchanged; no effect while ad signals are denied and no Ads link exists |
 | Data sharing settings | All OFF | Google products and services was already OFF; modelling contributions, technical support and business recommendations switched OFF at the controller's request on 5 November 2026 |
@@ -160,7 +164,8 @@ a statutory limit. The deletion cycle runs monthly; aggregated reports are not
 subject to this expiry. The account text states that such reports remain in the
 property for as long as the controller maintains it; this should be confirmed as
 the policy actually applied, including any exports. No contractual terms were
-accepted and no change was made to the Google property by the assistant.
+accepted. Changes to the Google property were made only at the controller's
+explicit request and are recorded in the table above.
 
 Since 15 June 2026 the Google Signals switch alone no longer governs the
 collection of advertising identifiers: the Consent Mode signals and all account
@@ -201,6 +206,31 @@ Google infrastructure was unreachable from the test environment
 (`ERR_CONNECTION_REFUSED`), so `gtag.js` never executed. The commands recorded
 above were read from the `dataLayer` queue, which is the payload that would be
 sent; they are not evidence of what Google actually received.
+
+### 4.3 Browser verification (15 November 2026)
+
+Reports and settings were read in the controller's signed-in browser. The live
+site (notice `2026-11-05.1`) and the local build of `2026-11-15.1`, served under
+the production hostname, were driven in a separate test browser. The Google tag
+script could not be loaded through the test machine's DNS resolver, so it was
+fetched through public DNS and served to the test browser only. Every request to
+Google's collection endpoints was captured and answered locally, so no test data
+reached the property.
+
+| Check | Result |
+| --- | --- |
+| Events in the property since 16 September 2026 | Only `page_view`, `contact_click` and GA's automatic `session_start`, `first_visit` and `user_engagement`; `scroll` and `click` appear only before that date |
+| Page paths in the reports | Catalogue routes, their `/en` copies and `/404` only; no query strings |
+| Landing URL with `utm_source`, `gclid` and an email-like parameter | None of them transmitted; the fragment dropped too |
+| Consent | No request to Google and no cookie before acceptance; afterwards `gcs=G101` and `npa=1` |
+| Cookies | `_ga` and `_ga_BVG3YZR5C5` on `.simonecolli.com`, 180 days; no cookie override in the tag settings |
+| Contact clicks (live site) | Email and WhatsApp clicks carried area, service, channel and placement as expected |
+| Form submission (local build) | One `contact_click` with channel `form`, area, service and placement; no name, email, phone or message text in any request; the banner reappeared for the new version |
+| Google tag after the changes in section 3 | The re-fetched tag has user-provided data and every automatic event type disabled; page views and contact clicks were sent unchanged |
+
+Requests to the Google tag diagnostics endpoint (`www.googletagmanager.com/a`)
+appeared once in the first run and were not inspected; they did not recur.
+DebugView was not used, so item 6 of section 5 remains open.
 
 ## 5. Outstanding verification
 
