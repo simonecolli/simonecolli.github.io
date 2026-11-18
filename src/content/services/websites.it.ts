@@ -48,8 +48,8 @@ export const websitesIt: ServicePageContent = {
             },
             {
               term: "Pagamento a fasi",
-              text: "acconto alla firma, poi a ogni consegna approvata.",
-              check: "paghi solo quello che hai già visto e approvato.",
+              text: "il pagamento è diviso per fasi, concordate nel preventivo.",
+              check: "fasi e importi li trovi scritti nel preventivo, prima di iniziare.",
             },
             {
               term: "Tutto intestato a te",

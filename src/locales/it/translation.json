@@ -216,8 +216,8 @@
     "inProgress": "In Corso",
     "completed": "Completato",
     "expanding": "In continua espansione",
-    "v1Released": "v1 completata",
-    "beyondPrototype": "Oltre il prototipo"
+    "v2InUse": "v2 in uso",
+    "inUse": "In uso"
   },
   "photoCategories": {
     "Portrait": "Ritratti",
@@ -301,7 +301,7 @@
     "projects": {
       "freelanceHub": {
         "title": "Freelance Hub",
-        "description": "CRM e gestionale per l'attività da libero professionista. Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 843 test con soglia di copertura al 100% imposta dalla pipeline, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
+        "description": "CRM e gestionale per l'attività da libero professionista. Gestivo clienti e progetti tra cartelle in Obsidian, moduli, email e WhatsApp: le informazioni esistevano, ma andavano ricostruite a mano ogni volta. Freelance Hub le tiene in un punto solo, dal primo contatto commerciale all'incasso, e da lì ricava previsioni sull'andamento dell'attività e proposte di pianificazione del tempo. Sviluppato in TDD: 1.699 test automatici, una pipeline che blocca ogni calo di copertura, type checking mypy --strict e catena DevSecOps completa. L'assistente si appoggia a modelli linguistici eseguiti in locale, via Ollama o LM Studio, così i dati dei clienti non escono dalla macchina.",
         "shortDescription": "CRM e gestionale per liberi professionisti: dal primo contatto all'incasso in un punto solo, con previsioni sull'andamento e pianificazione del tempo.",
         "keywords": "gestionale per freelance, CRM libero professionista, software gestione clienti freelance, automazione attività freelance, gestione preventivi e contratti, previsioni incassi, pianificazione carico di lavoro, self-hosted, LLM in locale, Ollama, software su misura, applicazione web gestionale",
         "seoTitle": "Freelance Hub: CRM e gestionale per freelance"
@@ -316,7 +316,7 @@
       },
       "photographyDelivery": {
         "title": "Photo Delivery",
-        "description": "Prototipo di un servizio di delivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel - il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria - gitleaks, ruff, pytest, typecheck - prima che il codice entri in branch.",
+        "description": "Servizio di delivery fotografico self-hosted, threat model rigoroso: gallery con codice d'accesso, ordini cifrati, consegna email post-pagamento. Dati di fatturazione sigillati in AES-256-GCM, segreti hashati con Argon2id, lookup email via HMAC-SHA256 con pepper dedicato, audit log append-only su ogni flusso, rate limiting sliding-window su Redis. FastAPI + SQLAlchemy async su PostgreSQL 16, Nuxt 3 in strict mode, esposto solo via Cloudflare Tunnel - il backend non tocca mai la rete pubblica. Pipeline pre-commit obbligatoria - gitleaks, ruff, pytest, typecheck - prima che il codice entri in branch.",
         "shortDescription": "Servizio di consegna fotografica self-hosted: gallerie con codice d'accesso, ordini cifrati, consegna via email dopo il pagamento e backend mai esposto in rete."
       },
       "salsoRunningClub": {
@@ -501,9 +501,9 @@
     "photoCta": "Scrivimi per un servizio fotografico",
     "orWrite": "oppure scrivi direttamente a",
     "reply": {
-      "time": "Rispondo entro 7 giorni lavorativi.",
-      "dev": "Rispondo entro 7 giorni lavorativi. La prima chiacchierata è gratuita perché mi serve per capire se e come posso aiutarti. Dura tra i 10 e i 30 minuti, al telefono o in videochiamata.",
-      "photo": "Rispondo entro 7 giorni lavorativi. Per eventi e servizi più impegnativi la prima chiacchierata è gratuita perché mi serve per capire se e come posso aiutarti. Dura tra i 10 e i 30 minuti, al telefono o in videochiamata."
+      "time": "Rispondo entro 1-2 giorni lavorativi.",
+      "dev": "Rispondo entro 1-2 giorni lavorativi. La prima chiacchierata è gratuita perché mi serve per capire se e come posso aiutarti. Dura tra i 10 e i 30 minuti, al telefono o in videochiamata.",
+      "photo": "Rispondo entro 1-2 giorni lavorativi. Per eventi e servizi più impegnativi la prima chiacchierata è gratuita perché mi serve per capire se e come posso aiutarti. Dura tra i 10 e i 30 minuti, al telefono o in videochiamata."
     },
     "whatsapp": {
       "cta": "Scrivimi su WhatsApp",
@@ -901,6 +901,17 @@
       ]
     },
     "package": "Pacchetto",
-    "undecided": "Da scegliere"
+    "undecided": "Da scegliere",
+    "budget": {
+      "label": "Budget indicativo",
+      "kind": "select",
+      "options": [
+        { "value": "", "label": "Non lo so ancora" },
+        { "value": "under-1000", "label": "Meno di 1.000 €" },
+        { "value": "1000-3000", "label": "1.000-3.000 €" },
+        { "value": "3000-6000", "label": "3.000-6.000 €" },
+        { "value": "over-6000", "label": "Più di 6.000 €" }
+      ]
+    }
   }
 }

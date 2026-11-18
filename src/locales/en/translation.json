@@ -216,8 +216,8 @@
     "inProgress": "In Progress",
     "completed": "Completed",
     "expanding": "Continuously expanding",
-    "v1Released": "v1 complete",
-    "beyondPrototype": "Beyond the prototype"
+    "v2InUse": "v2 in use",
+    "inUse": "In use"
   },
   "photoCategories": {
     "Portrait": "Portrait",
@@ -301,8 +301,8 @@
     "projects": {
       "freelanceHub": {
         "title": "Freelance Hub",
-        "description": "A CRM and business tool for freelance work. I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 843 tests with a 100% coverage threshold enforced by the pipeline, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
-        "shortDescription": "A CRM and business tool for freelancers: from first lead to payment in one place, with revenue forecasts and time planning, built with 843 automated tests.",
+        "description": "A CRM and business tool for freelance work. I was handling clients and projects across Obsidian folders, forms, email and WhatsApp: the information existed, but it had to be reconstructed by hand every time. Freelance Hub keeps it in one place, from the first lead to the payment, and derives revenue forecasts and time planning proposals from it. Built in TDD: 1,699 automated tests, a pipeline that blocks any drop in coverage, mypy --strict type checking and a full DevSecOps chain. The assistant runs on language models executed locally, through Ollama or LM Studio, so client data never leaves the machine.",
+        "shortDescription": "A CRM and business tool for freelancers: from first lead to payment in one place, with revenue forecasts and time planning, built with 1,699 automated tests.",
         "keywords": "freelance management system, freelance CRM, client management software for freelancers, freelance business automation, quotation and contract management, revenue forecasting, workload planning, self-hosted, local LLM, Ollama, custom software, management web application",
         "seoTitle": "Freelance Hub: a CRM for freelancers"
       },
@@ -316,7 +316,7 @@
       },
       "photographyDelivery": {
         "title": "Photo Delivery",
-        "description": "Prototype of a self-hosted photo delivery platform engineered around a strict threat model - access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel - the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate - gitleaks, ruff, pytest, typecheck - before it lands on the branch.",
+        "description": "Self-hosted photo delivery platform engineered around a strict threat model - access-coded galleries, encrypted orders, full-res email delivery. Customer billing sealed with AES-256-GCM, secrets hashed with Argon2id, email lookups indirected through HMAC-SHA256 with a dedicated pepper, append-only audit logs across every flow, sliding-window rate limits in Redis. FastAPI + async SQLAlchemy on PostgreSQL 16, Nuxt 3 in strict mode, exposed only through Cloudflare Tunnel - the backend never reaches the public internet. Every commit walks a mandatory pre-commit gate - gitleaks, ruff, pytest, typecheck - before it lands on the branch.",
         "shortDescription": "Self-hosted photo delivery service: galleries behind an access code, encrypted orders, email delivery after payment and a backend never exposed to the internet."
       },
       "salsoRunningClub": {
@@ -501,9 +501,9 @@
     "photoCta": "Email me about a photo shoot",
     "orWrite": "or write directly to",
     "reply": {
-      "time": "I reply within 7 working days.",
-      "dev": "I reply within 7 working days. The first conversation is free because I need it to understand whether and how I can help you. It takes 10 to 30 minutes, by phone or video call.",
-      "photo": "I reply within 7 working days. For events and larger shoots the first conversation is free because I need it to understand whether and how I can help you. It takes 10 to 30 minutes, by phone or video call."
+      "time": "I reply within 1-2 working days.",
+      "dev": "I reply within 1-2 working days. The first conversation is free because I need it to understand whether and how I can help you. It takes 10 to 30 minutes, by phone or video call.",
+      "photo": "I reply within 1-2 working days. For events and larger shoots the first conversation is free because I need it to understand whether and how I can help you. It takes 10 to 30 minutes, by phone or video call."
     },
     "whatsapp": {
       "cta": "Message me on WhatsApp",
@@ -901,6 +901,17 @@
       ]
     },
     "package": "Package",
-    "undecided": "To be decided"
+    "undecided": "To be decided",
+    "budget": {
+      "label": "Rough budget",
+      "kind": "select",
+      "options": [
+        { "value": "", "label": "Not sure yet" },
+        { "value": "under-1000", "label": "Under €1,000" },
+        { "value": "1000-3000", "label": "€1,000-3,000" },
+        { "value": "3000-6000", "label": "€3,000-6,000" },
+        { "value": "over-6000", "label": "Over €6,000" }
+      ]
+    }
   }
 }

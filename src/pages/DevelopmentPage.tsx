@@ -140,7 +140,10 @@ export default function DevelopmentPage() {
               <ContactForm
                 area="dev"
                 source={t("form.dev.source")}
-                questions={t("form.dev.questions", { returnObjects: true }) as FormQuestion[]}
+                questions={[
+                  ...(t("form.dev.questions", { returnObjects: true }) as FormQuestion[]),
+                  t("form.budget", { returnObjects: true }) as FormQuestion,
+                ]}
                 submitLabel={t("development.contactCta")}
               />
               <div className="flex flex-wrap gap-3 mt-8">

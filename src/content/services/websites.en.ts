@@ -48,8 +48,8 @@ export const websitesEn: ServicePageContent = {
             },
             {
               term: "Payment in stages",
-              text: "a deposit on signing, then at each approved delivery.",
-              check: "you only pay for what you have already seen and approved.",
+              text: "payment is split into stages, agreed in the quote.",
+              check: "the stages and amounts are written in the quote, before work starts.",
             },
             {
               term: "Everything in your name",

@@ -75,7 +75,7 @@ export const businessEn: ServicePageContent = {
             {
               title: "Client area",
               text: "Your clients log in, see their orders, book or download.",
-              cases: [{ slug: "photography-delivery", label: "Photo Delivery (prototype)" }],
+              cases: [{ slug: "photography-delivery", label: "Photo Delivery" }],
             },
           ],
         },

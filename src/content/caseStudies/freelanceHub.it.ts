@@ -25,7 +25,7 @@ export const freelanceHubIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "Quando il contatto si concretizza, una funzione permette di convertirlo in cliente e creare un progetto collegato. Ogni cliente può avere più progetti, ciascuno con informazioni, stato di avanzamento, budget e stime del tempo necessario.",
+          text: "Ogni cambio di stato del contatto resta registrato con la sua data. Quando il contatto accetta il preventivo, diventa cliente. Ogni cliente può avere più progetti, ciascuno con informazioni, stato di avanzamento, budget e stime del tempo necessario.",
         },
         {
           kind: "p",
@@ -33,7 +33,7 @@ export const freelanceHubIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "Attualmente utilizzo Freelance Hub come strumento interno per la mia attività. L'accesso diretto da parte dei clienti è un ambito ancora da validare.",
+          text: "Freelance Hub è uno strumento interno: lo uso solo io. I clienti non hanno un accesso diretto.",
         },
       ],
     },
@@ -51,13 +51,17 @@ export const freelanceHubIt: CaseStudy = {
         },
         {
           kind: "p",
+          text: "Ogni progetto ha un diagramma di Gantt con fasi e note. Il timer registra le ore sulle singole fasi. Il Gantt si esporta in PNG, SVG o PDF, anche in una versione da mandare al cliente.",
+        },
+        {
+          kind: "p",
           text: "Le note possono essere organizzate per contesto e categoria, mantenendo insieme indicazioni operative e informazioni utili al progetto.",
         },
       ],
     },
     {
       id: "quotes-contracts",
-      title: "Preventivi, contratti e rendicontazione",
+      title: "Preventivi, proforma, contratti e rendicontazione",
       blocks: [
         {
           kind: "p",
@@ -65,7 +69,15 @@ export const freelanceHubIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "Il flusso dei preventivi prevede la generazione di PDF e la creazione del progetto a seguito della registrazione dell'accettazione. I contratti utilizzano modelli compilabili con le informazioni del cliente e del progetto.",
+          text: "Un preventivo può contenere più pacchetti alternativi, ognuno con sezioni, righe e totali propri. Ogni preventivo tiene le sue revisioni, e le voci frequenti vengono da un catalogo. Il PDF riporta i dati dell'attività e i blocchi per la firma. Quando il cliente accetta, il gestionale crea il progetto.",
+        },
+        {
+          kind: "p",
+          text: "Dal preventivo accettato nascono i proforma: intero, di acconto o di saldo, con numerazione annuale e PDF. Gli incassi si collegano al proforma, e il gestionale mostra quanto resta da incassare.",
+        },
+        {
+          kind: "p",
+          text: "I contratti partono da modelli con versioni: ogni versione resta salvata. Il gestionale compila il modello con i dati del cliente, del progetto e della mia attività.",
         },
         {
           kind: "p",
@@ -83,11 +95,11 @@ export const freelanceHubIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "La vista economica distingue il totale ricevuto dalle somme accantonate per le tasse e dall'importo disponibile dopo l'accantonamento.",
+          text: "La vista economica distingue il totale ricevuto dalle somme accantonate per le tasse e dall'importo disponibile dopo l'accantonamento. Il riepilogo mostra incassi, spese, tasse accantonate e quanto resta, per anno e per mese.",
         },
         {
           kind: "p",
-          text: "Sono presenti inoltre la gestione delle tariffe, delle spese aziendali e delle entrate ricorrenti. Le ricorrenze consentono di rappresentare rapporti continuativi, come manutenzioni e compensi periodici, accanto ai lavori occasionali.",
+          text: "Sono presenti inoltre la gestione delle tariffe, delle spese aziendali e delle entrate ricorrenti. Le ricorrenze consentono di rappresentare rapporti continuativi, come manutenzioni e compensi periodici, accanto ai lavori occasionali. Le spese ricorrenti hanno una scadenza: prima di un rinnovo, il gestionale mi manda un'email.",
         },
       ],
     },
@@ -120,6 +132,7 @@ export const freelanceHubIt: CaseStudy = {
             { text: "Confronto tra ore stimate ed effettivamente lavorate." },
             { text: "Rapporto tra incassi e ore, confrontato con le tariffe nominali." },
             { text: "Opportunità commerciali e conversioni per fonte di acquisizione." },
+            { text: "Durata di ogni fase di un contatto, e punto in cui i contatti si perdono." },
             { text: "Distribuzione e andamento delle richieste." },
             { text: "Feedback e valutazioni registrate." },
             { text: "Storico e proiezioni del valore economico dei rapporti con i clienti." },
@@ -142,6 +155,10 @@ export const freelanceHubIt: CaseStudy = {
         {
           kind: "p",
           text: "È possibile impostare ore lavorative, eccezioni per singole giornate e blocchi fissi, includendo anche impegni personali. Le viste settimanali, mensili e annuali permettono di confrontare il tempo disponibile con quello già occupato.",
+        },
+        {
+          kind: "p",
+          text: "Una vista generale mostra il carico di ogni settimana e le pause. Le attività si collegano alle fasi del Gantt del progetto.",
         },
         {
           kind: "figure",
@@ -190,7 +207,7 @@ export const freelanceHubIt: CaseStudy = {
         },
         {
           kind: "p",
-          text: "Completano il gestionale la gestione dei collaboratori, il registro delle attività e una sezione per preparare ed esportare casi studio destinati al portfolio.",
+          text: "Completano il gestionale il registro delle attività, l'anonimizzazione di un cliente su richiesta (GDPR) e una sezione per preparare ed esportare casi studio destinati al portfolio.",
         },
       ],
     },
@@ -200,7 +217,15 @@ export const freelanceHubIt: CaseStudy = {
       blocks: [
         {
           kind: "p",
-          text: "Freelance Hub è installato sul mio server di casa e viene utilizzato nella gestione dell'attività. La scelta di un'infrastruttura propria risponde anche al desiderio di mantenere maggiore controllo sui dati dei clienti.",
+          text: "Freelance Hub gira sul mio server di casa da metà settembre 2026, e lo uso per gestire l'attività. La scelta di un'infrastruttura propria risponde anche al desiderio di mantenere maggiore controllo sui dati dei clienti.",
+        },
+        {
+          kind: "p",
+          text: "Lo sviluppo è iniziato ad aprile 2026 e continua. Con la v2 ho rifatto l'interfaccia: la dashboard mostra la panoramica della giornata, e una palette di comandi porta a ogni sezione.",
+        },
+        {
+          kind: "p",
+          text: "Il codice ha 1.699 test automatici: 1.368 nel backend e 331 nel frontend. La pipeline blocca ogni calo della copertura e controlla i tipi con mypy --strict. Per la sicurezza girano gitleaks, bandit, pip-audit, npm audit e Trivy, più il mutation testing sul livello di sicurezza GraphQL.",
         },
         {
           kind: "p",

@@ -25,7 +25,7 @@ export const freelanceHubEn: CaseStudy = {
         },
         {
           kind: "p",
-          text: "When a lead turns into work, it can be converted into a client with a project attached. A client can have several projects, each with its own details, progress, budget, and time estimates.",
+          text: "Every change in a lead's status is recorded with its date. When the lead accepts a quotation, it becomes a client. A client can have several projects, each with its own details, progress, budget, and time estimates.",
         },
         {
           kind: "p",
@@ -33,7 +33,7 @@ export const freelanceHubEn: CaseStudy = {
         },
         {
           kind: "p",
-          text: "For now I use Freelance Hub as an internal tool for my own practice. Giving clients direct access is something still to be validated.",
+          text: "Freelance Hub is an internal tool: I am its only user. Clients have no direct access.",
         },
       ],
     },
@@ -51,13 +51,17 @@ export const freelanceHubEn: CaseStudy = {
         },
         {
           kind: "p",
+          text: "Each project has a Gantt chart with phases and notes. A timer logs hours against each phase. The Gantt chart exports to PNG, SVG, or PDF, including a version to send to the client.",
+        },
+        {
+          kind: "p",
           text: "Notes can be organised by context and category, keeping working instructions and project information together.",
         },
       ],
     },
     {
       id: "quotes-contracts",
-      title: "Quotations, contracts, and reporting",
+      title: "Quotations, pro formas, contracts, and reporting",
       blocks: [
         {
           kind: "p",
@@ -65,7 +69,15 @@ export const freelanceHubEn: CaseStudy = {
         },
         {
           kind: "p",
-          text: "The quotation flow generates PDFs and creates the project once acceptance is recorded. Contracts use templates filled in with the client and project information.",
+          text: "A quotation can hold several alternative packages, each with its own sections, lines, and totals. Each quotation keeps its revisions, and common items come from a catalogue. The PDF carries the business details and signature blocks. When the client accepts, the system creates the project.",
+        },
+        {
+          kind: "p",
+          text: "An accepted quotation produces pro forma invoices: full, deposit, or balance, with yearly numbering and a PDF. Payments link to the pro forma, and the system shows what is still to be collected.",
+        },
+        {
+          kind: "p",
+          text: "Contracts start from versioned templates: every version stays saved. The system fills the template with the client, project, and business details.",
         },
         {
           kind: "p",
@@ -83,11 +95,11 @@ export const freelanceHubEn: CaseStudy = {
         },
         {
           kind: "p",
-          text: "The financial view separates the total received from the amounts set aside for tax and from what is actually available once that is put away.",
+          text: "The financial view separates the total received from the amounts set aside for tax and from what is actually available once that is put away. The summary shows income, expenses, tax set aside, and what is left, by year and by month.",
         },
         {
           kind: "p",
-          text: "There is also handling for rates, business expenses, and recurring income. Recurring entries represent ongoing arrangements, such as maintenance and periodic retainers, alongside one-off work.",
+          text: "There is also handling for rates, business expenses, and recurring income. Recurring entries represent ongoing arrangements, such as maintenance and periodic retainers, alongside one-off work. Recurring expenses have a due date: before a renewal, the system sends me an email.",
         },
       ],
     },
@@ -120,6 +132,7 @@ export const freelanceHubEn: CaseStudy = {
             { text: "Estimated hours against hours actually worked." },
             { text: "Income per hour, compared with the nominal rates." },
             { text: "Opportunities and conversions by acquisition source." },
+            { text: "How long each lead stage lasts, and where leads drop off." },
             { text: "The distribution and trend of incoming requests." },
             { text: "Recorded feedback and ratings." },
             { text: "History and projections of what client relationships are worth over time." },
@@ -142,6 +155,10 @@ export const freelanceHubEn: CaseStudy = {
         {
           kind: "p",
           text: "Working hours, exceptions for individual days, and fixed blocks can all be set, personal commitments included. Weekly, monthly, and yearly views compare the time available with the time already taken.",
+        },
+        {
+          kind: "p",
+          text: "An overview shows the load of each week and the breaks. Tasks link to the phases of the project's Gantt chart.",
         },
         {
           kind: "figure",
@@ -190,7 +207,7 @@ export const freelanceHubEn: CaseStudy = {
         },
         {
           kind: "p",
-          text: "Collaborator management, an activity log, and a section for preparing and exporting portfolio case studies complete the system.",
+          text: "An activity log, anonymising a client on request (GDPR), and a section for preparing and exporting portfolio case studies complete the system.",
         },
       ],
     },
@@ -200,7 +217,15 @@ export const freelanceHubEn: CaseStudy = {
       blocks: [
         {
           kind: "p",
-          text: "Freelance Hub is installed on my home server and is used to run the business. Choosing my own infrastructure also answers a wish to keep closer control over client data.",
+          text: "Freelance Hub has run on my home server since mid-September 2026, and I use it to run the business. Choosing my own infrastructure also answers a wish to keep closer control over client data.",
+        },
+        {
+          kind: "p",
+          text: "Development started in April 2026 and is still going. With v2 I rebuilt the interface: the dashboard shows an overview of the day, and a command palette reaches every section.",
+        },
+        {
+          kind: "p",
+          text: "The code has 1,699 automated tests: 1,368 in the backend and 331 in the frontend. The pipeline blocks any drop in coverage and checks types with mypy --strict. For security it runs gitleaks, bandit, pip-audit, npm audit, and Trivy, plus mutation testing on the GraphQL security layer.",
         },
         {
           kind: "p",

@@ -68,6 +68,7 @@ export default function DevServicePage() {
         }]
       : []),
     ...content.form.questions,
+    t("form.budget", { returnObjects: true }) as FormQuestion,
   ];
 
   const inlinePrice = (pkg: ServicePackage) =>

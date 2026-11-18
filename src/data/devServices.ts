@@ -3,9 +3,9 @@
 // the prerendered routes and the sitemap, and analytics.ts to know which paths
 // may be measured. The page text lives in `content/services`, keyed by `id`.
 export const DEV_SERVICES = [
-  { slug: "siti-web", id: "websites" },
   { slug: "gestionali-crm", id: "business" },
   { slug: "automazioni", id: "automation" },
+  { slug: "siti-web", id: "websites" },
 ] as const;
 
 export type DevService = (typeof DEV_SERVICES)[number];
