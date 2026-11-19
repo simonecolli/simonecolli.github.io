@@ -49,8 +49,10 @@ const longDate = (iso: string) =>
 // Posts to the Worker on /api/contatto, which mails the inbox of the area. On
 // failure the fields keep what the visitor wrote and the address is offered,
 // so the message is never lost.
-export default function ContactForm({ area, source, questions, submitLabel, service }: ContactFormProps) {
+export default function ContactForm({ area, source, questions: pageQuestions, submitLabel, service }: ContactFormProps) {
   const { t } = useTranslation();
+  // Every form ends by asking where the visitor found the site: GA4 misses most visits.
+  const questions = [...pageQuestions, t("form.referral", { returnObjects: true }) as FormQuestion];
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   // Characters typed in each long answer, for the counter under the box.
   const [counts, setCounts] = useState<Record<string, number>>({});

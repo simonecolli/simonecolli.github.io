@@ -912,6 +912,21 @@
         { "value": "3000-6000", "label": "€3,000-6,000" },
         { "value": "over-6000", "label": "Over €6,000" }
       ]
+    },
+    "referral": {
+      "label": "How did you find me?",
+      "kind": "select",
+      "half": true,
+      "options": [
+        { "value": "", "label": "I don't remember" },
+        { "value": "google", "label": "Google search" },
+        { "value": "maps", "label": "Google Maps" },
+        { "value": "referral", "label": "Word of mouth or a recommendation" },
+        { "value": "linkedin", "label": "LinkedIn" },
+        { "value": "instagram", "label": "Instagram" },
+        { "value": "ai", "label": "ChatGPT or another AI assistant" },
+        { "value": "other", "label": "Other" }
+      ]
     }
   }
 }

@@ -912,6 +912,21 @@
         { "value": "3000-6000", "label": "3.000-6.000 €" },
         { "value": "over-6000", "label": "Più di 6.000 €" }
       ]
+    },
+    "referral": {
+      "label": "Come mi hai trovato?",
+      "kind": "select",
+      "half": true,
+      "options": [
+        { "value": "", "label": "Non ricordo" },
+        { "value": "google", "label": "Ricerca su Google" },
+        { "value": "maps", "label": "Google Maps" },
+        { "value": "referral", "label": "Passaparola o consiglio di qualcuno" },
+        { "value": "linkedin", "label": "LinkedIn" },
+        { "value": "instagram", "label": "Instagram" },
+        { "value": "ai", "label": "ChatGPT o un altro assistente IA" },
+        { "value": "other", "label": "Altro" }
+      ]
     }
   }
 }
