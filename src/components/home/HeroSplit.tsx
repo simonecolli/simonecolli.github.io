@@ -43,7 +43,7 @@ export default function HeroSplit() {
             <a href={photoMail} className="btn btn-photo btn-solid">
               {t("hero.photoCta")}
             </a>
-            <Link to="/photography/" className={LINK_CLASS}>
+            <Link to="/photography/degree/" className={LINK_CLASS}>
               {t("hero.photoLink")}
             </Link>
           </div>

@@ -16,15 +16,16 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "role": "Custom software and photography for professionals and SMEs",
-    "devTitle": "Software development",
-    "devText": "Custom software for professionals and small and medium-sized businesses. I start from the way you work and make it faster and more reliable.",
-    "devCta": "Tell me about your problem",
+    "role": "Custom software for professionals and SMEs. Photography of graduations, events and sport.",
+    "promise": "First I understand your needs. If a cost isn't necessary, I tell you.",
+    "devTitle": "Custom software",
+    "devText": "Orders and bookings typed in by hand, quotes rewritten every time, reports in Excel, documents scattered across email and folders. I start from the way you work today. Then I build the software that handles it for you.",
+    "devCta": "Tell me what you redo by hand",
     "devLink": "See a real case: MGP",
-    "photoTitle": "Professional photographer",
-    "photoText": "A memory captured forever. Sport, events and details: the moments that matter should last over time.",
+    "photoTitle": "Photography",
+    "photoText": "Graduations, events and sport. Sixteen years of competitive figure skating taught me to read a gesture a split second before it happens.",
     "photoCta": "Email me for a quote",
-    "photoLink": "Services and packages",
+    "photoLink": "Graduating? See the packages",
     "scroll": "Scroll to the services"
   },
   "home": {

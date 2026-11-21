@@ -16,15 +16,16 @@
   },
   "hero": {
     "name": "Simone Colli",
-    "role": "Software su misura e fotografia per professionisti e PMI",
-    "devTitle": "Sviluppo software",
-    "devText": "Software su misura per professionisti, piccole e medie imprese. Parto dal tuo metodo di lavoro e lo rendo più veloce e affidabile.",
-    "devCta": "Raccontami il tuo problema",
+    "role": "Software su misura per professionisti e PMI. Fotografia di lauree, eventi e sport.",
+    "promise": "Prima capisco le tue esigenze. Se una spesa non è necessaria, te lo dico.",
+    "devTitle": "Software su misura",
+    "devText": "Ordini e prenotazioni inseriti a mano, preventivi rifatti ogni volta, report in Excel, documenti sparsi tra email e cartelle. Parto da come lavori oggi. Poi costruisco il software che se ne occupa al posto tuo.",
+    "devCta": "Raccontami cosa rifai a mano",
     "devLink": "Guarda un caso reale: MGP",
-    "photoTitle": "Fotografo professionista",
-    "photoText": "Un ricordo immortalato. Sport, eventi e dettagli: i momenti importanti devono rimanere nel tempo.",
+    "photoTitle": "Fotografia",
+    "photoText": "Lauree, eventi e sport. Sedici anni di pattinaggio agonistico mi hanno insegnato a leggere il gesto un istante prima che accada.",
     "photoCta": "Scrivimi per un preventivo",
-    "photoLink": "Servizi e pacchetti",
+    "photoLink": "Ti laurei? Guarda i pacchetti",
     "scroll": "Scorri ai servizi"
   },
   "home": {

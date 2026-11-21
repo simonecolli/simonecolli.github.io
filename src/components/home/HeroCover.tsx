@@ -27,7 +27,8 @@ export default function HeroCover() {
       <div className="relative z-10 flex flex-col items-center">
         <Logo variant="mix" className="w-[clamp(4.5rem,min(14vh,24vw),8rem)] h-[clamp(4.5rem,min(14vh,24vw),8rem)]" />
         <h1 className="type-cover-title mt-6">{t("hero.name")}</h1>
-        <p className="type-lead text-fg mt-3">{t("hero.role")}</p>
+        <p className="type-lead text-fg mt-3 text-balance">{t("hero.role")}</p>
+        <p className="type-lead text-fg mt-1 text-balance">{t("hero.promise")}</p>
       </div>
 
       <a href="#home-services" className="hero-scroll" aria-label={t("hero.scroll")}>
