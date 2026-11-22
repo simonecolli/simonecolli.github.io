@@ -153,9 +153,9 @@ export const websitesIt: ServicePageContent = {
             {
               id: "landing",
               title: "Landing page",
-              fromPrice: 600,
+              fromPrice: 450,
               weeks: "2-3 settimane",
-              body: "Per un servizio, un'offerta o un evento. Comprende: una pagina fino a 6 sezioni, pulsanti email e WhatsApp, ottimizzazione tecnica, 1 giro di revisione grafica e 1 di verifica, pubblicazione.",
+              body: "Per un servizio, un'offerta o un evento. Comprende: una pagina fino a 4 sezioni (con 6 sezioni, da 600 €), pulsanti email e WhatsApp, ottimizzazione tecnica, 1 giro di revisione grafica e 1 di verifica, pubblicazione.",
               fit: "hai un obiettivo solo.",
               limits: "non presenta tutta l'attività.",
             },

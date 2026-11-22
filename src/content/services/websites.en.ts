@@ -153,9 +153,9 @@ export const websitesEn: ServicePageContent = {
             {
               id: "landing",
               title: "Landing page",
-              fromPrice: 600,
+              fromPrice: 450,
               weeks: "2-3 weeks",
-              body: "For a service, an offer or an event. Includes: one page with up to 6 sections, email and WhatsApp buttons, technical optimisation, 1 round of design revisions and 1 of final checks, publishing.",
+              body: "For a service, an offer or an event. Includes: one page with up to 4 sections (with 6 sections, from €600), email and WhatsApp buttons, technical optimisation, 1 round of design revisions and 1 of final checks, publishing.",
               fit: "you have a single goal.",
               limits: "it doesn't present your whole business.",
             },
