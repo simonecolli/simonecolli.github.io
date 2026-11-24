@@ -65,3 +65,40 @@ test('malformed or oversized requests are rejected', () => {
   assert.equal(parse({ answers: [{ label: 'Q', value: 'x'.repeat(4001) }] }), null);
   assert.equal(parse({ answers: 'text' }), null);
 });
+
+// The Worker entry point, transpiled the same way, with ./contact wired in.
+const workerCode = ts.transpileModule(readFileSync(new URL('../worker/index.ts', import.meta.url), 'utf8'), { compilerOptions: { module: ts.ModuleKind.CommonJS, target: ts.ScriptTarget.ES2022 } }).outputText;
+const workerModule = { exports: {} };
+new Function('module', 'exports', 'require', workerCode)(workerModule, workerModule.exports, () => module.exports);
+const worker = workerModule.exports.default;
+
+const env = (changes = {}) => ({
+  EMAIL: { send: async () => {} },
+  DEV_TO: 'dev-inbox@example.org',
+  PHOTO_TO: 'photo-inbox@example.org',
+  RATE_LIMIT: { limit: async () => ({ success: true }) },
+  ...changes,
+});
+const post = (headers = {}, body = JSON.stringify(valid)) =>
+  new Request('https://www.simonecolli.com/api/contatto', { method: 'POST', headers: { Origin: 'https://www.simonecolli.com', ...headers }, body });
+
+test('the site origin gets through and the email goes out', async () => {
+  assert.equal((await worker.fetch(post(), env())).status, 204);
+});
+
+test('a localhost origin is refused unless .dev.vars allows it', async () => {
+  const local = { Origin: 'http://localhost:5173' };
+  assert.equal((await worker.fetch(post(local), env())).status, 403);
+  assert.equal((await worker.fetch(post(local), env({ ALLOW_LOCALHOST: 'true' }))).status, 204);
+});
+
+test('an address over the rate limit gets 429 and sends nothing', async () => {
+  let sent = false;
+  const limited = env({ RATE_LIMIT: { limit: async () => ({ success: false }) }, EMAIL: { send: async () => { sent = true; } } });
+  assert.equal((await worker.fetch(post(), limited)).status, 429);
+  assert.equal(sent, false);
+});
+
+test('a declared oversized body is refused before it is read', async () => {
+  assert.equal((await worker.fetch(post({ 'Content-Length': '20001' }), env())).status, 413);
+});

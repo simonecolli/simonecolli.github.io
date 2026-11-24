@@ -3,6 +3,8 @@
 //   npx wrangler secret put DEV_TO
 //   npx wrangler secret put PHOTO_TO
 // They must be destination addresses verified in Email Routing.
+// For `npx wrangler dev`, .dev.vars also needs ALLOW_LOCALHOST=true: without
+// it the Worker refuses the Vite dev server's localhost origin.
 {
   "name": "simonecolli-contatto",
   "main": "index.ts",
@@ -10,5 +12,8 @@
   "routes": [{ "pattern": "www.simonecolli.com/api/*", "zone_name": "simonecolli.com" }],
   // Reachable only through the site's route, not on a workers.dev address.
   "workers_dev": false,
-  "send_email": [{ "name": "EMAIL" }]
+  "send_email": [{ "name": "EMAIL" }],
+  // Five sends a minute per address. The namespace id is unique in the
+  // account: workers that share one also share the counters.
+  "ratelimits": [{ "name": "RATE_LIMIT", "namespace_id": "4290", "simple": { "limit": 5, "period": 60 } }]
 }
