@@ -3,16 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "devEngines": {
+    "runtime": { "name": "node", "version": "^26", "onFail": "error" },
+    "packageManager": { "name": "npm", "onFail": "error" }
+  },
+  "allowScripts": {
+    "@tailwindcss/oxide": false,
+    "esbuild": false,
+    "fsevents": false
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --max-warnings 0",
     "preview": "vite preview",
     "photos": "sh scripts/photos.sh"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
-    "@types/react-router-dom": "^5.3.3",
     "i18next": "^25.8.13",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
